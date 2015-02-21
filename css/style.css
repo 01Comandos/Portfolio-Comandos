@@ -1,0 +1,285 @@
+/* Diseñador por @01Comandos 
+       Febrero 2015        */
+
+@import url(http://fonts.googleapis.com/css?family=Raleway:700,400);
+
+@font-face{
+    font-family: "Myriad-Pro";  
+    src: url('../font/MyriadPro-Regular.otf') format("truetype");
+}
+
+/*RESET*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+	font-size: 100%;
+	vertical-align: baseline;
+	text-decoration: none;
+}
+a:hover { text-decoration:underline}
+body {
+	line-height: 1;
+	font-weight: 300;
+	overflow-x:hidden;
+	font-family:Arial, Helvetica, sans-serif;
+	background: #e1e1e0;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+.clear {clear:both}
+/*FIN RESET*/
+
+* {
+	box-sizing:border-box;
+}
+
+body{
+	font-size:0;
+	font-family:Arial, Helvetica, sans-serif;
+	background:linear-gradient(to right, #2da3cb 0%,#2da3cb 25%,#FFFFFF 20%,#FFFFFF 100%);
+}
+
+header, section {
+	font-size:14px;
+	display:inline-block;
+	vertical-align:top;
+}
+
+header{
+	background: #2da3cb;
+	width: 25%;
+	padding-bottom: 0;
+}
+
+section{
+	width: 75%;
+}
+
+nav span {
+	cursor:pointer;
+}
+
+nav span.active, nav span:hover {
+	color: #ffffff;
+	background: #2291af;
+}
+
+.contenido li:nth-child(2) {
+	display:none;
+}
+
+.globos{
+	margin-top: 1em;
+	position: relative;
+}
+
+#globo-one{
+	float: left;
+}
+
+#globo-two{
+	float: right;
+	margin-right: 1em;
+}
+
+.avatar{
+	text-align: center;
+	margin-top: 2em;
+}
+
+.avatar img{
+	width: 110px;
+	border: 4px solid #ffffff;
+	border-radius: 50%;
+}
+
+.nombre{
+	text-align: center;
+	margin-top: 0.8em;
+}
+
+.nombre h3{
+	color: #FFFFFF;
+	font-size: 1.5em;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+}
+
+.nombre a{
+	color: #000000;
+	font-size: 1.2em;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	border-bottom: 1px solid #000000;
+}
+
+.nombre a:hover{
+	text-decoration: none;
+	color: #31475f;
+	border-bottom: 1px solid #31475f;
+}
+
+.social-media{
+	text-align: center;
+	padding-top: 0.5em;
+}
+
+.social-media a{
+	padding-right: 0.3em;
+}
+
+.intro{
+	text-align: center;
+	padding: 1em 1em !important;
+}
+
+.intro span{
+	color: #FFFFFF;
+	font-size: 1.1em;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	line-height : 22px;
+}
+
+nav{
+	text-align: center;
+	margin-top: 2em;
+}
+
+nav span{
+	display: block;
+	color: #FFFFFF;
+	font-size: 1.2em;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	border-top: 1px solid #81c5ef;
+	border-bottom: 1px solid #81c5ef;
+}
+
+.nubes{
+	vertical-align: text-bottom;
+	margin:0;
+}
+
+.nubes img{
+	margin: 0;
+}
+
+/********************************************
+          DATOS PERSONALES
+*********************************************/
+
+.contenido li h1{
+	color: #0074a3;
+	text-align: center;
+	font-size: 32px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	margin-top: 1.2em;
+}
+
+.datos-contacto, .empresas{
+	text-align: center;
+	margin-top: 1.5em;
+}
+
+.datos-contacto span , .habilidades span, .empresas span, .cursos span{
+	font-size: 1.8em;
+	font-family: 'Myriad-Pro', sans-serif;
+	border-bottom: 1px solid #000000;
+}
+
+.datos figure{
+	display: inline-block;
+	margin-right: 0;
+}
+
+.datos span , .datos a{
+	color: #000000;
+	font-size: 1.1em;
+	font-family: 'Myriad-Pro', sans-serif;
+	text-decoration: none;
+	top: -0.35em;
+	position: relative;
+}
+
+.container-datos{
+	text-align: center;
+	padding-bottom: 1.5em;
+}
+
+.datos-left, .datos-right{
+	display: inline-block;
+	text-align: left;
+}
+
+.habilidades, .cursos{
+	background: #f2f2f2;
+	width: 99.99%;
+	text-align: center;
+	padding-top: 1.5em;
+	padding-bottom: 2em;
+}
+
+.tecnologias{
+	margin-top: 1.2em;
+}
+
+.tecnologias a{
+	padding-right: 0.5em;
+}
+
+.empresas img , .cursos img{
+	top: 0.2em;
+	position: relative;
+}
+
+.datos-empresa {
+	text-align: center;
+	margin-top: 1.5em;
+}
+
+.plus{
+	text-align: left;
+	display: inline-block;
+	font-size: 1.1em;
+	font-family: 'Myriad-Pro',sans-serif;
+	padding-bottom: 1.5em;
+}
+
+.plus a{
+	color: #000000;
+}
+
+.tiempo{
+	font-size: 1em !important;
+	border-bottom: 0 !important;
+	font-family: 'Myriad-Pro', sans-serif;
+	display: block;
+}
+
+.ola-ke-ase{
+	padding: 1.5em 0 0 0;
+}
+
+.one , .two , .three{
+	vertical-align: top;
+	display: inline-block;
+}
+
+.one, .two{
+	margin-right: 2em;
+}
