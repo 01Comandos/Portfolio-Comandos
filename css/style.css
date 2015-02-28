@@ -40,6 +40,7 @@ blockquote:before, blockquote:after, q:before, q:after {
 .clear {clear:both}
 /*FIN RESET*/
 
+/*NUEVO CSS */
 * {
 	box-sizing:border-box;
 }
@@ -57,9 +58,10 @@ header, section {
 }
 
 header{
-	background: #2da3cb;
+	background: transparent;
+	border-right: 0;
+	padding-right: 0;
 	width: 25%;
-	padding-bottom: 0;
 }
 
 section{
@@ -181,25 +183,32 @@ nav span{
 /********************************************
           DATOS PERSONALES
 *********************************************/
+.contenido{
+	margin-right: 1px;
+}
 
 .contenido li h1{
 	color: #0074a3;
-	text-align: center;
-	font-size: 32px;
 	font-family: 'Raleway', sans-serif;
+	font-size: 32px;
 	font-weight: 700;
 	margin-top: 1.2em;
+	text-align: center;
 }
 
 .datos-contacto, .empresas{
-	text-align: center;
 	margin-top: 1.5em;
+	text-align: center;
+}
+
+.datos{
+	margin-bottom: 0.5em;
 }
 
 .datos-contacto span , .habilidades span, .empresas span, .cursos span{
-	font-size: 1.8em;
-	font-family: 'Myriad-Pro', sans-serif;
 	border-bottom: 1px solid #000000;
+	font-family: 'Myriad-Pro', sans-serif;
+	font-size: 1.8em;
 }
 
 .datos figure{
@@ -209,16 +218,22 @@ nav span{
 
 .datos span , .datos a{
 	color: #000000;
-	font-size: 1.1em;
 	font-family: 'Myriad-Pro', sans-serif;
+	font-size: 1.1em;
+	position: relative;
 	text-decoration: none;
 	top: -0.35em;
-	position: relative;
+}
+
+.datos a:hover{
+	color: #d15a2c;
+	text-decoration: underline;
 }
 
 .container-datos{
-	text-align: center;
 	padding-bottom: 1.5em;
+	padding-top: 1.5em;
+	text-align: center;
 }
 
 .datos-left, .datos-right{
@@ -226,12 +241,17 @@ nav span{
 	text-align: left;
 }
 
+.datos-right{
+	margin-left: 2em;
+}
+
 .habilidades, .cursos{
 	background: #f2f2f2;
-	width: 99.99%;
-	text-align: center;
-	padding-top: 1.5em;
 	padding-bottom: 2em;
+	padding-top: 1.5em;
+	text-align: center;
+	width: 99.99%;
+	margin-left: 2.5px;
 }
 
 .tecnologias{
@@ -243,21 +263,21 @@ nav span{
 }
 
 .empresas img , .cursos img{
-	top: 0.2em;
 	position: relative;
+	top: 0.2em;
 }
 
 .datos-empresa {
-	text-align: center;
 	margin-top: 1.5em;
+	text-align: center;
 }
 
 .plus{
-	text-align: left;
 	display: inline-block;
-	font-size: 1.1em;
 	font-family: 'Myriad-Pro',sans-serif;
+	font-size: 1.1em;
 	padding-bottom: 1.5em;
+	text-align: left;
 }
 
 .plus a{
@@ -265,10 +285,10 @@ nav span{
 }
 
 .tiempo{
-	font-size: 1em !important;
 	border-bottom: 0 !important;
-	font-family: 'Myriad-Pro', sans-serif;
 	display: block;
+	font-family: 'Myriad-Pro', sans-serif;
+	font-size: 1em !important;
 }
 
 .ola-ke-ase{
@@ -276,10 +296,68 @@ nav span{
 }
 
 .one , .two , .three{
-	vertical-align: top;
 	display: inline-block;
+	vertical-align: top;
 }
 
 .one, .two{
 	margin-right: 2em;
+}
+
+
+
+/********************************************
+          PORTFOLIO
+*********************************************/
+
+li#portfolio, li#datos-personales {
+	overflow-y: auto;
+	overflow-x: hidden;
+	height: 771px;
+}
+
+#portfolio span{
+	border-bottom: 1px solid #000000;
+	font-family: 'Myriad-Pro', sans-serif;
+	font-size: 1.6em;
+}
+
+.shocklogic, .ARG, .xadrijo, .goradio-site, .goradio-app, .scientific, .fincas{
+	margin-left: 2.5em;
+	margin-top: 2.5em;
+}
+
+.ola-ke-ase{
+	display: block;
+	margin-bottom: 1em;
+}
+
+.imagenes-portfolio{
+	display: inline-block;
+	position: relative;
+}
+
+.img-thumbnail {
+	display: inline-block;
+	height: auto;
+	max-width: 100%;
+	padding: 4px;
+	line-height: 1.428571429;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	-webkit-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+
+.lightbox {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1041;
+	display: none;
+	overflow: auto;
+	overflow-y: scroll;
 }
