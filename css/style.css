@@ -1,5 +1,13 @@
-/* Diseñador por @01Comandos 
-       Febrero 2015        */
+/*
+
+    Proyecto: Portfolio 2015
+
+    Diseñado y maquetado por: @01Comandos
+
+    Fecha: Febrero 2015;
+
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------*/
 
 @import url(http://fonts.googleapis.com/css?family=Raleway:700,400);
 
@@ -305,7 +313,6 @@ nav span{
 }
 
 
-
 /********************************************
           PORTFOLIO
 *********************************************/
@@ -360,4 +367,96 @@ li#portfolio, li#datos-personales {
 	display: none;
 	overflow: auto;
 	overflow-y: scroll;
+}
+
+
+/*******************************************************************
+                    MEDIAS QUERIES
+*******************************************************************/
+
+/*PHONE SMALL */
+@media (max-width: 415px){
+	body{
+		background: none;
+	}
+
+	header, section{
+		display: block;
+		width: 100%;
+	}
+
+	header{
+		background: #2da3cb;
+	}
+
+	.avatar,.globos{
+		margin-top: 0;
+	}
+
+	.avatar img{
+		margin-top: 1em;
+	}
+
+	.imagenes-portfolio{
+		margin-top: 0.5em;
+	}
+
+	li#portfolio, li#datos-personales{
+		overflow-y: scroll;
+		height: auto;
+	}
+}
+
+/* Extra small devices (phones, less than 768px) */
+@media (min-width: 416px) and (max-width: 767px){
+	body{
+		background: none;
+	}
+
+	header, section{
+		display: block;
+		width: 100%;
+	}
+
+	header{
+		background: #2da3cb;
+	}
+
+	.avatar,.globos{
+		margin-top: 0;
+	}
+
+	.avatar img{
+		margin-top: 1em;
+	}
+
+	.imagenes-portfolio{
+		margin-top: 0.5em;
+	}
+
+	li#portfolio, li#datos-personales{
+		overflow-y: scroll; 
+		height: auto;
+	}
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px){
+	#globo-one,#globo-two{
+		display: none;
+	}
+
+	.imagenes-portfolio{
+		margin-top: 0.5em;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1235px){
+	#globo-one,#globo-two{
+		display: none;
+	}
+
+	.imagenes-portfolio{
+		margin-top: 0.5em;
+	}
 }
