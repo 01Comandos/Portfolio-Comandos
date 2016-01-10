@@ -1,0 +1,313 @@
+/*
+
+	Proyecto: PortFolio2015 (Version 2016)
+
+	Maquetado por: @01Comandos
+
+	Fecha: 10/01/2016;
+
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------*/
+
+/*
+	IMPORTACIONES
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------*/
+@import 'nib'
+@import 'style-icon.styl'
+
+
+@font-face 
+    font-family 'Roboto-Medium'
+    src url('../fonts/Roboto-Medium.ttf')
+
+@font-face 
+    font-family 'Roboto-Regular'
+    src url('../fonts/Roboto-Regular.ttf')
+    
+@font-face 
+    font-family 'Roboto-Thin'
+    src url('../fonts/Roboto-Thin.ttf') 
+    
+@font-face 
+    font-family 'Raleway-Bold'
+    src url('../fonts/Raleway-Bold.ttf')     
+    
+
+/*
+	VARIABLES
+-------------------------------------------------------------------------*/
+naranja = #ec7539
+naranja-oscuro = #cc480e
+    
+
+/*
+    HEADER
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------*/
+body
+	font-size 16px
+	background white
+
+header
+	background-color black
+	background-image url('../img/background-header.png')
+	background-position center top
+	background-repeat no-repeat
+	background-size cover
+	background-attachment fixed
+	padding 4em 0 2em 0
+	text-align center
+	.avatar
+		padding-bottom 0.5em
+		img
+			width 5.5em
+			border-radius 50%
+			border 3px solid white
+	.header-description
+		a
+			font-family 'Raleway-Bold',sans-serif
+			color white
+			font-size 1em
+			display block
+		span
+			display block
+			color naranja
+			font-size 1em
+			font-family 'Raleway-Bold',sans-serif
+	.header-social
+		padding-top 0.4em
+		a
+			color white
+			padding-right 0.5em
+			font-size 1.5em
+			transition .2s linear
+			&:hover
+				text-decoration none
+				color naranja
+			&:visited
+				text-decoration none
+	.header-tabs
+		text-align center
+		ul
+			border-bottom 0
+			li
+				float none
+				display inline-block
+				background none				
+				a
+					color white
+					background none
+					font-size 1.2em
+					font-family 'Roboto-Medium',sans-serif
+					transition 0.2s linear
+					border 0
+				&:hover
+					border 0
+					border-bottom 2px solid naranja
+					text-decoration none !important
+			.active
+				border-bottom 2px solid naranja
+				a
+					background none
+					border 0
+					color white
+					
+
+/*
+    SOBRE MI
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------*/					
+.sobreMi
+	margin 0 auto
+	width 75%
+	&-container
+		border-bottom 1px solid black
+		padding 2em 1em
+		h3
+			color black
+			font-family 'Roboto-Medium',sans-serif
+			font-size 1.8em
+			text-align center
+		p
+			font-family 'Roboto-Regular',sans-serif
+			font-size 1em
+			margin 0 auto
+			text-align center
+			width 60%
+			line-height 1.8em
+		&-tecnology
+			padding-top 1em
+			text-align center
+			a
+				color naranja
+				display inline-block
+				padding-right 0.2em
+				transition 0.3s linear
+				span
+					font-size 3em
+				&:hover
+					text-decoration none
+					color naranja-oscuro
+		&-experiencia			
+			display flex
+			flex-box wrap
+			justify-content center
+					
+			&-itemExperiencia
+				margin-bottom 1em
+				margin-right 2em
+				a
+					display block
+					color black
+					font-size 1.3em
+					font-family 'Roboto-Regular',sans-serif
+					&:before
+						content "\e902"
+						font-family 'iconitos'
+						font-size 1.1em
+				h4
+					font-family 'Raleway-Bold',sans-serif
+					font-size 1em
+					color naranja
+					display block
+					margin 0
+					padding-left 1.5em
+				span
+					font-size 1em
+					font-family 'Roboto-Regular',sans-serif
+					padding-left 1.5em
+	&-cursos
+		border-bottom 1px solid black
+		padding 2em 1em
+		h3
+			color black
+			font-family 'Roboto-Medium',sans-serif
+			font-size 1.8em
+			text-align center
+		.item
+			margin-left 26%
+			&:before
+				content "\e901"
+				font-family 'iconitos'
+				font-size 0.65em
+				color naranja
+				position relative
+				top -0.2em
+			h4
+				font-size 1em
+				color black
+				font-family 'Roboto-Medium',sans-serif
+				display inline-block
+			span
+				display inline-block
+				font-family 'Roboto-Regular',sans-serif
+				font-size 0.9em
+			#date
+				background #f2f2f2
+				padding 0.3em 0.5em
+				border-radius 2px
+				
+			
+				
+/*
+	MEDIA QUERIES
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------*/
+@media (max-width: 1297px)
+	/**********************
+        SOBRE MI
+    **********************/	
+	.sobreMi
+		width 90%
+		&-container
+			p
+				width 75%
+				line-height 1.8em
+		&-cursos
+			border-bottom 1px solid black
+			padding 2em 1em
+			.item
+				margin-left 19%
+
+	/**********************
+        INDEX
+    **********************/
+				
+	/**********************
+        EVENTS
+    **********************/	
+				
+
+// Large devices (desktops, 62em and up)
+@media (max-width: 991px)
+	/**********************
+        SOBRE MI
+    **********************/
+	.sobreMi
+		width 90%
+		margin 0 auto
+		&-container
+			p
+				width 85%
+				line-height 1.8em
+			&-experiencia			
+				display block
+				text-align center
+		&-cursos
+			border-bottom 1px solid black
+			padding 2em 1em
+			.item
+				margin-left 0 !important
+				
+	/**********************
+        INDEX
+    **********************/	
+				
+
+// Medium devices (tablets, 48em and up)
+/*@media (max-width: 767px)*/
+	/**********************
+        HEADER
+    **********************/	
+	
+	/**********************
+        INDEX
+    **********************/	
+	
+	/**********************
+        EVENTS
+    **********************/
+	
+	/**********************
+        EVENTS-DETAIL
+    **********************/	
+	
+	/**********************
+        MAGAZINE
+    **********************/	
+	
+	/**********************
+        BUSINESS
+    **********************/	
+
+// Small devices (landscape phones, 415px and up)
+@media (max-width: 415px)
+	body
+		font-size 12px
+						
+	/**********************
+        SOBRE MI
+    **********************/
+	.sobreMi
+		width 90%
+		margin 0 auto
+		&-container
+			padding 2em 0
+			p
+				width 95%
+	
+	/**********************
+        MAGAZINE
+    **********************/	
+		
