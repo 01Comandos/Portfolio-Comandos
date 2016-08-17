@@ -15,11 +15,12 @@
 		
 	</head>
 	<body>
+		<!--HEADER-->
 		<header class="header">
 			<!--MENU - AVATAR-->
 			<section class="header-title">
 				<!--REDES SOCIALES-->
-				<ul class="item">
+				<ul class="item socialmedia">
 					<!--GITLAB-->
 					<li>
 						<a href="https://gitlab.com/u/01Comandos" target="_blank">
@@ -102,7 +103,7 @@
 				<h1>@01Comandos</h1>
 				<h2>UIX Designer | FrontEnd Developer</h2>
 			</section>
-			
+
 			<!--DIAGONAL-->
 			<article class="header-diagonal">
 				<div class="wrapper">
@@ -286,6 +287,72 @@
 			</article>
 		</section>
 
+		<!--FOOTER-->
+		<footer>
+			<section class="footer-title">
+				<!--TITULO-->
+				<article class="portfolio-title">
+					<h2>Contacto</h2>
+					<h3>Siempre estoy abierto a colaborar en proyectos o con empresas</h3>
+				</article>
+
+				<!--REDES SOCIALES-->
+				<ul class="item socialmedia">
+					<!--GITLAB-->
+					<li>
+						<a href="https://gitlab.com/u/01Comandos" target="_blank">
+							<figure>
+								<span class="icon-portfolio_gitlab"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span></span>
+							</figure>
+						</a>
+					</li>
+					<!--GITHUB-->
+					<li>
+						<a href="https://github.com/01Comandos" target="_blank">
+							<span class="icon-portfolio_github"></span>
+						</a>
+					</li>
+					<!--TWITTER-->
+					<li>
+						<a href="https://twitter.com/01Comandos" target="_blank">
+							<span class="icon-portfolio_twitter"></span>
+						</a>
+					</li>
+					<!--GOOGLE-->
+					<li>
+						<a href="https://plus.google.com/u/0/+ComandosMan/posts" target="_blank">
+							<span class="icon-portfolio_google"></span>
+						</a>
+					</li>
+					<!--BEHANCE-->
+					<li>
+						<a href="https://www.behance.net/01Comandos" target="_blank">
+							<span class="icon-portfolio_behance"></span>
+						</a>
+					</li>
+					<!--LINKEDIN-->
+					<li>
+						<a href="https://ve.linkedin.com/in/01comandos" target="_blank">
+							<span class="icon-portfolio_linkedin"></span>
+						</a>
+					</li>
+				</ul>
+				<div class="email">
+					<figure>
+						<span class="icon-portfolio_galletas"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span><span class="path15"></span><span class="path16"></span><span class="path17"></span><span class="path18"></span><span class="path19"></span></span>
+					</figure>
+					<h5>00comandos@gmail.com</h5>
+				</div>
+			</section>
+
+			<!--DIAGONAL-->
+			<article class="diagonal">
+				<div class="wrapper">
+					<span class="back-contact"></span>
+				</div>			
+			</article>
+		</footer>
+
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	    <!-- complementos -->
@@ -301,7 +368,15 @@
 		    $(document).ready(
 		    	function() { 
 		    		//INICIALIZAR NICESCROLL
-		    		$("html").niceScroll({cursorwidth:"10px" , zindex:"9999" , cursorborder:"0px" , cursorborderradius:"0px" , cursorcolor: "#88c057"});
+		    		$("html").niceScroll({
+		    			cursorwidth:"7px" , 
+		    			zindex:"9999" , 
+		    			cursorborder:"0px" , 
+		    			cursorborderradius:"0px" , 
+		    			cursorcolor: "#8283A7",
+		    			scrollspeed: 80,
+		    			cursoropacitymin: 1,
+		    		});
 
 				    //ANIMACION SCROLL
 				    $(".portfolio-title, .card").smoove({

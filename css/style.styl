@@ -127,6 +127,7 @@ body
 		z-index 3
 		flex-center()
 		.item
+			/.socialmedia
 			&:nth-child(1)
 				flex-between()
 				background azul-2
@@ -237,7 +238,7 @@ body
 .portfolio	
 	width 65em
 	margin 2em auto 1em auto
-	&-title
+	/.portfolio-title
 		text-align center
 		padding 2.5em 0 0 0
 		h2
@@ -309,7 +310,33 @@ body
 			&:nth-child(9)
 				margin-top -6em
 
-				
+footer
+	background: url(../img/background-footer.png) no-repeat center center;
+	background-attachment fixed
+	background-size cover
+	background-color azul-1
+	.footer-title
+		color white
+		position relative
+		z-index 3
+		padding 2.5em 1em
+		.portfolio-title
+			h2
+				font-size 1.7em
+			h3
+				font-size 1em
+		.socialmedia
+			background none !important
+			margin 0 auto
+		.email
+			flex-center()
+			figure
+				font-size 1.8em
+			h5
+				font-size 1em
+				font-family 'Cabin-SemiBold',sans-serif
+				padding-top 0.5em
+
 
 /*
     PORTFOLIO
