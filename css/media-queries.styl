@@ -85,6 +85,28 @@
     **********************/			
 	body
 		font-size 14px
+	.header
+		&-title
+			.item
+				width 100%
+				&:nth-child(1)
+				&:nth-child(3)
+					width 75%
+					margin 0
+				&:nth-child(1)
+					background none
+					li
+						a
+							border 2px solid white
+							border-radius 50%
+							width 2em
+							height 2em
+							text-align center
+							padding-top 0.3em
+				&:nth-child(2)
+					margin 2em 0 -2em 0
+		&-subtitle
+			margin-top 1em
 		
 	.portfolio
 		&-container
@@ -114,3 +136,9 @@
 	/**********************
         INDEX
     **********************/
+	.header
+		&-title
+			.item
+				&:nth-child(1)
+				&:nth-child(3)
+					width 90%
