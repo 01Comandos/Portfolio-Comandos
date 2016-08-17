@@ -34,8 +34,8 @@
     src url('../fonts/Rancho-Regular.ttf')
     
 @font-face 
-    font-family 'Rancho-Regular'
-    src url('../fonts/Rancho-Regular.ttf')
+    font-family 'Oregano-Regular'
+    src url('../fonts/Oregano-Regular.ttf')
     
 @font-face 
     font-family 'Abel-Regular'
@@ -86,6 +86,25 @@ degradado()
     
 
 /*
+	CLASES GENERALES
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------*/
+
+h1
+h2
+h3
+h4
+h5
+	margin 0
+	padding 0
+
+
+p
+	font-size 1em
+	color negro-texto
+	font-family 'Abel-Regular',sans-serif
+
+/*
     HEADER
 -------------------------------------------------------------------------
 -------------------------------------------------------------------------*/
@@ -96,9 +115,83 @@ body
 					
 
 /*
-    SOBRE MI
+    INDEX
 -------------------------------------------------------------------------
--------------------------------------------------------------------------*/					
+-------------------------------------------------------------------------*/
+.portfolio	
+	width 65em
+	margin 2em auto 1em auto
+	&-title
+		text-align center
+		padding 2.5em 0 0 0
+		h2
+			font-size 2.2em
+			font-family 'Oregano-Regular',sans-serif
+		h3
+			font-size 1.2em
+			font-family 'Cabin-SemiBold',sans-serif
+			margin 0.3em
+		h4
+			font-size 1.5em
+			font-family 'Rancho-Regular',sans-serif
+			a
+				font-family 'Cabin-SemiBold',sans-serif
+				font-size 1em
+				color fucsia
+		
+			
+	&-container
+		flex-between()
+		padding 2em 1.5em
+		.card
+			background white
+			width 30%
+			margin-bottom 1.5em
+			border-radius 0 0 5px 5px
+			height 27em
+			box-shadow 1px 3px 5px rgba(0, 0, 0, 0.09)
+			figure				
+				img
+					width 100%
+					border-radius 5px 5px 0 0
+			&-resum
+				text-align center
+				padding 1em				
+				h2
+					font-size 1.4em
+					color azul-2
+					font-family 'Cabin-Medium',sans-serif
+					margin 0 0 0.5em 0
+				&-link
+					padding 0.5em 0
+					a
+						display inline-block
+						color fucsia
+						border 1px solid fucsia
+						border-radius 9px
+						font-size 0.9em
+						font-family 'Cabin-Regular',sans-serif
+						padding 0.5em 1em
+						transition .2s linear
+						strong
+							font-family 'Cabin-SemiBold',sans-serif
+						&:hover
+							background fucsia
+							color white
+							text-decoration none
+							
+			&:nth-child(1)
+				margin-top 6em
+			&:nth-child(2)
+				margin-top 3em
+				
+			&:nth-child(5)
+			&:nth-child(8)
+				margin-top -3em
+			
+			&:nth-child(6)
+			&:nth-child(9)
+				margin-top -6em
 
 				
 
