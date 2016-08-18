@@ -73,7 +73,7 @@
 					<ul>
 						<!--DISEÑOS-->
 						<li>
-							<a href="#!">
+							<a href="#portfolio">
 								<span class="icon-portfolio_diseno"></span>
 								<h3>Diseños</h3>
 							</a>
@@ -81,7 +81,7 @@
 
 						<!--SOBRE MI-->
 						<li>
-							<a href="#!">
+							<a href="#sobreMi">
 								<span class="icon-portfolio_sobreMi"></span>
 								<h3>Sobre mi</h3>
 							</a>
@@ -89,7 +89,7 @@
 
 						<!--CONTACTO-->
 						<li>
-							<a href="#!">
+							<a href="#footer">
 								<span class="icon-portfolio_contacto"></span>
 								<h3>Contacto</h3>
 							</a>
@@ -113,7 +113,7 @@
 		</header>
 		
 		<!--PORTFOLIO-->
-		<section class="portfolio">
+		<section class="portfolio" id="portfolio">
 			<!--TITULO-->
 			<article class="portfolio-title">
 				<h2>¡Hola! Soy @01Comandos</h2>
@@ -288,7 +288,7 @@
 		</section>
 
 		<!--SOBRE MI-->
-		<section class="sobreMi">
+		<section class="sobreMi" id="sobreMi">
 			<div class="sobreMi-container">
 				<!--TITULO-->
 				<article class="portfolio-title">
@@ -343,7 +343,7 @@
 
 
 		<!--FOOTER-->
-		<footer>
+		<footer id="footer">
 			<section class="footer-title">
 				<!--TITULO-->
 				<article class="portfolio-title">
@@ -438,8 +438,35 @@
 				    	offset:'9%'
 				    });
 
+				    //ANIMACION ENTRE ANCLAS
+			    	$(function(){
+						$('a[href*=#]').click(function() {
 
+						 if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+						     && location.hostname == this.hostname) {
+
+						         var $target = $(this.hash);
+
+						         $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+
+						         if ($target.length) {
+
+						             var targetOffset = $target.offset().top;
+
+						             $('html,body').animate({scrollTop: targetOffset}, 1000);
+
+						             return false;
+
+						        }
+
+						   }
+
+						});
+
+					})
 		    	}
+
+		    	
 		    );
 		</script>
 
