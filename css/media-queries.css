@@ -1,0 +1,113 @@
+/*
+	MEDIA QUERIES
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------*/
+/*@media (max-width: 1600px)/*
+	/**********************
+		INDEX
+    **********************/
+@media (max-width: 1297px) {
+  .portfolio {
+    width: 95%;
+  }
+  .sobreMi-container {
+    width: 90%;
+  }
+  .sobreMi .diagonal {
+    margin-top: -37em;
+  }
+}
+@media (max-width: 991px) {
+  .portfolio-container .card {
+    width: 48%;
+    height: 30em;
+  }
+  .portfolio-container .card:nth-child(1) {
+    margin-top: 4em;
+  }
+  .portfolio-container .card:nth-child(2) {
+    margin-top: 0em;
+  }
+  .portfolio-container .card:nth-child(4) {
+    margin-top: -3em;
+  }
+  .portfolio-container .card:nth-child(5) {
+    margin-top: 0em;
+  }
+  .portfolio-container .card:nth-child(6),
+  .portfolio-container .card:nth-child(8) {
+    margin-top: -3em;
+  }
+  .portfolio-container .card:nth-child(9) {
+    margin-top: 0em;
+  }
+}
+@media (max-width: 769px) {
+  body {
+    font-size: 14px;
+  }
+  .header-diagonal .wrapper .back-contact {
+    background: url("../img/bibliotecaTablet.png") no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #8283a7;
+  }
+}
+@media (max-width: 630px) {
+  body {
+    font-size: 14px;
+  }
+  .header-title .item {
+    width: 100%;
+  }
+  .header-title .item:nth-child(1),
+  .header-title .item:nth-child(3) {
+    width: 75%;
+    margin: 0;
+  }
+  .header-title .item:nth-child(1) {
+    background: none;
+  }
+  .header-title .item:nth-child(1) li a {
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    padding-top: 0.3em;
+  }
+  .header-title .item:nth-child(2) {
+    margin: 2em 0 -2em 0;
+  }
+  .header-subtitle {
+    margin-top: 1em;
+  }
+  .portfolio-container .card {
+    width: 100%;
+    height: auto;
+  }
+  .portfolio-container .card:nth-child(1),
+  .portfolio-container .card:nth-child(2),
+  .portfolio-container .card:nth-child(4),
+  .portfolio-container .card:nth-child(5),
+  .portfolio-container .card:nth-child(6),
+  .portfolio-container .card:nth-child(8),
+  .portfolio-container .card:nth-child(9) {
+    margin-top: 0em;
+  }
+}
+@media (max-width: 415px) {
+  body {
+    font-size: 11px;
+  }
+  .header-title .item:nth-child(1),
+  .header-title .item:nth-child(3) {
+    width: 90%;
+  }
+  .sobreMi-container {
+    width: 95%;
+  }
+  .sobreMi .diagonal {
+    margin-top: -37em;
+  }
+}

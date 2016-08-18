@@ -310,11 +310,94 @@ body
 			&:nth-child(9)
 				margin-top -6em
 
+.sobreMi
+	&-container
+		border-top 1px dashed negro-texto
+		border-bottom 1px dashed negro-texto
+		position relative
+		z-index 3
+		transform skew(0deg,-10deg)
+		width 80%
+		margin 8em auto	0 auto
+		.portfolio-title
+			transform skew(0,10deg)					
+			figure
+				width 7em
+				margin 0 auto
+				img
+					width 100%
+					border-radius 50%
+					border 7px solid azul-1
+
+		&-resumen
+			margin 2em auto
+			p
+				font-family 'Cabin-Regular',sans-serif
+				text-align center
+				font-size 1.1em
+				transform skew(0,10deg)
+			ul
+				flex-center()
+				transform skew(0,10deg)
+				padding-bottom 1em
+				li
+					font-size 2.5em
+					color naranja
+					margin-right 0.3em
+					&:last-child
+						margin-right 0
+		
+	.diagonal
+		z-index 2
+		display block
+		margin-top -34em
+		width 100%
+		background amarillo
+		transform skew(0deg,-10deg)
+		position relative
+		overflow hidden
+		transition all .5s ease-in-out
+		left 0
+		opacity 1
+		.wrapper
+			width 100%
+			padding 21em 0em
+			position relative
+			.back-contact
+				position absolute
+				background: url(../img/Petroaulas-entrada.png) no-repeat center center;
+				background-attachment fixed
+				background-size cover
+				background-color amarillo
+				top -16em
+				left 0
+				right 0
+				bottom -16em
+				transform skew(0,10deg)
+		&:after
+			content: '';
+			position: absolute;
+			z-index: 1;
+			display: block;
+			float: left;
+			transform: skew(0deg,0deg);
+			bottom: 0;
+			left: 0;
+			transition: all .5s ease-in-out;
+			opacity: 1;
+			width: 100%
+			height: 0px;
+			border-style: solid;
+			border-width: 0 1200px 17px 0;
+			border-color: transparent transparent azul-2 transparent;
+
 footer
 	background: url(../img/background-footer.png) no-repeat center center;
 	background-attachment fixed
 	background-size cover
 	background-color azul-1
+	padding-top 12em
+	margin-top -11em	
 	.footer-title
 		color white
 		position relative
