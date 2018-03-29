@@ -1,0 +1,127 @@
+
+/*
+	FUENTES
+------------------------------------------
+------------------------------------------*/
+@font-face 
+    font-family 'SFNS-Regular'
+    src url('../fonts/SFNS-Regular.otf')
+    
+@font-face 
+    font-family 'SFNS-Light'
+    src url('../fonts/SFNS-Light.otf')
+    
+@font-face 
+    font-family 'SFNS-Medium'
+    src url('../fonts/SFNS-Medium.otf')
+    
+@font-face 
+    font-family 'SFNS-Bold'
+    src url('../fonts/SFNS-Bold.otf')
+
+
+/*
+	MIXINS
+------------------------------------------
+------------------------------------------*/
+flex-center()
+	display flex
+	flex-wrap wrap
+	justify-content center
+	
+flex-around()
+	display flex
+	flex-wrap wrap
+	justify-content space-around
+	
+flex-between()
+	display flex
+	flex-wrap wrap
+	justify-content space-between
+	
+flex-flexStart()
+	display flex
+	flex-wrap wrap
+	justify-content flex-start
+	
+flex-end()
+	display flex
+	flex-wrap wrap
+	justify-content flex-end
+
+
+
+/*
+	MIXINS - PLACEHOLDER
+------------------------------------------
+------------------------------------------*/
+
+*::-webkit-input-placeholder {
+    /* Google Chrome y Safari */
+    color gris-texto
+    font-family 'SFNS-Regular'
+    letter-spacing -1px
+}
+*:-moz-placeholder {
+    /* Firefox anterior a 19 */
+    color gris-texto
+    font-family 'SFNS-Regular'
+    letter-spacing -1px
+}
+*::-moz-placeholder {
+    /* Firefox 19 y superior */
+    color gris-texto
+    font-family 'SFNS-Regular'
+    letter-spacing -1px
+}
+*:-ms-input-placeholder {
+    /* Internet Explorer 10 y superior */
+    color gris-texto
+    font-family 'SFNS-Regular'
+    letter-spacing -1px
+}
+
+
+/*
+    CLASES GENERALES
+------------------------------------------
+------------------------------------------*/
+
+h1
+h2
+h3
+h4
+h5
+h6
+    margin 0
+    padding 0
+    font-family 'SFNS-Regular',sans-serif
+    
+h3
+    font-size 1.8em
+    font-family 'SFNS-Light'
+
+
+p
+    font-size 1em
+    color negro-texto
+    font-family 'SFNS-Regular',sans-serif
+
+    
+ul
+    margin 0 
+    padding 0
+    li
+        list-style none
+a
+    text-decoration none
+    display inline-block
+    &:hover
+        text-decoration none
+        
+figure
+    margin 0
+        
+.grid
+    width 80%
+    margin 0 auto

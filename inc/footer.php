@@ -1,84 +1,56 @@
-<footer class="footerContainer">
-	<!--LOGOTIPO-->
-	<section class="footerContainer-item">
-		<figure>
-			<img src="img/camersur-logo.png" alt="camersur logotipo">
-		</figure>
-	</section>
+<!--FOOTER-->
+<footer class="footer">
+	
+	<h5>©2015 - 2018 @01Comandos - Todos los Derechos Reservados</h5>
 
-	<!--EMAIL - DIRECCION-->
-	<section class="footerContainer-item">
-		<!--EMAIL-->
-		<div class="options">
-			<figure>
-				<span class="icon-CamersurNoticias_email"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>
-			</figure>
-			<h5>hola@camersur.com</h5>
-		</div>
-		
-		<!--DIRECCION-->
-		<div class="options">
-			<figure>
-				<span class="icon-CamersurNoticias_direccion"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span><span class="path15"></span><span class="path16"></span><span class="path17"></span><span class="path18"></span><span class="path19"></span><span class="path20"></span><span class="path21"></span><span class="path22"></span><span class="path23"></span><span class="path24"></span><span class="path25"></span><span class="path26"></span><span class="path27"></span><span class="path28"></span><span class="path29"></span><span class="path30"></span><span class="path31"></span><span class="path32"></span><span class="path33"></span><span class="path34"></span><span class="path35"></span></span>
-			</figure>
-			<h5>Calle Rio Caribe de Cumaná 22 <br>6101 VENEZUELA</h5>
-		</div>
-	</section>
+	<section class="footer-item">
 
-	<!--UBICACION Y REDES SOCIALES-->
-	<section class="footerContainer-item">
-		<!--UBICACION-->
-		<div class="options">
-			<a href="#!" target="_blank">
-				<p>Ubicanos en 
-					<br><strong>GOOGLE MAPS</strong>
-				</p>
-				<figure>
-					<span class="icon-CamersurNoticias_ubication"></span>
-				</figure>
-			</a>
-		</div>
+		<!--REDES SOCIALES-->
+		<ul class="item-social">
 
-		<!--SOCIAL MEDIA-->
-		<div class="optionsSocial">
-			<p>Siguenos en</p>
-			<ul>
-				<!--LINKEDIN-->
-				<li>
-					<a href="http://es.slideshare.net/camersur" target="_blank">
-						<span class="icon-CamersurNoticias_linkedin2"></span>
-					</a>
-				</li>
-				<!--FACEBOOK-->
-				<li>
-					<a href="https://www.facebook.com/ca.mer.sur.com.ve/?fref=ts" target="_blank">
-						<span class="icon-CamersurNoticias_facebook2"></span>
-					</a>
-				</li>
-				<!--TWITTER-->
-				<li>
-					<a href="https://twitter.com/camersur" target="_blank">
-						<span class="icon-CamersurNoticias_twitter2"></span>
-					</a>
-				</li>
-				<!--YOUTUBE-->
-				<li>
-					<a href="https://www.youtube.com/channel/UCIEFGplXnr7y3wsKzY83iRg" target="_blank">
-						<span class="icon-CamersurNoticias_youtube2"></span>
-					</a>
-				</li>
-				<!--INSTAGRAM-->
-				<li>
-					<a href="" target="_blank">
-						<span class="icon-CamersurNoticias_instagram2"></span>
-					</a>
-				</li>
-			</ul>
+			<!--BEHANCE-->
+			<li>
+				<a href="https://www.behance.net/01Comandos" target="_blank" class="behance-hover">
+					<span class="icon-behance"></span>
+				</a>
+			</li>
+
+			<!--TWITTER-->
+			<li>
+				<a href="https://twitter.com/01Comandos" target="_blank" class="twitter-hover">
+					<span class="icon-twitter"></span>
+				</a>
+			</li>
+
+			<!--INSTAGRAM-->
+			<li>
+				<a href="https://plus.google.com/u/0/+ComandosMan/posts" target="_blank" class="insta-hover">
+					<span class="icon-instagram"></span>
+				</a>
+			</li>
+
+			<!--LINKEDIN-->
+			<li>
+				<a href="https://ve.linkedin.com/in/01comandos" target="_blank" class="linkedin-hover">
+					<span class="icon-linkedin"></span>
+				</a>
+			</li>
+
+			<!--GITHUB-->
+			<li>
+				<a href="https://github.com/01Comandos" target="_blank" class="github-hover">
+					<span class="icon-github"></span>
+				</a>
+			</li>
+		</ul>
+
+		<div class="item-text">
+			<p>
+				<strong>Contáctame</strong>
+				<br> por mis redes sociales
+			</p>
 		</div>
 	</section>
 
-	<!--DERECHOS RESERVADOS-->
-	<section class="footerContainer-item">
-		<h6>© CAMERSUR.com Una web de <a href="#!" target="_blank">CESTICOM</a></h6>
-	</section>
+	
 </footer>

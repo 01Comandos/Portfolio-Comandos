@@ -1,117 +1,32 @@
 /*
 
-	Proyecto: PortFolio2015 (Version 2016) 2da version
+	Proyecto: PortFolio2015 (Version 2018) 3era version
 
 	Maquetado por: @01Comandos
 
-	Fecha: 16/08/2016;
+	Fecha: 28/03/2018;
 
 -------------------------------------------------------------------------
 -------------------------------------------------------------------------*/
 
 /*
 	IMPORTACIONES
--------------------------------------------------------------------------
--------------------------------------------------------------------------*/
+--------------------------------------------------------------
+--------------------------------------------------------------*/
 @import 'nib'
-@import 'style-icon.styl'
+@import 'lib/_style-icon.styl'
+@import 'lib/_variables-colors.styl'
+@import 'lib/_mixins.styl'
 
-
-@font-face 
-    font-family 'Cabin-Regular'
-    src url('../fonts/Cabin-Regular.ttf')
     
-@font-face 
-    font-family 'Cabin-Medium'
-    src url('../fonts/Cabin-Medium.ttf')
-    
-@font-face 
-    font-family 'Cabin-SemiBold'
-    src url('../fonts/Cabin-SemiBold.ttf')
-    
-@font-face 
-    font-family 'Rancho-Regular'
-    src url('../fonts/Rancho-Regular.ttf')
-    
-@font-face 
-    font-family 'Oregano-Regular'
-    src url('../fonts/Oregano-Regular.ttf')
-    
-@font-face 
-    font-family 'Abel-Regular'
-    src url('../fonts/Abel-Regular.ttf')
-
-/*
-	VARIABLES
--------------------------------------------------------------------------*/
-gris-A = #eff4f7
-negro-texto = #4d4d4d
-
-azul-titulo = #003772
-azul-1 = #536dfe
-azul-2 = #3fa9f5
-
-naranja = #fc6d26
-amarillo = #ffda44
-
-fucsia = #ff545c
-
-
-/*
-	MIXINS
--------------------------------------------------------------------------
--------------------------------------------------------------------------*/
-flex-center()
-	display flex
-	flex-wrap wrap
-	justify-content center
-	
-flex-around()
-	display flex
-	flex-wrap wrap
-	justify-content space-around
-	
-flex-between()
-	display flex
-	flex-wrap wrap
-	justify-content space-between
-	
-flex-flexStart()
-	display flex
-	flex-wrap wrap
-	justify-content flex-start
-
-degradado()
-  background linear-gradient(90deg, rgba(148, 50, 107, 1) 0%, rgba(78, 115, 174, 1) 100%)
-    
-
 /*
 	CLASES GENERALES
 -------------------------------------------------------------------------
 -------------------------------------------------------------------------*/
 
-h1
-h2
-h3
-h4
-h5
-	margin 0
-	padding 0
-
-
-p
-	font-size 1em
-	color negro-texto
-	font-family 'Abel-Regular',sans-serif
 
 	
-ul
-	margin 0 
-	padding 0
-	li
-		list-style none
-a:hover
-	text-decoration none
+
 /*
     HEADER
 -------------------------------------------------------------------------
@@ -119,78 +34,60 @@ a:hover
 body
 	font-size 16px
 	background gris-A
+	margin 0
+	padding 0
 
 .header
+	position relative
+	z-index 2
+	.headerWhite
+		position relative
+		z-index 5
+		flex-between()
+		
+		h1 a
+			font-size 3em
+			color white
+			
+		&-item a
+			color white
+			font-size 2em
+			padding-top .7em
+		
 	&-title
-		margin-top 6em
+		margin-top 3em
 		position relative
 		z-index 3
 		flex-center()
+		
+		figure
+			width 9em
+			img
+				box-shadow 0 2px 15px 0 rgba(0,0,0,0.50)
+				border-radius 50%
+				width 100%
+				
 		.item
-			/.socialmedia
-			&:nth-child(1)
-				flex-between()
-				background azul-2
-				width 20em
-				padding 1em 1.2em 1em 1em
-				height 4.5em
-				margin-right -0.9em
-				li
-					a
-						display inline-block
-						font-size 1.7em
-						color white
-						transition .2s linear
-						border-bottom 2px solid transparent
-						&:hover
-							border-bottom 2px solid white
-			&:nth-child(2)
-				position relative
-				top -1.2em
-				figure
-					width 7em
-					margin 0 auto
-					img
-						width 100%
-						border-radius 50%
-						border 5px solid azul-2
-			&:nth-child(3)
-				width 20em
-				margin-left -1.3em
-				ul
-					flex-between()
-					background azul-2					
-					padding 0.5em 1em
-					li
-						width 30%
-						text-align center
-						a
-							display inline-block
-							font-size 1.7em
-							color white
-							transition .2s linear
-							border-bottom 2px solid transparent							
-							h3
-								font-size 0.5em !important
-								font-family 'Cabin-Regular'
-							&:hover
-								border-bottom 2px solid white
-	&-subtitle
-		text-align center
-		position relative
-		z-index 3
-		h1
-			font-size 2.3em
-			font-family 'Rancho-Regular',sans-serif
+			margin .6em 0 0 1.3em
 			color white
-		h2
-			font-size 1.2em
-			font-family 'Cabin-SemiBold',sans-serif
-			color white
+			h2
+				font-size 2.8em
+				font-family 'SFNS-Light'
+				letter-spacing 0.94px
+				line-height 48px
+				strong
+					font-family 'SFNS-Medium'
+			h3
+				text-align right
+				font-family 'SFNS-Light'
+				letter-spacing 0.94px
+				//text-transform uppercase
+				font-size 1.3em
+				
 	&-diagonal
 		z-index 2
 		display block
-		margin-top -52em
+		margin-top -43em
 		width 100%
 		background #8283A7
 		transform skew(0deg,-10deg)
@@ -229,88 +126,91 @@ body
 			height: 0px;
 			border-style: solid;
 			border-width: 0 1200px 17px 0;
-			border-color: transparent transparent azul-2 transparent;
+			//border-color: transparent transparent azul-2 transparent;
+			border-color: #6B69FF
 
 /*
     INDEX
 -------------------------------------------------------------------------
 -------------------------------------------------------------------------*/
-.portfolio	
-	width 65em
-	margin 2em auto 1em auto
-	/.portfolio-title
-		text-align center
-		padding 2.5em 0 0 0
+
+.aboutHome
+	position relative
+	z-index 4
+	height 600px
+	flex-between()
+	
+	.text
+		padding-top 9em
+		width 56%
 		h2
 			font-size 2.2em
-			font-family 'Oregano-Regular',sans-serif
-		h3
-			font-size 1.2em
-			font-family 'Cabin-SemiBold',sans-serif
-			margin 0.3em
-		h4
-			font-size 1.5em
-			font-family 'Rancho-Regular',sans-serif
-			a
-				font-family 'Cabin-SemiBold',sans-serif
-				font-size 1em
-				color fucsia
-		
-			
-	&-container
-		flex-between()
-		padding 2em 1.5em
-		.card
-			background white
-			width 30%
-			margin-bottom 1.5em
-			border-radius 0 0 5px 5px
-			height 27em
-			box-shadow 1px 3px 5px rgba(0, 0, 0, 0.09)
-			figure				
-				img
-					width 100%
-					border-radius 5px 5px 0 0
-			&-resum
-				text-align center
-				padding 1em				
-				h2
-					font-size 1.4em
-					color azul-2
-					font-family 'Cabin-Medium',sans-serif
-					margin 0 0 0.5em 0
-				&-link
-					padding 0.5em 0
-					a
-						display inline-block
-						color fucsia
-						border 1px solid fucsia
-						border-radius 9px
-						font-size 0.9em
-						font-family 'Cabin-Regular',sans-serif
-						padding 0.5em 1em
-						transition .2s linear
-						strong
-							font-family 'Cabin-SemiBold',sans-serif
-						&:hover
-							background fucsia
-							color white
-							text-decoration none
-							
-			&:nth-child(1)
-				margin-top 6em
-			&:nth-child(2)
-				margin-top 3em
-				
-			&:nth-child(5)
-			&:nth-child(8)
-				margin-top -3em
-			
-			&:nth-child(6)
-			&:nth-child(9)
-				margin-top -6em
+			font-family 'SFNS-Light'
+			margin-bottom 1em
+			strong
+				font-family 'SFNS-Medium'
 
-.sobreMi
+	figure
+		width 400px
+		position relative
+		top -10em
+		img
+			width 100%
+
+.mainContain
+	&-title
+		text-align center
+		margin-bottom 2.5em
+		flex-center()
+		figure
+			font-size 1.8em
+			padding .2em .4em 0 0
+			
+		h3
+			color gris-texto
+			strong
+				color azul-corporativo
+		
+	ul.project
+		margin-bottom 4em
+		flex-between()
+		li
+			width 33%
+			a
+				display inline-block
+				cursor pointer
+				img
+					transition .2s linear
+					width 100%
+					
+				&:hover img
+					filter blur(2px)
+			
+			&:nth-child(4)
+				width 66%
+				
+	ul.stack
+		width 500px
+		margin 0 auto 4em auto
+		flex-between()
+		li
+			width 15%
+			margin-bottom 2em
+			img 
+				width 80%
+				
+			&:nth-child(2)
+				img
+					width 60%
+					
+			&:nth-child(9)
+				padding-top .7em
+				img
+					width 90%
+
+
+
+/*.sobreMi
 	&-container
 		border-top 1px dashed negro-texto
 		border-bottom 1px dashed negro-texto
@@ -390,36 +290,93 @@ body
 			border-style: solid;
 			border-width: 0 1200px 17px 0;
 			border-color: transparent transparent azul-2 transparent;
+*/
 
-footer
-	background: url(../img/background-footer.png) no-repeat center center;
-	background-attachment fixed
-	background-size cover
-	background-color azul-1
-	padding-top 12em
-	margin-top -11em	
-	.footer-title
-		color white
-		position relative
-		z-index 3
-		padding 2.5em 1em
-		.portfolio-title
-			h2
-				font-size 1.7em
-			h3
-				font-size 1em
-		.socialmedia
-			background none !important
-			margin 0 auto
-		.email
+
+/*
+    FOOTER
+--------------------------------------------------------------
+--------------------------------------------------------------*/
+
+.footer
+	margin-top 3em
+	text-align center
+	h5
+		margin-bottom 8em
+		
+	&-item
+		background white
+		box-shadow: 0 -3px 18px 0 rgba(205,192,192,0.50)
+		height 45px
+		padding 1em 0
+		flex-center()
+		
+		position fixed
+		bottom 0
+		left 0
+		right 0
+		z-index 10
+		
+		.item-social
+			height 30px
+			margin-top .5em
 			flex-center()
-			figure
-				font-size 1.8em
-			h5
-				font-size 1em
-				font-family 'Cabin-SemiBold',sans-serif
-				padding-top 0.5em
+			li
+				margin-right .9em
+				a
+					display inline-block
+					font-size 1.7em
+					color gris-texto
+					&:hover
+						transition .2s linear
+				
+				&:nth-child(2)
+				&:nth-child(3)
+					a
+						font-size 1.4em
+						padding-top .1em
+						
+				&:nth-child(4)
+					a
+						font-size 1.5em
+						
+				&:nth-child(5)
+					a
+						font-size 1.5em
+						padding-top .1em
+						
+				&:last-child
+					margin-right 0
+					
+		.item-text
+			border-left 1px solid rgba(gris-texto .4)
+			padding-left 1em
+			margin-left 1em
+			p
+				width 9em
+				text-align left
+				margin 0
+				font-size .9em
+				padding-top .3em
+				strong
+					font-family 'SFNS-Bold'
 
+/* HOVER SOCIAL MEDIA */
+.behance-hover span:hover
+	color behance
+
+.twitter-hover span:hover
+	color twitter
+	
+.insta-hover span:hover
+	color instagram
+	
+.linkedin-hover span:hover
+	color linkedin
+	
+.github-hover span:hover
+	color black
+	
 
 /*
     PORTFOLIO
@@ -427,5 +384,5 @@ footer
 -------------------------------------------------------------------------*/					
 
 				
-@import 'media-queries.styl'
+@import 'lib/_media-queries.styl'
 		
