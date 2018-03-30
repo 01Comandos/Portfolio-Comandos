@@ -52,7 +52,7 @@
 		</section>
 
 		<!--STACK-->
-		<section class="mainContain grid">
+		<section class="mainContain stackContain">
 			<!-- TITULO -->
 			<article class="mainContain-title">
 				<h3>- Entorno <strong>Mac</strong> con estas herramientas</h3>

@@ -7,6 +7,7 @@
     <meta name="author" content="@01Comandos">
 
     <!-- Latest compiled and minified CSS -->
+    <link href="css/materialize.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css"/>
     
     <!--GOOGLE ANALYTICS-->
