@@ -62,7 +62,7 @@ body
 .header
 	position relative
 	z-index 2
-	.headerWhite
+	/.headerWhite
 		position relative
 		z-index 5
 		flex-between()
@@ -76,7 +76,7 @@ body
 			font-size 2em
 			padding-top .7em
 			
-	.headerColor
+	/.headerColor
 		h1 a
 			width 1.1em
 			position relative
@@ -509,9 +509,115 @@ body
 	
 
 /*
-    PORTFOLIO
--------------------------------------------------------------------------
--------------------------------------------------------------------------*/					
+    MODAL
+------------------------------------------------------------
+------------------------------------------------------------*/
+.modalMenu
+	top 0 !important
+	right 0
+	bottom 0
+	width 100%
+	height 100vh
+	max-height 100vh
+	margin 0
+	z-index 16
+	transition .3s linear
+	background white
+	
+	ul.language
+		width 600px
+		margin 0 auto
+		padding-bottom 1em
+		border-bottom 1px solid gris-claro
+		flex-center()
+		li
+			background white
+			border 1px solid gris-claro
+			border-radius 4px
+			padding .6em 2em
+			transition .2s linear
+			cursor pointer
+			flex-center()
+			
+			figure
+				font-size 3em
+				
+			.text
+				padding .7em 0 0 .6em
+				h3
+					font-size 1.2em
+					font-family 'SFNS-Medium'
+				p
+					font-size .9em
+					margin-top -.2em
+			
+			&:nth-child(1)
+				margin-right 1.3em
+					
+			&.active
+			&:hover
+				box-shadow: 0 0 11px 0 rgba(77,90,255,0.16)
+				
+	nav
+		box-shadow none !important
+		width 200px
+		margin 4em auto
+		ul
+			text-align center
+			li
+				margin-bottom 1.3em 
+				a
+					color gris-texto
+					transition .2s linear
+					
+					h2
+						font-size 2em
+
+					&:hover
+						color naranja-corporativo
+						
+				&:last-child
+					margin-bottom 0
+					
+				&.active a
+					color blueClaro
+					position relative
+					&:before
+						content "\e906"
+						color #ff3a00
+						font-family 'iconitos'
+						font-size 1.3em
+						position absolute
+						left -1.5em
+						top 0.4em
+						
+	.social
+		margin-top 7em
+		.title
+			text-align center
+			h3
+				font-size 1em
+				
+		ul.item-social
+			margin-top 1em
+			flex-center()
+			li
+				margin-right 1.3em
+				a
+					font-size 1.6em
+					&.behance
+						color behance
+					&.twitter
+						color twitter
+					&.insta
+						color instagram
+					&.linkedin
+						color linkedin
+					&.github
+						color black
+						
+				&:last-child
+					margin-right 0
 
 				
 @import 'lib/_media-queries.styl'

@@ -15,7 +15,6 @@
 
 				//INICIALIZAR MODALES
 				$('.modal-trigger').leanModal();
-
 	    	}
 	    );
 	</script>

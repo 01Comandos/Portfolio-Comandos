@@ -103,7 +103,7 @@
 			</section>
 		</article>
 		
-
+		<?php include 'inc/modalMenu.php'; ?>
 		<?php include 'inc/footer.php'; ?>
 		<?php include 'inc/footer_common.php'; ?>
 

@@ -8,7 +8,7 @@
 
 	<!-- MENU -->
 	<article class="headerWhite-item">
-		<a href="">
+		<a href="#modal1" class="modal-trigger">
 			<span class="icon-menu-button"></span>
 		</a>
 	</article>
