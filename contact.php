@@ -83,13 +83,12 @@
 						<p>Enviar Info.</p>
 					</a>
 				</section>
-
 			</form>
 		</article>
 
 
 		<!-- MENSAJE FINAL -->
-		<article class="messageEnd grid">
+		<article class="messageEnd grid hiden">
 			<figure>
 				<img src="img/smiley_grin@2x.png" alt="">
 			</figure>
