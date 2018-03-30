@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'iconitos';
-  src:  url('../fonts/iconitos.eot?ihgg6d');
-  src:  url('../fonts/iconitos.eot?ihgg6d#iefix') format('embedded-opentype'),
-    url('../fonts/iconitos.ttf?ihgg6d') format('truetype'),
-    url('../fonts/iconitos.woff?ihgg6d') format('woff'),
-    url('../fonts/iconitos.svg?ihgg6d#iconitos') format('svg');
+  src:  url('fonts/iconitos.eot?ihgg6d');
+  src:  url('fonts/iconitos.eot?ihgg6d#iefix') format('embedded-opentype'),
+    url('fonts/iconitos.ttf?ihgg6d') format('truetype'),
+    url('fonts/iconitos.woff?ihgg6d') format('woff'),
+    url('fonts/iconitos.svg?ihgg6d#iconitos') format('svg');
   font-weight: normal;
   font-style: normal;
 }
