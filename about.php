@@ -3,10 +3,17 @@
 	<head>
 		<?php include 'inc/head_common.php'; ?>
 	</head>
-	<body>
+	<body class="header-bgAboutDesktop">
 		<!--HEADER-->
 		<header class="header">
 			<?php include 'inc/header_white.php'; ?>
+
+			<!--DIAGONAL LEFT-->
+			<article class="header-bgAboutLeft hiden">
+				<div class="wrapper">
+					<span class="back-contact"></span>
+				</div>			
+			</article>
 
 			<!--DIAGONAL MOBILE-->
 			<article class="header-bgMovilAbout">
