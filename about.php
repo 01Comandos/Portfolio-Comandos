@@ -6,7 +6,15 @@
 	<body>
 		<!--HEADER-->
 		<header class="header">
-			<?php include 'inc/header_color.php'; ?>
+			<?php include 'inc/header_white.php'; ?>
+
+			<!--DIAGONAL MOBILE-->
+			<article class="header-bgMovilAbout">
+				<div class="wrapper">
+					<span class="back-contact"></span>
+				</div>			
+			</article>
+
 		</header>
 
 		<!-- PROFILE -->

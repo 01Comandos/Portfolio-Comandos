@@ -162,6 +162,52 @@ body
 			border-width: 0 1200px 17px 0;
 			//border-color: transparent transparent azul-2 transparent;
 			border-color: #6B69FF
+			
+	&-bgMovilAbout
+		z-index 2
+		display block
+		margin-top -51em
+		width 100%
+		background #8283A7
+		transform skew(0deg,11deg)
+		position relative
+		overflow hidden
+		transition all .5s ease-in-out
+		left 0
+		opacity 1
+		display none
+		.wrapper
+			width 100%
+			padding 29em 0em
+			position relative
+			.back-contact
+				position absolute
+				background: url(../img/scsMedicinaMobile.png) no-repeat center bottom
+				background-attachment fixed
+				background-size cover
+				background-color #8283A7
+				top 16em
+				left 0
+				right 0
+				bottom -16em
+				transform skew(0,-11deg)
+		&:after
+			content: '';
+			position: absolute;
+			z-index: 1;
+			display: block;
+			float: left;
+			transform: skew(0deg,0deg);
+			bottom: 0;
+			left: 0;
+			transition: all .5s ease-in-out;
+			opacity: 1;
+			width: 100%
+			height: 0px;
+			border-style: solid;
+			border-width: 0 1200px 17px 0;
+			//border-color: transparent transparent azul-2 transparent;
+			border-color: #6B69FF
 
 /*
     INDEX
