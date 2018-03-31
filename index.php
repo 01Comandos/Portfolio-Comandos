@@ -13,7 +13,7 @@
 
 				<!--AVATAR-->
 				<figure>
-					<img src="img/comandos-avatar.jpg" alt="">
+					<img src="img/comandos-avatar.jpg" alt="@01Comandos">
 				</figure>
 				
 				<article class="item">

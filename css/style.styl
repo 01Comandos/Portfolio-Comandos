@@ -40,6 +40,7 @@
 		text-align center
 		font-size .9em
 		text-transform uppercase
+		margin 0
 	
 	&:hover
 		background verde-corporativo!important
@@ -407,7 +408,6 @@ body
 		width 400px
 		margin 2em auto 0 auto
 
-
 .messageEnd
 	text-align center
 	margin-bottom 6em
@@ -599,6 +599,7 @@ body
 				font-size 1em
 				
 		ul.item-social
+		/.socialAbout
 			margin-top 1em
 			flex-center()
 			li
@@ -618,6 +619,65 @@ body
 						
 				&:last-child
 					margin-right 0
+					
+
+/*
+    ABOUT ME
+------------------------------------------------------------
+------------------------------------------------------------*/
+.gridAbout
+	width 720px
+	margin 0 auto
+	
+.aboutProfile
+	text-align center
+	margin-bottom 1.5em
+	padding-bottom 1.5em
+	border-bottom 1px solid gris-claro
+	figure
+		background #FFFFFF
+		width 8em
+		margin 0 auto
+		position relative
+		img
+			border-radius 50%
+			&:nth-child(1)
+				width 90%
+				position relative
+				z-index 3
+			&:nth-child(2)
+				width 100%
+				position absolute
+				z-index 2
+				top -.35em
+				left 0
+				
+	h1
+		font-size 2.1em
+		color blueClaro
+	p
+		margin-top -.5em
+
+.aboutCopy
+	text-align center
+	h2
+		font-size 1.8em
+	h4
+		font-size 1.4em
+		margin-bottom 1.4em
+		font-family 'SFNS-Light'
+		
+	.cpopyP
+		p
+			text-align left
+			margin-bottom 1em
+			font-size 1.2em
+			line-height 32px
+			strong
+				color blueClaro
+				font-family 'SFNS-Medium'
+			a:hover
+				color naranja-corporativo
 
 				
 @import 'lib/_media-queries.styl'
