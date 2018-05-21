@@ -50,7 +50,5 @@
 				<br> por mis redes sociales
 			</p>
 		</div>
-	</section>
-
-	
+	</section>	
 </footer>

@@ -1,7 +1,7 @@
 <section class="headerWhite headerColor grid">
 	<!-- LOGOTIPO -->
 	<h1>
-		<a href="index.php">
+		<a href="index.html">
 			<img src="img/CMD@2x.png" alt="">
 		</a>
 	</h1>

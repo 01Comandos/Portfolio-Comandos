@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<head>
+		<meta charset="utf-8"/>
+		<link rel="shortcut icon" href="img/favicon.ico">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<title>Carlos Pérez</title>     
+		<meta name="description" content="Carlos Pérez | @01Comandos - Product Designer and UI & UX Designer">
+		<meta name="keywords" content="diseñador móvil, diseñador web, freelancer latino, spotfinder, mobile first, mobile designer, web designer" />
+		<meta name="author" content="@01Comandos">
+
+		<!-- Latest compiled and minified CSS -->
+		<link href="css/materialize.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css"/>
+
+		<!--GOOGLE ANALYTICS-->
+		<script>
+		    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		    ga('create', 'UA-80349959-1', 'auto');
+		    ga('send', 'pageview');
+		</script>
+	</head>
+	
+	<body>
+		<!--HEADER-->
+		<header class="header">
+			<section class="headerWhite headerColor grid">
+				<!-- LOGOTIPO -->
+				<h1>
+					<a href="index.html">
+						<img src="img/CMD@2x.png" alt="">
+					</a>
+				</h1>
+
+				<!-- MENU -->
+				<article class="headerWhite-item">
+					<a href="#modal1" class="modal-trigger">
+						<span class="icon-menu-button"></span>
+					</a>
+				</article>
+			</section>
+		</header>
+
+		<!-- MENSAJE PRINCIPAL -->
+		<article class="messageInit grid">
+			<!-- TITULO -->
+			<section class="title">
+				<figure>
+					<img src="img/smiley_grin@2x.png" alt="">
+				</figure>
+				<h2>Cuentame sobre ti</h2>
+				<p>Muy pronto me pondré en contacto</p>
+			</section>
+			
+			<!-- FORMULARIO -->
+			<form action="" class="formLogin">
+					
+				<!--NOMBRE-->
+				<div class="itemForm input-field">
+					<label>Nombre</label>
+					<!-- ICONO -->
+					<figure>
+						<span class="icon-user"></span>
+					</figure>
+
+					<!-- INPUT -->
+					<input type="text">
+					<span class="mg-error hiden">Escribe tu Nombre</span>
+				</div>
+
+				<!--TELEFONO-->
+				<div class="itemForm input-field">
+					<label>Teléfono</label>
+					<!-- ICONO -->
+					<figure>
+						<span class="icon-phone-call"></span>
+					</figure>
+
+					<!-- INPUT -->
+					<input type="text">
+					<span class="mg-error hiden">Escribe tu número telefónico</span>
+				</div>
+
+				<!--CORREO ELECTRONICO-->
+				<div class="itemForm input-field">
+					<label>Correo Electrónico</label>
+
+					<!-- ICONO -->
+					<figure>
+						<span class="icon-email"></span>
+					</figure>
+
+					<!-- INPUT -->
+					<input type="email">
+					<span class="mg-error hiden">Verifica tu correo electrónico</span>
+				</div>
+
+				<!--MENSAJE-->
+				<div class="itemForm input-field">
+					<label>¿Qué estás buscando?</label>
+
+					<!-- ICONO -->
+					<figure>
+						<span class="icon-email"></span>
+					</figure>
+
+					<!-- INPUT -->
+					<textarea class="materialize-textarea"></textarea>
+					<span class="mg-error hiden">Dejanos tu mensaje</span>
+				</div>
+
+				<!-- BTN MAIN -->
+				<section class="btn-c" >
+					<a href="javascript:;" type="submit" class="btn-main">
+						<p>Enviar Info.</p>
+					</a>
+				</section>
+			</form>
+		</article>
+
+		<!-- MENSAJE FINAL -->
+		<article class="messageEnd grid hiden">
+			<figure>
+				<img src="img/smiley_grin@2x.png" alt="">
+			</figure>
+			<h2>Pronto te contactaré</h2>
+			<p>Será muy pronto. Gracias por preferirnos</p>
+
+			<!-- BTN MAIN -->
+			<section class="btn-form">
+				<a href="javascript:;" class="btn-main">
+					<p>Continuar</p>
+				</a>
+			</section>
+		</article>
+		
+		<!-- MODAL MENU -->
+		<div id="modal1" class="modal modalMenu">
+
+			<!-- HEADER MODAL -->
+			<section class="headerWhite headerColor grid">
+				<!-- LOGOTIPO -->
+				<h1>
+					<a href="index.html">
+						<img src="img/CMD@2x.png" alt="">
+					</a>
+				</h1>
+
+				<!-- CLOSE -->
+				<article class="headerWhite-item">
+					<a href="#!" class="modal-action modal-close">
+						<span class="icon-cancel-music"></span>
+					</a>
+				</article>
+			</section>
+
+			<!-- IDIOMA -->
+			<ul class="language">
+				<!-- SPANISH -->
+				<li class="active">
+					<figure>
+						<span class="icon-venezuela"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span></span>
+					</figure>
+					<div class="text">
+						<h3>Español</h3>
+						<p>Latinoamérica</p>
+					</div>
+				</li>
+
+				<!-- ENGLISH -->
+				<li>
+					<figure>
+						<span class="icon-united-states"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span></span>
+					</figure>
+					<div class="text">
+						<h3>English</h3>
+						<p>Nort America</p>
+					</div>
+				</li>
+			</ul>
+
+			<!-- MENU -->
+			<nav>
+				<ul>
+					<!-- HOME -->
+					<li class="active">
+						<a href="index.html">
+							<h2>Inicio</h2>
+						</a>
+					</li>
+
+					<!-- ABOUT ME -->
+					<li>
+						<a href="about.html">
+							<h2>Sobre mi</h2>
+						</a>
+					</li>
+
+					<!-- CONTACT -->
+					<li>
+						<a href="contact.html">
+							<h2>Contacto</h2>
+						</a>
+					</li>
+				</ul>
+			</nav>
+
+			<!-- SOCIAL MEDIA -->
+			<article class="social">
+				<!-- TITUTLO -->
+				<section class="title">
+					<h3>- Sigueme en las redes sociales</h3>
+				</section>
+
+				<!-- SOCIAL MEDIA -->
+				<ul class="item-social">
+
+					<!--BEHANCE-->
+					<li>
+						<a href="https://www.behance.net/01Comandos" target="_blank" class="behance">
+							<span class="icon-behance"></span>
+						</a>
+					</li>
+
+					<!--TWITTER-->
+					<li>
+						<a href="https://twitter.com/01Comandos" target="_blank" class="twitter">
+							<span class="icon-twitter"></span>
+						</a>
+					</li>
+
+					<!--INSTAGRAM-->
+					<li>
+						<a href="https://plus.google.com/u/0/+ComandosMan/posts" target="_blank" class="insta">
+							<span class="icon-instagram"></span>
+						</a>
+					</li>
+
+					<!--LINKEDIN-->
+					<li>
+						<a href="https://ve.linkedin.com/in/01comandos" target="_blank" class="linkedin">
+							<span class="icon-linkedin"></span>
+						</a>
+					</li>
+
+					<!--GITHUB-->
+					<li>
+						<a href="https://github.com/01Comandos" target="_blank" class="github">
+							<span class="icon-github"></span>
+						</a>
+					</li>
+				</ul>
+			</article>
+		</div>
+
+		<!-- FOOTER -->
+		<footer class="footer">
+			<h5>©2015 - 2018 @01Comandos - Todos los Derechos Reservados</h5>
+
+			<section class="footer-item">
+
+				<!--REDES SOCIALES-->
+				<ul class="item-social">
+
+					<!--BEHANCE-->
+					<li>
+						<a href="https://www.behance.net/01Comandos" target="_blank" class="behance-hover">
+							<span class="icon-behance"></span>
+						</a>
+					</li>
+
+					<!--TWITTER-->
+					<li>
+						<a href="https://twitter.com/01Comandos" target="_blank" class="twitter-hover">
+							<span class="icon-twitter"></span>
+						</a>
+					</li>
+
+					<!--INSTAGRAM-->
+					<li>
+						<a href="https://plus.google.com/u/0/+ComandosMan/posts" target="_blank" class="insta-hover">
+							<span class="icon-instagram"></span>
+						</a>
+					</li>
+
+					<!--LINKEDIN-->
+					<li>
+						<a href="https://ve.linkedin.com/in/01comandos" target="_blank" class="linkedin-hover">
+							<span class="icon-linkedin"></span>
+						</a>
+					</li>
+
+					<!--GITHUB-->
+					<li>
+						<a href="https://github.com/01Comandos" target="_blank" class="github-hover">
+							<span class="icon-github"></span>
+						</a>
+					</li>
+				</ul>
+
+				<div class="item-text">
+					<p>
+						<strong>Contáctame</strong>
+						<br> por mis redes sociales
+					</p>
+				</div>
+			</section>	
+		</footer>
+		
+		<!-- SCRIPTS FINALES -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	    <script src="js/materialize.min.js"></script>
+	    
+	    <!-- complementos -->
+		<script src="js/jquery.nicescroll.js"></script>
+
+		<!--SCRIPT PROPIOS-->
+		<script>
+		    $(document).ready(
+		    	function() { 
+		    		//INICIALIZAR NICESCROLL
+		    		$("html").niceScroll({cursorwidth:"9px" , zindex:"9999" , cursorborder:"0px" , cursorborderradius:"0px" , cursorcolor: "#88c057"});
+
+					//INICIALIZAR MODALES
+					$('.modal-trigger').leanModal();
+		    	}
+		    );
+		</script>
+	</body>
+</html>

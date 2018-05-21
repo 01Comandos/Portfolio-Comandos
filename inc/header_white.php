@@ -1,7 +1,7 @@
 <section class="headerWhite grid">
 	<!-- LOGOTIPO -->
 	<h1>
-		<a href="index.php">
+		<a href="index.html">
 			<span class="icon-CMD"></span>
 		</a>
 	</h1>
