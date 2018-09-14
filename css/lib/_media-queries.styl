@@ -2,10 +2,13 @@
 	MEDIA QUERIES
 -------------------------------------------------------------------------
 -------------------------------------------------------------------------*/
-/*@media (max-width: 1600px)/*
+@media (max-width: 1920px)
 	/**********************
 		INDEX
     **********************/
+	.headerContact
+		height 25em
+		background-position center center
     	
 @media (max-width: 1400px)
 	/**********************
@@ -17,6 +20,9 @@
 	/**********************
 		INDEX
     **********************/
+	.headerContact
+		background-position center top
+		background-size cover
 		
 
 	
@@ -28,11 +34,6 @@
 	/**********************
 		INDEX
     **********************/
-	.aboutHome
-		.text
-			width 55%
-		figure
-			width 40%
 				
 
 // Large devices (desktops, 62em and up)
@@ -42,36 +43,6 @@
     **********************/
 	.grid 
 		width 90%
-		
-	.aboutHome
-		height 540px
-		.text
-			h2
-				font-size 2em
-				
-	.mainContain
-		ul.project
-			li
-				width 50%
-				
-				&:nth-child(3)
-					order 4
-				
-				&:nth-child(4)
-					width 100%
-					order 3
-					
-				&:nth-child(6)
-					display none
-					
-				&:nth-child(8)
-					order 5
-					
-				&:nth-child(5)
-					order 6
-					
-				&:nth-child(7)
-					order 7
 
 	
 	/**********************
@@ -85,20 +56,7 @@
         LOGIN
     **********************/			
 	body
-		font-size 14px
-	
-	.header
-		&-diagonal
-			.wrapper
-				.back-contact
-					background: url(../img/bibliotecaTablet.png) no-repeat center bottom
-					background-attachment fixed
-					background-size cover
-					
-	.aboutHome
-		.text
-			padding-top 7em
-					
+		font-size 15px
 	
 		
 	/**********************
@@ -125,62 +83,17 @@
     	INDEX
     **********************/			
 	body
-		font-size 14px
-		
-	.aboutHome
-		height initial
-		flex-center()
-		figure
-			order 1
-			width 280px
-		
-		.text 
-			order 2
-			width 100%
-			padding-top 0
-			margin -8em auto 6em auto
-			width 80%
-			text-align center
-			h2
-				&:nth-child(2)
-					display none
-					
-	.mainContain
-		ul.stack
-			center-win()
-			li
-				width 70px
-				
-		&.stackContain
-			padding 3em 0 0 0
+		font-size 15px
 
 							
 	/**********************
         CONTACT
     **********************/
 	.messageInit
+		width 90%
+		padding 1em
 		form
-			width 80%
-			
-	/**********************
-        MODAL
-    **********************/
-	.modalMenu
-		ul.language
 			width 90%
-			li
-				&:nth-child(1)
-					margin-right 1em
-					
-	/**********************
-        ABOUT ME
-    **********************/
-	.header
-		&-bgMovilAbout
-			display block
-			
-	.aboutProfile
-		margin-top -4em
 			
 
 
@@ -194,43 +107,25 @@
         INDEX
     **********************/
 	.header
-		&-title
-			figure
-				width 7em
+		padding-top .8em
+		.headerWhite
+			h1
+				width 4em
 				
-			.item
-				h2
-					font-size 2.3em
-					line-height 30px
+			nav ul li:nth-child(1)
+				padding .9em 1.3em 0 0
+				a
+					font-size 1.3em
 					
-	.aboutHome
-		figure
-			width 250px
-		.text
-			width 100%
-			
-	.mainContain
-		width 100%
-		ul.stack
-			width 90%
-			margin-left auto
-			margin-right auto
-			li
-				width 50px
-		
-	.footer
-		&-item
-			height 30px
+	.headerContact-message
+		h3
+			font-size 1.3em
+					
 			
 	/**********************
         CONTACT
     **********************/
 	.messageInit
-		.title
-			h2
-				font-size 2em
-			p
-				font-size 1.1em
 				
 		form
 			width 90%
@@ -240,20 +135,8 @@
 				figure
 					font-size 1.4em
 					top .7em
-					
-	.messageEnd
-		p
-			font-size 1.1em
 			
 	.btn-main
+		padding 1em 2em
 		p
 			font-size 1.1em
-			
-	/**********************
-        ABOUT ME
-    **********************/
-	.aboutCopy
-		.cpopyP
-			p
-				line-height 25px
-				font-size 1.3em

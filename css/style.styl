@@ -24,10 +24,8 @@
 -------------------------------------------------------------------------
 -------------------------------------------------------------------------*/
 .btn-main
-	margin-top 1em
-	color white !important
-	font-family 'SFNS-Regular',sans-serif
-	background naranja-corporativo !important
+	font-family 'Poppins-Medium',sans-serif
+	background white
 	padding 0.8em 1.3em
 	border-radius 5px
 	transition .2s linear
@@ -36,18 +34,25 @@
 	position relative
 	box-shadow: 0 2px 7px 0 rgba(105,99,99,0.56)
 	p
-		color white
+		color blueClaro
 		text-align center
 		font-size .9em
 		text-transform uppercase
 		margin 0
 	
 	&:hover
-		background verde-corporativo!important
-		box-shadow 0 0 15px 0 #8BB339
+		background #5187F1
+		box-shadow 0 2px 11px 4px rgba(42,52,72,0.29)
+		p
+			color white
 		
 	&:active
 		transform scale(.95)
+		
+.btn-form
+	background #5187F1
+	p
+		color white
 	
 
 /*
@@ -63,156 +68,60 @@ body
 .header
 	position relative
 	z-index 2
-	/.headerWhite
+	padding-top .3em
+	.headerWhite
 		position relative
 		z-index 5
 		flex-between()
-		
-		h1 a
-			font-size 3em
-			color white
-			
-		&-item a
-			color white
-			font-size 2em
-			padding-top .7em
-			
-	/.headerColor
-		h1 a
-			width 1.1em
-			position relative
-			top -.25em
-			img
+	
+		h1
+			width 3em 
+			a
 				width 100%
-			
-		.headerWhite-item a
-			color #5187F1
-		
-	&-title
-		margin-top 3em
-		position relative
-		z-index 3
-		flex-center()
-		
-		figure
-			width 9em
-			img
-				box-shadow 0 2px 15px 0 rgba(0,0,0,0.50)
-				border-radius 50%
-				width 100%
+				padding-top .7em
+				img
+					width 100%
 				
-		.item
-			margin .6em 0 0 1.3em
-			color white
-			h2
-				font-size 2.8em
-				font-family 'SFNS-Light'
-				letter-spacing 0.94px
-				line-height 48px
-				strong
-					font-family 'SFNS-Medium'
-			h3
-				text-align right
-				font-family 'SFNS-Light'
-				letter-spacing 0.94px
-				//text-transform uppercase
-				font-size 1.3em
-				
-	&-diagonal
-		z-index 2
-		display block
-		margin-top -43em
-		width 100%
-		background #8283A7
-		transform skew(0deg,-10deg)
-		position relative
-		overflow hidden
-		transition all .5s ease-in-out
-		left 0
-		opacity 1
-		.wrapper
-			width 100%
-			padding 29em 0em
-			position relative
-			.back-contact
-				position absolute
-				background: url(../img/biblioteca-header.png) no-repeat center bottom
-				background-attachment fixed
-				background-size cover
-				background-color #8283A7
-				top 16em
-				left 0
-				right 0
-				bottom -16em
-				transform skew(0,10deg)
-		&:after
-			content: '';
-			position: absolute;
-			z-index: 1;
-			display: block;
-			float: left;
-			transform: skew(0deg,0deg);
-			bottom: 0;
-			left: 0;
-			transition: all .5s ease-in-out;
-			opacity: 1;
-			width: 100%
-			height: 0px;
-			border-style: solid;
-			border-width: 0 1200px 17px 0;
-			//border-color: transparent transparent azul-2 transparent;
-			border-color: #6B69FF
+		nav
+			box-shadow none
+			padding-top .4em
+			ul
+				width initial
+				flex-flexStart()
+				li:nth-child(1)
+					padding .7em 1em 0 0
+					a
+						color white
+					
+.headerContact
+	height 25em
+	background url(../img/background-contact@2x.png) no-repeat center top
+	//background-size contain
+	background-color white
+	//background-color red
+	//opacity: 0.66;
+	//background-image: linear-gradient(0deg, #27BDFF 0%, #6B69FF 100%);
+	
+	&-message
+		text-align center
+		color white
+		padding-top 6em
+		h1
+			font-size 2.5em
+			font-family 'Poppins-Medium',sans-serif
+		h3
+			font-size 1.6em
+			font-family 'Poppins-Regular', sans-serif
 			
-	&-bgMovilAbout
-		z-index 2
-		display block
-		margin-top -51em
-		width 100%
-		background #8283A7
-		transform skew(0deg,11deg)
-		position relative
-		overflow hidden
-		transition all .5s ease-in-out
-		left 0
-		opacity 1
-		display none
-		.wrapper
-			width 100%
-			padding 29em 0em
-			position relative
-			.back-contact
-				position absolute
-				background: url(../img/scsMedicinaMobile.png) no-repeat center bottom
-				background-attachment fixed
-				background-size cover
-				background-color #8283A7
-				top 16em
-				left 0
-				right 0
-				bottom -16em
-				transform skew(0,-11deg)
-		&:after
-			content: '';
-			position: absolute;
-			z-index: 1;
-			display: block;
-			float: left;
-			transform: skew(0deg,0deg);
-			bottom: 0;
-			left: 0;
-			transition: all .5s ease-in-out;
-			opacity: 1;
-			width: 100%
-			height: 0px;
-			border-style: solid;
-			border-width: 0 1200px 17px 0;
-			//border-color: transparent transparent azul-2 transparent;
-			border-color: #6B69FF
-			
-	&-bgAboutDesktop
-		background: url(../img/bgAboutLeft@2x.png) no-repeat center top
-		background-size contain
-		background-color white
+
+.headerMessageEnd
+	height 25em
+	background url(../img/background-messageEnd@2x.png) no-repeat center top
+	//background-size contain
+	background-color white
+	//background-color red
+	//opacity: 0.66;
+	//background-image: linear-gradient(0deg, #27BDFF 0%, #6B69FF 100%);
 
 
 
@@ -299,88 +208,6 @@ body
 		background gris-bg
 		padding 3em 1em 0em 1em
 
-/*.sobreMi
-	&-container
-		border-top 1px dashed negro-texto
-		border-bottom 1px dashed negro-texto
-		position relative
-		z-index 3
-		transform skew(0deg,-10deg)
-		width 80%
-		margin 8em auto	0 auto
-		.portfolio-title
-			transform skew(0,10deg)					
-			figure
-				width 7em
-				margin 0 auto
-				img
-					width 100%
-					border-radius 50%
-					border 7px solid azul-1
-
-		&-resumen
-			margin 2em auto
-			p
-				font-family 'Cabin-Regular',sans-serif
-				text-align center
-				font-size 1.1em
-				transform skew(0,10deg)
-			ul
-				flex-center()
-				transform skew(0,10deg)
-				padding-bottom 1em
-				li
-					font-size 2.5em
-					color naranja
-					margin-right 0.3em
-					&:last-child
-						margin-right 0
-		
-	.diagonal
-		z-index 2
-		display block
-		margin-top -34em
-		width 100%
-		background amarillo
-		transform skew(0deg,-10deg)
-		position relative
-		overflow hidden
-		transition all .5s ease-in-out
-		left 0
-		opacity 1
-		.wrapper
-			width 100%
-			padding 21em 0em
-			position relative
-			.back-contact
-				position absolute
-				background: url(../img/Petroaulas-entrada.png) no-repeat center center;
-				background-attachment fixed
-				background-size cover
-				background-color amarillo
-				top -16em
-				left 0
-				right 0
-				bottom -16em
-				transform skew(0,10deg)
-		&:after
-			content: '';
-			position: absolute;
-			z-index: 1;
-			display: block;
-			float: left;
-			transform: skew(0deg,0deg);
-			bottom: 0;
-			left: 0;
-			transition: all .5s ease-in-out;
-			opacity: 1;
-			width: 100%
-			height: 0px;
-			border-style: solid;
-			border-width: 0 1200px 17px 0;
-			border-color: transparent transparent azul-2 transparent;
-*/
-
 .formLogin
 	.itemForm
 		position relative
@@ -443,38 +270,26 @@ body
 --------------------------------------------------------------
 --------------------------------------------------------------*/
 .messageInit
-	.title
-		text-align center
-		border-bottom 1px solid rgba(gris-texto .1)
-		padding-bottom 1em
-		figure
-			width 4em
-			margin 0 auto
-			img
-				width 100%
-				
-		h2
-			color blueClaro
-		p
-			margin 0
-	form
-		width 400px
-		margin 2em auto 0 auto
-
-.messageEnd
-	text-align center
-	margin-bottom 6em
-	figure
-		width 7em
-		margin 0 auto
-		img
-			width 100%
+	position relative
+	z-index 4
+	margin -7em auto 0
+	background white
+	box-shadow 0 0 10px 7px rgba(0,0,0,0.04)
+	border-radius 4px
+	width 560px
+	padding 2em
 	
 	h2
-		font-size 2.4em
-		color blueClaro	
-	p
-		margin 0
+		text-align center
+		font-size 1.2em
+		margin-top .7em
+		
+	form
+		width 80%
+		margin 2em auto 0
+		input
+		label.active
+			font-family 'Poppins-Regular'
 
 /*
     FOOTER
@@ -485,22 +300,9 @@ body
 	margin-top 3em
 	text-align center
 	h5
-		margin-bottom 8em
+		margin 1em 0
 		
-	&-item
-		background white
-		box-shadow: 0 -3px 18px 0 rgba(205,192,192,0.50)
-		height 45px
-		padding 1em 0
-		flex-center()
-		
-		position fixed
-		bottom 0
-		left 0
-		right 0
-		z-index 10
-		
-		.item-social
+	.item-social
 			height 30px
 			margin-top .5em
 			flex-center()
@@ -513,36 +315,11 @@ body
 					&:hover
 						transition .2s linear
 				
-				&:nth-child(2)
-				&:nth-child(3)
-					a
-						font-size 1.4em
-						padding-top .1em
-						
-				&:nth-child(4)
-					a
-						font-size 1.5em
-						
-				&:nth-child(5)
-					a
-						font-size 1.5em
-						padding-top .1em
+				
 						
 				&:last-child
 					margin-right 0
 					
-		.item-text
-			border-left 1px solid rgba(gris-texto .4)
-			padding-left 1em
-			margin-left 1em
-			p
-				width 9em
-				text-align left
-				margin 0
-				font-size .9em
-				padding-top .3em
-				strong
-					font-family 'SFNS-Bold'
 
 /* HOVER SOCIAL MEDIA */
 .behance-hover span:hover
@@ -560,178 +337,6 @@ body
 .github-hover span:hover
 	color black
 	
-
-/*
-    MODAL
-------------------------------------------------------------
-------------------------------------------------------------*/
-.modalMenu
-	top 0 !important
-	right 0
-	bottom 0
-	width 100%
-	height 100vh
-	max-height 100vh
-	margin 0
-	z-index 16
-	transition .3s linear
-	background white
-	
-	ul.language
-		width 600px
-		margin 0 auto
-		padding-bottom 1em
-		border-bottom 1px solid gris-claro
-		flex-center()
-		li
-			background white
-			border 1px solid gris-claro
-			border-radius 4px
-			padding .6em 2em
-			transition .2s linear
-			cursor pointer
-			flex-center()
-			
-			figure
-				font-size 3em
-				
-			.text
-				padding .7em 0 0 .6em
-				h3
-					font-size 1.2em
-					font-family 'SFNS-Medium'
-				p
-					font-size .9em
-					margin-top -.2em
-			
-			&:nth-child(1)
-				margin-right 1.3em
-					
-			&.active
-			&:hover
-				box-shadow: 0 0 11px 0 rgba(77,90,255,0.16)
-				
-	nav
-		box-shadow none !important
-		width 200px
-		margin 4em auto
-		ul
-			text-align center
-			li
-				margin-bottom 1.3em 
-				a
-					color gris-texto
-					transition .2s linear
-					
-					h2
-						font-size 2em
-
-					&:hover
-						color naranja-corporativo
-						
-				&:last-child
-					margin-bottom 0
-					
-				&.active a
-					color blueClaro
-					position relative
-					&:before
-						content "\e906"
-						color #ff3a00
-						font-family 'iconitos'
-						font-size 1.3em
-						position absolute
-						left -1.5em
-						top 0.4em
-						
-	.social
-		margin-top 7em
-		.title
-			text-align center
-			h3
-				font-size 1em
-				
-		ul.item-social
-		/.socialAbout
-			margin-top 1em
-			flex-center()
-			li
-				margin-right 1.3em
-				a
-					font-size 1.6em
-					&.behance
-						color behance
-					&.twitter
-						color twitter
-					&.insta
-						color instagram
-					&.linkedin
-						color linkedin
-					&.github
-						color black
-						
-				&:last-child
-					margin-right 0
-					
-
-/*
-    ABOUT ME
-------------------------------------------------------------
-------------------------------------------------------------*/
-.gridAbout
-	width 720px
-	margin 0 auto
-	
-.aboutProfile
-	text-align center
-	margin-bottom 1.5em
-	padding-bottom 1.5em
-	border-bottom 1px solid gris-claro
-	figure
-		background #FFFFFF
-		width 8em
-		margin 0 auto
-		position relative
-		img
-			border-radius 50%
-			&:nth-child(1)
-				width 90%
-				position relative
-				z-index 3
-			&:nth-child(2)
-				width 100%
-				position absolute
-				z-index 2
-				top -.35em
-				left 0
-				
-	h1
-		font-size 2.1em
-		color blueClaro
-	p
-		margin-top -.5em
-
-.aboutCopy
-	text-align center
-	h2
-		font-size 1.8em
-	h4
-		font-size 1.4em
-		margin-bottom 1.4em
-		font-family 'SFNS-Light'
-		
-	.cpopyP
-		p
-			text-align left
-			margin-bottom 1em
-			font-size 1.2em
-			line-height 32px
-			strong
-				color blueClaro
-				font-family 'SFNS-Medium'
-			a:hover
-				color naranja-corporativo
-
 				
 @import 'lib/_media-queries.styl'
 		
