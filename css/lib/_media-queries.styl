@@ -14,6 +14,8 @@
 	/**********************
 		INDEX
     **********************/
+	.grid
+		width 1000px
 
     		
 @media (max-width: 1297px)
@@ -24,16 +26,21 @@
 		background-position center top
 		background-size cover
 		
+	.grid
+		width 90%
+		
 
 	
 	/**********************
         MODALES
     **********************/
     	
-@media (max-width: 1136px)
+@media (max-width: 1166px)
 	/**********************
 		INDEX
     **********************/
+	.logos li
+		width 11em
 				
 
 // Large devices (desktops, 62em and up)
@@ -43,7 +50,20 @@
     **********************/
 	.grid 
 		width 90%
-
+		
+	.headerHome-message
+		margin-top 10em
+		h1
+			font-size 2.3em
+		
+	.logos li
+		width 9em
+		
+	.proyectWin li 
+		figure
+			width 27em
+		.text
+			width calc(100% - 27em)
 	
 	/**********************
         ERROR 404
@@ -60,15 +80,14 @@
 	
 		
 	/**********************
-    	HEADER
+    	HOME
     **********************/
-		
-	
-	/**********************
-        ABOUT ME
-    **********************/
-	.gridAbout
-		width 90%
+	.proyectWin li 
+		figure
+			width 20em
+		.text
+			width calc(100% - 20em)
+			padding-top 4em
 
 
 @media (max-width: 630px)
@@ -84,6 +103,27 @@
     **********************/			
 	body
 		font-size 15px
+		
+	.proyectWin li
+		margin-bottom 3.5em
+		flex-center()
+		
+		figure
+			width 20em
+		.text
+			width 100%
+			padding-top 0em
+			margin-top -1.5em
+			text-align center
+			&-title
+				flex-center()
+				figure
+					display none
+				h3
+					width initial
+					
+	.mainContain ul.project li
+		width 49%
 
 							
 	/**********************
@@ -101,7 +141,7 @@
 // Small devices (landscape phones, 415px and up)
 @media (max-width: 415px)
 	body
-		font-size 11px	
+		font-size 12px	
 				
 	/**********************
         INDEX
@@ -115,6 +155,24 @@
 	.headerContact-message
 		h3
 			font-size 1.3em
+			
+	.headerHome-message h1
+		width 100%
+			
+	.logos li
+		width 33%
+		margin-bottom 1em
+		
+	.proyectWin li
+		figure
+			width 30em
+		.text 
+			margin-top -2.5em
+			h3 
+				font-size 1.5em
+				padding 0
+			p
+				font-size 1em
 					
 			
 	/**********************
