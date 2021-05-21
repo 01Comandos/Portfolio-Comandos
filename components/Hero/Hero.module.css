@@ -1,0 +1,29 @@
+.container {
+  min-height: 500px;
+  width: 100%;
+}
+
+.picture {
+  top: -7rem !important;
+}
+
+.textContainer {
+  color: white;
+  padding: 1.5rem;
+  position: absolute;
+  top: 410px;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 1.25;
+  margin: 0;
+}
+
+.subtitle {
+  color: var(--secondary);
+  font-size: 18px;
+  font-weight: 600;
+  margin: 20px 0;
+}
