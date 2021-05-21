@@ -1,6 +1,7 @@
 .container {
   min-height: 500px;
   width: 100%;
+  padding: 22.5rem 1.5rem 1.5rem 1.5rem;
 }
 
 .picture {
@@ -9,9 +10,6 @@
 
 .textContainer {
   color: white;
-  padding: 1.5rem;
-  position: absolute;
-  top: 410px;
 }
 
 .title {
