@@ -15,6 +15,7 @@ export default function Home() {
       </Head>
       <main>
         <Hero />
+        <div className={styles.verticalLine}></div>
       </main>
     </div>
   );
