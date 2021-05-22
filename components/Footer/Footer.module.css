@@ -1,0 +1,17 @@
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0px 15px;
+}
+
+.brand {
+  align-items: center;
+  color: white;
+  display: flex;
+  font-size: 14px;
+  font-weight: 500;
+  justify-content: space-between;
+  margin: 20px 0;
+  width: 100%;
+}
