@@ -1,0 +1,25 @@
+.container {
+  color: var(--gray-1);
+  margin: 5rem 0 0 0;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  margin: 1rem 0.8rem;
+}
+
+.logosContainer {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3rem 1rem ;
+  justify-content: flex-start;
+}
+
+.logosContainer > div {
+  box-sizing: border-box;
+  width: 50%;
+}

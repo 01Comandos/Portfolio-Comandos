@@ -1,0 +1,28 @@
+.container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 3rem 0;
+  mix-blend-mode: luminosity;
+}
+
+.ycLogo {
+  height: 18px;
+  mix-blend-mode: luminosity;
+  opacity: 0.60;
+  position: absolute;
+  top: 0px;
+  left: 10%;
+  width: 18px;
+}
+
+.fortuneLogo {
+    height: 20px;
+    mix-blend-mode: luminosity;
+    opacity: 0.60;
+    position: absolute;
+    top: 0px;
+    left: 10%;
+    width: 20px;
+  }
