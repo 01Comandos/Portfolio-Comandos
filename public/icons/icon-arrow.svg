@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 50 50">
+    <defs>
+        <path id="sgly4icbta" d="M13.176.32c.427-.427 1.117-.427 1.53 0l6.63 6.631c.432.417.432 1.11.004 1.523l-6.63 6.63c-.416.432-1.107.432-1.533.005-.416-.415-.416-1.1 0-1.53l4.794-4.786H1.074c-.563 0-1.02-.434-1.07-.985L0 7.709c0-.596.477-1.074 1.074-1.074l16.897-.001-4.794-4.795c-.392-.39-.415-1.023-.07-1.443z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <g transform="translate(-202 -7477) translate(0 7207) translate(17 270) translate(185)">
+                        <rect width="50" height="50" fill="#FFF" fill-opacity=".086" rx="25"/>
+                        <g>
+                            <path d="M0 0H30V30H0z" transform="translate(10 10)"/>
+                            <g transform="translate(10 10) translate(4.333 7.449)">
+                                <mask id="sfqq6wt3kb" fill="#fff">
+                                    <use xlink:href="#sgly4icbta"/>
+                                </mask>
+                                <use fill="#1E201D" fill-rule="nonzero" xlink:href="#sgly4icbta"/>
+                                <g fill="#FFF" mask="url(#sfqq6wt3kb)">
+                                    <rect width="30" height="30" rx="8" transform="translate(-4.333 -7.449)"/>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
