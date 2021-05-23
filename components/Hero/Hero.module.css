@@ -1,11 +1,12 @@
 .container {
   min-height: 500px;
   width: 100%;
-  padding: 22.5rem 0rem 1.5rem 0rem;
+  padding: 0;
+  margin-bottom: 5rem;
 }
 
 .picture {
-  top: -7rem !important;
+  max-width: 100%;
 }
 
 .textContainer {
@@ -23,5 +24,5 @@
   color: var(--secondary);
   font-size: 18px;
   font-weight: 600;
-  margin: 20px 0;
+  margin: 1.5rem 0 3rem 0;
 }

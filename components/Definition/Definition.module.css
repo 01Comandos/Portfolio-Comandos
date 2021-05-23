@@ -1,7 +1,7 @@
 .container {
   color: white;
   box-sizing: border-box;
-  padding: 5rem 0 0 0;
+  padding: 5rem 0;
 }
 
 .description {
@@ -19,8 +19,11 @@
 .knowMore {
   align-items: center;
   display: flex;
-  gap: 1.5rem;
-  padding: 1rem 0 5rem 0;
+  padding: 1rem 0 4rem 0;
+}
+
+.knowMore > span {
+  margin-right: 1.5rem;
 }
 
 .logo {

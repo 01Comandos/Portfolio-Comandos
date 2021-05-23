@@ -2,9 +2,9 @@
   display: flex;
   margin: 0;
   padding: 0;
-  gap: 0 1rem;
 }
 
 .container > li {
   cursor: pointer;
+  margin-right: 20px;
 }

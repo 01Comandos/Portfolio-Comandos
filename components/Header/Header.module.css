@@ -6,7 +6,50 @@
   padding: 17px;
 }
 
+.logo {
+  display: none;
+}
+
+.menu {
+  display: none;
+}
+
 .rightOptions {
+  align-items: center;
   display: flex;
-  gap: 0rem 1rem;
+}
+
+.rightOptions > button {
+  margin-right: 1.5rem;
+}
+
+@media (min-width: 769px) {
+  .container {
+    padding: 2.3rem;
+  }
+
+  .logoMobile {
+    display: none;
+  }
+
+  .logo {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 1025px) {
+  .menuIcon {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+  }
+
+  .menu > a {
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    margin: 0 1.5rem;
+  }
 }
