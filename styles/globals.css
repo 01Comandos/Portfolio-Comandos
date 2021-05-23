@@ -3,8 +3,10 @@
 :root {
   --secondary: #ffbc00;
   --black-1: rgba(255, 255, 255, 0.09);
+  --black-2: #1d262c;
   --gray-1: #b4c0ca;
   --gray-2: #cdcdcd;
+  --green-1: #57fbdb;
 }
 
 html,

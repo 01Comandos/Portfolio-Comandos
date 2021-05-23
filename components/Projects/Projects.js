@@ -31,8 +31,8 @@ const Projects = () => (
       I can help visualize even the craziest ideas converting them into elegant
       designs, awesome experiences and catchy brands.
     </p>
-    {projectsList.map((project) => (
-      <div className={styles.project}>
+    {projectsList.map((project, index) => (
+      <div className={styles.project} key={index}>
         <Project
           name={project.name}
           picture={project.picture}

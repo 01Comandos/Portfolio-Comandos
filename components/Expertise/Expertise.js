@@ -16,8 +16,8 @@ const Expertise = () => {
       <h2 className={styles.title}>
         <span>Expert</span>ise
       </h2>
-      {skills.map(({ skill, icon, description }) => (
-        <div className={styles.skill}>
+      {skills.map(({ skill, icon, description }, index) => (
+        <div className={styles.skill} key={index}>
           <Skill skill={skill} icon={icon} description={description} />
         </div>
       ))}
