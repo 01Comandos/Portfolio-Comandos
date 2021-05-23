@@ -1,0 +1,27 @@
+.container {
+  color: white;
+  padding: 4rem 0;
+}
+
+.contactButton {
+  width: 100%;
+}
+
+.title {
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 1.58;
+  letter-spacing: 0.16px;
+  margin: 0;
+}
+
+.title > span {
+  color: var(--secondary);
+}
+
+.text {
+  color: var(--gray-1);
+  font-size: 18px;
+  line-height: 2;
+  margin-bottom: 3rem;
+}
