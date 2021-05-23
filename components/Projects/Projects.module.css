@@ -1,0 +1,36 @@
+.container {
+  color: white;
+  margin: 8rem 0;
+}
+
+.description {
+  color: var(--gray-1);
+  font-size: 18px;
+  line-height: 2;
+  padding: 0 0 3rem 0;
+}
+
+.project {
+  padding: 1.8rem 0;
+}
+
+.title {
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 1.58;
+  letter-spacing: 0.16px;
+}
+
+.title > span {
+  color: var(--secondary);
+}
+
+.allProjects {
+  min-width: 218px;
+}
+
+.options {
+  margin: 3rem 0;
+  text-align: center;
+  width: 100%;
+}
