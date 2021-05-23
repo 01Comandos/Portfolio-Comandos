@@ -1,0 +1,19 @@
+.container {
+  color: white;
+  margin: 8rem 0;
+}
+
+.title {
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 1.58;
+  letter-spacing: 0.16px;
+}
+
+.title > span {
+  color: var(--secondary);
+}
+
+.skill {
+  padding: 2rem 0;
+}
