@@ -24,8 +24,26 @@
   width: 50%;
 }
 
+.logosContainer > div:nth-child(n+7) {
+  display: none;
+}
+
 @media (min-width: 769px) {
   .container {
     margin: 2.5rem 0;
+  }
+
+  .logosContainer > div {
+    width: 33%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .logosContainer > div {
+    width: 25%;
+  }
+
+  .logosContainer > div:nth-child(n+7) {
+    display: flex;
   }
 }

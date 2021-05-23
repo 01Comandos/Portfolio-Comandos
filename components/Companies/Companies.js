@@ -50,6 +50,22 @@ const companiesList = [
     yc: false,
     fortune: false,
   },
+  {
+    height: 44,
+    width: 143,
+    name: "Caribe Federal Credit Union",
+    logo: "/images/caribe-federal.png",
+    yc: false,
+    fortune: false,
+  },
+  {
+    height: 39,
+    width: 172,
+    name: "Digital Marketing",
+    logo: "/images/dcg.png",
+    yc: false,
+    fortune: false,
+  }
 ];
 
 const Companies = () => (

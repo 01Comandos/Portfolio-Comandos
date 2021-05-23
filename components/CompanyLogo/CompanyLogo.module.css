@@ -2,27 +2,30 @@
   align-items: center;
   display: flex;
   justify-content: center;
-  position: relative;
   padding: 3rem 0;
+}
+
+.logo {
+  position: relative;
   mix-blend-mode: luminosity;
 }
 
 .ycLogo {
   height: 18px;
   mix-blend-mode: luminosity;
-  opacity: 0.60;
+  opacity: 0.6;
   position: absolute;
-  top: 0px;
-  left: 10%;
+  top: -30px;
+  left: 0;
   width: 18px;
 }
 
 .fortuneLogo {
-    height: 20px;
-    mix-blend-mode: luminosity;
-    opacity: 0.60;
-    position: absolute;
-    top: 0px;
-    left: 10%;
-    width: 20px;
-  }
+  height: 20px;
+  mix-blend-mode: luminosity;
+  opacity: 0.6;
+  position: absolute;
+  top: -30px;
+  left: 0;
+  width: 20px;
+}
