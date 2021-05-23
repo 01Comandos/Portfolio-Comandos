@@ -26,3 +26,28 @@
   font-weight: 600;
   margin: 1.5rem 0 3rem 0;
 }
+
+@media (min-width: 769px) {
+  .container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  .picture {
+    height: auto;
+    min-height: 427px;
+    min-width: 400px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .title {
+    font-size: 70px;
+    letter-spacing: 0.53px;
+  }
+
+  .subtitle {
+    margin-bottom: 6.5rem;
+  }
+}

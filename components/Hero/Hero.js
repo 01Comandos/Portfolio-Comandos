@@ -1,4 +1,3 @@
-import Image from "next/image";
 import SocialNetworks from "../SocialNetworks/SocialNetworks";
 import styles from "./Hero.module.css";
 
@@ -8,8 +7,8 @@ const Hero = () => (
     <div className={styles.textContainer}>
       <h1 className={styles.title}>Innovating experiences for humans</h1>
       <h3 className={styles.subtitle}>Let’s create something together ></h3>
+      <SocialNetworks className={styles.socialSection} />
     </div>
-    <SocialNetworks className={styles.socialSection} />
   </div>
 );
 

@@ -8,3 +8,13 @@
   height: 113px;
   width: 50%;
 }
+
+@media (min-width: 769px) {
+  .container {
+    padding: 0 2.3rem;
+  }
+
+  .verticalLine {
+    display: none;
+  }
+}
