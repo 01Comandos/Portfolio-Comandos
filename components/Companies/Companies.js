@@ -69,7 +69,7 @@ const companiesList = [
 ];
 
 const Companies = () => (
-  <div className={styles.container}>
+  <section className={styles.container}>
     <h3 className={styles.title}>Incredible startups that rely on Comandos</h3>
     <div className={styles.logosContainer}>
       {companiesList.map((company, index) => (
@@ -84,7 +84,7 @@ const Companies = () => (
         />
       ))}
     </div>
-  </div>
+  </section>
 );
 
 export default Companies;

@@ -59,7 +59,7 @@ const projectsList = [
 ];
 
 const Projects = () => (
-  <div className={styles.container}>
+  <section className={styles.container}>
     <h2 className={styles.title}>
       Looks like <span>magic</span>, works like <span>science</span>.
     </h2>
@@ -83,7 +83,7 @@ const Projects = () => (
         View all projects
       </button>
     </div>
-  </div>
+  </section>
 );
 
 export default Projects;

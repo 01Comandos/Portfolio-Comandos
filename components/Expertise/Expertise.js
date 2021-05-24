@@ -12,7 +12,7 @@ const skills = [
 
 const Expertise = () => {
   return (
-    <div className={styles.container}>
+    <section className={styles.container}>
       <h2 className={styles.title}>
         <span>Expert</span>ise
       </h2>
@@ -23,7 +23,7 @@ const Expertise = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

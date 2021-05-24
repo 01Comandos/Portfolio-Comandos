@@ -15,7 +15,7 @@ const testimonialsList = [
 
 const Testimonials = () => {
   return (
-    <div className={styles.container}>
+    <section className={styles.container}>
       {testimonialsList.map((testimonial, index) => (
         <div key={index}>
           <h3 className={styles.title}>{testimonial.title}</h3>
@@ -29,7 +29,7 @@ const Testimonials = () => {
           </div>
         </div>
       ))}
-    </div>
+    </section>
   );
 };
 

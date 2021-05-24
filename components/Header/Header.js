@@ -9,7 +9,7 @@ const menuOptions = [
 ];
 
 const Header = () => (
-  <div className={styles.container}>
+  <header className={styles.container}>
     <img
       className={styles.logoMobile}
       src="/logo/logo-isotipo-white.svg"
@@ -38,7 +38,7 @@ const Header = () => (
         height={19}
       />
     </div>
-  </div>
+  </header>
 );
 
 export default Header;
