@@ -8,10 +8,20 @@
   font-size: 18px;
   line-height: 2;
   padding: 0 0 3rem 0;
+  font-weight: 300;
+}
+
+.projects {
+  display: block;
 }
 
 .project {
+  box-sizing: border-box;
   padding: 1.8rem 0;
+}
+
+.project:nth-child(n+4) {
+  display: none;
 }
 
 .title {
@@ -19,6 +29,7 @@
   font-weight: 600;
   line-height: 1.58;
   letter-spacing: 0.16px;
+  max-width: 400px;
 }
 
 .title > span {
@@ -33,4 +44,45 @@
   margin: 3rem 0;
   text-align: center;
   width: 100%;
+}
+
+@media (min-width: 769px) {
+  .title {
+    font-size: 50px;
+    line-height: normal;
+    letter-spacing: 0.21px;
+    max-width: 480px;
+  }
+
+  .description {
+    max-width: 590px;
+  }
+
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .project {
+    width: 45%;
+  }
+
+  .project:nth-child(n+4) {
+    display: block;
+  }
+
+  .project:nth-child(n+5) {
+    display: none;
+  }
+}
+
+@media (min-width: 1025px) {
+  .project:nth-child(n) {
+    display: block;
+  }
+
+  .project {
+    width: 31%;
+  }
 }

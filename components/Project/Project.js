@@ -1,8 +1,9 @@
 import styles from "./Project.module.css"
 
-const Project = ({ picture, name, description }) => (
+const Project = ({ pictures, name, description }) => (
   <div className={styles.container}>
-    <img src={picture} className={styles.picture} />
+    <img src={pictures.mobile} className={styles.pictureMobile} />
+    <img src={pictures.desktop} className={styles.picture} />
     <h4 className={styles.title}>{name}</h4>
     <p className={styles.description}>{description}</p>
   </div>
