@@ -1,7 +1,8 @@
 .container {
-  color: white;
   box-sizing: border-box;
+  color: white;
   padding: 5rem 0;
+  overflow: hidden;
 }
 
 .description {
@@ -29,4 +30,26 @@
 .logo {
   cursor: pointer;
   margin-bottom: 2rem;
+}
+
+@media (min-width: 679px) {
+  .container {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .container > div {
+    max-width: 50%;
+  }
+
+  .description {
+    margin: 0;
+  }
+}
+
+@media (min-width: 1025px) {
+  .container > div {
+    max-width: 70%;
+  }
 }
