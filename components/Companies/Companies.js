@@ -27,19 +27,19 @@ const companiesList = [
     fortune: true,
   },
   {
-    height: 30,
-    width: 116,
-    name: "Kriptos",
-    logo: "/images/kriptos.svg",
-    yc: false,
-    fortune: false,
-  },
-  {
     height: 36,
     width: 86,
     name: "Rappi",
     logo: "/images/rappi.png",
     yc: true,
+    fortune: false,
+  },
+  {
+    height: 30,
+    width: 116,
+    name: "Kriptos",
+    logo: "/images/kriptos.svg",
+    yc: false,
     fortune: false,
   },
   {
