@@ -1,7 +1,7 @@
 .container {
   background-color: var(--green-1);
   margin: 0 -1rem;
-  padding: 5rem 1rem;
+  padding: 5rem 1.5rem;
 }
 
 .customers {
@@ -50,6 +50,21 @@
 .text {
   color: var(--black-2);
   font-size: 21px!important;
-  font-weight: 600;
   line-height: 1.9;
+}
+
+@media (min-width: 769px) {
+  .container {
+    margin: 0 -2.3rem;
+    padding: 8rem 5rem;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .text {
+    font-size: 23px!important;
+    line-height: 1.74;
+  }
 }
