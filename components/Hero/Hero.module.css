@@ -22,9 +22,15 @@
 
 .subtitle {
   color: var(--secondary);
+  cursor: pointer;
   font-size: 18px;
   font-weight: 600;
   margin: 1.5rem 0 3rem 0;
+}
+
+.subtitle:hover {
+  text-decoration: underline;
+  transition: .2s linear;
 }
 
 @media (min-width: 769px) {

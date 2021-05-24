@@ -6,6 +6,10 @@
   padding: 17px;
 }
 
+.logoMobile, .logo {
+  cursor: pointer;
+}
+
 .logo {
   display: none;
 }

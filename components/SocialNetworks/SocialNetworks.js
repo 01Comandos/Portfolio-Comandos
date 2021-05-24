@@ -3,19 +3,19 @@ import styles from "./SocialNetworks.module.css"
 const SocialNetworks = () => (
     <ul className={styles.container}>
       <li>
-        <img src="/icons/icon-linkedin.svg" />
+      <span className={`icon-linkedin ${styles.icon}`}></span>
       </li>
       <li>
-        <img src="/icons/icon-github.svg" />
+      <span className={`icon-github ${styles.icon}`}></span>
       </li>
       <li>
-        <img src="/icons/icon-twitter.svg" />
+      <span className={`icon-twitter ${styles.icon}`}></span>
       </li>
       <li>
-        <img src="/icons/icon-behance.svg" />
+      <span className={`icon-behance ${styles.icon}`}></span>
       </li>
       <li>
-        <img src="/icons/icon-instagram.svg" />
+      <span className={`icon-instagram ${styles.icon}`}></span>
       </li>
     </ul>
 );

@@ -9,3 +9,15 @@
   cursor: pointer;
   margin-right: 20px;
 }
+
+.icon {
+  color: white;
+  font-size: 24px;
+  opacity: .389;
+}
+
+.icon:hover {
+  color: var(--secondary);
+  opacity: 1;
+  transition: .2s linear;
+}

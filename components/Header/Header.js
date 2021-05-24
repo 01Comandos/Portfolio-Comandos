@@ -10,18 +10,22 @@ const menuOptions = [
 
 const Header = () => (
   <header className={styles.container}>
-    <img
-      className={styles.logoMobile}
-      src="/logo/logo-isotipo-white.svg"
-      width={51}
-      height={51}
-    />
-    <img
-      className={styles.logo}
-      src="/logo/logo-white.svg"
-      width={183}
-      height={40}
-    />
+    <Link href="/">
+      <img
+        className={styles.logoMobile}
+        src="/logo/logo-isotipo-white.svg"
+        width={51}
+        height={51}
+      />
+    </Link>
+    <Link href="/">
+      <img
+        className={styles.logo}
+        src="/logo/logo-white.svg"
+        width={183}
+        height={40}
+      />
+    </Link>
     <div className={styles.menu}>
       {menuOptions.map(item => (
         <Link href={item.link}>
