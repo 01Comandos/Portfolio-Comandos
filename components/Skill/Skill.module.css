@@ -6,10 +6,12 @@
   font-size: 24px;
   font-weight: 500;
   letter-spacing: 0.1px;
+  margin-bottom: 1rem;
 }
 
 .description {
   color: var(--gray-2);
   font-size: 16px;
   line-height: 1.81;
+  font-weight: 300;
 }

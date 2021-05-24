@@ -14,6 +14,29 @@
   color: var(--secondary);
 }
 
+.skills {
+  display: block;
+}
+
 .skill {
+  box-sizing: border-box;
   padding: 2rem 0;
+}
+
+@media (min-width: 481px) {
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .skill {
+    width: 45%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .skill {
+    width: 31%;
+  }
 }
