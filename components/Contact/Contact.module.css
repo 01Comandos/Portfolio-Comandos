@@ -25,3 +25,19 @@
   line-height: 2;
   margin-bottom: 3rem;
 }
+
+@media (min-width: 769px) {
+  .container {
+    align-items: center;
+    display: flex;
+  }
+
+  .contactButton {
+    max-width: 161px;
+  }
+
+  .description {
+    max-width: 300px;
+    margin-right: 3rem;
+  }
+}
