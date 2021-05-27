@@ -5,10 +5,10 @@ const menuOptions = [
   { name: "Home", link: "/" },
   { name: "Projects", link: "/projects" },
   { name: "Methodology", link: "/methodology" },
-  { name: "Podcast", link: "/podcast" }
+  { name: "Podcast", link: "/podcast" },
 ];
 
-const Header = () => (
+const Header = ({ withContact }) => (
   <header className={styles.container}>
     <Link href="/">
       <img
@@ -36,7 +36,11 @@ const Header = () => (
       ))}
     </div>
     <div className={styles.rightOptions}>
-      <button className="black">Contact</button>
+      {withContact && (
+        <Link href="/contact">
+          <button className="black">Contact</button>
+        </Link>
+      )}
       <img
         className={styles.menuIcon}
         src="/icons/icon-menu.svg"

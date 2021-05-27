@@ -1,0 +1,40 @@
+.heroContainer {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  justify-content: center;
+}
+
+.heroContainer img {
+  max-width: 100%;
+}
+
+.heroContainer figure {
+  margin: 2.8rem -1rem 0 0;
+}
+
+.heroTitle {
+  color: white;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.25;
+  margin: 3.5rem 0 0 0;
+}
+
+.heroTitle > span {
+  color: var(--secondary);
+}
+
+.heroSubtitle {
+  color: var(--secondary);
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.heroDescription {
+  color: var(--gray-1);
+  font-size: 18px;
+  line-height: 1.67;
+  margin: 2rem 0;
+}

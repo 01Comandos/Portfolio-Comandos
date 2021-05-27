@@ -114,3 +114,7 @@ button.black:hover {
   color: var(--primary);
   transition: .2s linear;
 }
+
+.main {
+  padding: 0 1rem;
+}
