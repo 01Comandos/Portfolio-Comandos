@@ -14,6 +14,7 @@ const Header = () => (
       <img
         className={styles.logoMobile}
         src="/logo/logo-isotipo-white.svg"
+        alt="Comandos Logotipo"
         width={51}
         height={51}
       />
@@ -22,13 +23,14 @@ const Header = () => (
       <img
         className={styles.logo}
         src="/logo/logo-white.svg"
+        alt="Comandos Logotipo"
         width={183}
         height={40}
       />
     </Link>
     <div className={styles.menu}>
-      {menuOptions.map(item => (
-        <Link href={item.link}>
+      {menuOptions.map((item, index) => (
+        <Link key={index} href={item.link}>
           <a>{item.name}</a>
         </Link>
       ))}

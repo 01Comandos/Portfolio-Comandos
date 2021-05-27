@@ -8,7 +8,7 @@ const companiesList = [
     name: "Truora",
     logo: "/images/truora.svg",
     yc: true,
-    fortune: false,
+    startups: false,
   },
   {
     height: 30,
@@ -16,7 +16,7 @@ const companiesList = [
     name: "mipOS",
     logo: "/images/mip-os.svg",
     yc: true,
-    fortune: false,
+    startups: false,
   },
   {
     height: 37,
@@ -24,7 +24,7 @@ const companiesList = [
     name: "Rebaja Tus Cuentas",
     logo: "/images/rtc.svg",
     yc: false,
-    fortune: true,
+    startups: true,
   },
   {
     height: 36,
@@ -32,7 +32,7 @@ const companiesList = [
     name: "Rappi",
     logo: "/images/rappi.png",
     yc: true,
-    fortune: false,
+    startups: false,
   },
   {
     height: 30,
@@ -40,7 +40,7 @@ const companiesList = [
     name: "Kriptos",
     logo: "/images/kriptos.svg",
     yc: false,
-    fortune: false,
+    startups: false,
   },
   {
     height: 30,
@@ -48,7 +48,7 @@ const companiesList = [
     name: "Check.pe",
     logo: "/images/check-pe.png",
     yc: false,
-    fortune: false,
+    startups: false,
   },
   {
     height: 44,
@@ -56,7 +56,7 @@ const companiesList = [
     name: "Caribe Federal Credit Union",
     logo: "/images/caribe-federal.png",
     yc: false,
-    fortune: false,
+    startups: false,
   },
   {
     height: 39,
@@ -64,7 +64,7 @@ const companiesList = [
     name: "Digital Marketing",
     logo: "/images/dcg.png",
     yc: false,
-    fortune: false,
+    startups: false,
   }
 ];
 
@@ -77,7 +77,7 @@ const Companies = () => (
           key={index}
           height={company.height}
           width={company.width}
-          isFortune={company.fortune}
+          isStartups={company.startups}
           isYC={company.yc}
           name={company.name}
           logo={company.logo}

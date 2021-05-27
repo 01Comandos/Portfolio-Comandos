@@ -3,7 +3,7 @@ import styles from "./Definition.module.css";
 const Definition = () => {
   return (
     <section className={styles.container}>
-      <img className={styles.logo} src="/logo/logo-white.svg" alt="Logotipo Comandos" width={192} height={42} />
+      <img className={styles.logo} src="/logo/logo-white.svg" alt="Comandos Logotipo" width={192} height={42} />
       <div>
         <p className={styles.description}>
           Comandos has more than 10 years of experience creating innovate products
