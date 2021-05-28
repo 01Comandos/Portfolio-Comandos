@@ -1,0 +1,100 @@
+.container {
+  background-color: white;
+  margin: 0 -1rem;
+  padding: 4rem 1rem 6rem 1rem;
+}
+
+.title {
+  color: var(--black-2);
+  font-size: 36px;
+  font-weight: 500;
+  letter-spacing: 0.15px;
+  margin: 0 0 1.1rem 0;
+}
+
+.description {
+  color: var(--black-3);
+  font-size: 16px;
+  line-height: 2.06;
+}
+
+.divider {
+    border-top: 1px solid var(--gray-3);
+}
+
+.icon {
+  cursor: pointer;
+  height: 30px;
+}
+
+.message {
+  margin: 3.5rem 0;
+}
+
+.goBack {
+  display: flex;
+  align-items: center;
+}
+
+.goBackText {
+  color: var(--black-2);
+  cursor: pointer;
+  border-bottom: 1px solid var(--green-1);
+  font-size: 18px;
+  margin-right: 1rem;
+  padding-bottom: 1rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin: 5.3rem 0 0 0;
+}
+
+.form > label {
+  color: var(--black-2);
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.39px;
+  margin-bottom: 1rem;
+}
+
+.form > input,
+.form > textarea {
+  border-radius: 4px;
+  border: solid 1px #dbe0e9;
+  background-color: white;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--black-2);
+  margin-bottom: 3.8rem;
+  padding: 1.2rem;
+}
+
+.form > textarea {
+  height: 410px;
+  line-height: 1.88;
+}
+
+.form > input:focus-visible,
+.form > textarea:focus-visible {
+  outline: none;
+}
+
+/* If input is empty */
+.form > input:placeholder-shown {
+  background-color: var(--gray-4);
+}
+
+.form > input::placeholder,
+.form > textarea::placeholder {
+  color: var(--gray-6);
+  font-family: Poppins;
+  font-weight: 300;
+}
+
+.send {
+  background-color: var(--green-1);
+  margin-top: 2rem;
+  width: 100%;
+}

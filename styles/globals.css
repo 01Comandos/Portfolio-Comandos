@@ -17,9 +17,13 @@
   --secondary: #ffbc00;
   --black-1: rgba(255, 255, 255, 0.09);
   --black-2: #1d262c;
+  --black-3: #333333;
   --gray-1: #b4c0ca;
   --gray-2: #cdcdcd;
   --gray-3: #eff2f8;
+  --gray-4: #f6f9fc;
+  --gray-5: #dbe0e9;
+  --gray-6: #97a5b4;
   --green-1: #57fbdb;
 }
 
@@ -38,24 +42,44 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-behance:before {
+.icon-arrow .path1:before {
   content: "\e900";
+  opacity: 0.0860;
 }
-.icon-github:before {
+.icon-arrow .path2:before {
   content: "\e901";
+  margin-left: -1em;
 }
-.icon-instagram:before {
+.icon-arrow .path3:before {
   content: "\e902";
+  margin-left: -1em;
 }
-.icon-linkedin:before {
+.icon-behance:before {
   content: "\e903";
 }
-.icon-menu:before {
+.icon-github:before {
   content: "\e904";
 }
-.icon-twitter:before {
+.icon-instagram:before {
   content: "\e905";
 }
+.icon-linkedin:before {
+  content: "\e906";
+}
+.icon-menu:before {
+  content: "\e907";
+}
+.icon-twitter:before {
+  content: "\e908";
+}
+.icon-up .path1:before {
+  content: "\e909";
+}
+.icon-up .path2:before {
+  content: "\e90a";
+  margin-left: -1em;
+}
+
 
 html,
 body {
