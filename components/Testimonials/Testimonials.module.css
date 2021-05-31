@@ -68,3 +68,9 @@
     line-height: 1.74;
   }
 }
+
+@media (min-width: 1201px) {
+  .container {
+    margin: 0 calc(-2rem + -8%);
+  }
+}

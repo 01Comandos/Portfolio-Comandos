@@ -18,3 +18,9 @@
     display: none;
   }
 }
+
+@media (min-width: 1201px) {
+  .container {
+    padding: 0 8%;
+  }
+}

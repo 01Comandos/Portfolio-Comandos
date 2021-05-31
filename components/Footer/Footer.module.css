@@ -27,3 +27,9 @@
     bottom: 25px;
   }
 }
+
+@media (min-width: 1201px) {
+  .container {
+    margin: 0 8% 2rem 8%;
+  }
+}
