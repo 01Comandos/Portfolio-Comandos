@@ -131,7 +131,6 @@
 
 @media (min-width: 769px) {
   .container {
-    background-color: white;
     padding: 4rem var(--padding-tablet) 6rem var(--padding-tablet);
   }
 }
@@ -160,5 +159,11 @@
 
   .send {
     margin-top: 0;
+  }
+}
+
+@media (min-width: 1201px) {
+  .container {
+    padding: 4rem var(--padding-desktop) 6rem var(--padding-desktop);
   }
 }
