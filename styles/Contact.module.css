@@ -60,6 +60,7 @@
 
 @media (min-width: 1025px) {
   .heroContainer {
+    align-items: center;
     flex-direction: row-reverse;
     flex-wrap: nowrap;
     justify-content: space-between;
