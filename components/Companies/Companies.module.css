@@ -1,6 +1,6 @@
 .container {
   color: var(--gray-1);
-  margin: 5rem 0;
+  margin: 3rem 0;
 }
 
 .title {
@@ -15,7 +15,7 @@
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
-  padding: 3rem 1rem ;
+  padding: 3rem 1rem 0rem 1rem;
   justify-content: flex-start;
 }
 

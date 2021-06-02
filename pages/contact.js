@@ -14,7 +14,7 @@ import styles from "../styles/Contact.module.css";
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="main">
+      <main className={styles.container}>
         <section className={styles.heroContainer}>
           <figure>
             <img src="/images/contact-hero.png" alt="Contact hero image" />
@@ -26,7 +26,7 @@ import styles from "../styles/Contact.module.css";
           </div>
         </section>
         <ContactForm />
-        <Testimonials />
+        {/* <Testimonials /> */}
       </main>
     </div>
   );

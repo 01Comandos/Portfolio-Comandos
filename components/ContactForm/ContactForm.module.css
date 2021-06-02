@@ -1,7 +1,6 @@
 .container {
   background-color: white;
-  margin: 0 -1rem;
-  padding: 4rem 1rem 6rem 1rem;
+  padding: 4rem var(--padding-mobile) 6rem var(--padding-mobile);
 }
 
 .title {
@@ -19,12 +18,16 @@
 }
 
 .divider {
-    border-top: 1px solid var(--gray-3);
+  border-top: 1px solid var(--gray-3);
 }
 
-.icon {
+.iconMobile {
   cursor: pointer;
   height: 30px;
+}
+
+.iconDesktop {
+  display: none;
 }
 
 .message {
@@ -45,13 +48,19 @@
   padding-bottom: 1rem;
 }
 
-.form {
+.form,
+.basicInfo,
+.messageContainer,
+.optionsContainer {
   display: flex;
   flex-direction: column;
-  margin: 5.3rem 0 0 0;
 }
 
-.form > label {
+.form sup {
+  color: var(--secondary);
+}
+
+.form label {
   color: var(--black-2);
   font-size: 16px;
   font-weight: 500;
@@ -59,8 +68,9 @@
   margin-bottom: 1rem;
 }
 
-.form > input,
-.form > textarea {
+.form input,
+.form textarea,
+.form select {
   border-radius: 4px;
   border: solid 1px #dbe0e9;
   background-color: white;
@@ -69,32 +79,86 @@
   color: var(--black-2);
   margin-bottom: 3.8rem;
   padding: 1.2rem;
+  font-family: Poppins;
 }
 
-.form > textarea {
+.form select {
+  padding: 1.2rem 3.5em 1.2rem 1.2rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("/icons/select-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+}
+
+.form textarea {
   height: 410px;
   line-height: 1.88;
 }
 
-.form > input:focus-visible,
-.form > textarea:focus-visible {
+.form input:focus-visible,
+.form textarea:focus-visible,
+.form select:focus-visible {
   outline: none;
 }
 
 /* If input is empty */
-.form > input:placeholder-shown {
+.form input:placeholder-shown {
   background-color: var(--gray-4);
 }
 
-.form > input::placeholder,
-.form > textarea::placeholder {
+.form input::placeholder,
+.form textarea::placeholder {
   color: var(--gray-6);
   font-family: Poppins;
   font-weight: 300;
 }
 
+.basicInfo {
+  margin-top: 4rem;
+}
+
 .send {
+  align-self: center;
   background-color: var(--green-1);
   margin-top: 2rem;
+  max-width: 350px;
   width: 100%;
+}
+
+@media (min-width: 769px) {
+  .container {
+    background-color: white;
+    padding: 4rem var(--padding-tablet) 6rem var(--padding-tablet);
+  }
+}
+
+@media (min-width: 1025px) {
+  .optionsContainer {
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .iconMobile {
+    display: none;
+  }
+
+  .iconDesktop {
+    display: inline-block;
+    height: 43px;
+    width: 43px;
+  }
+
+  .goBackText {
+    margin-left: 1rem;
+    padding-bottom: 0.35rem;
+  }
+
+  .send {
+    margin-top: 0;
+  }
 }
