@@ -50,7 +50,7 @@
 }
 
 @media (min-width: 769px) {
-  .heroContainer {
+  .container {
     padding: 6rem var(--padding-tablet) 0 var(--padding-tablet);
   }
 
@@ -61,13 +61,17 @@
 }
 
 @media (min-width: 1025px) {
+  .container {
+    padding: 8rem var(--padding-tablet) 0 var(--padding-tablet);
+  }
+  
   .heroContainer {
     align-items: center;
     flex-direction: row-reverse;
     flex-wrap: nowrap;
     justify-content: space-between;
     height: auto;
-    padding: 7rem 3rem 3rem 3rem;
+    padding: 0 0 3rem 0;
   }
 
   .heroContainer > div {
@@ -77,12 +81,16 @@
 }
 
 @media (min-width: 1201px) {
+  .container {
+    padding: 8rem var(--padding-desktop) 0 var(--padding-desktop);
+  }
+
   .heroContainer {
-    padding: 8rem var(--padding-desktop) 5rem var(--padding-desktop);
+    padding: 0 0 5rem 0;
   }
 
   .heroContainer figure {
     text-align: right;
-    margin: 2.8rem calc(var(--padding-desktop) * -1 - 1rem) 0 0;
+    margin: 2.8rem calc(var(--padding-desktop) * -1 - 2rem) 0 0;
   }
 }

@@ -134,6 +134,7 @@
 @media (min-width: 769px) {
   .container {
     padding: 4rem var(--padding-tablet) 6rem var(--padding-tablet);
+    margin: 0 calc(var(--padding-tablet) * -1);
   }
 }
 
@@ -167,5 +168,6 @@
 @media (min-width: 1201px) {
   .container {
     padding: 4rem var(--padding-desktop) 6rem var(--padding-desktop);
+    margin: 0 calc(var(--padding-desktop) * -1 - 2rem);
   }
 }
