@@ -15,10 +15,6 @@ const ContactForm = () => {
     }
   }, [state]);
 
-  const goTop = () => {
-    window.scrollTo(0, 0);
-  };
-
   return (
     <section className={styles.container} id="form-top">
       <form className={styles.form} onSubmit={handleSubmit}>
@@ -91,13 +87,13 @@ const ContactForm = () => {
         </section>
 
         <section className={styles.optionsContainer}>
-          <div className={styles.goBack}>
+          <a className={styles.goBack} href="#form-top">
             <img src="/icons/green-up.svg" alt="Up arrow" className={styles.iconDesktop} />
-            <a className={styles.goBackText} href="#form-top">
+            <span className={styles.goBackText}>
               Go back to the top of the form
-            </a>
+            </span>
             <img src="/icons/up.svg" alt="Up arrow" className={styles.iconMobile} />
-          </div>
+          </a>
 
           <button
             className={styles.send}

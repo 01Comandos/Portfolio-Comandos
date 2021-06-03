@@ -1,6 +1,5 @@
 .container {
-  /* background-color: var(--tertiary); */
-  margin: 0 -1rem;
+  margin: 0 calc(var(--padding-mobile) * -1);
   padding: 5rem 1.5rem;
 }
 

@@ -1,6 +1,7 @@
 .container {
   background-color: white;
   padding: 4rem var(--padding-mobile) 6rem var(--padding-mobile);
+  margin: 0 calc(var(--padding-mobile) * -1);
 }
 
 .title {

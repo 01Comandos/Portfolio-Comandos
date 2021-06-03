@@ -1,10 +1,12 @@
+.container {
+  padding: 5rem var(--padding-mobile) 0 var(--padding-mobile);
+}
+
 .heroContainer {
   display: flex;
   flex-direction: column;
   height: 85vh;
   justify-content: center;
-  overflow: hidden;
-  padding: 5rem var(--padding-mobile) 0 var(--padding-mobile);
 }
 
 .heroContainer img {

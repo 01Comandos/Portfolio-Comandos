@@ -19,6 +19,7 @@
 
 .knowMore {
   align-items: center;
+  cursor: pointer;
   display: flex;
   padding: 1rem 0 4rem 0;
 }

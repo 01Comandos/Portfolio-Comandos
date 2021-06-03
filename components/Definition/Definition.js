@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./Definition.module.css";
 
 const Definition = () => {
@@ -18,10 +19,12 @@ const Definition = () => {
             designers and developers to achieve the maximum potential of your
             idea.
           </p>
-          <div className={styles.knowMore}>
-            <span>I want to know more</span>
-            <img src="/icons/icon-arrow.svg" />
-          </div>
+          <Link href="/contact">
+            <div className={styles.knowMore}>
+              <span>I want to know more</span>
+              <img src="/icons/icon-arrow.svg" />
+            </div>
+          </Link>
         </div>
       </section>
       <div className={styles.horizontalLine}></div>
