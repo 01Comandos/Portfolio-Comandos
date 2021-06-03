@@ -50,7 +50,7 @@
 }
 
 .form,
-.basicInfo,
+.formField,
 .messageContainer,
 .optionsContainer {
   display: flex;
@@ -139,10 +139,8 @@
 }
 
 @media (min-width: 1025px) {
-  .optionsContainer {
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
+  .divider {
+    display: none;
   }
 
   .iconMobile {
@@ -163,11 +161,57 @@
   .send {
     margin-top: 0;
   }
+
+  .form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .basicInfo {
+    margin-top: 0;
+  }
+
+  .messageContainer {
+    align-items: flex-start;
+    flex-direction: row;
+    flex-basis: 100%;
+    justify-content: space-between;
+  }
+
+  .messageContainer > h2,
+  .whoAreYou {
+    flex-basis: 28%;
+    margin-top: 0;
+  }
+
+  .messageContainer > textarea,
+  .basicInfo {
+    flex-basis: 62%;
+  }
+
+  .optionsContainer {
+    align-items: center;
+    flex-basis: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 @media (min-width: 1201px) {
   .container {
     padding: 4rem var(--padding-desktop) 6rem var(--padding-desktop);
     margin: 0 calc(var(--padding-desktop) * -1 - 2rem);
+  }
+
+  .basicInfo {
+    display: grid;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem 4rem;
+  }
+
+  .messageContainer {
+    margin: 5rem 0;
   }
 }

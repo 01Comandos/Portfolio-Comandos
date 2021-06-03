@@ -18,7 +18,7 @@ const ContactForm = () => {
   return (
     <section className={styles.container} id="form-top">
       <form className={styles.form} onSubmit={handleSubmit}>
-        <section>
+        <section className={styles.whoAreYou}>
           <h2 className={styles.title}>Who are you?</h2>
           <p className={styles.description}>
             The more details you include, the easier it will be for us to get
@@ -26,50 +26,63 @@ const ContactForm = () => {
           </p>
         </section>
         <section className={styles.basicInfo}>
-          <label htmlFor="name">
-            My name is <small>REQUIRED</small>
-          </label>
-          <input
-            placeholder="Ex.: Antonio De La Rosa"
-            id="name"
-            type="text"
-            name="name"
-            required
-          />
+          <div className={styles.formField}>
+            <label htmlFor="name">
+              My name is <small>REQUIRED</small>
+            </label>
+            <input
+              placeholder="Ex.: Antonio De La Rosa"
+              id="name"
+              type="text"
+              name="name"
+              required
+            />
+          </div>
 
-          <label htmlFor="email">
-            My email is <small>REQUIRED</small>
-          </label>
-          <input
-            id="email"
-            placeholder="Ex.: a.delarosa@mycompany.com"
-            type="email"
-            name="email"
-            required
-          />
+          <div className={styles.formField}>
+            <label htmlFor="email">
+              My email is <small>REQUIRED</small>
+            </label>
+            <input
+              id="email"
+              placeholder="Ex.: a.delarosa@mycompany.com"
+              type="email"
+              name="email"
+              required
+            />
+          </div>
+          <div className={styles.formField}>
+            <label htmlFor="company">
+              I’m working for the following company
+            </label>
+            <input type="text" placeholder="Company name" name="company" />
+          </div>
 
-          <label htmlFor="company">I’m working for the following company</label>
-          <input type="text" placeholder="Company name" name="company" />
+          <div className={styles.formField}>
+            <label htmlFor="role">My role is</label>
+            <input type="text" placeholder="Ex.: Product Manager" name="role" />
+          </div>
 
-          <label htmlFor="role">My role is</label>
-          <input type="text" placeholder="Ex.: Product Manager" name="role" />
+          <div className={styles.formField}>
+            <label htmlFor="need">I’m in need of a</label>
+            <select name="need">
+              <option>Mobile App</option>
+              <option>Web App</option>
+              <option>Product Design</option>
+              <option>MVP</option>
+              <option>Other</option>
+            </select>
+          </div>
 
-          <label htmlFor="need">I’m in need of a</label>
-          <select name="need">
-            <option>Mobile App</option>
-            <option>Web App</option>
-            <option>Product Design</option>
-            <option>MVP</option>
-            <option>Other</option>
-          </select>
-
-          <label htmlFor="budget">My budget is around</label>
-          <select placeholder="Range of budget" name="budget">
-            <option>Less than $ 5.000</option>
-            <option>$ 5.000 to $ 10.000</option>
-            <option>$ 10.000 to $ 50.000</option>
-            <option>Greater than $ 50.000</option>
-          </select>
+          <div className={styles.formField}>
+            <label htmlFor="budget">My budget is around</label>
+            <select placeholder="Range of budget" name="budget">
+              <option>Less than $ 5.000</option>
+              <option>$ 5.000 to $ 10.000</option>
+              <option>$ 10.000 to $ 50.000</option>
+              <option>Greater than $ 50.000</option>
+            </select>
+          </div>
         </section>
 
         <div className={styles.divider}></div>
@@ -88,11 +101,19 @@ const ContactForm = () => {
 
         <section className={styles.optionsContainer}>
           <a className={styles.goBack} href="#form-top">
-            <img src="/icons/green-up.svg" alt="Up arrow" className={styles.iconDesktop} />
+            <img
+              src="/icons/green-up.svg"
+              alt="Up arrow"
+              className={styles.iconDesktop}
+            />
             <span className={styles.goBackText}>
               Go back to the top of the form
             </span>
-            <img src="/icons/up.svg" alt="Up arrow" className={styles.iconMobile} />
+            <img
+              src="/icons/up.svg"
+              alt="Up arrow"
+              className={styles.iconMobile}
+            />
           </a>
 
           <button
