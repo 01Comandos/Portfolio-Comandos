@@ -56,8 +56,9 @@
   flex-direction: column;
 }
 
-.form sup {
+.form small {
   color: var(--secondary);
+  margin-left: 0.5rem;
 }
 
 .form label {

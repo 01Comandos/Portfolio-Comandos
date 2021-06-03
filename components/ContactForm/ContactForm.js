@@ -31,7 +31,7 @@ const ContactForm = () => {
         </section>
         <section className={styles.basicInfo}>
           <label htmlFor="name">
-            My name is <sup>*</sup>
+            My name is <small>REQUIRED</small>
           </label>
           <input
             placeholder="Ex.: Antonio De La Rosa"
@@ -42,7 +42,7 @@ const ContactForm = () => {
           />
 
           <label htmlFor="email">
-            My email is <sup>*</sup>
+            My email is <small>REQUIRED</small>
           </label>
           <input
             id="email"
@@ -80,7 +80,7 @@ const ContactForm = () => {
 
         <section className={styles.messageContainer}>
           <h2 className={`${styles.title} ${styles.message}`}>
-            What’s on your mind? <sup>*</sup>
+            What’s on your mind? <small>REQUIRED</small>
           </h2>
           <textarea
             name="message"

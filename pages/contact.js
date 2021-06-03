@@ -22,7 +22,7 @@ import styles from "../styles/Contact.module.css";
           <div>
             <h1 className={styles.heroTitle}>Let's <span>Talk</span>.</h1>
             <p className={styles.heroDescription}>Let us know who you are and what you’re up to.</p>
-            <h3 className={styles.heroSubtitle}>check out my methodology ></h3>
+            {/* <h3 className={styles.heroSubtitle}>check out my methodology ></h3> */}
           </div>
         </section>
         <ContactForm />
