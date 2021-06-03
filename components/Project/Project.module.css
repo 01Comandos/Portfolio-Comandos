@@ -27,6 +27,17 @@
   display: none;
 }
 
+.textContainer {
+  align-items: center;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.textContainer > p {
+  flex-basis: 75%;
+}
+
 @media (min-width: 769px) {
   .pictureMobile {
     display: none;

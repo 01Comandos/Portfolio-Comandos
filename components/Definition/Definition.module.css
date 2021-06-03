@@ -1,7 +1,7 @@
 .container {
   box-sizing: border-box;
   color: white;
-  padding: 5rem 0;
+  padding: 5rem 0 0 0;
   overflow: hidden;
 }
 
@@ -14,7 +14,7 @@
 .horizontalLine {
   border-bottom: 1px solid var(--gray-3);
   opacity: 0.21;
-  margin: 0 -1rem;
+  margin: 3rem -1rem 5rem -1rem;
 }
 
 .knowMore {

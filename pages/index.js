@@ -6,9 +6,10 @@ import Expertise from "../components/Expertise/Expertise";
 import Testimonials from "../components/Testimonials/Testimonials";
 import Definition from "../components/Definition/Definition";
 import Contact from "../components/Contact/Contact";
+import { isMobile } from "../utils";
 import styles from "../styles/Home.module.css";
 
-export default function Home() {
+const Home = ({ isMobile }) => {
   return (
     <div>
       <Head>
@@ -24,7 +25,7 @@ export default function Home() {
         <div className={styles.verticalLine}></div>
         <Companies />
         <div className={styles.verticalLine}></div>
-        <Projects />
+        <Projects isMobile={isMobile} />
         <div className={styles.verticalLine}></div>
         <Expertise />
         <Testimonials />
@@ -33,4 +34,14 @@ export default function Home() {
       </main>
     </div>
   );
-}
+};
+
+export const getServerSideProps = async ({ req }) => {
+  return {
+    props: {
+      isMobile: isMobile(req),
+    },
+  };
+};
+
+export default Home;

@@ -2,7 +2,7 @@ import Project from "../Project/Project";
 import projectsList from "../../content/projects.json"
 import styles from "./Projects.module.css";
 
-const Projects = () => (
+const Projects = ({ isMobile }) => (
   <section className={styles.container}>
     <h2 className={styles.title}>
       Looks like <span>magic</span>, works like <span>science</span>.
@@ -15,6 +15,7 @@ const Projects = () => (
       {projectsList.map((project, index) => (
         <div className={styles.project} key={index}>
           <Project
+            isMobile={isMobile}
             name={project.name}
             pictures={project.pictures}
             description={project.description}
