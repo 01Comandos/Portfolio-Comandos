@@ -56,6 +56,11 @@
     font-size: 16px;
     margin: 0 1.5rem;
   }
+
+  .menu > a:hover {
+    color: var(--secondary);
+    transition: 0.2s linear;
+  }
 }
 
 @media (min-width: 1201px) {
