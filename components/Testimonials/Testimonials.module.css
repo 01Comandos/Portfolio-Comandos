@@ -1,7 +1,15 @@
 .container {
-  background-color: var(--green-1);
+  /* background-color: var(--tertiary); */
   margin: 0 -1rem;
   padding: 5rem 1.5rem;
+}
+
+.tertiaryContainer {
+  background-color: var(--tertiary);
+}
+
+.infoContainer {
+  background-color: var(--blue-1);
 }
 
 .customers {

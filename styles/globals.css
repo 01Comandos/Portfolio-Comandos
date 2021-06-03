@@ -16,16 +16,17 @@
 :root {
   --primary: #000;
   --secondary: #ffbc00;
+  --tertiary: #57fbdb;
   --black-1: rgba(255, 255, 255, 0.09);
   --black-2: #1d262c;
   --black-3: #333333;
+  --blue-1: #afe7fb;
   --gray-1: #b4c0ca;
   --gray-2: #cdcdcd;
   --gray-3: #eff2f8;
   --gray-4: #f6f9fc;
   --gray-5: #dbe0e9;
   --gray-6: #97a5b4;
-  --green-1: #57fbdb;
   --padding-mobile: 1rem;
   --padding-tablet: 2.3rem;
   --padding-desktop: 8%;

@@ -13,9 +13,9 @@ const testimonialsList = [
   },
 ];
 
-const Testimonials = () => {
+const Testimonials = ({ color = "tertiary" }) => {
   return (
-    <section className={styles.container}>
+    <section className={`${styles.container} ${styles[`${color}Container`]}`}>
       {testimonialsList.map((testimonial, index) => (
         <div key={index}>
           <h3 className={styles.title}>{testimonial.title}</h3>

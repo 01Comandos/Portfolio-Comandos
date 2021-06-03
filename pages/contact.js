@@ -26,7 +26,7 @@ import styles from "../styles/Contact.module.css";
           </div>
         </section>
         <ContactForm />
-        {/* <Testimonials /> */}
+        <Testimonials color="info" />
       </main>
     </div>
   );
