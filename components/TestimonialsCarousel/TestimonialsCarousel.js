@@ -30,13 +30,13 @@ const TestimonialCarousel = ({ testimonials, color = "tertiary" }) => {
 
   return (
     <section className={`${styles.container} ${styles[`${color}Container`]}`}>
+      <h3 className={styles.title}>Impacting teams, products and thousands of people</h3>
       <div
         className={styles.slideshowSlider}
         style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
       >
         {testimonials.map((testimonial, index) => (
-          <article key={index} className={styles.slide}>
-            {testimonial.title && <h3 className={styles.title}>{testimonial.title}</h3>}
+          <article key={index} className={styles.slide}>            
             <p className={styles.text}>{testimonial.feedback}</p>
             <div className={styles.customers}>
               <img

@@ -1,6 +1,5 @@
 .container {
   width: 100%;
-  overflow: hidden;
   cursor: pointer;
 }
 
@@ -50,9 +49,10 @@
     min-width: 320px;
     max-width: 100%;
     transition: all .2s ease-in-out;
+    margin: 0 auto;
   }
-
+  
   .animation {
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
 }

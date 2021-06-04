@@ -11,7 +11,10 @@ const Project = ({ isMobile, pictures, name, description }) => {
       onMouseLeave={() => setHover(false)}
     >
       <img src={pictures.mobile} className={styles.pictureMobile} />
-      <img src={pictures.desktop} className={`${styles.picture} ${isHover ? styles.animation : null }`} />
+      <img
+        src={pictures.desktop}
+        className={`${styles.picture} ${isHover ? styles.animation : null}`}
+      />
       <h4 className={styles.title}>{name}</h4>
       <div className={styles.textContainer}>
         <p className={styles.description}>{description}</p>
