@@ -93,7 +93,7 @@
   -moz-appearance: none;
   background-image: url("/icons/select-arrow.svg");
   background-repeat: no-repeat;
-  background-position: 95% 50%;
+  background-position: calc(100% - 1.2rem) 50%;
 }
 
 .form textarea {
