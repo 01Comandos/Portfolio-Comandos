@@ -1,13 +1,14 @@
 .container {
   width: 100%;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .title {
   font-size: 24px;
   font-weight: 500;
   letter-spacing: 0.1px;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
 }
 
 .description {
@@ -44,7 +45,6 @@
   }
 
   .picture {
-    cursor: pointer;
     display: inline;
     object-fit: contain;
     min-width: 320px;
@@ -52,7 +52,7 @@
     transition: all .2s ease-in-out;
   }
 
-  .picture:hover {
+  .animation {
     transform: scale(1.1);
   }
 }
