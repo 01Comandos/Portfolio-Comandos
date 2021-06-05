@@ -11,18 +11,18 @@
   background-color: var(--blue-1);
 }
 
-.slideshowSlider {
-  display: flex;
-	flex-wrap: nowrap;
-	flex-direction: row;
-  width: 100%;
-  transition: ease 1000ms;
-}
-
 .slide {
   height: auto;
   width: 100%;
-	flex-shrink: 0;
+  opacity: 0;
+  height: 0;
+}
+
+.slide.active {
+  height: min-content;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 1.2s linear;
 }
 
 /* Buttons */
@@ -45,6 +45,7 @@
 .slideshowDot.active {
   background-color: var(--black-2);
   width: 50px;
+  transition: 0.1s linear;
 }
 
 .customers {
@@ -92,7 +93,7 @@
 
 .text {
   color: var(--black-2);
-  font-size: 21px!important;
+  font-size: 21px !important;
   line-height: 1.9;
 }
 
@@ -106,8 +107,7 @@
   }
 
   .text {
-    font-size: 23px!important;
+    font-size: 23px !important;
     line-height: 1.74;
   }
 }
-
