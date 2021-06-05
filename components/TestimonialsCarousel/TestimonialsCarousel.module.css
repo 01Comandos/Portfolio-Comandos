@@ -1,6 +1,5 @@
 .container {
   overflow: hidden;
-  margin: 0 calc(var(--padding-mobile) * -1);
   padding-bottom: 5rem;
 }
 
@@ -100,7 +99,6 @@
 
 @media (min-width: 769px) {
   .container {
-    margin: 0 -2.3rem;
     padding-bottom: 8rem;
   }
 
@@ -115,12 +113,6 @@
   .text {
     font-size: 23px!important;
     line-height: 1.74;
-  }
-}
-
-@media (min-width: 1201px) {
-  .container {
-    margin: 0 calc(-1.5rem + -8%);
   }
 }
 
