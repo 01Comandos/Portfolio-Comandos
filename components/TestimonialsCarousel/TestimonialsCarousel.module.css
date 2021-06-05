@@ -11,15 +11,21 @@
   background-color: var(--blue-1);
 }
 
+.slideshowSlider {
+  display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+  width: 100%;
+}
+
 .slide {
-  height: auto;
   width: 100%;
   opacity: 0;
-  height: 0;
+  height: auto;
+  flex-shrink: 0;
 }
 
 .slide.active {
-  height: min-content;
   visibility: visible;
   opacity: 1;
   transition: opacity 1.2s linear;

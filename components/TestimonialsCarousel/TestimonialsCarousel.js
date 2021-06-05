@@ -35,31 +35,29 @@ const TestimonialCarousel = ({ testimonials, color = "tertiary" }) => {
       <h3 className={styles.title}>
         Impacting teams, products and thousands of people
       </h3>
-      <div className={styles.slideshowSlider}>
+      <div className={styles.slideshowSlider} style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}>
         {testimonials.map((testimonial, idx) => (
           <article
-          key={idx}
-          className={`${styles.slide} ${
-            index === idx ? styles.active : ""
-          }`}
-        >
-          <p className={styles.text}>{testimonial.feedback}</p>
-          <div className={styles.customers}>
-            <img
-              className={styles.customerPicture}
-              src={testimonial.customer.picture}
-              alt={testimonial.customer.name}
-            />
-            <div className={styles.customerInfo}>
-              <span className={styles.customerName}>
-                {testimonial.customer.name}
-              </span>
-              <span className={styles.customerPosition}>
-                {testimonial.customer.position}
-              </span>
+            key={idx}
+            className={`${styles.slide} ${index === idx ? styles.active : ""}`}
+          >
+            <p className={styles.text}>{testimonial.feedback}</p>
+            <div className={styles.customers}>
+              <img
+                className={styles.customerPicture}
+                src={testimonial.customer.picture}
+                alt={testimonial.customer.name}
+              />
+              <div className={styles.customerInfo}>
+                <span className={styles.customerName}>
+                  {testimonial.customer.name}
+                </span>
+                <span className={styles.customerPosition}>
+                  {testimonial.customer.position}
+                </span>
+              </div>
             </div>
-          </div>
-        </article>
+          </article>
         ))}
       </div>
 
@@ -72,7 +70,7 @@ const TestimonialCarousel = ({ testimonials, color = "tertiary" }) => {
             }`}
             onClick={() => {
               setIndex(idx);
-              console.log('holi');
+              console.log("holi");
             }}
           ></div>
         ))}
