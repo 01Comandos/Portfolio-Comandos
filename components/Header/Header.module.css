@@ -68,6 +68,6 @@
 
 @media (min-width: 1201px) {
   .container {
-    padding: 1.5rem 7rem;
+    padding: 1.5rem var(--padding-large);
   }
 }

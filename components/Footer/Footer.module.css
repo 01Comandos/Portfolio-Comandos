@@ -2,7 +2,7 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  margin: 3rem 20px 2rem 20px;
+  margin: 3rem 0 2rem 0;
   position: relative;
 }
 
@@ -19,7 +19,7 @@
 
 @media (min-width: 769px) {
   .container {
-    margin: 0 2.3rem 2rem 2.3rem;
+    margin-bottom: 2rem;
   }
 
   .container > ul {
@@ -30,6 +30,6 @@
 
 @media (min-width: 1201px) {
   .container {
-    margin: 0 8% 2rem 8%;
+    margin-bottom: 2rem;
   }
 }

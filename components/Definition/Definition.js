@@ -4,7 +4,7 @@ import styles from "./Definition.module.css";
 const Definition = () => {
   return (
     <>
-      <section className={styles.container}>
+      <section className={`${styles.container} padding-x`}>
         <img
           className={styles.logo}
           src="/logo/logo-white.svg"

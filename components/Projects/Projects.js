@@ -3,7 +3,7 @@ import projectsList from "../../content/projects.json"
 import styles from "./Projects.module.css";
 
 const Projects = ({ isMobile }) => (
-  <section className={styles.container}>
+  <section className={`${styles.container} padding-x`}>
     <h2 className={styles.title}>
       Looks like <span>magic</span>, works like <span>science</span>.
     </h2>

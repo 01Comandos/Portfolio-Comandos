@@ -69,7 +69,7 @@ const companiesList = [
 ];
 
 const Companies = () => (
-  <section className={styles.container}>
+  <section className={`${styles.container} padding-x`}>
     <h3 className={styles.title}>Incredible startups that rely on Comandos</h3>
     <div className={styles.logosContainer}>
       {companiesList.map((company, index) => (

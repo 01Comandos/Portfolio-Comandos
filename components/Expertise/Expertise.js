@@ -12,7 +12,7 @@ const skills = [
 
 const Expertise = () => {
   return (
-    <section className={styles.container}>
+    <section className={`${styles.container} padding-x`}>
       <h2 className={styles.title}>
         <span>Expert</span>ise
       </h2>

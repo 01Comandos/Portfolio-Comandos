@@ -1,7 +1,7 @@
 .container {
   box-sizing: border-box;
   color: white;
-  padding: 5rem 0 0 0;
+  padding-top: 5rem;
   overflow: hidden;
 }
 
@@ -47,10 +47,24 @@
   .description {
     margin: 0;
   }
+
+  .horizontalLine {
+    margin: 3rem var(--padding-tablet) 5rem var(--padding-tablet);
+  }
 }
 
 @media (min-width: 1025px) {
   .container > div {
     max-width: 70%;
+  }
+}
+
+@media (min-width: 1201px) {
+  .container > div {
+    max-width: 70%;
+  }
+
+  .horizontalLine {
+    margin: 3rem var(--padding-large) 5rem var(--padding-large);
   }
 }

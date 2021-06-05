@@ -29,7 +29,7 @@ const TestimonialCarousel = ({ testimonials, color = "tertiary" }) => {
   }, [index]);
 
   return (
-    <section className={`${styles.container} ${styles[`${color}Container`]}`}>
+    <section className={`${styles.container} ${styles[`${color}Container`]} padding-x`}>
       <h3 className={styles.title}>Impacting teams, products and thousands of people</h3>
       <div
         className={styles.slideshowSlider}

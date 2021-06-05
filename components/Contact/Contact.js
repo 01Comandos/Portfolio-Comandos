@@ -2,7 +2,7 @@ import Link from "next/link";
 import styles from "./Contact.module.css"
 
 const Contact = () => {
-  return <section className={styles.container}>
+  return <section className={`${styles.container} padding-x`}>
     <div className={styles.description}>
       <h2 className={styles.title}>Let’s <span>talk</span></h2>
       <p className={styles.text}>Let us know who you are and what you’re up to.</p>
