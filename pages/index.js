@@ -21,7 +21,7 @@ const Home = ({ isMobile }) => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
+      <main className="pageContainer">
         <Hero />
         <div className={styles.verticalLine}></div>
         <Companies />

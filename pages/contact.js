@@ -15,7 +15,7 @@ import styles from "../styles/Contact.module.css";
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
+      <main className="pageContainer">
         <section className={styles.heroContainer}>
           <figure>
             <img src="/images/contact-hero.png" alt="Contact hero image" />

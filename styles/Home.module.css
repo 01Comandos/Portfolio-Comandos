@@ -1,7 +1,3 @@
-.container {
-  padding: 5rem var(--padding-mobile) 0 var(--padding-mobile);
-}
-
 .verticalLine {
   border-right: solid 1px rgba(239, 242, 248, 0.21);
   box-sizing: border-box;
@@ -10,23 +6,7 @@
 }
 
 @media (min-width: 769px) {
-  .container {
-    padding: 6rem var(--padding-tablet) 0 var(--padding-tablet);
-  }
-
   .verticalLine {
     display: none;
-  }
-}
-
-@media (min-width: 1025px) {
-  .container {
-    padding: 8rem var(--padding-tablet) 0 var(--padding-tablet);
-  }
-}
-
-@media (min-width: 1201px) {
-  .container {
-    padding: 8rem var(--padding-desktop) 0 var(--padding-desktop);
   }
 }

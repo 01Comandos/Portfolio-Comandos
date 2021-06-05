@@ -145,6 +145,22 @@ button.black:hover {
   transition: 0.2s linear;
 }
 
-.main {
-  padding: 0 1rem;
+.pageContainer {
+  padding-top: 4.2rem;
+}
+
+@media (min-width: 769px) {
+  .pageContainer {
+    padding-top: 6rem;
+  }
+
+  .verticalLine {
+    display: none;
+  }
+}
+
+@media (min-width: 1025px) {
+  .pageContainer {
+    padding-top: 8rem;
+  }
 }
