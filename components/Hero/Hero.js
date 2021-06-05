@@ -2,7 +2,7 @@ import SocialNetworks from "../SocialNetworks/SocialNetworks";
 import styles from "./Hero.module.css";
 
 const Hero = () => (
-  <section className={styles.container}>
+  <section className={`${styles.container} padding-x`}>
     <figure><img alt="Hero image" className={styles.picture} src="/images/coming-soon-mobile.png" /></figure>
     <div className={styles.textContainer}>
       <h1 className={styles.title}>Innovating experiences for humans</h1>
