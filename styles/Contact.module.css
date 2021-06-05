@@ -1,7 +1,3 @@
-.container {
-  padding: 5rem var(--padding-mobile) 0 var(--padding-mobile);
-}
-
 .heroContainer {
   display: flex;
   flex-direction: column;
@@ -16,7 +12,6 @@
 
 .heroContainer figure {
   text-align: right;
-  margin: 2.8rem calc(var(--padding-mobile) * -1) 0 0;
 }
 
 .heroTitle {
@@ -51,21 +46,12 @@
 }
 
 @media (min-width: 769px) {
-  .container {
-    padding: 6rem var(--padding-tablet) 0 var(--padding-tablet);
-  }
-
   .heroContainer figure {
     text-align: right;
-    margin: 2.8rem calc(var(--padding-tablet) * -1) 0 0;
   }
 }
 
 @media (min-width: 1025px) {
-  .container {
-    padding: 8rem var(--padding-tablet) 0 var(--padding-tablet);
-  }
-  
   .heroContainer {
     align-items: center;
     flex-direction: row-reverse;
@@ -82,16 +68,11 @@
 }
 
 @media (min-width: 1201px) {
-  .container {
-    padding: 8rem var(--padding-desktop) 0 var(--padding-desktop);
-  }
-
   .heroContainer {
     padding: 0 0 5rem 0;
   }
 
   .heroContainer figure {
     text-align: right;
-    margin: 2.8rem calc(var(--padding-desktop) * -1 - 2rem) 0 0;
   }
 }

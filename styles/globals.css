@@ -29,7 +29,7 @@
   --gray-6: #97a5b4;
   --padding-mobile: 1rem;
   --padding-tablet: 2.3rem;
-  --padding-desktop: 8%;
+  --padding-large: 5rem;
 }
 
 [class^="icon-"],
@@ -149,18 +149,28 @@ button.black:hover {
   padding-top: 4.2rem;
 }
 
+.padding-x {
+  padding: 0 var(--padding-mobile);
+}
+
 @media (min-width: 769px) {
   .pageContainer {
     padding-top: 6rem;
   }
 
-  .verticalLine {
-    display: none;
+  .padding-x {
+    padding: 0 var(--padding-tablet);
   }
 }
 
 @media (min-width: 1025px) {
   .pageContainer {
     padding-top: 8rem;
+  }
+}
+
+@media (min-width: 1201px) {
+  .padding-x {
+    padding: 0 var(--padding-large);
   }
 }

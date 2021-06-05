@@ -23,7 +23,6 @@
   height: auto;
   width: 100%;
 	flex-shrink: 0;
-  padding: 0rem 1.5rem;
 }
 
 /* Buttons */
@@ -100,10 +99,6 @@
 @media (min-width: 769px) {
   .container {
     padding-bottom: 8rem;
-  }
-
-  .slide {
-    padding: 0rem 5rem;
   }
 
   .title {

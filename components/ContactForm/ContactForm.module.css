@@ -1,6 +1,5 @@
 .container {
   background-color: white;
-  padding: 4rem var(--padding-mobile) 6rem var(--padding-mobile);
 }
 
 .title {
@@ -130,12 +129,6 @@
   width: 100%;
 }
 
-@media (min-width: 769px) {
-  .container {
-    padding: 4rem var(--padding-tablet) 6rem var(--padding-tablet);
-  }
-}
-
 @media (min-width: 1025px) {
   .divider {
     display: none;
@@ -197,10 +190,6 @@
 }
 
 @media (min-width: 1201px) {
-  .container {
-    padding: 4rem var(--padding-desktop) 6rem var(--padding-desktop);
-  }
-
   .basicInfo {
     display: grid;
     display: grid;
