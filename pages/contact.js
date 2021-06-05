@@ -16,7 +16,7 @@ import styles from "../styles/Contact.module.css";
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="pageContainer">
-        <section className={styles.heroContainer}>
+        <section className={`${styles.heroContainer} padding-x`}>
           <figure>
             <img src="/images/contact-hero.png" alt="Contact hero image" />
           </figure>

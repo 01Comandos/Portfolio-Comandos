@@ -16,7 +16,7 @@ const ContactForm = () => {
   }, [state]);
 
   return (
-    <section className={styles.container} id="form-top">
+    <section className={`${styles.container} padding-x`} id="form-top">
       <form className={styles.form} onSubmit={handleSubmit}>
         <section className={styles.whoAreYou}>
           <h2 className={styles.title}>Who are you?</h2>

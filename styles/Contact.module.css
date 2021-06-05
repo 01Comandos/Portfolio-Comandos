@@ -12,6 +12,7 @@
 
 .heroContainer figure {
   text-align: right;
+  margin-right: calc(-1 * var(--padding-mobile));
 }
 
 .heroTitle {
@@ -47,7 +48,7 @@
 
 @media (min-width: 769px) {
   .heroContainer figure {
-    text-align: right;
+    margin-right: calc(-1 * var(--padding-tablet));
   }
 }
 
@@ -58,7 +59,7 @@
     flex-wrap: nowrap;
     justify-content: space-between;
     height: auto;
-    padding: 0 0 3rem 0;
+    padding-bottom: 3rem;
   }
 
   .heroContainer > div {
@@ -69,10 +70,10 @@
 
 @media (min-width: 1201px) {
   .heroContainer {
-    padding: 0 0 5rem 0;
+    padding-bottom: 5rem;
   }
 
   .heroContainer figure {
-    text-align: right;
+    margin-right: calc(-1 * var(--padding-large));
   }
 }

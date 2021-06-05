@@ -1,5 +1,7 @@
 .container {
   background-color: white;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .title {
@@ -189,7 +191,19 @@
   }
 }
 
+@media (min-width: 769px) {
+  .container {
+    padding-top: 5.5rem;
+    padding-bottom: 5.5rem;
+  }
+}
+
 @media (min-width: 1201px) {
+  .container {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+
   .basicInfo {
     display: grid;
     display: grid;
