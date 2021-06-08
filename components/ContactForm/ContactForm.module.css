@@ -131,6 +131,23 @@
   width: 100%;
 }
 
+@media (min-width: 769px) {
+  .container {
+    padding-top: 5.5rem;
+    padding-bottom: 5.5rem;
+  }
+
+  .optionsContainer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .send {
+    margin-top: 0;
+    max-width: 200px;
+  }
+}
+
 @media (min-width: 1025px) {
   .divider {
     display: none;
@@ -188,13 +205,6 @@
     flex-basis: 100%;
     flex-direction: row;
     justify-content: space-between;
-  }
-}
-
-@media (min-width: 769px) {
-  .container {
-    padding-top: 5.5rem;
-    padding-bottom: 5.5rem;
   }
 }
 
