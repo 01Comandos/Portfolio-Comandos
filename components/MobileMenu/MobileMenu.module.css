@@ -1,6 +1,10 @@
 .container {
   background-color: black;
   width: 100%;
+  background-image: url("/images/line-bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: 90%;
 }
 
 .container.inactive {
@@ -47,7 +51,7 @@
 
 .menuItem {
   color: white;
-  font-size: 38px;
+  font-size: 32px;
   font-weight: 500;
 }
 
@@ -57,7 +61,7 @@
 
 @keyframes moveUp {
   0% {
-    transform:translateY(150px);
+    transform:translateY(100px);
   }
   100% {
     transform:translateY(0);
@@ -73,6 +77,12 @@
   }
 }
 
+@media (min-width: 500px) {
+  .container {
+    background-position-y: 120%;
+  }
+}
+
 @media (min-width: 769px) {
   .logoMobile {
     display: none;
@@ -80,5 +90,15 @@
 
   .logo {
     display: inline-block;
+  }
+
+  .container {
+    background-position-y: 150%;
+  }
+}
+
+@media (min-width: 900px) {
+  .container {
+    background-position-y: 180%;
   }
 }
