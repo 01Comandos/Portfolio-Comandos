@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="37" height="37" viewBox="0 0 37 37">
+    <defs>
+        <path id="enceinfkwa" d="M18.634.277c-.37-.37-.967-.37-1.337 0L9.456 8.12 1.614.277c-.37-.37-.967-.37-1.337 0s-.37.968 0 1.337L8.12 9.456.277 17.297c-.37.37-.37.967 0 1.337.185.184.427.277.669.277.242 0 .484-.093.668-.277l7.842-7.841 7.841 7.841c.184.184.427.277.669.277.242 0 .484-.093.668-.277.37-.37.37-.967 0-1.337l-7.841-7.841 7.841-7.842c.37-.37.37-.967 0-1.337z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <path d="M0 0H37V37H0z" transform="translate(-360.000000, -71.000000) translate(17.000000, 64.000000) translate(343.000000, 7.000000)"/>
+                    <g transform="translate(-360.000000, -71.000000) translate(17.000000, 64.000000) translate(343.000000, 7.000000) translate(9.044444, 9.044444)">
+                        <mask id="l79d1439xb" fill="#fff">
+                            <use xlink:href="#enceinfkwa"/>
+                        </mask>
+                        <use fill="#E44C4D" fill-rule="nonzero" xlink:href="#enceinfkwa"/>
+                        <g fill="#FFF" mask="url(#l79d1439xb)">
+                            <rect width="37" height="37" rx="8" transform="translate(-9.044444, -9.044444)"/>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

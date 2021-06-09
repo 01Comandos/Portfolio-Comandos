@@ -1,12 +1,15 @@
-import Layout from "../layouts/default"
-import '../styles/globals.css'
+import Layout from "../layouts/default";
+import { MenuMobileProvider } from "../contexts/mobileMenuContext";
+import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
-  )
+    <MenuMobileProvider>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </MenuMobileProvider>
+  );
 }
 
-export default MyApp
+export default MyApp;

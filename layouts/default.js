@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import Header from "../components/Header/Header";
+import MobileMenu from "../components/MobileMenu/MobileMenu";
 import Footer from "../components/Footer/Footer";
 
 const Layout = ({ children }) => {
@@ -11,6 +12,7 @@ const Layout = ({ children }) => {
     <div>
       <Header withContact={true} />
       {children}
+      <MobileMenu />
       <Footer />
     </div>
   );
