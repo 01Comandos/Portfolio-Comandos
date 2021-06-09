@@ -1,15 +1,12 @@
 .container {
   background-color: black;
-  position: absolute;
   width: 100%;
-  padding: 1.2rem;
 }
 
 .container.inactive {
   animation: moveDown .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
   opacity: 0;
   height: 0;
-  transform: scale(0);
 }
 
 .container.active {
@@ -22,7 +19,7 @@
   bottom: 0;
   left: 0;
   opacity: 1;
-  transform: scale(1);
+  padding: 1.2rem;
   animation: moveUp .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
 }
 
@@ -72,7 +69,7 @@
     transform:translateY(0px);
   }
   100% {
-    transform:translateY(150px);
+    transform:translateY(0px);
   }
 }
 

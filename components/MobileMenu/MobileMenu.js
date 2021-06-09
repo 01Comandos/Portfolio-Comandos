@@ -15,7 +15,6 @@ const MobileMenu = () => {
   const router = useRouter();
   const { activeMenu, toogleMenu } = useContext(MenuMobileContext);
   const pathname = router.pathname;
-  console.log(pathname)
 
   return (
     <section
