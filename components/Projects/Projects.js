@@ -19,6 +19,7 @@ const Projects = ({ isMobile }) => (
             name={project.name}
             pictures={project.pictures}
             description={project.description}
+            url={project.url}
           />
         </div>
       ))}

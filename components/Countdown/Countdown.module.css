@@ -1,0 +1,48 @@
+.container {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.time {
+  display: flex;
+  flex-direction: column;
+}
+
+.number {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.label {
+  text-transform: capitalize;
+}
+
+.seconds {
+  color: var(--secondary);
+}
+
+@media (min-width: 769px) {
+  .container {
+    justify-content: space-evenly;
+  }
+
+  .number {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 1025px) {
+    .container {
+      justify-content: center;
+    }
+
+    .time {
+        margin-left: 2.5rem;
+    }
+  
+    .number {
+      font-size: 70px;
+    }
+  }

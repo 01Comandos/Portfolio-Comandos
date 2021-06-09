@@ -6,7 +6,7 @@
       "desktop": "/images/stadio.png"
     },
     "description": "A great collaborative solution for runners. Lima? Sao Paulo? Let's run together!",
-    "url": ""
+    "url": "stadio"
   },
   {
     "name": "mipOS Interger",
@@ -15,7 +15,7 @@
       "desktop": "/images/mipos-1.png"
     },
     "description": "1 or 40 Dark Kitchen, 1 or 100 restaurants. Everything in a tablet to manage thousands of orders by Delivery.",
-    "url": ""
+    "url": "mipos-interger"
   },
   {
     "name": "mipOS POS",
@@ -24,7 +24,7 @@
       "desktop": "/images/mipos-2.png"
     },
     "description": "Underpinned by old operating systems, a great POS for the new generation of consumers.",
-    "url": ""
+    "url": "mipos-pos"
   },
   {
     "name": "RebajaTusCuentas",
@@ -33,7 +33,7 @@
       "desktop": "/images/rtc.png"
     },
     "description": "Making it less painful to ask for mortgages is the mission of RebajaTusCuentas. All without goin to the bank.",
-    "url": ""
+    "url": "rebaja-tus-cuentas"
   },
   {
     "name": "Spotfinder",
@@ -42,7 +42,7 @@
       "desktop": "/images/spotlitefinal.png"
     },
     "description": "Finding and reserving parking is not an easy thing. More with AI. Spotfinder the genuinely awesome.",
-    "url": ""
+    "url": "spotfinder"
   },
   {
     "name": "Caribe Federal Credit Union",
@@ -51,6 +51,6 @@
       "desktop": "/images/caribe-federal-device.png"
     },
     "description": "A traditional government bank wants to make the experience of visiting and finding information incredible.",
-    "url": ""
+    "url": "caribe-federal-credit-union"
   }
 ]
