@@ -19,7 +19,7 @@ const MobileMenu = () => {
 
   return (
     <section
-      className={`${styles.container} ${activeMenu ? styles.active : ""}`}
+      className={`${styles.container} ${activeMenu ? styles.active : styles.inactive}`}
     >
       <div className={styles.header}>
         <img
