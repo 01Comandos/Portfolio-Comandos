@@ -30,7 +30,8 @@
 
 @media (min-width: 769px) {
   .container {
-    margin: 2.5rem 0;
+    margin: 0;
+    padding-bottom: 5rem;
   }
 
   .logosContainer > div {
