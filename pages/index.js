@@ -37,7 +37,7 @@ const Home = ({ isMobile }) => {
   );
 };
 
-export const getStaticProps = async ({ req }) => {
+export const getServerSideProps = async ({ req }) => {
   return {
     props: {
       isMobile: isMobile(req),
