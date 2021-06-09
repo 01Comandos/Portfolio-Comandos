@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Project from "../Project/Project";
 import projectsList from "../../content/projects.json"
 import styles from "./Projects.module.css";
@@ -25,9 +26,11 @@ const Projects = ({ isMobile }) => (
       ))}
     </div>
     <div className={styles.options}>
-      <button className={`black ${styles.allProjects}`}>
-        View all projects
-      </button>
+      <Link href="/">
+        <button className={`black ${styles.allProjects}`}>
+          View all projects
+        </button>
+      </Link>
     </div>
   </section>
 );

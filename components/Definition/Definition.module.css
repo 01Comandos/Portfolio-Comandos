@@ -14,14 +14,14 @@
 .horizontalLine {
   border-bottom: 1px solid var(--gray-3);
   opacity: 0.21;
-  margin: 3rem 0 5rem 0;
+  margin: 3rem 0;
 }
 
 .knowMore {
   align-items: center;
   cursor: pointer;
   display: flex;
-  padding: 1rem 0 4rem 0;
+  padding: 1rem 0;
 }
 
 .knowMore > span {
