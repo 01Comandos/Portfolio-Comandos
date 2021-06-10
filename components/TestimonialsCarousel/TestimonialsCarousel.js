@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import { useSwipeable } from "react-swipeable";
 import ArrowButton from "../ArrowButton/ArrowButton";
 import styles from "./TestimonialsCarousel.module.css";
 
@@ -6,10 +7,16 @@ const DELAY = 8000;
 
 const TestimonialCarousel = ({
   testimonials,
-  color = "tertiary"
+  color = "tertiary",
+  isMobile
 }) => {
   const [index, setIndex] = useState(0);
   const timeoutRef = useRef(null);
+  const handlers = useSwipeable({
+    onSwipedLeft: () => isMobile ? swipe(1) : null,
+    onSwipedRight: () => isMobile ? swipe(-1) : null,
+    preventDefaultTouchmoveEvent: true,
+  });
 
   function resetTimeout() {
     if (timeoutRef.current) {
@@ -17,7 +24,8 @@ const TestimonialCarousel = ({
     }
   }
 
-  const swipe = (newIndex) => {
+  const swipe = (value) => {
+    const newIndex = index + value;
     if (newIndex === -1) {
       setIndex(testimonials.length - 1);
     } else if (newIndex === testimonials.length) {
@@ -51,6 +59,7 @@ const TestimonialCarousel = ({
       </h3>
       <div
         className={styles.slideshowSlider}
+        {...handlers}
         style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
       >
         {testimonials.map((testimonial, idx) => (
@@ -62,7 +71,7 @@ const TestimonialCarousel = ({
               <ArrowButton
                 styles={styles.arrowLeft}
                 onclick={() => {
-                  swipe(idx - 1);
+                  swipe(-1);
                 }}
               />
             )}
@@ -85,7 +94,7 @@ const TestimonialCarousel = ({
               </div>
             </div>
             {index === idx && <ArrowButton styles={styles.arrowRight} onclick={() => {
-                  swipe(idx + 1);
+                  swipe(1);
                 }} />}
           </article>
         ))}

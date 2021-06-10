@@ -29,7 +29,7 @@ const Home = ({ isMobile }) => {
         <Projects isMobile={isMobile} />
         <div className={styles.verticalLine}></div>
         <Expertise />
-        <TestimonialsCarousel testimonials={TestimonialsList} />
+        <TestimonialsCarousel testimonials={TestimonialsList} isMobile={isMobile} />
         <Definition />
         <Contact />
       </main>
