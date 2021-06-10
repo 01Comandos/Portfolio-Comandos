@@ -222,6 +222,12 @@
   }
 
   .messageContainer {
-    margin: 5rem 0;
+    margin: 3rem 0;
+  }
+
+  .form input,
+  .form textarea,
+  .form select {
+    margin-bottom: 1.2rem;
   }
 }
