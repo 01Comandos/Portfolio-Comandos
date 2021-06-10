@@ -15,6 +15,11 @@ const ContactForm = () => {
     }
   }, [state]);
 
+  const goToTop = () => {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  };
+
   return (
     <section className={`${styles.container} padding-x`} id="form-top">
       <form className={styles.form} onSubmit={handleSubmit}>
@@ -100,7 +105,7 @@ const ContactForm = () => {
         </section>
 
         <section className={styles.optionsContainer}>
-          <a className={styles.goBack} href="#form-top">
+          <a className={styles.goBack} onClick={goToTop}>
             <img
               src="/icons/green-up.svg"
               alt="Up arrow"
