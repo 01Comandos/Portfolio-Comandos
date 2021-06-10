@@ -43,10 +43,15 @@
     display: none;
   }
 
-  .picture {
-    display: inline;
-    object-fit: contain;
+  .figurePicture {
+    overflow: hidden;
     min-width: 320px;
+    height: auto;
+  }
+
+  .picture {
+    display: block;
+    object-fit: contain;
     max-width: 100%;
     transition: all .2s ease-in-out;
     margin: 0 auto;
