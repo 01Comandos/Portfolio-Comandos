@@ -6,9 +6,10 @@ import styles from "./MobileMenu.module.css";
 
 const routes = [
   { label: "Home", path: "/" },
-  { label: "Projects", path: "/projects" },
-  { label: "Methodology", path: "/methodology" },
-  { label: "Podcast", path: "/podcast" },
+  { label: "Contact", path: "/contact" },
+  // { label: "Projects", path: "/projects" },
+  // { label: "Methodology", path: "/methodology" },
+  // { label: "Podcast", path: "/podcast" },
 ];
 
 const MobileMenu = () => {
