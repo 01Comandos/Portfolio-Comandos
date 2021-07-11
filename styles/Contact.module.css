@@ -46,6 +46,45 @@
   margin: 2rem 0;
 }
 
+.title {
+  color: white;
+  font-size: 48px;
+  line-height: 1.25;
+  font-weight: 600;
+  margin: 0;
+}
+
+.title > span {
+  color: var(--secondary);
+}
+
+.contactSendContainer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.message {
+  color: var(--gray-1);
+  line-height: 1.67;
+  font-size: 18px;
+  letter-spacing: -0.43px;
+  margin-bottom: 2rem;
+}
+
+.goHome {
+  width: 100%;
+}
+
+@media (min-width: 481px) {
+  .goHome {
+    width: inherit;
+  }
+}
+
 @media (min-width: 769px) {
   .heroContainer {
     height: 80vh;
