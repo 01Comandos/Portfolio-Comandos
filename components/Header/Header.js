@@ -1,4 +1,5 @@
 import Link from "next/link";
+import classNames from 'classnames';
 import { useContext } from "react";
 import { MenuMobileContext } from "../../contexts/mobileMenuContext";
 import styles from "./Header.module.css";
@@ -10,11 +11,20 @@ const menuOptions = [
   { name: "Podcast", link: "/podcast" },
 ];
 
-const Header = ({ withContact }) => {
+const Header = ({
+  withContact,
+  transparent = false,
+  buttonStyle = null,
+  darkMenu = false
+}) => {
   const { toogleMenu } = useContext(MenuMobileContext);
+  const containerColor = transparent ? {} : styles.bgcBlack;
 
   return (
-    <header className={styles.container}>
+    <header className={classNames([
+      styles.container,
+      containerColor
+    ])}>
       <Link href="/">
         <img
           className={styles.logoMobile}
@@ -43,16 +53,23 @@ const Header = ({ withContact }) => {
       <div className={styles.rightOptions}>
         {withContact && (
           <Link href="/contact">
-            <button className="black">Contact</button>
+            <button className={buttonStyle || 'black'}>Contact</button>
           </Link>
         )}
-        <img
+        {!darkMenu && <img
           onClick={toogleMenu}
           className={styles.menuIcon}
           src="/icons/icon-menu.svg"
           width={28}
           height={19}
-        />
+        />}
+        {darkMenu && <img
+          onClick={toogleMenu}
+          className={styles.menuIcon}
+          src="/icons/icon-black-menu.svg"
+          width={37}
+          height={37}
+        />}
       </div>
     </header>
   );

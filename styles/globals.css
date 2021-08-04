@@ -17,6 +17,7 @@
   --primary: #000;
   --secondary: #ffbc00;
   --tertiary: #57fbdb;
+  --info: #0f8eff;
   --black-1: rgba(255, 255, 255, 0.09);
   --black-2: #1d262c;
   --black-3: #333333;
@@ -27,6 +28,7 @@
   --gray-4: #f6f9fc;
   --gray-5: #dbe0e9;
   --gray-6: #97a5b4;
+  --gray-7: #dadce1;
   --padding-mobile: 1rem;
   --padding-tablet: 2.3rem;
   --padding-large: 5.5rem;
@@ -145,10 +147,19 @@ button.black {
   color: white;
 }
 
+button.info {
+  background-color: var(--info);
+  color: white;
+}
+
 button.black:hover {
   background-color: var(--secondary);
   color: var(--primary);
   transition: 0.2s linear;
+}
+
+span.info {
+  color: var(--info);
 }
 
 .pageContainer {

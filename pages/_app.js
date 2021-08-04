@@ -6,7 +6,7 @@ import "../styles/globals.css";
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
   const { pathname } = router;
-  console.log(pathname);
+
   return (
     <MenuMobileProvider>
       {pathname.includes('/project') && <Component {...pageProps} />}
