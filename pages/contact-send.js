@@ -13,7 +13,7 @@ import styles from "../styles/Contact.module.css";
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={`main ${styles.contactSendContainer}`}>
+      <main className={`pageContainer ${styles.contactSendContainer}`}>
         <h1 className={styles.title}>We will talk <span>very soon</span></h1>
         <p className={styles.message}>I will write yo you shortly to make an appointment and get to know us.</p>
         <Link href="/">

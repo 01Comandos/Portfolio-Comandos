@@ -63,8 +63,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   text-align: center;
+  height: 80vh;
 }
 
 .message {
