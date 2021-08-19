@@ -1,27 +1,112 @@
-.container {
-  background-image: linear-gradient(to bottom, #edf1fc 33%, #ffffff);
+.backgroundRTC {
+  background-image: linear-gradient(to bottom, var(--gray-8) 33%, #ffffff);
+  font-weight: 300;
+  color: var(--black-2);
+  background-color: var(--gray-8);
 }
 
 .description {
-  background-color: #edf1fc;
+  background-color: var(--gray-8);
   margin-top: 2.5rem;
-  padding: 2rem 1.5rem;
+  padding: 4rem 1.5rem;
 }
 
-.descriptionTitle {
+.beforeStartingSection,
+.marketSection {
+  background-color: var(--gray-8);
+  padding: 5rem 0 4rem 0;
+}
+
+.funelSection,
+.resultsSection {
+  background-color: white;
+  padding: 5rem 0 4rem 0;
+}
+
+.bicolorTitle {
   font-size: 35px;
   font-weight: bold;
-  color: var(--black-2);
+}
+
+.sectionTitle {
+  font-size: 35px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.15px;
+  margin: 0;
 }
 
 .description p {
   font-size: 18px;
   line-height: 2;
-  color: var(--black-2);
 }
 
 .main {
   padding-top: 5.6rem;
+}
+
+.testimonialSection,
+.challengeSection {
+  font-size: 18px;
+  line-height: 1.83;
+  letter-spacing: normal;
+  background-color: white;
+}
+
+.challengeSection {
+  padding: 4rem 1.5rem;
+}
+
+.testimonialSection {
+  padding: 0 1.5rem 6rem 1.5rem;
+}
+
+.testimonialSection p {
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 2.1;
+  letter-spacing: normal;
+  margin-bottom: 2rem;
+}
+
+.normalParagraph {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-size: 18px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+}
+
+.projectInfo {
+  background-color: var(--gray-8);
+  padding: 3rem 1.5rem;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.projectInfo article {
+  margin-bottom: 3rem;
+}
+
+.projectInfo article:last-child {
+  grid-column-end: span 2;
+}
+
+.projectInfo article strong,
+.projectInfo article span {
+  display: block;
+  padding: 0.5rem;
+}
+
+.moreProjectsSection {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary);
+  align-items: center;
 }
 
 .title {
@@ -54,4 +139,64 @@
   box-sizing: border-box;
   height: 113px;
   width: 50%;
+}
+
+.sectionSubtitle {
+  font-weight: 600;
+  font-size: 18px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+}
+
+.takeInAccount > li,
+.marketPoints > li {
+  margin-bottom: 2.5rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.takeInAccount > li > img,
+.marketPoints > li > img {
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.feature {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 150px;
+  max-width: 120px;
+  margin-bottom: 3rem;
+  justify-self: center;
+  align-self: baseline;
+}
+
+.feature img {
+  height: 77px;
+  width: 77px;
+  margin-bottom: 1rem;
+}
+
+.feature div {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.07px;
+  text-align: center;
+}
+
+.marketSectionImage {
+  width: 243px;
+}
+
+.primaryBackground {
+  background-color: var(--primary);
 }

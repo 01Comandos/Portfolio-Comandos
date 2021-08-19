@@ -13,12 +13,12 @@ const menuOptions = [
 
 const Header = ({
   withContact,
-  transparent = false,
+  backgroundStyle = null,
   buttonStyle = null,
   darkMenu = false
 }) => {
   const { toogleMenu } = useContext(MenuMobileContext);
-  const containerColor = transparent ? {} : styles.bgcBlack;
+  const containerColor = backgroundStyle ? backgroundStyle : styles.bgcBlack;
 
   return (
     <header className={classNames([

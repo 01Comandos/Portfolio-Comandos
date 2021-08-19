@@ -9,9 +9,9 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <MenuMobileProvider>
-      {pathname.includes('/project') && <Component {...pageProps} />}
+      {pathname.includes('/p/') && <Component {...pageProps} />}
       {
-      !pathname.includes('/project') &&
+      !pathname.includes('/p/') &&
         <Layout>
           <Component {...pageProps} />
         </Layout>

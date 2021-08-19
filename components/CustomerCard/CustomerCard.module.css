@@ -1,0 +1,29 @@
+.CustomerCardContainer {
+    align-items: center;
+    display: flex;
+    color: var(--black-2);
+    justify-content: space-around;
+}
+
+.CustomerCardPhoto {
+    height: 73px;
+    width: 73px;
+}
+
+.CustomerCardName {
+  display: block;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.09px;
+}
+
+.CustomerCardRole {
+  font-size: 13px;
+  line-height: 1.81;
+  letter-spacing: 0.07px;
+}
+
+.BolderText {
+    font-weight: 500;
+}
