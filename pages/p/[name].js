@@ -27,7 +27,7 @@ const Project = () => {
           <Countdown date={new Date("2021-10-01")} />
           <Link href="/">
             <button className="black mt-2">
-              Go to home
+              Return to home
             </button>
           </Link>
         </section>
