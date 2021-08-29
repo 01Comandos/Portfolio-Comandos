@@ -9,11 +9,12 @@
 
 .container.inactive {
   animation: moveDown .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
-  opacity: 0;
+  display: none;
   height: 0;
 }
 
 .container.active {
+  display: block;
   z-index: 100;
   height: 100vh;
   overflow-y: hidden;

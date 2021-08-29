@@ -5,13 +5,18 @@ import CustomerCard from "../../components/CustomerCard/CustomerCard";
 import TestimonialsCarousel from "../../components/TestimonialsCarousel/TestimonialsCarousel";
 import Definition from "../../components/Definition/Definition";
 import Contact from "../../components/Contact/Contact";
+import Project from "../../components/Project/Project";
 import MobileMenu from "../../components/MobileMenu/MobileMenu";
 import Footer from "../../components/Footer/Footer";
 import content from "../../content/projects/rebaja-tus-cuentas.json";
+import projects from "../../content/projects.json";
 import TestimonialsList from "../../content/testimonials.json";
+import { isMobile } from "../../utils";
 import styles from "../../styles/RebajaTusCuentas.module.css";
 
 const RebajaTusCuentasPage = ({ isMobile }) => {
+  const project = projects.find(project => project.name === 'RebajaTusCuentas');
+
   return (
     <>
       <Head>
@@ -194,13 +199,23 @@ const RebajaTusCuentasPage = ({ isMobile }) => {
             </ul>
           </section>
           <section className={styles.moreProjectsSection}>
-            <h3>Discover more project</h3>
-            <div>Project component here</div>
-            <Link href="/">
+            <h3 className={`${styles.sectionTitle} text-white`}>Discover more project</h3>
+            <div className={styles.projectsSection}>
+              <div className={styles.project}>
+                <Project
+                  isMobile={isMobile}
+                  name={project.name}
+                  pictures={project.pictures}
+                  description={project.description}
+                  url={project.url}
+                />
+              </div>
+            </div>
+            {/* <Link href="/">
               <button className="black">
                 View all projects
               </button>
-            </Link>
+            </Link> */}
           </section>
           <TestimonialsCarousel testimonials={TestimonialsList} isMobile={isMobile} />
           <section className={styles.primaryBackground}>
@@ -213,6 +228,14 @@ const RebajaTusCuentasPage = ({ isMobile }) => {
       </div>
     </>
   );
+};
+
+export const getServerSideProps = async ({ req }) => {
+  return {
+    props: {
+      isMobile: isMobile(req),
+    },
+  };
 };
 
 export default RebajaTusCuentasPage;

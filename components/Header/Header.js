@@ -2,14 +2,8 @@ import Link from "next/link";
 import classNames from 'classnames';
 import { useContext } from "react";
 import { MenuMobileContext } from "../../contexts/mobileMenuContext";
+import { menuOptions } from "../../utils/constants";
 import styles from "./Header.module.css";
-
-const menuOptions = [
-  { name: "Home", link: "/" },
-  { name: "Projects", link: "/projects" },
-  { name: "Methodology", link: "/methodology" },
-  { name: "Podcast", link: "/podcast" },
-];
 
 const Header = ({
   withContact,

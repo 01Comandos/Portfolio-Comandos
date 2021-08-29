@@ -200,3 +200,11 @@
 .primaryBackground {
   background-color: var(--primary);
 }
+
+.projectsSection {
+  display: block;
+}
+
+.project {
+  box-sizing: border-box;
+}

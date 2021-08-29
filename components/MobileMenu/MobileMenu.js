@@ -2,15 +2,8 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { useContext } from "react";
 import { MenuMobileContext } from "../../contexts/mobileMenuContext";
+import { menuOptions } from '../../utils/constants';
 import styles from "./MobileMenu.module.css";
-
-const routes = [
-  { label: "Home", path: "/" },
-  { label: "Contact", path: "/contact" },
-  // { label: "Projects", path: "/projects" },
-  // { label: "Methodology", path: "/methodology" },
-  // { label: "Podcast", path: "/podcast" },
-];
 
 const MobileMenu = () => {
   const router = useRouter();
@@ -45,15 +38,15 @@ const MobileMenu = () => {
         />
       </div>
       <ul className={styles.menu}>
-        {routes.map((item, index) => (
-          <Link href={item.path} key={index}>
+        {menuOptions.map((item, index) => (
+          <Link href={item.link} key={index}>
             <li
               className={`${styles.menuItem} ${
-                pathname === item.path ? styles.active : ""
+                pathname === item.link ? styles.active : ""
               }`}
               onClick={toogleMenu}
             >
-              {item.label}
+              {item.name}
             </li>
           </Link>
         ))}
