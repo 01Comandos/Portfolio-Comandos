@@ -5,21 +5,24 @@
   background-color: var(--gray-8);
 }
 
+.hero {
+  background-image: linear-gradient(to bottom, #edf1fc 33%, #fff);
+  padding-bottom: 4rem;
+}
+
+.backgroundGradient {
+  background-image: linear-gradient(to bottom, #edf1fc 33%, #fff);
+}
+
 .description {
   background-color: var(--gray-8);
-  margin-top: 2.5rem;
-  padding: 4rem 1.5rem;
+  padding: 3rem 1.5rem;
 }
 
 .beforeStartingSection,
-.marketSection {
-  background-color: var(--gray-8);
-  padding: 5rem 0 4rem 0;
-}
-
+.marketSection,
 .funelSection,
 .resultsSection {
-  background-color: white;
   padding: 5rem 0 4rem 0;
 }
 
