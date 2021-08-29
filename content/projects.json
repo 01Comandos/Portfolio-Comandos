@@ -1,5 +1,14 @@
 [
   {
+    "name": "RebajaTusCuentas",
+    "pictures": {
+      "mobile": "/images/rtc.png",
+      "desktop": "/images/rtc.png"
+    },
+    "description": "Making it less painful to ask for mortgages is the mission of RebajaTusCuentas. All without goin to the bank.",
+    "url": "rebaja-tus-cuentas"
+  },
+  {
     "name": "Stadio",
     "pictures": {
       "mobile": "/images/stadio-mobile.png",
@@ -25,15 +34,6 @@
     },
     "description": "Underpinned by old operating systems, a great POS for the new generation of consumers.",
     "url": "mipos-pos"
-  },
-  {
-    "name": "RebajaTusCuentas",
-    "pictures": {
-      "mobile": null,
-      "desktop": "/images/rtc.png"
-    },
-    "description": "Making it less painful to ask for mortgages is the mission of RebajaTusCuentas. All without goin to the bank.",
-    "url": "rebaja-tus-cuentas"
   },
   {
     "name": "Spotfinder",

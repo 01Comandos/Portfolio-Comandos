@@ -6,7 +6,7 @@ const Project = ({ isMobile, pictures, name, description, url }) => {
   const [isHover, setHover] = useState(false);
 
   return (
-    <Link href={`/project/${url}`}>
+    <Link href={`/p/${url}`}>
       <article
         className={styles.container}
         onMouseEnter={() => setHover(true)}

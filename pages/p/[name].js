@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import { useRouter } from "next/router";
 import projects from "../../content/projects.json";
 import Countdown from "../../components/Countdown/Countdown";
@@ -23,7 +24,12 @@ const Project = () => {
       <main className="pageContainer">
         <section className={styles.soonContainer}>
           <h1 className={styles.soonTitle}>DON'T WORRY, THIS PROJECT IS <span>ALMOST DONE</span></h1>
-          <Countdown date={new Date("2021-07-01")} />
+          <Countdown date={new Date("2021-10-01")} />
+          <Link href="/">
+            <button className="black mt-2">
+              Go to home
+            </button>
+          </Link>
         </section>
       </main>
     </>
