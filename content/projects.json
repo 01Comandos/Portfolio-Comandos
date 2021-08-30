@@ -1,5 +1,6 @@
 [
   {
+    "id": "RebajaTusCuentas",
     "name": "RebajaTusCuentas",
     "pictures": {
       "mobile": "/images/rtc-mobile.png",
@@ -9,6 +10,7 @@
     "url": "rebaja-tus-cuentas"
   },
   {
+    "id": "Stadio",
     "name": "Stadio",
     "pictures": {
       "mobile": "/images/stadio-mobile.png",
@@ -18,6 +20,7 @@
     "url": "stadio"
   },
   {
+    "id": "mipOSInterger",
     "name": "mipOS Interger",
     "pictures": {
       "mobile": "/images/mipos-1-mobile.png",
@@ -27,6 +30,7 @@
     "url": "mipos-interger"
   },
   {
+    "id": "mipOSPOS",
     "name": "mipOS POS",
     "pictures": {
       "mobile": "/images/mipos-2-mobile.png",
@@ -36,18 +40,20 @@
     "url": "mipos-pos"
   },
   {
+    "id": "Spotfinder",
     "name": "Spotfinder",
     "pictures": {
-      "mobile": null,
+      "mobile": "/images/spotlitefinal-mobile.png",
       "desktop": "/images/spotlitefinal.png"
     },
     "description": "Finding and reserving parking is not an easy thing. More with AI. Spotfinder the genuinely awesome.",
     "url": "spotfinder"
   },
   {
+    "id": "Caribe",
     "name": "Caribe Federal Credit Union",
     "pictures": {
-      "mobile": null,
+      "mobile": "/images/caribe-federal-device-mobile.png",
       "desktop": "/images/caribe-federal-device.png"
     },
     "description": "A traditional government bank wants to make the experience of visiting and finding information incredible.",

@@ -15,7 +15,7 @@ import { isMobile } from "../../utils";
 import styles from "../../styles/RebajaTusCuentas.module.css";
 
 const RebajaTusCuentasPage = ({ isMobile }) => {
-  const project = projects.find(project => project.name === 'RebajaTusCuentas');
+  const selectedProjects = projects.filter(project => project.id === 'RebajaTusCuentas' || project.id === 'Spotfinder' || project.id === 'Caribe');
 
   return (
     <>
@@ -205,17 +205,19 @@ const RebajaTusCuentasPage = ({ isMobile }) => {
             </section>
           </div>
           <section className={styles.moreProjectsSection}>
-            <h3 className={`${styles.sectionTitle} text-white`}>Discover more project</h3>
+            <h3 className={`${styles.sectionTitle} text-white pt-2 pb-3`}>Discover more project</h3>
             <div className={styles.projectsSection}>
-              <div className={styles.project}>
-                <Project
-                  isMobile={isMobile}
-                  name={project.name}
-                  pictures={project.pictures}
-                  description={project.description}
-                  url={project.url}
-                />
-              </div>
+              {selectedProjects.map((project, index) => (
+                <div className={styles.project} key={index}>
+                  <Project
+                    isMobile={isMobile}
+                    name={project.name}
+                    pictures={project.pictures}
+                    description={project.description}
+                    url={project.url}
+                  />
+                </div>
+              ))}
             </div>
             <Link href="/">
               <button className="black">

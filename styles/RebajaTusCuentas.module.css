@@ -110,6 +110,7 @@
   flex-direction: column;
   background-color: var(--primary);
   align-items: center;
+  padding: 1rem 1.5rem 4.5rem 1.5rem;
 }
 
 .title {
@@ -204,10 +205,6 @@
   background-color: var(--primary);
 }
 
-.projectsSection {
-  display: block;
-}
-
 .project {
-  box-sizing: border-box;
+  margin-bottom: 4rem;
 }

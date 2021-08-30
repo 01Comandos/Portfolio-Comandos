@@ -138,6 +138,10 @@ figure {
   padding-bottom: 2rem;
 }
 
+.pb-3 {
+  padding-bottom: 3rem;
+}
+
 .pb-4 {
   padding-bottom: 4rem!important;
 }
