@@ -52,15 +52,23 @@
     display: none;
   }
 
-  .menu {
+  .menu, .darkMenu {
     display: flex;
   }
 
-  .menu > a {
+  .menu > a,
+  .darkMenu > a {
     cursor: pointer;
-    color: white;
     font-size: 16px;
     margin: 0 1.5rem;
+  }
+
+  .menu > a {
+    color: white;
+  }
+
+  .darkMenu > a {
+    color: var(--black-2);
   }
 
   .menu > a:hover {

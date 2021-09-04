@@ -6,6 +6,16 @@
       "mobile": "/images/rtc-mobile.png",
       "desktop": "/images/rtc.png"
     },
+    "beforeStartingSection": [
+      "/images/projects/rtc-before-01.png",
+      "/images/projects/rtc-before-01.png",
+      "/images/projects/rtc-before-01.png"
+    ],
+    "resultsSection": [
+      "/images/projects/rtc-gallery.png",
+      "/images/projects/rtc-gallery.png",
+      "/images/projects/rtc-gallery.png"
+    ],
     "description": "Making it less painful to ask for mortgages is the mission of RebajaTusCuentas. All without goin to the bank.",
     "url": "rebaja-tus-cuentas"
   },

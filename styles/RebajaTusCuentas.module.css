@@ -1,11 +1,11 @@
 .backgroundRTC {
-  background-image: linear-gradient(to bottom, var(--gray-8) 33%, #ffffff);
   font-weight: 300;
   color: var(--black-2);
   background-color: var(--gray-8);
 }
 
 .hero {
+  display: block;
   background-image: linear-gradient(to bottom, #edf1fc 33%, #fff);
   padding-bottom: 4rem;
 }
@@ -58,12 +58,10 @@
   background-color: white;
 }
 
-.challengeSection {
-  padding: 4rem 1.5rem;
-}
-
-.testimonialSection {
-  padding: 0 1.5rem 6rem 1.5rem;
+.challengeAndTestimonials {
+  background-color: white;
+  display: block;
+  padding: 4rem 1.5rem 6rem 1.5rem;
 }
 
 .testimonialSection p {
@@ -111,6 +109,10 @@
   background-color: var(--primary);
   align-items: center;
   padding: 1rem 1.5rem 4.5rem 1.5rem;
+}
+
+.projectsSection {
+  display: block;
 }
 
 .title {
@@ -207,4 +209,205 @@
 
 .project {
   margin-bottom: 4rem;
+}
+
+.rtcLogo,
+.rtcSummary,
+.beforeDesktopGallery {
+  display: none;
+}
+
+.beforeMobileGallery {
+  display: block;
+}
+
+.showAllPicturesButton {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  color: var(--black-2);
+  position: absolute;
+  box-shadow: 0 2px 24px 0 var(--gray-9);
+  font-size: 16px;
+  bottom: 20px;
+  right: 20px;
+}
+
+@media (min-width: 769px) {
+  .features {
+    grid-template-columns: 33% 33% 33%;
+  }
+
+  .beforeStartingSection,
+  .marketSection,
+  .funelSection,
+  .resultsSection {
+    padding: 3.5rem var(--padding-tablet) 4rem var(--padding-tablet);
+  }
+
+  .description,
+  .projectInfo {
+    padding: 3rem var(--padding-tablet);
+  }
+
+  .challengeSection {
+    padding: 4rem var(--padding-tablet);
+  }
+
+  .testimonialSection {
+    padding: 0 var(--padding-tablet) 6rem var(--padding-tablet);
+  }
+
+  .projectsSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .project {
+    flex-basis: 45%;
+  }
+
+  .hero {
+    padding-top: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "title video"
+        "vertical-line video";
+  }
+
+  .hero .title {
+    grid-area: title;
+    padding: 2rem var(--padding-tablet);
+  }
+
+  .hero figure {
+    grid-area: video;
+
+  }
+
+  .hero .verticalLine {
+    grid-area: vertical-line;
+    width: var(--padding-tablet);
+  }
+}
+
+@media (min-width: 1025px) {
+  .rtcLogo {
+    display: inline-block;
+    height: 50px;
+    width: auto;
+    padding: 0 var(--padding-tablet);
+  }
+
+  .rtcSummary {
+    display: block;
+    padding: 0.4rem var(--padding-tablet) 1rem var(--padding-tablet);
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.07px;
+    color: var(--secondary);
+    text-transform: uppercase;
+  }
+
+  .rtcVideo {
+    max-width: 686px;
+    max-height: 524px;
+    border-radius: 18px;
+  }
+
+  .description {
+    display: flex;
+  }
+
+  .description > .bicolorTitle {
+    flex-basis: 100%;
+  }
+
+  .description p {
+    margin-top: 0;
+  }
+
+  .projectInfo {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .projectInfo article:last-child {
+    grid-column-end: span 4;
+  }
+
+  .challengeAndTestimonials {
+    display: flex;
+    align-items: center;
+    padding: 4rem var(--padding-tablet) 6rem var(--padding-tablet);
+  }
+
+  .challengeSection {
+    flex-shrink: 0;
+    flex-basis: 50%;
+  }
+
+  .beforeMobileGallery {
+    display: none;
+  }
+
+  .beforeDesktopGallery {
+    position: relative;
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "main-img main-img second-img third-img"
+        "main-img main-img four-img five-img";
+    padding-left: calc(var(--padding-tablet) - 0.3rem);
+    padding-right: calc(var(--padding-tablet) - 0.3rem);
+  }
+
+  .beforeDesktopGallery > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    padding: 0.3rem;
+  }
+
+  .beforeDesktopGallery > .one {
+    grid-area: main-img;
+  }
+
+  .beforeDesktopGallery > .two {
+    grid-area: second-img;
+  }
+
+  .beforeDesktopGallery > .three {
+    grid-area: third-img;
+  }
+
+  .beforeDesktopGallery > .four {
+    grid-area: four-img;
+    align-self: end;
+  }
+
+  .beforeDesktopGallery > .five {
+    grid-area: five-img;
+    align-self: end;
+  }
+
+  .beforeStartingSection .sectionTitle {
+    padding-left: var(--padding-tablet);
+    padding-right: var(--padding-tablet);
+    padding-bottom: 0;
+  }
+
+  .beforeStartingSection > p {
+    width: 493px;
+    margin: 0;
+    padding: 1rem var(--padding-tablet) 3rem var(--padding-tablet)!important;
+  }
+}
+
+@media (min-width: 1201px) {
+  .challengeSection {
+    flex-basis: 60%;
+  }
 }

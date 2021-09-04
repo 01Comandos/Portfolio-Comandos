@@ -1,0 +1,36 @@
+.container {
+    overflow: hidden;
+    position: relative;
+}
+
+.photos {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 100%;
+}
+
+.photo {
+    object-fit: cover;
+    max-width: 100%;
+    opacity: 0;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.photo.active {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 1.2s linear;
+  }
+
+.counter {
+    position: absolute;
+    color: white;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.72);
+    padding: 10px;
+    letter-spacing: 4px;
+    bottom: 15px;
+    right: 15px;
+}

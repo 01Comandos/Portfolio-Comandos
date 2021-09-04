@@ -28,16 +28,29 @@ const Header = ({
           height={51}
         />
       </Link>
-      <Link href="/">
-        <img
-          className={styles.logo}
-          src="/logo/logo-white.svg"
-          alt="Comandos Logotipo"
-          width={183}
-          height={40}
-        />
+      {!darkMenu && 
+        <Link href="/">
+          <img
+            className={styles.logo}
+            src="/logo/logo-white.svg"
+            alt="Comandos Logotipo"
+            width={183}
+            height={40}
+          />
+        </Link>
+      }
+      {darkMenu &&
+        <Link href="/">
+          <img
+            className={styles.logo}
+            src="/logo/logo-black.svg"
+            alt="Comandos Logotipo"
+            width={183}
+            height={40}
+          />
       </Link>
-      <div className={styles.menu}>
+      }
+      <div className={darkMenu ? styles.darkMenu : styles.menu}>
         {menuOptions.map((item, index) => (
           <Link key={index} href={item.link}>
             <a>{item.name}</a>

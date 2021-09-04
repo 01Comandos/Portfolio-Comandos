@@ -2,12 +2,12 @@
     align-items: center;
     display: flex;
     color: var(--black-2);
-    justify-content: space-around;
 }
 
 .CustomerCardPhoto {
-    height: 73px;
-    width: 73px;
+  height: 73px;
+  width: 73px;
+  margin-right: 1rem;
 }
 
 .CustomerCardName {
