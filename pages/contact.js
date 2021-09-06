@@ -16,7 +16,7 @@ const Contact = ({ isMobile }) => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="pageContainer">
+      <main className={`${styles.contactPage} pageContainer`}>
         <section className={`${styles.heroContainer} padding-x`}>
           <figure>
             <img src="/images/contact-hero.png" alt="Contact hero image" />
