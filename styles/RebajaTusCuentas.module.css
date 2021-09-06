@@ -19,11 +19,14 @@
   padding: 3rem 1.5rem;
 }
 
-.beforeStartingSection,
-.marketSection,
 .funelSection,
 .resultsSection {
   padding: 5rem 0 4rem 0;
+}
+
+.marketSection,
+.beforeStartingSection {
+  padding: 6rem 0 4rem 0;
 }
 
 .bicolorTitle {
@@ -56,6 +59,10 @@
   line-height: 1.83;
   letter-spacing: normal;
   background-color: white;
+}
+
+.challengeSection {
+  padding-bottom: 5rem;
 }
 
 .challengeAndTestimonials {
@@ -238,24 +245,28 @@
     grid-template-columns: 33% 33% 33%;
   }
 
-  .beforeStartingSection,
-  .marketSection,
-  .funelSection,
-  .resultsSection {
+  .funelSection {
     padding: 3.5rem var(--padding-tablet) 4rem var(--padding-tablet);
+  }
+
+  .resultsSection .sectionTitle,
+  .resultsSection .normalParagraph,
+  .marketSection .sectionTitle,
+  .marketSection .normalParagraph,
+  .beforeStartingSection .sectionTitle,
+  .beforeStartingSection .normalParagraph,
+  .moreProjectsSection {
+    padding-right: var(--padding-tablet);
+    padding-left: var(--padding-tablet);
   }
 
   .description,
   .projectInfo {
     padding: 3rem var(--padding-tablet);
   }
-
-  .challengeSection {
-    padding: 4rem var(--padding-tablet);
-  }
-
-  .testimonialSection {
-    padding: 0 var(--padding-tablet) 6rem var(--padding-tablet);
+  
+  .challengeAndTestimonials {
+    padding: 4rem var(--padding-tablet) 6rem var(--padding-tablet);
   }
 
   .projectsSection {

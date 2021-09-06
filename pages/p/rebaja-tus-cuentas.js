@@ -140,12 +140,12 @@ const RebajaTusCuentasPage = ({ isMobile }) => {
                 </div>
               </div>
               <div>
-              <figure>
-                <img src="/images/projects/rtc-analytics.webp" alt="Product metrics" className={styles.videoImage} />
-              </figure>
+                <figure>
+                  <img src="/images/projects/rtc-analytics.webp" alt="Product metrics" className={styles.videoImage} />
+                </figure>
 
-              <h3 className={`${styles.sectionTitle} px-1 pt-3`}>Let’s start by analyzing metrics and conversations</h3>
-              <p className={`${styles.normalParagraph} px-1`}>RebajaTusCuentas had started a previous research about two weeks before I joined the team. We analyzed all the information gathred to create the first prototypes and start iterating and talking with users with a tangible base.</p>
+                <h3 className={`${styles.sectionTitle} px-1 pt-3`}>Let’s start by analyzing metrics and conversations</h3>
+                <p className={`${styles.normalParagraph} px-1`}>RebajaTusCuentas had started a previous research about two weeks before I joined the team. We analyzed all the information gathred to create the first prototypes and start iterating and talking with users with a tangible base.</p>
               </div>
             </section>
             <section className={styles.funelSection}>

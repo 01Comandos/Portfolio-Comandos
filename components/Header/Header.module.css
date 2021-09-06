@@ -20,7 +20,8 @@
   display: none;
 }
 
-.menu {
+.menu,
+.darkMenu {
   display: none;
 }
 
