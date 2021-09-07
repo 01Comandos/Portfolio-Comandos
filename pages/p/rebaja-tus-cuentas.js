@@ -139,13 +139,25 @@ const RebajaTusCuentasPage = ({ isMobile }) => {
                   </button>
                 </div>
               </div>
-              <div>
+              <div className={styles.letsGoWork}>
+                <div>
+                  <h3 className={`${styles.sectionTitle}`}>Let's get to work</h3>
+                  <p className={styles.normalParagraph}>We started with many user interviews, phone calls to talk to them and analyze metrics of RebajaTusCuentas.com's performance at that time.</p>
+                  <p className={styles.normalParagraph}>We thought about a total restructuring of both the platform and transactional communication, modifying the brand's voice a bit.</p>
+                </div>
+                <figure>
+                  <img src="/images/projects/lets-go-work.png" alt="Let's go to work" className={styles.videoImage} />
+                  <figcaption>New graphic line for RebajaTusCuentas.com</figcaption>
+                </figure>
+              </div>
+              <div className={styles.letsStartSection}>
                 <figure>
                   <img src="/images/projects/rtc-analytics.webp" alt="Product metrics" className={styles.videoImage} />
                 </figure>
-
-                <h3 className={`${styles.sectionTitle} px-1 pt-3`}>Let’s start by analyzing metrics and conversations</h3>
-                <p className={`${styles.normalParagraph} px-1`}>RebajaTusCuentas had started a previous research about two weeks before I joined the team. We analyzed all the information gathred to create the first prototypes and start iterating and talking with users with a tangible base.</p>
+                <div>
+                  <h3 className={`${styles.sectionTitle} px-1 pt-3`}>Let’s start by analyzing metrics and conversations</h3>
+                  <p className={`${styles.normalParagraph} px-1`}>RebajaTusCuentas had started a previous research about two weeks before I joined the team. We analyzed all the information gathred to create the first prototypes and start iterating and talking with users with a tangible base.</p>
+                </div>
               </div>
             </section>
             <section className={styles.funelSection}>
@@ -186,46 +198,95 @@ const RebajaTusCuentasPage = ({ isMobile }) => {
           </div>
           <div className={styles.backgroundGradient}>
             <section className={styles.marketSection}>
-              <h3 className={`${styles.sectionTitle} px-1 pb-2`}>We improve market perception by providing confidence</h3>
-              <ul className={`${styles.marketPoints} px-1 pt-1`}>
-                <li>
-                  <img src="/icons/check-input.svg" />
-                  <span>The roadmap was created by a team. Taking into account time to experiment with prototypes.</span>
-                </li>
-                <li>
-                  <img src="/icons/check-input.svg" />
-                  <span>We had up to 3 experiments to achieve the best registration process.</span>
-                </li>
-                <li>
-                  <img src="/icons/check-input.svg" />
-                  <span>Our type of user was more prone to a phone call than to a videoconference. A very interesting type of user for a fintech.</span>
-                </li>
-              </ul>
-              <figure className="text-centered">
-                <img src="/images/projects/rtc-mobile-capture.webp" className={`${styles.videoImage} ${styles.marketSectionImage}`} />
+              <div className={styles.marketInfo}>
+                <h3 className={`${styles.sectionTitle} px-1 pb-2`}>We improve market perception by providing confidence</h3>
+                <ul className={`${styles.marketPoints} px-1 pt-1`}>
+                  <li>
+                    <img src="/icons/check-input.svg" />
+                    <span>The roadmap was created by a team. Taking into account time to experiment with prototypes.</span>
+                  </li>
+                  <li>
+                    <img src="/icons/check-input.svg" />
+                    <span>We had up to 3 experiments to achieve the best registration process.</span>
+                  </li>
+                  <li>
+                    <img src="/icons/check-input.svg" />
+                    <span>Our type of user was more prone to a phone call than to a videoconference. A very interesting type of user for a fintech.</span>
+                  </li>
+                </ul>
+                <figure className="text-centered">
+                  <img src="/images/projects/rtc-mobile-capture.webp" className={`${styles.videoImage} ${styles.marketSectionImage}`} />
+                </figure>
+              </div>
+              <figure className={styles.marketLandingImage}>
+                <img alt="Landing image" src="/images/projects/market-home.png" className={styles.videoImage} />
+              </figure>
+              <figure className={styles.marketMobileImage}>
+                <img alt="Mobile image" src="/images/projects/rtc-mobile-capture.webp" className={styles.videoImage} />
+              </figure>
+              <figure className={styles.marketAppFirst}>
+                <img alt="Mobile image" src="/images/projects/market-solicitudes.png" className={styles.videoImage} />
+              </figure>
+              <figure className={styles.marketAppSecond}>
+              <img alt="Mobile image" src="/images/projects/market-request.png" className={styles.videoImage} />
+              </figure>
+            </section>
+            <section className={styles.banks}>
+              <p className={styles.normalParagraph}>Some allied banks of RebajaTusCuentas</p>
+              <div className={styles.banksLogos}>
+                <img alt="Scotiabank" src="/images/projects/scotiabank.svg" className={styles.scotiabank} />
+                <img alt="Interbank" src="/images/projects/interbank.svg" className={styles.interbank} />
+                <img alt="BBVA" src="/images/projects/bbva.svg" className={styles.bbva} />
+                <img alt="BanBif" src="/images/projects/banbif.svg" className={styles.banbif} />
+                <img alt="BCP" src="/images/projects/bcp.svg" className={styles.bcp} />
+                {/* <img alt="tcf" src="/images/projects/tcf.svg" className={styles.tcf} /> */}
+              </div>
+            </section>
+            <section className={styles.designSystem}>
+              <p className={styles.normalParagraph}>Some components of the design system</p>
+              <figure>
+                <img alt="Market image" src="/images/projects/market-02.png" className={styles.videoImage} />
               </figure>
             </section>
             <section className={styles.resultsSection}>
-              <h3 className={`${styles.sectionTitle} pb-2`}>The result was excellent</h3>
-              <Gallery photos={rtcContent.resultsSection} />
-              <ul className={`${styles.marketPoints} px-1 pt-2`}>
-                <li>
-                  <img src="/icons/check-input.svg" />
-                  <span>We unify all RebajaTusCuentas.com services under a single identity.</span>
-                </li>
-                <li>
-                  <img src="/icons/check-input.svg" />
-                  <span>Expansion to Peru, Colombia and Mexico.</span>
-                </li>
-                <li>
-                  <img src="/icons/check-input.svg" />
-                  <span>In Peru we went from being a mortgage broker to delivering mortgages directly.</span>
-                </li>
-                <li>
-                  <img src="/icons/check-input.svg" />
-                  <span>BBVA Peru acquires part of RTC’s operation.</span>
-                </li>
-              </ul>
+              <div className={styles.resultsInfo}>
+                <div>
+                  <h3 className={`${styles.sectionTitle} pb-2`}>The result was excellent</h3>
+                  <Gallery photos={rtcContent.resultsSection} containerStyles={styles.beforeMobileGallery} />
+                  <ul className={`${styles.marketPoints} px-1 pt-2`}>
+                    <li>
+                      <img src="/icons/check-input.svg" />
+                      <span>We unify all RebajaTusCuentas.com services under a single identity.</span>
+                    </li>
+                    <li>
+                      <img src="/icons/check-input.svg" />
+                      <span>Expansion to Peru, Colombia and Mexico.</span>
+                    </li>
+                    <li>
+                      <img src="/icons/check-input.svg" />
+                      <span>In Peru we went from being a mortgage broker to delivering mortgages directly.</span>
+                    </li>
+                    <li>
+                      <img src="/icons/check-input.svg" />
+                      <span>BBVA Peru acquires part of RTC’s operation.</span>
+                    </li>
+                  </ul>
+                </div>
+                <figure>
+                  <img src="/images/projects/rtc-gallery.png" alt="Results" className={styles.videoImage} />
+                </figure>
+              </div>
+              <div className={styles.beforeDesktopGallery}>
+                <img src='/images/projects/results-01.png' className={styles.one}/>
+                <img src='/images/projects/results-02.png' className={styles.two}/>
+                <img src='/images/projects/results-04.png' className={styles.three}/>
+                <img src='/images/projects/results-03.png' className={styles.four}/>
+                <img src='/images/projects/results-05.png' className={styles.five}/>
+                <button className={styles.showAllPicturesButton}>
+                  <img src="/icons/icon-camera.svg" />
+                  Show all pictures
+                </button>
+              </div>
             </section>
           </div>
           <section className={styles.moreProjectsSection}>

@@ -26,6 +26,7 @@
 
 .marketSection,
 .beforeStartingSection {
+  display: block;
   padding: 6rem 0 4rem 0;
 }
 
@@ -116,10 +117,6 @@
   background-color: var(--primary);
   align-items: center;
   padding: 1rem 1.5rem 4.5rem 1.5rem;
-}
-
-.projectsSection {
-  display: block;
 }
 
 .title {
@@ -220,17 +217,25 @@
 
 .rtcLogo,
 .rtcSummary,
-.beforeDesktopGallery {
+.beforeDesktopGallery,
+.letsGoWork,
+.resultsInfo figure,
+.banks,
+.designSystem {
   display: none;
 }
 
-.beforeMobileGallery {
+.beforeMobileGallery,
+.marketInfo figure,
+.letsStartSection,
+.projectsSection {
   display: block;
 }
 
 .showAllPicturesButton {
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color: white;
   color: var(--black-2);
   position: absolute;
@@ -238,6 +243,8 @@
   font-size: 16px;
   bottom: 20px;
   right: 20px;
+  width: 230px;
+  height: 45px;
 }
 
 @media (min-width: 769px) {
@@ -246,7 +253,7 @@
   }
 
   .funelSection {
-    padding: 3.5rem var(--padding-tablet) 4rem var(--padding-tablet);
+    padding: 0rem var(--padding-tablet) 4rem var(--padding-tablet);
   }
 
   .resultsSection .sectionTitle,
@@ -255,7 +262,8 @@
   .marketSection .normalParagraph,
   .beforeStartingSection .sectionTitle,
   .beforeStartingSection .normalParagraph,
-  .moreProjectsSection {
+  .moreProjectsSection,
+  .marketPoints {
     padding-right: var(--padding-tablet);
     padding-left: var(--padding-tablet);
   }
@@ -276,7 +284,7 @@
   }
 
   .project {
-    flex-basis: 45%;
+    width: 45%;
   }
 
   .hero {
@@ -305,6 +313,10 @@
 }
 
 @media (min-width: 1025px) {
+  .project {
+    width: 31%;
+  }
+
   .rtcLogo {
     display: inline-block;
     height: 50px;
@@ -359,7 +371,8 @@
     flex-basis: 50%;
   }
 
-  .beforeMobileGallery {
+  .beforeMobileGallery,
+  .marketInfo figure {
     display: none;
   }
 
@@ -410,10 +423,120 @@
     padding-bottom: 0;
   }
 
-  .beforeStartingSection > p {
-    width: 493px;
+  .beforeStartingSection .normalParagraph {
+    width: 593px;
     margin: 0;
     padding: 1rem var(--padding-tablet) 3rem var(--padding-tablet)!important;
+  }
+
+  .beforeDesktopGallery {
+    margin-bottom: 7rem;
+  }
+
+  .letsGoWork,
+  .letsStartSection,
+  .resultsInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 7rem;
+  }
+
+  .letsGoWork > div,
+  .letsStartSection > div,
+  .resultsInfo > div {
+    width: 55%;
+  }
+
+  .letsGoWork p,
+  .letsStartSection p,
+  .resultsInfo p {
+    max-width: 535px;
+  }
+
+  .letsGoWork figure,
+  .letsStartSection figure,
+  .resultsInfo figure {
+    display: inline-block;
+    padding-right: var(--padding-tablet);
+    text-align: center;
+  }
+
+  .letsGoWork figcaption {
+    margin-top: 22px;
+    font-size: 14px;
+  }
+
+  .letsGoWork .videoImage,
+  .letsStartSection .videoImage,
+  .resultsInfo .videoImage {
+    width: 320px;
+    height: auto;
+  }
+
+  .letsStartSection {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .funelSection > .bicolorTitle {
+    text-align: left;
+  }
+
+  .features {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .banks,
+  .designSystem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem var(--padding-tablet) 0 var(--padding-tablet);
+  }
+
+  .banksLogos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+  }
+
+  .marketSection,
+  .beforeStartingSection {
+    padding: 6rem 0 0 0;
+  }
+
+  .marketSection {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));;
+    grid-template-areas:
+        "description description description landing landing"
+        "mobileApp appFirst appFirst landing landing"
+        "mobileApp appSecond appSecond landing landing";
+    padding-left: calc(var(--padding-tablet) - 0.3rem);
+    padding-right: calc(var(--padding-tablet) - 0.3rem);
+  }
+
+  .marketAppFirst {
+    grid-area: appFirst;
+  }
+
+  .marketAppSecond {
+    grid-area: appSecond;
+  }
+
+  .marketMobileImage {
+    grid-area: mobileApp;
+  }
+
+  .marketInfo {
+    grid-area: description;
+  }
+
+  .marketLandingImage {
+    grid-area: landing;
   }
 }
 
