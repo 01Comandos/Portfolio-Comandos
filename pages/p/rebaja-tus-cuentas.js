@@ -219,16 +219,16 @@ const RebajaTusCuentasPage = ({ isMobile }) => {
                 </figure>
               </div>
               <figure className={styles.marketLandingImage}>
-                <img alt="Landing image" src="/images/projects/market-home.png" className={styles.videoImage} />
+                <img alt="Landing image" src="/images/projects/rtc-market-home.png" className={styles.videoImage} />
               </figure>
               <figure className={styles.marketMobileImage}>
-                <img alt="Mobile image" src="/images/projects/rtc-mobile-capture.webp" className={styles.videoImage} />
+                <img alt="Mobile image" src="/images/projects/rtc-mobile-capture.png" />
               </figure>
               <figure className={styles.marketAppFirst}>
-                <img alt="Mobile image" src="/images/projects/market-solicitudes.png" className={styles.videoImage} />
+                <img alt="Mobile image" src="/images/projects/rtc-market-requests-01.png" className={styles.videoImage} />
               </figure>
               <figure className={styles.marketAppSecond}>
-              <img alt="Mobile image" src="/images/projects/market-request.png" className={styles.videoImage} />
+              <img alt="Mobile image" src="/images/projects/rtc-market-requests-02.png" className={styles.videoImage} />
               </figure>
             </section>
             <section className={styles.banks}>

@@ -510,13 +510,34 @@
 
   .marketSection {
     display: grid;
-    grid-template-columns: repeat(5, minmax(0, 1fr));;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-template-rows: auto;
+    grid-gap: 10px;
     grid-template-areas:
         "description description description landing landing"
         "mobileApp appFirst appFirst landing landing"
         "mobileApp appSecond appSecond landing landing";
     padding-left: calc(var(--padding-tablet) - 0.3rem);
     padding-right: calc(var(--padding-tablet) - 0.3rem);
+  }
+
+  .marketSection .sectionTitle,
+  .marketSection .marketPoints {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+
+  .marketMobileImage > img {
+    object-fit: contain;
+    max-width: 100%;
+    height: 100%;
+  }
+
+  .marketAppFirst > img {
+    object-fit: cover;
+    max-width: 100%;
+    height: 100%;
   }
 
   .marketAppFirst {
@@ -529,10 +550,12 @@
 
   .marketMobileImage {
     grid-area: mobileApp;
+    align-self: start;
   }
 
   .marketInfo {
     grid-area: description;
+    max-width: 400px;
   }
 
   .marketLandingImage {
