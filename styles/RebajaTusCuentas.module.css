@@ -684,11 +684,13 @@
     padding-right: var(--padding-large);
   }
 
-  .letsGoWork figure {
-    width: 480px;
+  .letsGoWork figure,
+  .letsStartSection figure {
+    width: 500px;
   }
 
-  .letsGoWork .videoImage {
+  .letsGoWork .videoImage,
+  .letsStartSection .videoImage {
     width: 100%;
   }
 
