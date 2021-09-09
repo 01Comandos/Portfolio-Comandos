@@ -10,6 +10,14 @@
   padding-bottom: 4rem;
 }
 
+.rtcVideoMobile {
+  display: block;
+}
+
+.rtcVideoDesktop {
+  display: none;
+}
+
 .backgroundGradient {
   background-image: linear-gradient(to bottom, #edf1fc 33%, #fff);
 }
@@ -24,10 +32,15 @@
   padding: 5rem 0 4rem 0;
 }
 
+.resultsSection .sectionTitle {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .marketSection,
 .beforeStartingSection {
   display: block;
-  padding: 6rem 0 4rem 0;
+  padding: 6rem 0 0 0;
 }
 
 .bicolorTitle {
@@ -204,7 +217,7 @@
 }
 
 .marketSectionImage {
-  width: 243px;
+ display: block;
 }
 
 .primaryBackground {
@@ -221,7 +234,11 @@
 .letsGoWork,
 .resultsInfo figure,
 .banks,
-.designSystem {
+.designSystem,
+.marketLandingImage,
+.marketMobileImage,
+.marketAppFirst,
+.marketAppSecond {
   display: none;
 }
 
@@ -230,6 +247,19 @@
 .letsStartSection,
 .projectsSection {
   display: block;
+}
+
+.marketInfo {
+  overflow-x: hidden;
+}
+
+.marketInfo figure {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  max-width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  max-height: 750px;
 }
 
 .showAllPicturesButton {
@@ -313,6 +343,14 @@
 }
 
 @media (min-width: 1025px) {
+  .rtcVideoMobile {
+    display: none;
+  }
+
+  .rtcVideoDesktop {
+    display: block;
+  }
+
   .project {
     width: 31%;
   }
@@ -333,13 +371,7 @@
     color: var(--secondary);
     text-transform: uppercase;
   }
-
-  .rtcVideo {
-    max-width: 686px;
-    max-height: 524px;
-    border-radius: 18px;
-  }
-
+  
   .description {
     display: flex;
   }
@@ -364,15 +396,22 @@
     display: flex;
     align-items: center;
     padding: 4rem var(--padding-tablet) 0 var(--padding-tablet);
+    justify-content: space-between;
   }
 
   .challengeSection {
     flex-shrink: 0;
     flex-basis: 50%;
+    max-width: 450px;
+  }
+
+  .testimonialSection {
+    max-width: 450px;
   }
 
   .beforeMobileGallery,
-  .marketInfo figure {
+  .marketInfo figure,
+  .marketSectionImage {
     display: none;
   }
 
@@ -493,7 +532,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 5rem var(--padding-tablet) 0 var(--padding-tablet);
+    padding: 2.5rem var(--padding-tablet) 0 var(--padding-tablet);
   }
 
   .banksLogos {
@@ -542,15 +581,18 @@
 
   .marketAppFirst {
     grid-area: appFirst;
+    display: block;
   }
 
   .marketAppSecond {
     grid-area: appSecond;
+    display: block;
   }
 
   .marketMobileImage {
     grid-area: mobileApp;
     align-self: start;
+    display: block;
   }
 
   .marketInfo {
@@ -560,6 +602,7 @@
 
   .marketLandingImage {
     grid-area: landing;
+    display: block;
   }
 }
 

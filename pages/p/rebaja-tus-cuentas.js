@@ -38,7 +38,10 @@ const RebajaTusCuentasPage = ({ isMobile }) => {
         />
         <main className={styles.main}>
           <section className={styles.hero}>
-            <figure><img src="/images/projects/rtc-mobile.png" className={`${styles.videoImage} ${styles.rtcVideo}`} /></figure>
+            <figure>
+              <img src="/images/projects/rtc-video-mobile.png" className={`${styles.videoImage} ${styles.rtcVideoMobile}`} />
+              <img src="/images/projects/rtc-video.png" className={`${styles.videoImage} ${styles.rtcVideoDesktop}`} />
+            </figure>
             <div className={styles.info}>
               <img src="/images/projects/rtc-logo-color.svg" className={styles.rtcLogo} />
               <span className={styles.rtcSummary}>Web and responsive design</span>
@@ -215,7 +218,7 @@ const RebajaTusCuentasPage = ({ isMobile }) => {
                   </li>
                 </ul>
                 <figure className="text-centered">
-                  <img src="/images/projects/rtc-mobile-capture.webp" className={`${styles.videoImage} ${styles.marketSectionImage}`} />
+                  <img src="/images/projects/rtc-market-figure-mobile.png" className={styles.marketSectionImage} />
                 </figure>
               </div>
               <figure className={styles.marketLandingImage}>
@@ -273,7 +276,7 @@ const RebajaTusCuentasPage = ({ isMobile }) => {
                   </ul>
                 </div>
                 <figure>
-                  <img src="/images/projects/rtc-gallery.png" alt="Results" className={styles.videoImage} />
+                  <img src="/images/projects/rtc-ipad.jpg" alt="Results" className={styles.videoImage} />
                 </figure>
               </div>
               <div className={styles.beforeDesktopGallery}>
