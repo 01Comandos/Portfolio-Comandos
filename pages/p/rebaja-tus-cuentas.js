@@ -131,11 +131,11 @@ const RebajaTusCuentasPage = ({ isMobile }) => {
                 <Gallery photos={rtcContent.beforeStartingSection} containerStyles={styles.beforeMobileGallery} />
                 <p className={`${styles.normalParagraph} px-1 pb-4`}>We started by understanding the entire product up to that point, both users and services and products of RebajaTusCuentas.</p>
                 <div className={styles.beforeDesktopGallery}>
-                  <img src='/images/projects/before-01.png' className={styles.one}/>
-                  <img src='/images/projects/before-03.png' className={styles.two}/>
-                  <img src='/images/projects/before-04.png' className={styles.three}/>
-                  <img src='/images/projects/before-02.png' className={styles.four}/>
-                  <img src='/images/projects/before-05.png' className={styles.five}/>
+                  <img src='/images/projects/rtc-before-01.png' className={styles.one}/>
+                  <img src='/images/projects/rtc-before-03.png' className={styles.two}/>
+                  <img src='/images/projects/rtc-before-04.png' className={styles.three}/>
+                  <img src='/images/projects/rtc-before-02.png' className={styles.four}/>
+                  <img src='/images/projects/rtc-before-05.png' className={styles.five}/>
                   <button className={styles.showAllPicturesButton}>
                     <img src="/icons/icon-camera.svg" />
                     Show all pictures
@@ -155,7 +155,7 @@ const RebajaTusCuentasPage = ({ isMobile }) => {
               </div>
               <div className={styles.letsStartSection}>
                 <figure>
-                  <img src="/images/projects/rtc-analytics.webp" alt="Product metrics" className={styles.videoImage} />
+                  <img src="/images/projects/rtc-analytics.png" alt="Product metrics" className={styles.videoImage} />
                 </figure>
                 <div>
                   <h3 className={`${styles.sectionTitle} px-1 pt-3`}>Let’s start by analyzing metrics and conversations</h3>
@@ -280,11 +280,11 @@ const RebajaTusCuentasPage = ({ isMobile }) => {
                 </figure>
               </div>
               <div className={styles.beforeDesktopGallery}>
-                <img src='/images/projects/results-01.png' className={styles.one}/>
-                <img src='/images/projects/results-02.png' className={styles.two}/>
-                <img src='/images/projects/results-04.png' className={styles.three}/>
-                <img src='/images/projects/results-03.png' className={styles.four}/>
-                <img src='/images/projects/results-05.png' className={styles.five}/>
+                <img src='/images/projects/rtc-results-01.png' className={styles.one}/>
+                <img src='/images/projects/rtc-results-02.png' className={styles.two}/>
+                <img src='/images/projects/rtc-results-04.png' className={styles.three}/>
+                <img src='/images/projects/rtc-results-03.png' className={styles.four}/>
+                <img src='/images/projects/rtc-results-05.png' className={styles.five}/>
                 <button className={styles.showAllPicturesButton}>
                   <img src="/icons/icon-camera.svg" />
                   Show all pictures
