@@ -249,47 +249,47 @@ const RebajaTusCuentasPage = ({ isMobile }) => {
                 <img alt="Market image" src="/images/projects/market-02.png" className={styles.videoImage} />
               </figure>
             </section>
-            <section className={styles.resultsSection}>
-              <div className={styles.resultsInfo}>
-                <div>
-                  <h3 className={`${styles.sectionTitle} pb-2`}>The result was excellent</h3>
-                  <Gallery photos={rtcContent.resultsSection} containerStyles={styles.beforeMobileGallery} />
-                  <ul className={`${styles.marketPoints} px-1 pt-2`}>
-                    <li>
-                      <img src="/icons/check-input.svg" />
-                      <span>We unify all RebajaTusCuentas.com services under a single identity.</span>
-                    </li>
-                    <li>
-                      <img src="/icons/check-input.svg" />
-                      <span>Expansion to Peru, Colombia and Mexico.</span>
-                    </li>
-                    <li>
-                      <img src="/icons/check-input.svg" />
-                      <span>In Peru we went from being a mortgage broker to delivering mortgages directly.</span>
-                    </li>
-                    <li>
-                      <img src="/icons/check-input.svg" />
-                      <span>BBVA Peru acquires part of RTC’s operation.</span>
-                    </li>
-                  </ul>
-                </div>
-                <figure>
-                  <img src="/images/projects/rtc-ipad.jpg" alt="Results" className={styles.videoImage} />
-                </figure>
-              </div>
-              <div className={styles.beforeDesktopGallery}>
-                <img src='/images/projects/rtc-results-01.png' className={styles.one}/>
-                <img src='/images/projects/rtc-results-02.png' className={styles.two}/>
-                <img src='/images/projects/rtc-results-04.png' className={styles.three}/>
-                <img src='/images/projects/rtc-results-03.png' className={styles.four}/>
-                <img src='/images/projects/rtc-results-05.png' className={styles.five}/>
-                <button className={styles.showAllPicturesButton}>
-                  <img src="/icons/icon-camera.svg" />
-                  Show all pictures
-                </button>
-              </div>
-            </section>
           </div>
+          <section className={styles.resultsSection}>
+            <div className={styles.resultsInfo}>
+              <div>
+                <h3 className={`${styles.sectionTitle} pb-2`}>The result was excellent</h3>
+                <Gallery photos={rtcContent.resultsSection} containerStyles={styles.beforeMobileGallery} />
+                <ul className={`${styles.marketPoints} px-1 pt-2`}>
+                  <li>
+                    <img src="/icons/check-input.svg" />
+                    <span>We unify all RebajaTusCuentas.com services under a single identity.</span>
+                  </li>
+                  <li>
+                    <img src="/icons/check-input.svg" />
+                    <span>Expansion to Peru, Colombia and Mexico.</span>
+                  </li>
+                  <li>
+                    <img src="/icons/check-input.svg" />
+                    <span>In Peru we went from being a mortgage broker to delivering mortgages directly.</span>
+                  </li>
+                  <li>
+                    <img src="/icons/check-input.svg" />
+                    <span>BBVA Peru acquires part of RTC’s operation.</span>
+                  </li>
+                </ul>
+              </div>
+              <figure>
+                <img src="/images/projects/rtc-ipad.jpg" alt="Results" className={styles.videoImage} />
+              </figure>
+            </div>
+            <div className={styles.beforeDesktopGallery}>
+              <img src='/images/projects/rtc-results-01.png' className={styles.one}/>
+              <img src='/images/projects/rtc-results-02.png' className={styles.two}/>
+              <img src='/images/projects/rtc-results-04.png' className={styles.three}/>
+              <img src='/images/projects/rtc-results-03.png' className={styles.four}/>
+              <img src='/images/projects/rtc-results-05.png' className={styles.five}/>
+              <button className={styles.showAllPicturesButton}>
+                <img src="/icons/icon-camera.svg" />
+                Show all pictures
+              </button>
+            </div>
+            </section>
           <section className={styles.moreProjectsSection}>
             <h3 className={`${styles.sectionTitle} text-white pt-2 pb-3`}>Discover more project</h3>
             <div className={styles.projectsSection}>
