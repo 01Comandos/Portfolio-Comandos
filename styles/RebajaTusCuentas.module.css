@@ -280,6 +280,10 @@
   height: 45px;
 }
 
+.letsGoWork p {
+  padding: 1rem 1.5rem;
+}
+
 @media (min-width: 769px) {
   .features {
     grid-template-columns: 33% 33% 33%;
@@ -345,6 +349,10 @@
   .hero .verticalLine {
     grid-area: vertical-line;
     width: var(--padding-tablet);
+  }
+
+  .letsGoWork p {
+    padding: 1rem var(--padding-tablet);
   }
 }
 
@@ -495,7 +503,7 @@
   .letsGoWork > div,
   .letsStartSection > div,
   .resultsInfo > div {
-    width: 55%;
+    width: calc(100% - 540px);
   }
 
   .letsGoWork p,
@@ -676,8 +684,20 @@
     padding-right: var(--padding-large);
   }
 
+  .letsGoWork figure {
+    width: 480px;
+  }
+
+  .letsGoWork .videoImage {
+    width: 100%;
+  }
+
   .beforeDesktopGallery {
     padding-right: calc(var(--padding-large) - 0.3rem);;
     padding-left: calc(var(--padding-large) - 0.3rem);;
+  }
+
+  .letsGoWork p {
+    padding: 1rem var(--padding-large);
   }
 }

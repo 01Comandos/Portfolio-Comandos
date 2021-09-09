@@ -144,8 +144,8 @@ const RebajaTusCuentasPage = ({ isMobile }) => {
             <div className={styles.letsGoWork}>
               <div>
                 <h3 className={`${styles.sectionTitle}`}>Let's get to work</h3>
-                <p className={styles.normalParagraph}>We started with many user interviews, phone calls to talk to them and analyze metrics of RebajaTusCuentas.com's performance at that time.</p>
-                <p className={styles.normalParagraph}>We thought about a total restructuring of both the platform and transactional communication, modifying the brand's voice a bit.</p>
+                <p>We started with many user interviews, phone calls to talk to them and analyze metrics of RebajaTusCuentas.com's performance at that time.</p>
+                <p>We thought about a total restructuring of both the platform and transactional communication, modifying the brand's voice a bit.</p>
               </div>
               <figure>
                 <img src="/images/projects/lets-go-work.png" alt="Let's go to work" className={styles.videoImage} />
