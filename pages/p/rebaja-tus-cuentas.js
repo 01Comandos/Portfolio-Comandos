@@ -55,7 +55,7 @@ const RebajaTusCuentasPage = ({ isMobile }) => {
             </span>
             <div>
               <p>
-                RebajaTusCuentas was born as Peruvian startup with the commitment to democratize access to mortgage loans in an underbanked country. It is a mortgages broker whit the support of 500 startup with presence in 3 countries and + 10M in loans granted.
+                RebajaTusCuentas was born as Peruvian startup with the commitment to democratize access to mortgage loans in an underbanked country. It is a mortgages broker whit the support of 500 startup with presence in 3 countries and +60M in loans granted.
               </p>
               <p>
                 It has been incredible to see the growth of RTC.
@@ -74,15 +74,15 @@ const RebajaTusCuentasPage = ({ isMobile }) => {
             </article>
             <article>
               <strong>Tools</strong>
-              <span>Pencil, <br />Adobe Photoshop, <br />Adobe illustrator, <br />Sketch.</span>
+              <span className="lineHeight-30">Pencil, <br />Adobe Photoshop, <br />Adobe illustrator, <br />Sketch.</span>
             </article>
             <article>
               <strong>Projects</strong>
-              <span>Product Discovery, <br />UX Architecture, <br />Design System, <br />Prototype</span>
+              <span className="lineHeight-30">Product Discovery, <br />UX Architecture, <br />Design System, <br />Prototype</span>
             </article>
             <article>
               <strong>Deliverables</strong>
-              <span>Design App Mobile, <br />Design app, <br />Desktop</span>
+              <span className="lineHeight-30">Design App Mobile, <br />Design app, <br />Desktop</span>
             </article>
             <article>
               <strong>Applied methodologies:</strong>

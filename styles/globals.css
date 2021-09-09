@@ -33,7 +33,7 @@
   --gray-9: #babccf;
   --padding-mobile: 1rem;
   --padding-tablet: 2.3rem;
-  --padding-large: 5.5rem;
+  --padding-large: 4rem;
 }
 
 [class^="icon-"],
@@ -153,6 +153,10 @@ figure {
 
 .mt-2 {
   margin-top: 2rem;
+}
+
+.lineHeight-30 {
+  line-height: 30px;
 }
 
 .text-white {

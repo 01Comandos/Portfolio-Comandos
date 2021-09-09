@@ -82,4 +82,8 @@
   .container {
     padding: 1.5rem var(--padding-large);
   }
+
+  .rightOptions > button {
+    margin-right: 0;
+  }
 }
