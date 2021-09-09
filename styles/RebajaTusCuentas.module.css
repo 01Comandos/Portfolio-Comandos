@@ -302,8 +302,7 @@
     padding: 3rem var(--padding-tablet);
   }
 
-  .description,
-  .projectInfo {
+  .description {
     padding: 5.5rem var(--padding-tablet) 3rem;
   }
   
@@ -624,6 +623,14 @@
 
   .hero .verticalLine {
     width: var(--padding-large);
+  }
+
+  .projectInfo {
+    padding: 3rem var(--padding-large);
+  }
+
+  .description {
+    padding: 5.5rem var(--padding-large) 3rem;
   }
 
   .challengeSection {
