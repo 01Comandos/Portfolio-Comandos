@@ -30,6 +30,7 @@
 .funelSection,
 .resultsSection {
   padding: 5rem 0 4rem 0;
+  background-color: white;
 }
 
 .resultsSection .sectionTitle {
@@ -68,7 +69,9 @@
 }
 
 .testimonialSection,
-.challengeSection {
+.challengeSection,
+.letsGoWork,
+.letsStartSection {
   font-size: 18px;
   line-height: 1.83;
   letter-spacing: normal;
@@ -473,11 +476,11 @@
   .beforeStartingSection .normalParagraph {
     width: 593px;
     margin: 0;
-    padding: 1rem var(--padding-tablet) 3rem var(--padding-tablet)!important;
+    padding: 1rem var(--padding-tablet) 3rem var(--padding-tablet);
   }
 
   .beforeDesktopGallery {
-    margin-bottom: 7rem;
+    padding-bottom: 7rem;
   }
 
   .letsGoWork,
@@ -651,5 +654,30 @@
     margin-bottom: 1.5rem;
     display: flex;
     align-items: flex-start;
+  }
+
+  .resultsSection .sectionTitle,
+  .resultsSection .normalParagraph,
+  .marketSection .sectionTitle,
+  .marketSection .normalParagraph,
+  .beforeStartingSection .sectionTitle,
+  .beforeStartingSection .normalParagraph,
+  .moreProjectsSection,
+  .marketPoints,
+  .beforeStartingSection .sectionTitle,
+  .beforeStartingSection .normalParagraph {
+    padding-right: var(--padding-large);
+    padding-left: var(--padding-large);
+  }
+
+  .letsGoWork figure,
+  .letsStartSection figure,
+  .resultsInfo figure {
+    padding-right: var(--padding-large);
+  }
+
+  .beforeDesktopGallery {
+    padding-right: calc(var(--padding-large) - 0.3rem);;
+    padding-left: calc(var(--padding-large) - 0.3rem);;
   }
 }

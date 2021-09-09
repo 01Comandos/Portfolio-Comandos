@@ -90,115 +90,113 @@ const RebajaTusCuentasPage = ({ isMobile }) => {
             </article>
           </section>
           <div className={styles.challengeAndTestimonials}>
-            <section className={styles.challengeSection}>
-              <h3 className={styles.sectionTitle}>The challenge</h3>
-              <p className={styles.normalParagraph}>An incredible exprience for people who are often unbanked and want a mortgage loan. Taking into account that the services of a fintech are new to them and may not generate much confidence.</p>
-              <div className={`${styles.sectionSubtitle} pb-1`}>Points to take into account:</div>
-              <ul className={styles.takeInAccount}>
-                <li>
-                  <img src="/icons/check-input.svg" />
-                  <span>Conveying strength and confidence</span>
-                </li>
-                <li>
-                  <img src="/icons/check-input.svg" />
-                  <span>Pre-approved mortgages by banks and RebajaTusCuentas</span>
-                </li>
-                <li>
-                  <img src="/icons/check-input.svg" />
-                  <span>Constantly communicate the status of your process</span>
-                </li>
-                <li>
-                  <img src="/icons/check-input.svg" />
-                  <span>Request a lot of information without being overwhelming</span>
-                </li>
-              </ul>
-            </section>
-            <section className={styles.testimonialSection}>
-              <img src="/icons/left-quote.svg" />
-              <p>Redesigning a fintech platform for Latin America was a great challenge. The users who use this tool to search and compare mortgage loans do not have a high academic background, delivering pre-approved proposals and interacting with them was a challenge. It had to be very easy to use, so that they would become familiar with it as they went through the process.</p>
-              <CustomerCard
-                photo="/images/projects/rtc-cto.png"
-                name="Martín Mendoza del Solar"
-                role="CTO"
-                company="RebajaTusCuentas.com"
-              />
-            </section>
-          </div>
-          <div className={styles.backgroundGradient}>
-            <section className={styles.beforeStartingSection}>
+          <section className={styles.challengeSection}>
+            <h3 className={styles.sectionTitle}>The challenge</h3>
+            <p className={styles.normalParagraph}>An incredible exprience for people who are often unbanked and want a mortgage loan. Taking into account that the services of a fintech are new to them and may not generate much confidence.</p>
+            <div className={`${styles.sectionSubtitle} pb-1`}>Points to take into account:</div>
+            <ul className={styles.takeInAccount}>
+              <li>
+                <img src="/icons/check-input.svg" />
+                <span>Conveying strength and confidence</span>
+              </li>
+              <li>
+                <img src="/icons/check-input.svg" />
+                <span>Pre-approved mortgages by banks and RebajaTusCuentas</span>
+              </li>
+              <li>
+                <img src="/icons/check-input.svg" />
+                <span>Constantly communicate the status of your process</span>
+              </li>
+              <li>
+                <img src="/icons/check-input.svg" />
+                <span>Request a lot of information without being overwhelming</span>
+              </li>
+            </ul>
+          </section>
+          <section className={styles.testimonialSection}>
+            <img src="/icons/left-quote.svg" />
+            <p>Redesigning a fintech platform for Latin America was a great challenge. The users who use this tool to search and compare mortgage loans do not have a high academic background, delivering pre-approved proposals and interacting with them was a challenge. It had to be very easy to use, so that they would become familiar with it as they went through the process.</p>
+            <CustomerCard
+              photo="/images/projects/rtc-cto.png"
+              name="Martín Mendoza del Solar"
+              role="CTO"
+              company="RebajaTusCuentas.com"
+            />
+          </section>
+        </div>
+          <section className={styles.beforeStartingSection}>
+            <div className={styles.backgroundGradient}>
+              <h3 className={`${styles.sectionTitle} pb-2 px-1`}>Before starting</h3>
+              <Gallery photos={rtcContent.beforeStartingSection} containerStyles={styles.beforeMobileGallery} />
+              <p className={`${styles.normalParagraph} px-1 pb-4`}>We started by understanding the entire product up to that point, both users and services and products of RebajaTusCuentas.</p>
+              <div className={styles.beforeDesktopGallery}>
+                <img src='/images/projects/rtc-before-01.png' className={styles.one}/>
+                <img src='/images/projects/rtc-before-03.png' className={styles.two}/>
+                <img src='/images/projects/rtc-before-04.png' className={styles.three}/>
+                <img src='/images/projects/rtc-before-02.png' className={styles.four}/>
+                <img src='/images/projects/rtc-before-05.png' className={styles.five}/>
+                <button className={styles.showAllPicturesButton}>
+                  <img src="/icons/icon-camera.svg" />
+                  Show all pictures
+                </button>
+              </div>
+            </div>
+            <div className={styles.letsGoWork}>
               <div>
-                <h3 className={`${styles.sectionTitle} pb-2 px-1`}>Before starting</h3>
-                <Gallery photos={rtcContent.beforeStartingSection} containerStyles={styles.beforeMobileGallery} />
-                <p className={`${styles.normalParagraph} px-1 pb-4`}>We started by understanding the entire product up to that point, both users and services and products of RebajaTusCuentas.</p>
-                <div className={styles.beforeDesktopGallery}>
-                  <img src='/images/projects/rtc-before-01.png' className={styles.one}/>
-                  <img src='/images/projects/rtc-before-03.png' className={styles.two}/>
-                  <img src='/images/projects/rtc-before-04.png' className={styles.three}/>
-                  <img src='/images/projects/rtc-before-02.png' className={styles.four}/>
-                  <img src='/images/projects/rtc-before-05.png' className={styles.five}/>
-                  <button className={styles.showAllPicturesButton}>
-                    <img src="/icons/icon-camera.svg" />
-                    Show all pictures
-                  </button>
-                </div>
+                <h3 className={`${styles.sectionTitle}`}>Let's get to work</h3>
+                <p className={styles.normalParagraph}>We started with many user interviews, phone calls to talk to them and analyze metrics of RebajaTusCuentas.com's performance at that time.</p>
+                <p className={styles.normalParagraph}>We thought about a total restructuring of both the platform and transactional communication, modifying the brand's voice a bit.</p>
               </div>
-              <div className={styles.letsGoWork}>
-                <div>
-                  <h3 className={`${styles.sectionTitle}`}>Let's get to work</h3>
-                  <p className={styles.normalParagraph}>We started with many user interviews, phone calls to talk to them and analyze metrics of RebajaTusCuentas.com's performance at that time.</p>
-                  <p className={styles.normalParagraph}>We thought about a total restructuring of both the platform and transactional communication, modifying the brand's voice a bit.</p>
-                </div>
-                <figure>
-                  <img src="/images/projects/lets-go-work.png" alt="Let's go to work" className={styles.videoImage} />
-                  <figcaption>New graphic line for RebajaTusCuentas.com</figcaption>
-                </figure>
+              <figure>
+                <img src="/images/projects/lets-go-work.png" alt="Let's go to work" className={styles.videoImage} />
+                <figcaption>New graphic line for RebajaTusCuentas.com</figcaption>
+              </figure>
+            </div>
+            <div className={styles.letsStartSection}>
+              <figure>
+                <img src="/images/projects/rtc-analytics.png" alt="Product metrics" className={styles.videoImage} />
+              </figure>
+              <div>
+                <h3 className={`${styles.sectionTitle} px-1 pt-3`}>Let’s start by analyzing metrics and conversations</h3>
+                <p className={`${styles.normalParagraph} px-1`}>RebajaTusCuentas had started a previous research about two weeks before I joined the team. We analyzed all the information gathred to create the first prototypes and start iterating and talking with users with a tangible base.</p>
               </div>
-              <div className={styles.letsStartSection}>
-                <figure>
-                  <img src="/images/projects/rtc-analytics.png" alt="Product metrics" className={styles.videoImage} />
-                </figure>
-                <div>
-                  <h3 className={`${styles.sectionTitle} px-1 pt-3`}>Let’s start by analyzing metrics and conversations</h3>
-                  <p className={`${styles.normalParagraph} px-1`}>RebajaTusCuentas had started a previous research about two weeks before I joined the team. We analyzed all the information gathred to create the first prototypes and start iterating and talking with users with a tangible base.</p>
-                </div>
+            </div>
+          </section>
+          <section className={styles.funelSection}>
+            <div className={`${styles.bicolorTitle} text-centered pb-2`}>
+              Funel <span className="info">of RTC</span>
+            </div>
+            <div className={styles.features}>
+              <div className={styles.feature}>
+                <img src="/images/projects/trc-funel-01.png" alt="Website" />
+                <div>Website</div>
               </div>
-            </section>
-            <section className={styles.funelSection}>
-              <div className={`${styles.bicolorTitle} text-centered pb-2`}>
-                Funel <span className="info">of RTC</span>
+              <div className={styles.feature}>
+                <img src="/images/projects/trc-funel-02.png" alt="Registration" />
+                <div>Registration</div>
               </div>
-              <div className={styles.features}>
-                <div className={styles.feature}>
-                  <img src="/images/projects/trc-funel-01.png" alt="Website" />
-                  <div>Website</div>
-                </div>
-                <div className={styles.feature}>
-                  <img src="/images/projects/trc-funel-02.png" alt="Registration" />
-                  <div>Registration</div>
-                </div>
-                <div className={styles.feature}>
-                  <img src="/images/projects/trc-funel-03.png" alt="Mortgage type" />
-                  <div>Mortgage type</div>
-                </div>
-                <div className={styles.feature}>
-                  <img src="/images/projects/trc-funel-04.png" alt="Pre-approved loans" />
-                  <div>Pre-approved loans</div>
-                </div>
-                <div className={styles.feature}>
-                  <img src="/images/projects/trc-funel-05.png" alt="Document submission" />
-                  <div>Document submission</div>
-                </div>
-                <div className={styles.feature}>
-                  <img src="/images/projects/trc-funel-06.png" alt="Final evaluation" />
-                  <div>Final evaluation</div>
-                </div>
-                <div className={styles.feature}>
-                  <img src="/images/projects/trc-funel-07.png" alt="Delivery of credit" />
-                  <div>Delivery of credit</div>
-                </div>
+              <div className={styles.feature}>
+                <img src="/images/projects/trc-funel-03.png" alt="Mortgage type" />
+                <div>Mortgage type</div>
               </div>
-            </section>
-          </div>
+              <div className={styles.feature}>
+                <img src="/images/projects/trc-funel-04.png" alt="Pre-approved loans" />
+                <div>Pre-approved loans</div>
+              </div>
+              <div className={styles.feature}>
+                <img src="/images/projects/trc-funel-05.png" alt="Document submission" />
+                <div>Document submission</div>
+              </div>
+              <div className={styles.feature}>
+                <img src="/images/projects/trc-funel-06.png" alt="Final evaluation" />
+                <div>Final evaluation</div>
+              </div>
+              <div className={styles.feature}>
+                <img src="/images/projects/trc-funel-07.png" alt="Delivery of credit" />
+                <div>Delivery of credit</div>
+              </div>
+            </div>
+          </section>
           <div className={styles.backgroundGradient}>
             <section className={styles.marketSection}>
               <div className={styles.marketInfo}>
