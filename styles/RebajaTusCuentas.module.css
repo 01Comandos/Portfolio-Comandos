@@ -298,9 +298,13 @@
     padding-left: var(--padding-tablet);
   }
 
-  .description,
   .projectInfo {
     padding: 3rem var(--padding-tablet);
+  }
+
+  .description,
+  .projectInfo {
+    padding: 5.5rem var(--padding-tablet) 3rem;
   }
   
   .challengeAndTestimonials {
