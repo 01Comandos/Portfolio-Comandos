@@ -46,7 +46,7 @@
 
 .bicolorTitle {
   font-size: 35px;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .sectionTitle {
@@ -104,6 +104,7 @@
   font-style: normal;
   line-height: 2;
   letter-spacing: normal;
+  margin: 0;
 }
 
 .projectInfo {
@@ -577,6 +578,8 @@
         "mobileApp appSecond appSecond landing landing";
     padding-left: calc(var(--padding-tablet) - 0.3rem);
     padding-right: calc(var(--padding-tablet) - 0.3rem);
+    max-height: 1300px;
+    overflow-y: hidden;
   }
 
   .marketSection .sectionTitle,
@@ -695,11 +698,30 @@
   }
 
   .beforeDesktopGallery {
-    padding-right: calc(var(--padding-large) - 0.3rem);;
-    padding-left: calc(var(--padding-large) - 0.3rem);;
+    padding-right: calc(var(--padding-large) - 0.3rem);
+    padding-left: calc(var(--padding-large) - 0.3rem);
   }
 
   .letsGoWork p {
     padding: 1rem var(--padding-large);
+  }
+
+  .testimonialSection {
+    max-width: 600px;
+  }
+
+  .marketSection {
+    padding-right: var(--padding-large);
+    padding-left: var(--padding-large);
+    max-height: 1450px;
+  }
+
+  .marketInfo {
+    max-width: 90%;
+  }
+
+  .marketInfo .sectionTitle {
+    padding-right: 0;
+    padding-left: 0;
   }
 }
