@@ -364,7 +364,7 @@
 
   .rtcSummary {
     display: block;
-    padding: 0.4rem var(--padding-tablet) 1rem var(--padding-tablet);
+    padding: 0.4rem var(--padding-tablet) 0 var(--padding-tablet);
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.07px;
@@ -607,6 +607,21 @@
 }
 
 @media (min-width: 1201px) {
+  .rtcLogo,
+  .rtcSummary,
+  .hero .title {
+    padding-left: var(--padding-large);
+    padding-right: var(--padding-large);
+  }
+
+  .hero .rtcVideoDesktop {
+    padding-right: var(--padding-large);
+  }
+
+  .hero .verticalLine {
+    width: var(--padding-large);
+  }
+
   .challengeSection {
     flex-basis: 60%;
   }
