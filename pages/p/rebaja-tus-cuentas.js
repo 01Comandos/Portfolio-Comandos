@@ -339,7 +339,7 @@ const RebajaTusCuentasPage = ({ isMobile }) => {
           >
             <iframe className={styles.videoDefinition} src="https://www.youtube.com/embed/cSlE9gzCEBg" title="Rebaja tus Cuentas" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </FullscreenModal>
-          {/* <MobileMenu /> */}
+          <MobileMenu />
         </main>
       </div>
     </>
