@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import { useState } from 'react';
 import Header from "../../components/Header/Header";
 import CustomerCard from "../../components/CustomerCard/CustomerCard";
 import TestimonialsCarousel from "../../components/TestimonialsCarousel/TestimonialsCarousel";
@@ -8,6 +9,7 @@ import Contact from "../../components/Contact/Contact";
 import Project from "../../components/Project/Project";
 import Gallery from "../../components/Gallery/Gallery";
 import MobileMenu from "../../components/MobileMenu/MobileMenu";
+import FullscreenModal from "../../components/FullscreenModal/FullscreenModal";
 import Footer from "../../components/Footer/Footer";
 import content from "../../content/projects/rebaja-tus-cuentas.json";
 import projects from "../../content/projects.json";
@@ -16,8 +18,13 @@ import { isMobile } from "../../utils";
 import styles from "../../styles/RebajaTusCuentas.module.css";
 
 const RebajaTusCuentasPage = ({ isMobile }) => {
+  const [videoVisbility, setVideoVisibility] = useState(false);
   const selectedProjects = projects.filter(project => project.id === 'RebajaTusCuentas' || project.id === 'Spotfinder' || project.id === 'Caribe');
   const rtcContent = projects.find(project => project.id === 'RebajaTusCuentas');
+
+  function handleVideoVisibility() {
+    setVideoVisibility(prevState => !prevState);
+  }
 
   return (
     <>
@@ -39,8 +46,16 @@ const RebajaTusCuentasPage = ({ isMobile }) => {
         <main className={styles.main}>
           <section className={styles.hero}>
             <figure>
-              <img src="/images/projects/rtc-video-mobile.png" className={`${styles.videoImage} ${styles.rtcVideoMobile}`} />
-              <img src="/images/projects/rtc-video.png" className={`${styles.videoImage} ${styles.rtcVideoDesktop}`} />
+              <img
+                src="/images/projects/rtc-video-mobile.png"
+                className={`${styles.videoImage} ${styles.rtcVideoMobile}`}
+                onClick={handleVideoVisibility}
+              />
+              <img
+                src="/images/projects/rtc-video.png"
+                className={`${styles.videoImage} ${styles.rtcVideoDesktop}`}
+                onClick={handleVideoVisibility}
+              />
             </figure>
             <div className={styles.info}>
               <img src="/images/projects/rtc-logo-color.svg" className={styles.rtcLogo} />
@@ -317,6 +332,13 @@ const RebajaTusCuentasPage = ({ isMobile }) => {
             <Contact />
             <Footer />
           </section>
+          <FullscreenModal
+            visibility={videoVisbility}
+            handleClose={handleVideoVisibility}
+            containerStyles={styles.videoBackground}
+          >
+            <iframe className={styles.videoDefinition} src="https://www.youtube.com/embed/cSlE9gzCEBg" title="Rebaja tus Cuentas" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </FullscreenModal>
           {/* <MobileMenu /> */}
         </main>
       </div>

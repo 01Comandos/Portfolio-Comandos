@@ -1,0 +1,28 @@
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    overflow: hidden;
+}
+  
+.buttonClose {
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    right: var(--padding-mobile);
+}
+
+@media (min-width: 769px) {
+    .buttonClose {
+        right: var(--padding-tablet);
+    }
+}
+
+@media (min-width: 1201px) {
+    .buttonClose {
+        right: var(--padding-large);
+    }
+}
