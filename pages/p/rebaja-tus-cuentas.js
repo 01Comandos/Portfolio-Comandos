@@ -255,7 +255,9 @@ const RebajaTusCuentasPage = ({ isMobile }) => {
                 <img alt="BBVA" src="/images/projects/bbva.svg" className={styles.bbva} />
                 <img alt="BanBif" src="/images/projects/banbif.svg" className={styles.banbif} />
                 <img alt="BCP" src="/images/projects/bcp.svg" className={styles.bcp} />
-                {/* <img alt="tcf" src="/images/projects/tcf.svg" className={styles.tcf} /> */}
+                <img alt="Citibanamex" src="/images/projects/citibanamex.svg" className={styles.citibanamex} />
+                <img alt="HSBC" src="/images/projects/hsbc.svg" className={styles.hsbc} />
+                <img alt="Santander" src="/images/projects/santander.svg" className={styles.santander} />
               </div>
             </section>
             <section className={styles.designSystem}>
@@ -337,7 +339,7 @@ const RebajaTusCuentasPage = ({ isMobile }) => {
             handleClose={handleVideoVisibility}
             containerStyles={styles.videoBackground}
           >
-            <iframe className={styles.videoDefinition} src="https://www.youtube.com/embed/cSlE9gzCEBg" title="Rebaja tus Cuentas" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe className={styles.videoDefinition} src="https://www.youtube.com/embed/cSlE9gzCEBg" title="Rebaja tus Cuentas" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           </FullscreenModal>
           <MobileMenu />
         </main>

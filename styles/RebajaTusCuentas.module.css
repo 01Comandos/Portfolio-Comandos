@@ -574,10 +574,15 @@
   }
 
   .banksLogos {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+  }
+
+  .banksLogos img {
+    padding: 2rem 1rem;
+    align-self: center;
+    justify-self: center;
   }
 
   .marketSection,

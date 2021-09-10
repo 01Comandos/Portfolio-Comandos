@@ -4,6 +4,7 @@ function FullscreenModal({ children, containerStyles, handleClose, visibility = 
     const innerStyles = {
         display: visibility ? 'block' : 'none'
     };
+
     return (
         <div className={`${styles.container} ${containerStyles}`} style={innerStyles}>
             <img src='/icons/close.svg' onClick={handleClose} className={styles.buttonClose} />
