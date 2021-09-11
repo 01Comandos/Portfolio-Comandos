@@ -1,5 +1,5 @@
 import mixpanel from 'mixpanel-browser';
-mixpanel.init(process.env.MIXPANEL_TOKEN);
+mixpanel.init(process.env.NEXT_PUBLIC_MIXPANEL_TOKEN);
 
 let env_check = process.env.NODE_ENV === 'production';
 
@@ -8,7 +8,6 @@ const actions = {
     if (env_check) mixpanel.identify(id);
   },
   track: (name, props) => {
-    console.log(process.env.MIXPANEL_TOKEN, process.env.NODE_ENV);
     if (env_check) mixpanel.track(name, props);
   }
 };
