@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Head from "next/head";
 import Hero from "../components/Hero/Hero";
 import Companies from "../components/Companies/Companies";
@@ -7,10 +8,17 @@ import TestimonialsCarousel from "../components/TestimonialsCarousel/Testimonial
 import Definition from "../components/Definition/Definition";
 import Contact from "../components/Contact/Contact";
 import TestimonialsList from "../content/testimonials.json"
-import { isMobile } from "../utils";
+import { visitPage } from "../analytics/HomePage";
 import styles from "../styles/Home.module.css";
+import { isMobile } from "../utils";
+
 
 const Home = ({ isMobile }) => {
+
+  useEffect(() => {
+    visitPage();
+  }, []);
+
   return (
     <div>
       <Head>
