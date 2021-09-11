@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "static": "next build && next export",
-    "start": "next start"
+    "start": "next start",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "@formspree/react": "^2.2.3",
@@ -16,5 +18,13 @@
     "react-dom": "17.0.2",
     "react-swipeable": "^6.1.2",
     "ua-parser-js": "^0.7.28"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@storybook/addon-actions": "^6.3.8",
+    "@storybook/addon-essentials": "^6.3.8",
+    "@storybook/addon-links": "^6.3.8",
+    "@storybook/react": "^6.3.8",
+    "babel-loader": "^8.2.2"
   }
 }
