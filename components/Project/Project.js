@@ -1,12 +1,13 @@
 import Link from "next/link";
-import { useState } from "react";
 import styles from "./Project.module.css";
+import { trackEvent } from "../../analytics/events";
+import { useState } from "react";
 
 const Project = ({ isMobile, pictures, name, description, url }) => {
   const [isHover, setHover] = useState(false);
 
   return (
-    <Link href={`/p/${url}`}>
+    <Link href={`/p/${url}`} onClick={trackEvent('Project clicked', { project: name })}>
       <article
         className={styles.container}
         onMouseEnter={() => setHover(true)}

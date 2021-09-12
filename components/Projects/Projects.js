@@ -2,6 +2,7 @@ import Link from "next/link";
 import Project from "../Project/Project";
 import projectsList from "../../content/projects.json"
 import styles from "./Projects.module.css";
+import { trackEvent } from "../../analytics/events";
 
 const Projects = ({ isMobile }) => (
   <section className={`${styles.container} padding-x`}>
@@ -26,7 +27,7 @@ const Projects = ({ isMobile }) => (
       ))}
     </div>
     <div className={styles.options}>
-      <Link href="/">
+      <Link href="/" onClick={trackEvent('View all projects clicked')}>
         <button className={`black ${styles.allProjects}`}>
           View all projects
         </button>

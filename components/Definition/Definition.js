@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from "./Definition.module.css";
+import { trackEvent } from "../../analytics/events";
 
 const Definition = () => {
   return (
@@ -19,7 +20,7 @@ const Definition = () => {
             designers and developers to achieve the maximum potential of your
             idea.
           </p>
-          <Link href="/contact">
+          <Link href="/contact" onClick={trackEvent('Contact CTA clicked')}>
             <div className={styles.knowMore}>
               <span>I want to know more</span>
               <img src="/icons/icon-arrow.svg" />
