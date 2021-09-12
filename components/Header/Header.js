@@ -3,6 +3,7 @@ import classNames from 'classnames';
 import { useContext } from "react";
 import { MenuMobileContext } from "../../contexts/mobileMenuContext";
 import { menuOptions } from "../../utils/constants";
+import { trackEvent } from "../../analytics/events";
 import styles from "./Header.module.css";
 
 const Header = ({
@@ -14,12 +15,21 @@ const Header = ({
   const { toogleMenu } = useContext(MenuMobileContext);
   const containerColor = backgroundStyle ? backgroundStyle : styles.bgcBlack;
 
+  function registerEvent(actionName) {
+    trackEvent(actionName);
+  }
+
+  function setMenuVisibility() {
+    registerEvent('Mobile menu clicked')
+    toogleMenu()
+  }
+
   return (
     <header className={classNames([
       styles.container,
       containerColor
     ])}>
-      <Link href="/">
+      <Link href="/" onClick={registerEvent('Header logo mobile clicked')}>
         <img
           className={styles.logoMobile}
           src="/logo/logo-isotipo-white.svg"
@@ -29,7 +39,7 @@ const Header = ({
         />
       </Link>
       {!darkMenu && 
-        <Link href="/">
+        <Link href="/" onClick={registerEvent('Header logo clicked')}>
           <img
             className={styles.logo}
             src="/logo/logo-white.svg"
@@ -40,7 +50,7 @@ const Header = ({
         </Link>
       }
       {darkMenu &&
-        <Link href="/">
+        <Link href="/" onClick={registerEvent('Header logo clicked')}>
           <img
             className={styles.logo}
             src="/logo/logo-black.svg"
@@ -52,26 +62,30 @@ const Header = ({
       }
       <div className={darkMenu ? styles.darkMenu : styles.menu}>
         {menuOptions.map((item, index) => (
-          <Link key={index} href={item.link}>
+          <Link
+            key={index}
+            href={item.link}
+            onClick={registerEvent('Menu option clicked', { value: item.name })}
+          >
             <a>{item.name}</a>
           </Link>
         ))}
       </div>
       <div className={styles.rightOptions}>
         {withContact && (
-          <Link href="/contact">
+          <Link href="/contact" onClick={registerEvent('Header contact button clicked')}>
             <button className={buttonStyle || 'black'}>Contact</button>
           </Link>
         )}
         {!darkMenu && <img
-          onClick={toogleMenu}
+          onClick={setMenuVisibility}
           className={styles.menuIcon}
           src="/icons/icon-menu.svg"
           width={28}
           height={19}
         />}
         {darkMenu && <img
-          onClick={toogleMenu}
+          onClick={setMenuVisibility}
           className={styles.menuIcon}
           src="/icons/icon-black-menu.svg"
           width={37}

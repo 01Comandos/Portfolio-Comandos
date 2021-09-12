@@ -8,7 +8,7 @@ import TestimonialsCarousel from "../components/TestimonialsCarousel/Testimonial
 import Definition from "../components/Definition/Definition";
 import Contact from "../components/Contact/Contact";
 import TestimonialsList from "../content/testimonials.json"
-import { visitPage } from "../analytics/HomePage";
+import { visitPage } from "../analytics/events";
 import styles from "../styles/Home.module.css";
 import { isMobile } from "../utils";
 
