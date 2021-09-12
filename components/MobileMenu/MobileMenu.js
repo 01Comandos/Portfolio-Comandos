@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import { useContext } from "react";
 import { MenuMobileContext } from "../../contexts/mobileMenuContext";
 import { menuOptions } from '../../utils/constants';
+import { trackEvent } from "../../analytics/events";
 import styles from "./MobileMenu.module.css";
 
 const MobileMenu = () => {
@@ -39,7 +40,11 @@ const MobileMenu = () => {
       </div>
       <ul className={styles.menu}>
         {menuOptions.map((item, index) => (
-          <Link href={item.link} key={index}>
+          <Link
+            href={item.link}
+            key={index}
+            onClick={trackEvent('Mobile menu option clicked', { value: item.name })}
+          >
             <li
               className={`${styles.menuItem} ${
                 pathname === item.link ? styles.active : ""
