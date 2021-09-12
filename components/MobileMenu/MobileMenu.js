@@ -43,7 +43,12 @@ const MobileMenu = () => {
           <Link
             href={item.link}
             key={index}
-            onClick={trackEvent('Mobile menu option clicked', { value: item.name })}
+            onClick={() => 
+              trackEvent(
+                'Mobile menu option clicked',
+                { value: item.name }
+              )
+            }
           >
             <li
               className={`${styles.menuItem} ${

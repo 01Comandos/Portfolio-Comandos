@@ -158,7 +158,7 @@ const RebajaTusCuentasPage = ({ isMobile }) => {
                 <img src='/images/projects/rtc-before-05.png' className={styles.five}/>
                 <button
                   className={styles.showAllPicturesButton}
-                  onClick={trackEvent('Gallery show all pictures clicked')}
+                  onClick={() => trackEvent('Gallery show all pictures clicked')}
                 >
                   <img src="/icons/icon-camera.svg" />
                   Show all pictures
@@ -312,7 +312,7 @@ const RebajaTusCuentasPage = ({ isMobile }) => {
               <img src='/images/projects/rtc-results-05.png' className={styles.five}/>
               <button
                 className={styles.showAllPicturesButton}
-                onClick={trackEvent('Gallery show all pictures clicked')}
+                onClick={() => trackEvent('Gallery show all pictures clicked')}
               >
                 <img src="/icons/icon-camera.svg" />
                 Show all pictures

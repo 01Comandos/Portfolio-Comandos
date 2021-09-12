@@ -29,7 +29,7 @@ const Header = ({
       styles.container,
       containerColor
     ])}>
-      <Link href="/" onClick={registerEvent('Header logo mobile clicked')}>
+      <Link href="/" onClick={() => registerEvent('Header logo mobile clicked')}>
         <img
           className={styles.logoMobile}
           src="/logo/logo-isotipo-white.svg"
@@ -39,7 +39,7 @@ const Header = ({
         />
       </Link>
       {!darkMenu && 
-        <Link href="/" onClick={registerEvent('Header logo clicked')}>
+        <Link href="/" onClick={() => registerEvent('Header logo clicked')}>
           <img
             className={styles.logo}
             src="/logo/logo-white.svg"
@@ -50,7 +50,7 @@ const Header = ({
         </Link>
       }
       {darkMenu &&
-        <Link href="/" onClick={registerEvent('Header logo clicked')}>
+        <Link href="/" onClick={() => registerEvent('Header logo clicked')}>
           <img
             className={styles.logo}
             src="/logo/logo-black.svg"
@@ -65,7 +65,7 @@ const Header = ({
           <Link
             key={index}
             href={item.link}
-            onClick={registerEvent('Menu option clicked', { value: item.name })}
+            onClick={() => registerEvent('Menu option clicked', { value: item.name })}
           >
             <a>{item.name}</a>
           </Link>
@@ -73,7 +73,10 @@ const Header = ({
       </div>
       <div className={styles.rightOptions}>
         {withContact && (
-          <Link href="/contact" onClick={registerEvent('Header contact button clicked')}>
+          <Link
+            href="/contact"
+            onClick={() => registerEvent('Header contact button clicked')}
+          >
             <button className={buttonStyle || 'black'}>Contact</button>
           </Link>
         )}

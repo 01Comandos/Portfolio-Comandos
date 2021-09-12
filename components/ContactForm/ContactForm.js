@@ -126,7 +126,7 @@ const ContactForm = () => {
             className={styles.send}
             type="submit"
             disabled={state.submitting}
-            onClick={trackEvent('Message was sent')}
+            onClick={() => trackEvent('Message was sent')}
           >
             Send
           </button>

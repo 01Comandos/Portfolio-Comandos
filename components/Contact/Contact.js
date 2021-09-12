@@ -8,7 +8,7 @@ const Contact = () => {
       <h2 className={styles.title}>Let’s <span>talk</span></h2>
       <p className={styles.text}>Let us know who you are and what you’re up to.</p>
     </div>
-    <Link href="/contact" onClick={trackEvent('Contact button clicked')}>
+    <Link href="/contact" onClick={() => trackEvent('Contact button clicked')}>
       <button className={`black ${styles.contactButton}`}>Contact</button>
     </Link>
   </section>

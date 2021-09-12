@@ -7,7 +7,7 @@ const SocialNetworks = () => (
       <a
         href="https://www.linkedin.com/in/01comandos"
         target="_blank"
-        onClick={trackEvent('Linkedin clicked')}
+        onClick={() => trackEvent('Linkedin clicked')}
       >
         <span className={`icon-linkedin ${styles.icon}`}></span>
       </a>
@@ -16,7 +16,7 @@ const SocialNetworks = () => (
       <a
         href="https://github.com/01Comandos"
         target="_blank"
-        onClick={trackEvent('Github clicked')}
+        onClick={() => trackEvent('Github clicked')}
       >
         <span className={`icon-github ${styles.icon}`}></span>
       </a>
@@ -25,7 +25,7 @@ const SocialNetworks = () => (
       <a
         href="https://twitter.com/01Comandos"
         target="_blank"
-        onClick={trackEvent('Twitter clicked')}
+        onClick={() => trackEvent('Twitter clicked')}
       >
         <span className={`icon-twitter ${styles.icon}`}></span>
       </a>
@@ -34,7 +34,7 @@ const SocialNetworks = () => (
       <a
         href="https://www.behance.net/01Comandos"
         target="_blank"
-        onClick={trackEvent('Behance clicked')}
+        onClick={() => trackEvent('Behance clicked')}
       >
         <span className={`icon-behance ${styles.icon}`}></span>
       </a>
@@ -43,7 +43,7 @@ const SocialNetworks = () => (
       <a
         href="https://www.instagram.com/01comandos/"
         target="_blank"
-        onClick={trackEvent('Instagram clicked')}
+        onClick={() => trackEvent('Instagram clicked')}
       >
         <span className={`icon-instagram ${styles.icon}`}></span>
       </a>

@@ -20,7 +20,7 @@ const Definition = () => {
             designers and developers to achieve the maximum potential of your
             idea.
           </p>
-          <Link href="/contact" onClick={trackEvent('Contact CTA clicked')}>
+          <Link href="/contact" onClick={() => trackEvent('Contact CTA clicked')}>
             <div className={styles.knowMore}>
               <span>I want to know more</span>
               <img src="/icons/icon-arrow.svg" />

@@ -27,7 +27,10 @@ const Projects = ({ isMobile }) => (
       ))}
     </div>
     <div className={styles.options}>
-      <Link href="/" onClick={trackEvent('View all projects clicked')}>
+      <Link
+        href="/"
+        onClick={() => trackEvent('View all projects clicked')}
+      >
         <button className={`black ${styles.allProjects}`}>
           View all projects
         </button>
