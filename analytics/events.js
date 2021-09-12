@@ -1,7 +1,7 @@
 import { Mixpanel } from './mixpanel';
 
-export const visitPage = () => {
-    Mixpanel.track('Home viewed');
+export const visitPage = (page) => {
+    Mixpanel.track(page);
 };
 
 export const trackEvent = (action, props) => {

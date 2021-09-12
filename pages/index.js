@@ -16,7 +16,7 @@ import { isMobile } from "../utils";
 const Home = ({ isMobile }) => {
 
   useEffect(() => {
-    visitPage();
+    visitPage('Home viewed');
   }, []);
 
   return (

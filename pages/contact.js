@@ -2,10 +2,16 @@ import Head from "next/head";
 import ContactForm from "../components/ContactForm/ContactForm";
 import TestimonialsCarousel from "../components/TestimonialsCarousel/TestimonialsCarousel";
 import TestimonialsList from "../content/testimonials.json";
+import { useEffect } from 'react';
 import { isMobile } from "../utils";
+import { visitPage } from "../analytics/events";
 import styles from "../styles/Contact.module.css";
 
 const Contact = ({ isMobile }) => {
+  useEffect(() => {
+    visitPage('Contact page viewed');
+  }, []);
+
   return (
     <div>
       <Head>

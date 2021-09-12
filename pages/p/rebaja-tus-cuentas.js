@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Header from "../../components/Header/Header";
 import CustomerCard from "../../components/CustomerCard/CustomerCard";
 import TestimonialsCarousel from "../../components/TestimonialsCarousel/TestimonialsCarousel";
@@ -16,6 +16,7 @@ import projects from "../../content/projects.json";
 import TestimonialsList from "../../content/testimonials.json";
 import { isMobile } from "../../utils";
 import styles from "../../styles/RebajaTusCuentas.module.css";
+import { trackEvent, visitPage } from "../../analytics/events";
 
 const RebajaTusCuentasPage = ({ isMobile }) => {
   const [videoVisbility, setVideoVisibility] = useState(false);
@@ -23,8 +24,13 @@ const RebajaTusCuentasPage = ({ isMobile }) => {
   const rtcContent = projects.find(project => project.id === 'RebajaTusCuentas');
 
   function handleVideoVisibility() {
+    trackEvent('RTC page video played');
     setVideoVisibility(prevState => !prevState);
   }
+
+  useEffect(() => {
+    visitPage('RTC page viewed');
+  }, []);
 
   return (
     <>
@@ -150,7 +156,10 @@ const RebajaTusCuentasPage = ({ isMobile }) => {
                 <img src='/images/projects/rtc-before-04.png' className={styles.three}/>
                 <img src='/images/projects/rtc-before-02.png' className={styles.four}/>
                 <img src='/images/projects/rtc-before-05.png' className={styles.five}/>
-                <button className={styles.showAllPicturesButton}>
+                <button
+                  className={styles.showAllPicturesButton}
+                  onClick={trackEvent('Gallery show all pictures clicked')}
+                >
                   <img src="/icons/icon-camera.svg" />
                   Show all pictures
                 </button>
@@ -301,7 +310,10 @@ const RebajaTusCuentasPage = ({ isMobile }) => {
               <img src='/images/projects/rtc-results-04.png' className={styles.three}/>
               <img src='/images/projects/rtc-results-03.png' className={styles.four}/>
               <img src='/images/projects/rtc-results-05.png' className={styles.five}/>
-              <button className={styles.showAllPicturesButton}>
+              <button
+                className={styles.showAllPicturesButton}
+                onClick={trackEvent('Gallery show all pictures clicked')}
+              >
                 <img src="/icons/icon-camera.svg" />
                 Show all pictures
               </button>
