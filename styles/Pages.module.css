@@ -1,0 +1,15 @@
+.main {
+  padding-top: 5.6rem;
+}
+
+@media (min-width: 769px) {
+  .main {
+    padding-top: 8rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .main {
+    padding-top: 11rem;
+  }
+}

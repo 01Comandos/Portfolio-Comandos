@@ -23,6 +23,7 @@
     "id": "Stadio",
     "name": "Stadio",
     "pictures": {
+      "default": "/images/projects/stadio/hero-image.png",
       "mobile": "/images/stadio-mobile.png",
       "desktop": "/images/stadio.png"
     },
