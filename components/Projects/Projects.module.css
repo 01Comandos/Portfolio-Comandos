@@ -20,7 +20,7 @@
   padding: 1.8rem 0;
 }
 
-.project:nth-child(n+4) {
+.projectVisibility:nth-child(n+4) {
   display: none;
 }
 
@@ -74,17 +74,17 @@
     width: 45%;
   }
 
-  .project:nth-child(n+4) {
+  .projectVisibility:nth-child(n+4) {
     display: block;
   }
 
-  .project:nth-child(n+5) {
+  .projectVisibility:nth-child(n+5) {
     display: none;
   }
 }
 
 @media (min-width: 1025px) {
-  .project:nth-child(n) {
+  .projectVisibility:nth-child(n) {
     display: block;
   }
 
