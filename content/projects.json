@@ -17,6 +17,7 @@
       "/images/projects/rtc-ipad.jpg"
     ],
     "description": "Making it less painful to ask for mortgages is the mission of RebajaTusCuentas. All without goin to the bank.",
+    "shortDescription": "A financial platform built for scale and accessibility",
     "url": "rebaja-tus-cuentas"
   },
   {
@@ -27,6 +28,7 @@
       "desktop": "/images/stadio.png"
     },
     "description": "A great collaborative solution for runners. Lima? Sao Paulo? Let's run together!",
+    "shortDescription": "A better running experience",
     "url": "stadio"
   },
   {
@@ -37,6 +39,7 @@
       "desktop": "/images/mipos-1.png"
     },
     "description": "1 or 40 Dark Kitchen, 1 or 100 restaurants. Everything in a tablet to manage thousands of orders by Delivery.",
+    "shortDescription": "A better experience for Dark Kitchen",
     "url": "mipos-interger"
   },
   {
@@ -47,6 +50,7 @@
       "desktop": "/images/mipos-2.png"
     },
     "description": "Underpinned by old operating systems, a great POS for the new generation of consumers.",
+    "shortDescription": "A smart way to manage restaurants",
     "url": "mipos-pos"
   },
   {
@@ -57,16 +61,29 @@
       "desktop": "/images/spotlitefinal.png"
     },
     "description": "Finding and reserving parking is not an easy thing. More with AI. Spotfinder the genuinely awesome.",
+    "shortDescription": "Efficient parking experiences",
     "url": "spotfinder"
   },
   {
-    "id": "Caribe",
-    "name": "Caribe Federal Credit Union",
+    "id": "Truorawhatsapp",
+    "name": "Truora Whatsapp",
     "pictures": {
-      "mobile": "/images/caribe-federal-device-mobile.png",
-      "desktop": "/images/caribe-federal-device.png"
+      "mobile": "",
+      "desktop": ""
     },
-    "description": "A traditional government bank wants to make the experience of visiting and finding information incredible.",
-    "url": "caribe-federal-credit-union"
+    "description": "",
+    "shortDescription": "Recovering users via whatsapp with a non-code tool",
+    "url": ""
+  },
+  {
+    "id": "Truoratruchecks",
+    "name": "Truora TruChecks",
+    "pictures": {
+      "mobile": "",
+      "desktop": ""
+    },
+    "description": "",
+    "shortDescription": "Redesigning how to do a background query",
+    "url": ""
   }
 ]

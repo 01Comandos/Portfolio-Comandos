@@ -20,7 +20,7 @@
   padding: 1.8rem 0;
 }
 
-.project:nth-child(n+4) {
+.projectVisibility:nth-child(n+4) {
   display: none;
 }
 
