@@ -23,6 +23,7 @@
   --black-3: #333333;
   --black-4: #100f0f;
   --black-5: #171717;
+  --black-6: #212126;
   --blue-1: #afe7fb;
   --gray-1: #b4c0ca;
   --gray-2: #cdcdcd;
@@ -36,6 +37,7 @@
   --padding-mobile: 1rem;
   --padding-tablet: 2.3rem;
   --padding-large: 4rem;
+  --padding-extralarge: 12%;
 }
 
 [class^="icon-"],
@@ -245,5 +247,11 @@ span.info {
 @media (min-width: 1201px) {
   .padding-x {
     padding: 0 var(--padding-large);
+  }
+}
+
+@media (min-width: 1501px) {
+  .padding-x {
+    padding: 0 var(--padding-extralarge);
   }
 }

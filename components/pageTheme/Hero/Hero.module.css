@@ -3,6 +3,10 @@
   background-color: transparent;
 }
 
+.logo {
+  margin-bottom: 14px;
+}
+
 .figureVideo {
   position: relative;
   height: 360px;
@@ -12,7 +16,7 @@
 
 .imageVideo {
   object-fit: cover;
-  object-position: 0% 0%;
+  object-position: 0% 18%;
   width: 100%;
   height: 100%;
 }
@@ -41,7 +45,7 @@
 
 .title {
   margin: 0;
-  padding: 42px var(--padding-mobile) 32px;
+  padding: 42px 0 32px;
   font-size: 40px;
   font-weight: 500;
   color: white;
@@ -62,6 +66,11 @@
   display: none;
 }
 
+.textSection {
+  margin-left: var(--padding-mobile);
+  margin-right: var(--padding-mobile);
+}
+
 @media (min-width: 769px) {
   .container {
     display: flex;
@@ -74,17 +83,17 @@
     height: 400px;
   }
 
-  .title {
-    padding-left: var(--padding-tablet);
-    padding-right: var(--padding-tablet);
-  }
-
   .verticalLine {
-    width: var(--padding-tablet);
+    width: 0%;
   }
 
   .imageVideo {
     object-position: 0% 20%;
+  }
+
+  .textSection {
+    margin-left: var(--padding-tablet);
+    margin-right: var(--padding-tablet);
   }
 }
 
@@ -111,7 +120,6 @@
 
   .contactMe {
     display: block;
-    padding-left: var(--padding-tablet);
     padding-bottom: 60px;
   }
 
@@ -120,34 +128,20 @@
   }
 
   .titleProjectInfo {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
-  .titleProjectInfo > .projectName {    
-    padding-left: var(--padding-tablet);
-  }
-
-  .titleProjectInfo > .projectSlogan {
-    padding-left: var(--padding-tablet);
+  .textSection {
+    margin-right: var(--padding-large);
   }
 }
 
 @media (min-width: 1201px) {
   .textSection {
     max-width: 600px;
-  }
-
-  .contactMe {
-    padding-left: var(--padding-large);
-  }
-
-  .title {
-    padding-left: var(--padding-large);
-    padding-right: var(--padding-large);
-  }
-
-  .verticalLine {
-    width: var(--padding-large);
+    margin-left: var(--padding-large);
   }
 
   .figureVideo {
@@ -156,10 +150,15 @@
 
   .titleProjectInfo > .projectName {
     font-size: 44px;
-    padding-left: var(--padding-large);
+  }
+}
+
+@media (min-width: 1501px) {
+  .textSection {
+    margin-left: var(--padding-extralarge);
   }
 
-  .titleProjectInfo > .projectSlogan {
-    padding-left: var(--padding-large);
+  .figureVideo {
+    margin-right: var(--padding-extralarge);
   }
 }

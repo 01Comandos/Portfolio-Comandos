@@ -94,3 +94,9 @@
     transition: 0.2s linear;
   }
 }
+
+@media (min-width: 1501px) {
+  .containerDesktop {
+    padding: 0 var(--padding-extralarge);
+  }
+}

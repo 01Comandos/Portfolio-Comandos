@@ -2,6 +2,14 @@
   padding-top: 5.6rem;
 }
 
+.bgBlack {
+  background-color: var(--primary);
+}
+
+.bgBlack6 {
+  background-color: var(--black-6);
+}
+
 @media (min-width: 769px) {
   .main {
     padding-top: 8rem;

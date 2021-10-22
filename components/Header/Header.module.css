@@ -87,3 +87,9 @@
     margin-right: 0;
   }
 }
+
+@media (min-width: 1501px) {
+  .container {
+    padding: 1.5rem var(--padding-extralarge);
+  }
+}

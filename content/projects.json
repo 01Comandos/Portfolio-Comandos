@@ -23,6 +23,7 @@
   {
     "id": "Stadio",
     "name": "Stadio",
+    "logo": null,
     "pictures": {
       "default": "/images/projects/stadio/hero-image.png",
       "mobile": "/images/stadio-mobile.png",
@@ -46,7 +47,9 @@
   {
     "id": "mipOSPOS",
     "name": "mipOS POS",
+    "logo": "/logos/mip-os.svg",
     "pictures": {
+      "default": "/images/projects/mipos-pos/hero-image.png",
       "mobile": "/images/mipos-2-mobile.png",
       "desktop": "/images/mipos-2.png"
     },
@@ -69,8 +72,8 @@
     "id": "Truorawhatsapp",
     "name": "Truora Whatsapp",
     "pictures": {
-      "mobile": "",
-      "desktop": ""
+      "mobile": "/images/TruoraWhatsapp.png",
+      "desktop": "/images/TruoraWhatsapp.png"
     },
     "description": "",
     "shortDescription": "Recovering users via whatsapp with a non-code tool",
@@ -80,8 +83,8 @@
     "id": "Truoratruchecks",
     "name": "Truora TruChecks",
     "pictures": {
-      "mobile": "",
-      "desktop": ""
+      "mobile": "/images/TruoraTruchekcs.png",
+      "desktop": "/images/TruoraTruchekcs.png"
     },
     "description": "",
     "shortDescription": "Redesigning how to do a background query",

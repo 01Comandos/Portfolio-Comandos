@@ -1,4 +1,5 @@
 import Head from "next/head";
+import classNames from "classnames";
 import { useEffect } from 'react';
 
 import Header from "@/components/Header/Header";
@@ -7,17 +8,17 @@ import styles from "@/styles/Pages.module.css";
 import projects from "@/content/projects.json";
 import { visitPage } from "@/analytics/events";
 
-const content = projects.find(project => project.id === 'Stadio');
+const content = projects.find(project => project.id === 'mipOSPOS');
 
-const StadioPage = () => {
+const MipOSPage = () => {
   useEffect(() => {
-    visitPage('Stadio page viewed');
+    visitPage('mipOS page viewed');
   }, []);
 
   return (
     <>
       <Head>
-        <title>Stadio</title>
+        <title>mipOS</title>
         <meta
           name="description"
           content={content.description}
@@ -26,13 +27,16 @@ const StadioPage = () => {
       </Head>
       <>
         <Header withContact={true} />
-        <main className={styles.main}>
+        <main className={classNames({
+          [styles.main]: true,
+          [styles.bgBlack6]: true,
+        })}>
           <Hero
             logo={content.logo}
             picture={content.pictures.default}
             project={content.name}
-            subtitle="Apple Watch design"
-            title="Redefining the jogging experience with friends"
+            subtitle="Web and tablet design"
+            title="A smart way to manage restaurants"
           />
         </main>
       </>
@@ -40,4 +44,4 @@ const StadioPage = () => {
   );
 };
 
-export default StadioPage;
+export default MipOSPage;
