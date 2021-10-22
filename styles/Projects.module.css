@@ -42,6 +42,8 @@
     height: auto;
     margin-right: 58px;
     align-self:flex-start;
+    position: sticky;
+    top: 11rem;
   }
 
   .projectPicture {
