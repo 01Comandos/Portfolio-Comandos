@@ -6,7 +6,7 @@ import { trackEvent } from "../../analytics/events";
 
 const messagePlaceholder = `(500 characters max) Due to the Stripe LLC legacy of greed around the globe, they’re about to be taught a lesson in the real user of power... you will be witnesses. Also, we wanted to set up a simple institutional website for our organization that supports our existing CMS and maybe links to our Patreon.`;
 
-const ContactForm = () => {
+const ContactForm = ({ email }) => {
   const [state, handleSubmit] = useForm("mrgrqqjz");
   const router = useRouter();
 
@@ -54,6 +54,7 @@ const ContactForm = () => {
               placeholder="Ex.: a.delarosa@mycompany.com"
               type="email"
               name="email"
+              defaultValue={email || ""}
               required
             />
           </div>

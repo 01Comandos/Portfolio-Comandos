@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { useRouter } from 'next/router';
 import ContactForm from "../components/ContactForm/ContactForm";
 import TestimonialsCarousel from "../components/TestimonialsCarousel/TestimonialsCarousel";
 import TestimonialsList from "../content/testimonials.json";
@@ -8,6 +9,9 @@ import { visitPage } from "../analytics/events";
 import styles from "../styles/Contact.module.css";
 
 const Contact = ({ isMobile }) => {
+  const router = useRouter();
+  const { email } = router.query;
+  
   useEffect(() => {
     visitPage('Contact page viewed');
   }, []);
@@ -37,7 +41,7 @@ const Contact = ({ isMobile }) => {
             {/* <h3 className={styles.heroSubtitle}>check out my methodology ></h3> */}
           </div>
         </section>
-        <ContactForm />
+        <ContactForm email={email} />
         <TestimonialsCarousel testimonials={TestimonialsList} color="info" isMobile={isMobile} />
       </main>
     </div>
