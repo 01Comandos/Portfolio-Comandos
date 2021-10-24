@@ -9,7 +9,15 @@ function Summary({ projectName, description, picture, details }) {
         "padding-x": true,
       })}
     >
-      <p className={styles.description}>{description}</p>
+      <>
+        <p className={styles.description}>{description}</p>
+        <div
+          className={classNames({
+            horizontalLine: true,
+            [styles.line]: true
+          })}
+        ></div>
+      </>
       <figure className={styles.figure}>
         <img className={styles.picture} src={picture} alt={projectName} />
       </figure>

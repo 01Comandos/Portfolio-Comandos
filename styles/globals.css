@@ -228,6 +228,11 @@ span.info {
   padding: 0 var(--padding-mobile);
 }
 
+.horizontalLine {
+  border-bottom: 1px solid var(--gray-3);
+  opacity: 0.21;
+}
+
 @media (min-width: 769px) {
   .pageContainer {
     padding-top: 6rem;

@@ -1,5 +1,6 @@
 .container {
-    margin-top: 60px;
+  background-color: transparent;
+  margin-top: 60px;
 }
 
 .description {
@@ -24,11 +25,13 @@
 .details {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 58px;
 }
 
 .detail {
   display: flex;
   flex-direction: column;
+  margin-bottom: 58px;
 }
 
 .detail:nth-child(odd) {
@@ -40,7 +43,6 @@
   font-weight: bold;
   letter-spacing: 0.08px;
   color: white;
-  margin-top: 58px;
   margin-bottom: 17px;
 }
 
@@ -48,4 +50,64 @@
   font-size: 16px;
   margin-bottom: 10px;
   color: var(--gray-1);
+  font-weight: 300;
+}
+
+.line {
+  display: none;
+}
+
+@media (min-width: 769px) {
+  .details {
+    justify-content: space-between;
+  }
+
+  .detail, .detail:nth-child(odd) {
+    flex-basis: 33%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "description image"
+    "line image"
+    "details image";
+    grid-gap: 2rem;
+  }
+
+  .line {
+    display: block;
+    grid-area: line;
+  }
+
+  .figure {
+    grid-area: image;
+    margin-top: 0;
+    align-self: flex-start;
+  }
+
+  .description {
+    grid-area: description;
+  }
+
+  .details {
+    grid-area: details;
+  }
+
+  .detail, .detail:nth-child(odd) {
+    flex-basis: 50%;
+  }
+
+  .description {
+    margin-bottom: 58px;
+  }
+}
+
+@media (min-width: 1201px) {
+  .container {
+    grid-gap: 4rem;
+  }
 }
