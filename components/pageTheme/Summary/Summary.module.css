@@ -1,0 +1,51 @@
+.container {
+    margin-top: 60px;
+}
+
+.description {
+  font-size: 18px;
+  line-height: 2.17;
+  letter-spacing: normal;
+  color: var(--gray-1);
+}
+
+.figure {
+  margin-top: 60px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.picture {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.details {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+}
+
+.detail:nth-child(odd) {
+  flex-basis: 50%;
+}
+
+.detailName {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.08px;
+  color: white;
+  margin-top: 58px;
+  margin-bottom: 17px;
+}
+
+.detailContent {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: var(--gray-1);
+}

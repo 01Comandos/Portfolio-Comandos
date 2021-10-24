@@ -31,6 +31,18 @@
     },
     "description": "A great collaborative solution for runners. Lima? Sao Paulo? Let's run together!",
     "shortDescription": "A better running experience",
+    "summary": {
+      "description": "It is true that the pandemic transformed us and we can no longer meet friends to jog. Stadio has taken it as an emblem to jog with friends in other cities or countries. It works basically like a room to zoom in and out for a jog! In his first month of MVP he worked with 100 people and it was amazing to see his performance.",
+      "picture": "/images/projects/stadio/details-image.png",
+      "details": {
+        "Rol": ["Product Designer"],
+        "Duration": ["2 months"],
+        "Tools": ["Pencil", "Adobe Photoshop", "Sketch", "Origami"],
+        "Project": ["Product Discovery", "UX Architecture", "Prototype"],
+        "Deliverables": ["App Mobile", "App Apple Watch"],
+        "Applied methodologies": ["User and product discovery", "User interviews", "Usability testing", "Low-fi prototyping", "High-fi prototyping"]
+      }
+    },
     "url": "stadio"
   },
   {

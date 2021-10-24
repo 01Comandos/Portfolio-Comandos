@@ -3,6 +3,8 @@ import { useEffect } from 'react';
 
 import Header from "@/components/Header/Header";
 import Hero from "@/components/pageTheme/Hero/Hero";
+import Summary from "@/components/pageTheme/Summary/Summary";
+import Footer from "@/components/Footer/Footer";
 import styles from "@/styles/Pages.module.css";
 import projects from "@/content/projects.json";
 import { visitPage } from "@/analytics/events";
@@ -34,6 +36,13 @@ const StadioPage = () => {
             subtitle="Apple Watch design"
             title="Redefining the jogging experience with friends"
           />
+          <Summary
+            projectName={content.name}
+            details={content.summary.details}
+            description={content.summary.description}
+            picture={content.summary.picture}
+          />
+          <Footer />
         </main>
       </>
     </>
