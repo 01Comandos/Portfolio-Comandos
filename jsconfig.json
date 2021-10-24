@@ -5,7 +5,8 @@
       "@/analytics/*": ["analytics/*"],
       "@/content/*": ["content/*"],
       "@/components/*": ["components/*"],
-      "@/styles/*": ["styles/*"]
+      "@/styles/*": ["styles/*"],
+      "@/utils/*": ["utils/*"]
     }
   }
 }

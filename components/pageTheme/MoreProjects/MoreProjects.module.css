@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  margin: 0;
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 1.58;
+  letter-spacing: 0.16px;
+  color: white;
+  margin-bottom: 64px;
+}
+
+.projectsContainer {
+  display: block;
+}
+
+.project {
+  margin-bottom: 68px;
+}
+
+.allProjects {
+  width: 218px;
+}
+
+.buttons {
+  width: 100%;
+  text-align: center;
+}
+
+@media (min-width: 769px) {
+  .projectsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .project {
+    flex-basis: 45%;
+  }
+}
+
+@media (min-width: 1201px) {
+  .project {
+    flex-basis: 31%;
+  }
+}

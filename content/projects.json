@@ -43,6 +43,16 @@
         "Applied methodologies": ["User and product discovery", "User interviews", "Usability testing", "Low-fi prototyping", "High-fi prototyping"]
       }
     },
+    "sectionOne": {
+      "description": "Check second by second how you perform against other competitors in the same race. May the fastest win!",
+      "picture": "/images/projects/stadio/section-1.png",
+      "title": "<span>Motivation</span> for running <span>on your wrist</span>"
+    },
+    "sectionTwo": {
+      "description": "You can organize sessions with friends or participate in other rooms with people from other cities or countries. Training has never been so much fun",
+      "picture": "/images/projects/stadio/section-2.png",
+      "title": "<span>Create rooms</span> or join in running <span>with strangers</span>"
+    },
     "url": "stadio"
   },
   {
@@ -87,7 +97,7 @@
       "mobile": "/images/TruoraWhatsapp.png",
       "desktop": "/images/TruoraWhatsapp.png"
     },
-    "description": "",
+    "description": "Recover users easily and -almost - for free through Whatsapp and Truora’s non-code tool.",
     "shortDescription": "Recovering users via whatsapp with a non-code tool",
     "url": ""
   },

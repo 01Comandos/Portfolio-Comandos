@@ -8,6 +8,7 @@
   line-height: 2.17;
   letter-spacing: normal;
   color: var(--gray-1);
+  font-weight: 300;
 }
 
 .figure {
@@ -76,6 +77,7 @@
     "line image"
     "details image";
     grid-gap: 2rem;
+    margin-top: 120px;
   }
 
   .line {
@@ -87,6 +89,8 @@
     grid-area: image;
     margin-top: 0;
     align-self: flex-start;
+    max-width: 450px;
+    justify-self: end;
   }
 
   .description {
@@ -106,8 +110,8 @@
   }
 }
 
-@media (min-width: 1201px) {
-  .container {
-    grid-gap: 4rem;
+@media (min-width: 1501px) {
+  .figure {
+    max-width: 500px;
   }
 }

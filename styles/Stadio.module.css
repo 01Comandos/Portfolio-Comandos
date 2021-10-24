@@ -1,0 +1,21 @@
+.sectionOne {
+  background-color: var(--black-7);
+  padding-top: 100px;
+  padding-bottom: 109px;
+}
+
+.sectionTwo {
+  padding-top: 109px;
+  padding-bottom: 109px;
+}
+
+.line {
+  margin: 73px 0;
+  border: solid 1px rgba(255, 255, 255, 0.12);
+}
+
+.backgroundTop {
+  height: 74px;
+  width: 100%;
+  margin-bottom: -8px;
+}
