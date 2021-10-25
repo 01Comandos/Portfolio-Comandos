@@ -3,10 +3,10 @@ import { useEffect } from "react";
 
 import ImpactSection from "@/components/StadioComponents/ImpactSection/ImpactSection";
 import Header from "@/components/Header/Header";
-import Hero from "@/components/PageTheme/Hero/Hero";
-import Summary from "@/components/PageTheme/Summary/Summary";
-import ImageSection from "@/components/PageTheme/ImageSection/ImageSection";
-import MoreProjects from "@/components/PageTheme/MoreProjects/MoreProjects";
+import Hero from "@/components/pageTheme/Hero/Hero";
+import Summary from "@/components/pageTheme/Summary/Summary";
+import ImageSection from "@/components/pageTheme/ImageSection/ImageSection";
+import MoreProjects from "@/components/pageTheme/MoreProjects/MoreProjects";
 import TestimonialsCarousel from "@/components/TestimonialsCarousel/TestimonialsCarousel";
 import Footer from "@/components/Footer/Footer";
 import Definition from "@/components/Definition/Definition";
