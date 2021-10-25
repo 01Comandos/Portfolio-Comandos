@@ -53,6 +53,11 @@
       "picture": "/images/projects/stadio/section-2.png",
       "title": "<span>Create rooms</span> or join in running <span>with strangers</span>"
     },
+    "impactSection": {
+      "description": "Taking into account that the main running apps have not developed this feature very well. These were the results:",
+      "title": "Impact on <span>people</span>",
+      "picture": "/images/projects/stadio/impact-section.png"
+    },
     "url": "stadio"
   },
   {

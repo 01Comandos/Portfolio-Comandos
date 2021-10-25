@@ -1,0 +1,78 @@
+.figure {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.picture {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 0.17px;
+  color: white;
+  margin: 38px 0 0 0;
+}
+
+.title > span {
+  color: var(--secondary);
+}
+
+.description {
+  font-size: 21px;
+  line-height: 1.81;
+  color: var(--gray-1);
+  font-weight: 300;
+  margin-top: 29px;
+}
+
+@media (min-width: 769px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .defaultContainer {
+    grid-template-areas:
+      "image title"
+      "image description";
+  }
+
+  .reverseContainer {
+    grid-template-areas:
+      "title image"
+      "description image";
+  }
+
+  .figure {
+    align-self: flex-start;
+    grid-area: image;
+    margin-right: 3rem;
+  }
+
+  .title {
+    grid-area: title;
+    align-self: end;
+    max-width: 469px;
+    margin: 0;
+  }
+
+  .description {
+    grid-area: description;
+    max-width: 469px;
+  }
+
+  .title,
+  .description {
+    justify-self: center;
+  }
+}
+
+@media (min-width: 1201px) {
+  .figure {
+    margin-right: 4rem;
+  }
+}

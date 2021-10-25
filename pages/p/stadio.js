@@ -1,18 +1,22 @@
 import Head from "next/head";
-import classNames from "classnames";
 import { useEffect } from "react";
 
+import ImpactSection from "@/components/StadioComponents/ImpactSection/ImpactSection";
 import Header from "@/components/Header/Header";
 import Hero from "@/components/PageTheme/Hero/Hero";
 import Summary from "@/components/PageTheme/Summary/Summary";
 import ImageSection from "@/components/PageTheme/ImageSection/ImageSection";
 import MoreProjects from "@/components/PageTheme/MoreProjects/MoreProjects";
+import TestimonialsCarousel from "@/components/TestimonialsCarousel/TestimonialsCarousel";
 import Footer from "@/components/Footer/Footer";
+import Definition from "@/components/Definition/Definition";
+import Contact from "@/components/Contact/Contact";
 import styles from "@/styles/Pages.module.css";
 import stadioStyles from "@/styles/Stadio.module.css";
 import projects from "@/content/projects.json";
-import { isMobile } from "../../utils";
+import TestimonialsList from "@/content/testimonials.json";
 import { visitPage } from "@/analytics/events";
+import { isMobile } from "../../utils";
 
 const content = projects.find((project) => project.id === "Stadio");
 const moreProjects = projects.filter(
@@ -68,8 +72,19 @@ const StadioPage = ({ isMobile }) => {
             description={content.sectionTwo.description}
             title={content.sectionTwo.title}
             picture={content.sectionTwo.picture}
+            isReverse={true}
           />
+          <ImpactSection
+            projectName={content.name}
+            description={content.impactSection.description}
+            title={content.impactSection.title}
+            picture={content.impactSection.picture}
+          />
+          <div className={stadioStyles.line}></div>
           <MoreProjects projects={moreProjects} isMobile={isMobile} />
+          <TestimonialsCarousel testimonials={TestimonialsList} isMobile={isMobile} />
+          <Definition />
+          <Contact />
           <Footer />
         </main>
       </>
