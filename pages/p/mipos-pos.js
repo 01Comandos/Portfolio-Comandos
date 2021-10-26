@@ -3,7 +3,7 @@ import classNames from "classnames";
 import { useEffect } from 'react';
 
 import Header from "@/components/Header/Header";
-import Hero from "@/components/PageTheme/Hero/Hero";
+import Hero from "@/components/pageTheme/Hero/Hero";
 import styles from "@/styles/Pages.module.css";
 import projects from "@/content/projects.json";
 import { visitPage } from "@/analytics/events";
