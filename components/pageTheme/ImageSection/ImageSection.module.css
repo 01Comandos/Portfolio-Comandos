@@ -10,7 +10,7 @@
 }
 
 .title {
-  font-size: 40px;
+  font-size: 34px;
   font-weight: 600;
   letter-spacing: 0.17px;
   color: white;
@@ -22,8 +22,8 @@
 }
 
 .description {
-  font-size: 21px;
-  line-height: 1.81;
+  font-size: 18px;
+  line-height: 1.9;
   color: var(--gray-1);
   font-weight: 300;
   margin-top: 29px;
@@ -48,31 +48,46 @@
   }
 
   .figure {
-    align-self: flex-start;
     grid-area: image;
+    max-width: 500px;
+  }
+
+  .defaultContainer .figure {
     margin-right: 3rem;
   }
 
+  .reverseContainer .figure {
+    margin-left: 3rem;
+  } 
+
   .title {
     grid-area: title;
-    align-self: end;
     max-width: 469px;
     margin: 0;
-  }
+    align-self: flex-end;
+  } 
 
   .description {
     grid-area: description;
     max-width: 469px;
   }
 
-  .title,
-  .description {
-    justify-self: center;
-  }
+  /* .reverseContainer .title,
+  .reverseContainer .description {
+    justify-self: end;
+  } */
 }
 
 @media (min-width: 1201px) {
   .figure {
+    max-width: 550px;
+  }
+
+  .defaultContainer .figure {
     margin-right: 4rem;
   }
+
+  .reverseContainer .figure {
+    margin-left: 4rem;
+  } 
 }

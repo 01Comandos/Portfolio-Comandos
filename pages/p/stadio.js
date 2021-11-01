@@ -81,7 +81,11 @@ const StadioPage = ({ isMobile }) => {
             picture={content.impactSection.picture}
           />
           <div className={stadioStyles.line}></div>
-          <MoreProjects projects={moreProjects} isMobile={isMobile} />
+          <MoreProjects
+            containerStyles={stadioStyles.moreProjects}
+            projects={moreProjects}
+            isMobile={isMobile}
+          />
           <TestimonialsCarousel testimonials={TestimonialsList} isMobile={isMobile} />
           <Definition />
           <Contact />

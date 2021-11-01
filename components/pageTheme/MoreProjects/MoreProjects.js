@@ -4,12 +4,13 @@ import classNames from "classnames";
 import Project from "@/components/Project/Project";
 import styles from "./MoreProjects.module.css";
 
-function MoreProjects({ projects, isMobile }) {
+function MoreProjects({ projects, isMobile, containerStyles }) {
   return (
     <div
       className={classNames({
         [styles.container]: true,
         "padding-x": true,
+        [containerStyles]: true
       })}
     >
       <h3 className={styles.title}>Discover more project</h3>

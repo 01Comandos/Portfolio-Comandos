@@ -99,7 +99,7 @@
     "id": "Truorawhatsapp",
     "name": "Truora Whatsapp",
     "pictures": {
-      "mobile": "/images/TruoraWhatsapp.png",
+      "mobile": "/images/TruoraWhatsapp-mobile.png",
       "desktop": "/images/TruoraWhatsapp.png"
     },
     "description": "Recover users easily and -almost - for free through Whatsapp and Truora’s non-code tool.",
@@ -110,10 +110,10 @@
     "id": "Truoratruchecks",
     "name": "Truora TruChecks",
     "pictures": {
-      "mobile": "/images/TruoraTruchekcs.png",
+      "mobile": "/images/TruoraTruchekcs-mobile.png",
       "desktop": "/images/TruoraTruchekcs.png"
     },
-    "description": "",
+    "description": "Redesigning how to do a background query.",
     "shortDescription": "Redesigning how to do a background query",
     "url": ""
   }

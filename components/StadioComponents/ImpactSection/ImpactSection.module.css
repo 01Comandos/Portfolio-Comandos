@@ -10,7 +10,7 @@
 }
 
 .title {
-  font-size: 40px;
+  font-size: 34px;
   font-weight: 600;
   letter-spacing: 0.17px;
   color: white;
@@ -22,35 +22,99 @@
 }
 
 .description {
-  font-size: 21px;
-  line-height: 1.81;
+  font-size: 18px;
+  line-height: 1.9;
   color: var(--gray-1);
   font-weight: 300;
   margin-top: 29px;
+}
+
+.stadioInfo {
+  display: flex;
+  align-items: center;
+  margin-top: 55px;
+}
+
+.stadioLogo {
+  width: 78px;
+  height: 78px;
+}
+
+.yellowLine {
+  width: 2px;
+  height: 45px;
+  background-color: var(--secondary);
+  margin-left: 35px;
+  margin-right: 8px;
+}
+
+.insightText {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.06px;
+  color: white;
+  margin-left: 5px;
+}
+
+.starIcon {
+  width: 33px;
+  height: 33px;
+}
+
+.infoLine {
+  margin: 40px 0;
+  height: 1px;
+  border: solid 1px rgba(255, 255, 255, 0.12);
+  max-width: 469px;
+}
+
+.companies {
+  display: flex;
+  align-items: center;
+}
+
+.logoList {
+  display: flex;
+}
+
+.logoList > li {
+  margin-left: -18px;
+}
+
+.logoList > li:first-child {
+  margin-left: 0;
+}
+
+.companyLogo {
+  width: 67px;
+  height: 67px;
+}
+
+.companyText {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.07px;
+  color: var(--gray-1);
+  margin-left: 30px;
 }
 
 @media (min-width: 769px) {
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-  }
-
-  .defaultContainer {
     grid-template-areas:
       "image title"
-      "image description";
-  }
-
-  .reverseContainer {
-    grid-template-areas:
-      "title image"
-      "description image";
+      "image description"
+      "image stadio-info"
+      "image line"
+      "image stadio-companies";
   }
 
   .figure {
     align-self: flex-start;
     grid-area: image;
     margin-right: 3rem;
+    max-width: 500px;
   }
 
   .title {
@@ -65,14 +129,24 @@
     max-width: 469px;
   }
 
-  .title,
-  .description {
-    justify-self: center;
+  .stadioInfo {
+    margin-top: 10px;
+    grid-area: stadio-info;
+  }
+
+  .infoLine {
+    grid-area: line;
+    margin: 20px 0;
+  }
+
+  .companies {
+    grid-area: stadio-companies;
   }
 }
 
 @media (min-width: 1201px) {
   .figure {
     margin-right: 4rem;
+    max-width: 550px;
   }
 }
