@@ -58,19 +58,38 @@
       "title": "Impact on <span>people</span>",
       "picture": "/images/projects/stadio/impact-section.png"
     },
-    "collapsable": [
-      {
-        "title": "Paper <span>first</span>",
-        "description": "To get started I needed a few blank pages and to answer these questions:",
-        "list": [
-          "What is the day-to-day life of these people?",
-          "Why apple watch and not another device?",
-          "How important is it to run with other people?"
-        ],
-        "icon": "",
-        "picture": ""
-      }
-    ],
+    "collapsableSection": {
+      "title": "<span>A start with</span> a lot of <span>adrenaline</span>",
+      "items": [
+        {
+          "title": "Paper <span>first</span>",
+          "description": "To get started I needed a few blank pages and to answer these questions:",
+          "list": [
+            "What is the day-to-day life of these people?",
+            "Why apple watch and not another device?",
+            "How important is it to run with other people?"
+          ],
+          "icon": "location-arrow.svg",
+          "picture": ""
+        },
+        {
+          "title": "<span>Customer</span> journey",
+          "description": "",
+          "list": [
+          ],
+          "icon": "users-alt.svg",
+          "picture": ""
+        },
+        {
+          "title": "Organized and <span>Simple</span>",
+          "description": "",
+          "list": [
+          ],
+          "icon": "comment-heart.svg",
+          "picture": ""
+        }
+      ]
+    },
     "url": "stadio"
   },
   {

@@ -1,0 +1,14 @@
+.icon {
+  height: 22px;
+  width: 22px;
+}
+
+.secondary {
+  filter: invert(75%) sepia(25%) saturate(2078%) hue-rotate(358deg)
+    brightness(100%) contrast(104%);
+}
+
+.white {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(69deg) brightness(106%)
+    contrast(102%);
+}

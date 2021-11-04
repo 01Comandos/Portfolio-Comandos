@@ -7,6 +7,7 @@ import Hero from "@/components/pageTheme/Hero/Hero";
 import Summary from "@/components/pageTheme/Summary/Summary";
 import ImageSection from "@/components/pageTheme/ImageSection/ImageSection";
 import MoreProjects from "@/components/pageTheme/MoreProjects/MoreProjects";
+import Collapsable from "@/components/pageTheme/Collapsable/Collapsable";
 import TestimonialsCarousel from "@/components/TestimonialsCarousel/TestimonialsCarousel";
 import Footer from "@/components/Footer/Footer";
 import Definition from "@/components/Definition/Definition";
@@ -55,6 +56,10 @@ const StadioPage = ({ isMobile }) => {
             picture={content.summary.picture}
           />
           <div className={stadioStyles.line}></div>
+          <Collapsable
+            title={content.collapsableSection.title}
+            items={content.collapsableSection.items}
+            containerStyles={stadioStyles.collapsableSection}/>
           <img
             src="/images/projects/stadio/background-top.svg"
             className={stadioStyles.backgroundTop}
