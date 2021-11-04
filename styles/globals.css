@@ -181,7 +181,7 @@ figure {
   color: #fff;
 }
 
-button {
+.button {
   border: none;
   border-radius: 13px;
   cursor: pointer;
@@ -193,7 +193,7 @@ button {
   min-width: 120px;
 }
 
-button:active {
+.button:active {
   -webkit-transform: scale(0.9);
   -moz-transform: scale(0.9);
   -o-transform: scale(0.9);
@@ -201,17 +201,17 @@ button:active {
   transform: scale(0.9);
 }
 
-button.black {
+.button.black {
   background-color: var(--black-1);
   color: white;
 }
 
-button.info {
+.button.info {
   background-color: var(--info);
   color: white;
 }
 
-button.black:hover {
+.button.black:hover {
   background-color: var(--secondary);
   color: var(--primary);
   transition: 0.2s linear;

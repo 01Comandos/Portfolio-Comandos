@@ -1,3 +1,4 @@
+import classNames from "classnames";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
 import { useForm } from "@formspree/react";
@@ -124,7 +125,10 @@ const ContactForm = ({ email }) => {
           </a>
 
           <button
-            className={styles.send}
+            className={classNames({
+              [styles.send]: true,
+              'button': true
+            })}
             type="submit"
             disabled={state.submitting}
             onClick={() => trackEvent('Message was sent')}

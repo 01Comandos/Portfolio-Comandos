@@ -9,7 +9,7 @@ const Contact = () => {
       <p className={styles.text}>Let us know who you are and what you’re up to.</p>
     </div>
     <Link href="/contact" onClick={() => trackEvent('Contact button clicked')}>
-      <button className={`black ${styles.contactButton}`}>Contact</button>
+      <button className={`black button ${styles.contactButton}`}>Contact</button>
     </Link>
   </section>
 };

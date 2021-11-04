@@ -9,6 +9,10 @@
   padding-bottom: 109px;
 }
 
+.collapsableSection {
+  padding-bottom: 109px;
+}
+
 .line {
   margin: 73px 0;
   border: solid 1px rgba(255, 255, 255, 0.12);

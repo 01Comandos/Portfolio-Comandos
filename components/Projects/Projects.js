@@ -36,7 +36,7 @@ const Projects = ({
         href="/projects"
         onClick={() => trackEvent('View all projects clicked')}
       >
-        <button className={`black ${styles.allProjects}`}>
+        <button className={`black button ${styles.allProjects}`}>
           View all projects
         </button>
       </Link>

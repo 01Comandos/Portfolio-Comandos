@@ -17,7 +17,7 @@ import styles from "../styles/Contact.module.css";
         <h1 className={styles.title}>We will talk <span>very soon</span></h1>
         <p className={styles.message}>I will write yo you shortly to make an appointment and get to know us.</p>
         <Link href="/">
-          <button className={`black ${styles.goHome}`}>Return to home</button>
+          <button className={`black button ${styles.goHome}`}>Return to home</button>
         </Link>        
       </main>
     </div>

@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import classNames from "classnames";
 import { useState, useEffect } from 'react';
 import Header from "../../components/Header/Header";
 import CustomerCard from "../../components/CustomerCard/CustomerCard";
@@ -157,7 +158,10 @@ const RebajaTusCuentasPage = ({ isMobile }) => {
                 <img src='/images/projects/rtc-before-02.png' className={styles.four}/>
                 <img src='/images/projects/rtc-before-05.png' className={styles.five}/>
                 <button
-                  className={styles.showAllPicturesButton}
+                   className={classNames({
+                    [styles.showAllPicturesButton]: true,
+                    'button': true
+                  })}
                   onClick={() => trackEvent('Gallery show all pictures clicked')}
                 >
                   <img src="/icons/icon-camera.svg" />
@@ -311,7 +315,10 @@ const RebajaTusCuentasPage = ({ isMobile }) => {
               <img src='/images/projects/rtc-results-03.png' className={styles.four}/>
               <img src='/images/projects/rtc-results-05.png' className={styles.five}/>
               <button
-                className={styles.showAllPicturesButton}
+                className={classNames({
+                  [styles.showAllPicturesButton]: true,
+                  'button': true
+                })}
                 onClick={() => trackEvent('Gallery show all pictures clicked')}
               >
                 <img src="/icons/icon-camera.svg" />
@@ -335,7 +342,7 @@ const RebajaTusCuentasPage = ({ isMobile }) => {
               ))}
             </div>
             <Link href="/">
-              <button className="black">
+              <button className="black button">
                 View all projects
               </button>
             </Link>

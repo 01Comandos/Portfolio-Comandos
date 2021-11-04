@@ -25,7 +25,7 @@ const Project = () => {
           <h1 className={styles.soonTitle}>DON'T WORRY, THIS PROJECT IS <span>ALMOST DONE</span></h1>
           <Countdown date={new Date("2021-11-01")} />
           <Link href="/">
-            <button className="black mt-2">
+            <button className="black button mt-2">
               Return to home
             </button>
           </Link>

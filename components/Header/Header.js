@@ -77,7 +77,15 @@ const Header = ({
             href="/contact"
             onClick={() => registerEvent('Header contact button clicked')}
           >
-            <button className={buttonStyle || 'black'}>Contact</button>
+            <button
+              className={classNames({
+                [buttonStyle]: buttonStyle,
+                'black': !buttonStyle,
+                'button': true
+              })}
+            >
+              Contact
+            </button>
           </Link>
         )}
         {!darkMenu && <img
