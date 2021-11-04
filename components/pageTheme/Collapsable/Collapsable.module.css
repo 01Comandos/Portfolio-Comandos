@@ -94,7 +94,6 @@
 .itemFigure {
   width: 100%;
   overflow: hidden;
-  max-height: 449px;
   background-color: var(--primary);
   margin-top: 40px;
 }
