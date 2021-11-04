@@ -1,41 +1,65 @@
 import classNames from "classnames";
 import { Disclosure } from "@headlessui/react";
-import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/solid';
-import Icon from './Icon';
+import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/solid";
+import { CheckCircleIcon } from "@heroicons/react/outline";
+import Icon from "./Icon";
 import styles from "./Collapsable.module.css";
 
-const renderItem = ({ title, description, icon }) => {
+const renderItem = ({ title, description, icon, list }, index) => {
   return (
-    <Disclosure as="div">
+    <Disclosure as="div" key={index}>
       {({ open }) => (
         <>
           <Disclosure.Button
             className={classNames({
               [styles.itemButton]: true,
+              [styles.itemButtonOpen]: open,
               [styles.bgPrimary]: !open,
               [styles.bgGray]: open,
+              "padding-x": true,
             })}
           >
-            {icon && <Icon path={icon} color={open ? 'secondary' : 'white'} />}
+            {icon && <Icon path={icon} color={open ? "secondary" : "gray"} />}
             <span
               dangerouslySetInnerHTML={{ __html: title }}
-              className={styles.itemTitle}
+              className={classNames({
+                [styles.itemTitle]: true,
+                [styles.bicolorTitle]: open,
+              })}
             ></span>
-            {open ? (<ChevronUpIcon
-              className={classNames({
-                [styles.itemButtonIcon]: true,
-                [styles.openArrow]: true
-              })}
-            />) : (<ChevronDownIcon
-              className={classNames({
-                [styles.itemButtonIcon]: true,
-                [styles.closeArrow]: true
-              })}
-            />)}
-            
+            {open ? (
+              <ChevronUpIcon
+                className={classNames({
+                  [styles.itemButtonIcon]: true,
+                  [styles.openArrow]: true,
+                })}
+              />
+            ) : (
+              <ChevronDownIcon
+                className={classNames({
+                  [styles.itemButtonIcon]: true,
+                  [styles.closeArrow]: true,
+                })}
+              />
+            )}
           </Disclosure.Button>
-          <Disclosure.Panel className={styles.description}>
-            {description}
+          <Disclosure.Panel
+            className={classNames({
+              [styles.description]: true,
+              "padding-x": true,
+            })}
+          >
+            <p>{description}</p>
+            <ul>
+              {list.map((item, idx) => (
+                <li className={styles.itemList} key={idx}>
+                  <div className={styles.checkIconContainer}>
+                    <CheckCircleIcon className={styles.checkIcon} />
+                  </div>
+                  <p>{item}</p>
+                </li>
+              ))}
+            </ul>
           </Disclosure.Panel>
         </>
       )}
@@ -54,12 +78,17 @@ function Collapsable({ title, items, containerStyles = {} }) {
       <h3
         className={classNames({
           [styles.title]: true,
-          'padding-x': true
+          "padding-x": true,
         })}
         dangerouslySetInnerHTML={{ __html: title }}
+      ></h3>
+      <div
+        className={classNames({
+          [styles.itemsContainer]: true,
+        })}
       >
-      </h3>
-      {items.map((item) => renderItem(item))}
+        {items.map((item, index) => renderItem(item, index))}
+      </div>
     </div>
   );
 }

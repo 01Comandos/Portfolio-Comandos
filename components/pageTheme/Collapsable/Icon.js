@@ -9,6 +9,7 @@ function Icon({ path, color }) {
         [styles.icon]: true,
         [styles.secondary]: color === 'secondary',
         [styles.white]: color === 'white',
+        [styles.gray]: color === 'gray',
       })}
     />
   );

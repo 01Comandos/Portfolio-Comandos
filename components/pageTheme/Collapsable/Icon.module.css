@@ -1,6 +1,7 @@
 .icon {
   height: 22px;
   width: 22px;
+  margin-right: 20px;
 }
 
 .secondary {
@@ -11,4 +12,8 @@
 .white {
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(69deg) brightness(106%)
     contrast(102%);
+}
+
+.gray {
+  filter: invert(87%) sepia(25%) saturate(8%) hue-rotate(351deg) brightness(90%) contrast(88%);
 }

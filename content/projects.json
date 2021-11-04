@@ -76,14 +76,18 @@
           "title": "<span>Customer</span> journey",
           "description": "",
           "list": [
+            "Interviews with 20+ running enthusiasts",
+            "Designing a freemium business model"
           ],
           "icon": "users-alt.svg",
           "picture": ""
         },
         {
           "title": "Organized and <span>Simple</span>",
-          "description": "",
+          "description": "The flow of the app was designed based on current running apps to reduce the learning curve for our runner and what they expected.",
           "list": [
+            "40+ runners to test in test phase",
+            "In the process we created the open rooms for running"
           ],
           "icon": "comment-heart.svg",
           "picture": ""
