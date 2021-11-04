@@ -70,7 +70,7 @@
             "How important is it to run with other people?"
           ],
           "icon": "location-arrow.svg",
-          "picture": ""
+          "picture": "/images/projects/stadio/paper-first.png"
         },
         {
           "title": "<span>Customer</span> journey",
@@ -80,7 +80,7 @@
             "Designing a freemium business model"
           ],
           "icon": "users-alt.svg",
-          "picture": ""
+          "picture": "/images/projects/stadio/customer-journey.png"
         },
         {
           "title": "Organized and <span>Simple</span>",
@@ -90,7 +90,7 @@
             "In the process we created the open rooms for running"
           ],
           "icon": "comment-heart.svg",
-          "picture": ""
+          "picture": "/images/projects/stadio/simple.png"
         }
       ]
     },

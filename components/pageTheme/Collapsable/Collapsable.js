@@ -1,13 +1,22 @@
 import classNames from "classnames";
+import { useState } from "react";
 import { Disclosure } from "@headlessui/react";
 import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/solid";
 import { CheckCircleIcon } from "@heroicons/react/outline";
 import Icon from "./Icon";
 import styles from "./Collapsable.module.css";
 
-const renderItem = ({ title, description, icon, list }, index) => {
+const renderItem = ({
+  title,
+  description,
+  icon,
+  list,
+  picture,
+  index,
+  selectedItem,
+}) => {
   return (
-    <Disclosure as="div" key={index}>
+    <Disclosure as="div" defaultOpen={selectedItem === index}>
       {({ open }) => (
         <>
           <Disclosure.Button
@@ -43,23 +52,38 @@ const renderItem = ({ title, description, icon, list }, index) => {
               />
             )}
           </Disclosure.Button>
-          <Disclosure.Panel
-            className={classNames({
-              [styles.description]: true,
-              "padding-x": true,
-            })}
-          >
-            <p>{description}</p>
-            <ul>
-              {list.map((item, idx) => (
-                <li className={styles.itemList} key={idx}>
-                  <div className={styles.checkIconContainer}>
-                    <CheckCircleIcon className={styles.checkIcon} />
-                  </div>
-                  <p>{item}</p>
-                </li>
-              ))}
-            </ul>
+          <Disclosure.Panel>
+            {({ close }) => (
+              <>
+                {index !== selectedItem && close()}
+                <div
+                  className={classNames({
+                    [styles.description]: true,
+                    "padding-x": true,
+                  })}
+                >
+                  <p>{description}</p>
+                  <ul>
+                    {list.map((item, idx) => (
+                      <li className={styles.itemList} key={idx}>
+                        <div className={styles.checkIconContainer}>
+                          <CheckCircleIcon className={styles.checkIcon} />
+                        </div>
+                        <p>{item}</p>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <figure
+                  className={classNames({
+                    [styles.itemFigure]: true,
+                    "padding-x": true,
+                  })}
+                >
+                  <img src={picture} className={styles.itemPicture} />
+                </figure>
+              </>
+            )}
           </Disclosure.Panel>
         </>
       )}
@@ -68,6 +92,7 @@ const renderItem = ({ title, description, icon, list }, index) => {
 };
 
 function Collapsable({ title, items, containerStyles = {} }) {
+  const [selectedItem, setSelectedItem] = useState(0);
   return (
     <div
       className={classNames({
@@ -87,7 +112,11 @@ function Collapsable({ title, items, containerStyles = {} }) {
           [styles.itemsContainer]: true,
         })}
       >
-        {items.map((item, index) => renderItem(item, index))}
+        {items.map((item, index) => (
+          <div onClick={() => setSelectedItem(index)} key={index}>
+            {renderItem({ ...item, index, selectedItem })}
+          </div>
+        ))}
       </div>
     </div>
   );

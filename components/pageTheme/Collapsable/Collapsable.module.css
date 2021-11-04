@@ -61,7 +61,7 @@
   color: var(--gray-1);
   background-color: var(--gray-10);
   padding-top: 17px;
-  padding-bottom: 50px;
+  padding-bottom: 35px;
   padding-left: calc(44px + var(--padding-mobile));
 }
 
@@ -89,4 +89,18 @@
   height: 25px;
   margin-right: 12px;
   margin-top: 8px;
+}
+
+.itemFigure {
+  width: 100%;
+  overflow: hidden;
+  max-height: 449px;
+  background-color: var(--primary);
+  margin-top: 40px;
+}
+
+.itemPicture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
