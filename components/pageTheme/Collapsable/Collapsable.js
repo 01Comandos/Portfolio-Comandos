@@ -76,7 +76,7 @@ const renderItem = ({
                 </div>
                 <figure
                   className={classNames({
-                    [styles.itemFigure]: true,
+                    [styles.itemMobileFigure]: true,
                     "padding-x": true,
                   })}
                 >
@@ -93,6 +93,7 @@ const renderItem = ({
 
 function Collapsable({ title, items, containerStyles = {} }) {
   const [selectedItem, setSelectedItem] = useState(0);
+
   return (
     <div
       className={classNames({
@@ -118,6 +119,9 @@ function Collapsable({ title, items, containerStyles = {} }) {
           </div>
         ))}
       </div>
+      <figure className={styles.itemDesktopFigure}>
+        <img src={items[selectedItem].picture} className={styles.itemPicture} />
+      </figure>
     </div>
   );
 }
