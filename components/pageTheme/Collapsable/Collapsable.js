@@ -103,8 +103,7 @@ function Collapsable({ title, items, containerStyles = {} }) {
     >
       <h3
         className={classNames({
-          [styles.title]: true,
-          "padding-x": true,
+          [styles.title]: true
         })}
         dangerouslySetInnerHTML={{ __html: title }}
       ></h3>
