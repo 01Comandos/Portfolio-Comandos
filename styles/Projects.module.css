@@ -9,7 +9,7 @@
 
 @media (min-width: 769px) {
   .container {
-    padding-top: 4rem;
+    padding-top: 2rem;
   }
 }
 
@@ -37,13 +37,16 @@
     color: var(--secondary);
   }
 
+  .projectListContainer {
+    width: 50%;
+  }
+
   .projectPictureContainer {
-    max-width: 500px;
+    width: 45%;
     height: auto;
-    margin-right: 58px;
-    align-self:flex-start;
+    max-height: 85vh;
     position: sticky;
-    top: 11rem;
+    top: 1rem;
   }
 
   .projectPicture {
@@ -55,10 +58,8 @@
   .projectDetails {
     cursor: pointer;
     display: grid;
-    width: 700px;
     grid-template-columns: 1fr 2fr 0.2fr;
     border-bottom: solid 1px rgba(239, 242, 248, 0.21);
-    align-items: center;
   }
 
   .projectsList {
@@ -76,11 +77,11 @@
   .projectName {
     font-size: 18px;
     font-weight: 500;
-    max-width: fit-content;
+    margin-right: 1.2rem;
+    width: 175px;
   }
 
-  .projectSelected {
-    padding-bottom: 7px;
+  .projectSelected > span {
     border-bottom: solid 1px var(--secondary);
     transition: 0.2s linear;
   }
@@ -89,11 +90,19 @@
     font-size: 16px;
     font-weight: normal;
     color: #b4c0ca;
+    max-width: 300px;
   }
 
   .arrowIcon {
     justify-self: end;
     transition: 0.2s linear;
+  }
+
+  .iconContainer {
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 

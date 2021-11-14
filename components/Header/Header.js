@@ -10,8 +10,7 @@ const Header = ({
   withContact,
   backgroundStyle = null,
   buttonStyle = null,
-  darkMenu = false,
-  fixed = false
+  darkMenu = false
 }) => {
   const { toogleMenu } = useContext(MenuMobileContext);
   const containerColor = backgroundStyle ? backgroundStyle : styles.bgcBlack;

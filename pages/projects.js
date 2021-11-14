@@ -31,7 +31,7 @@ const ProjectsPage = ({ isMobile }) => {
             alt={selectedProject.name}
           />
         </figure>
-        <div>
+        <div className={styles.projectListContainer}>
           <h2 className={styles.title}>
             Looks like <span>magic</span>, works like <span>science</span>.
           </h2>
@@ -40,32 +40,36 @@ const ProjectsPage = ({ isMobile }) => {
               <Link
                 key={index}
                 href={`/p/${project.url}`}
-                onClick={() => trackEvent("Project clicked", { project: project.name })}
+                onClick={() =>
+                  trackEvent("Project clicked", { project: project.name })
+                }
               >
                 <li
                   className={styles.projectDetails}
                   onMouseEnter={() => hoverProject(project)}
                 >
-                  <span
+                  <div
                     className={
                       selectedProject.id === project.id
                         ? projectSelectedStyles
                         : projectStyles
                     }
                   >
-                    {project.name}
-                  </span>
+                    <span>{project.name}</span>
+                  </div>
                   <p
                     className={`${styles.projectDescription} ${styles.projectText}`}
                   >
                     {project.shortDescription}
                   </p>
-                  {selectedProject.id === project.id && (
-                    <img
-                      className={styles.arrowIcon}
-                      src="/icons/icon-arrow.svg"
-                    />
-                  )}
+                  <div className={styles.iconContainer}>
+                    {selectedProject.id === project.id && (
+                      <img
+                        className={styles.arrowIcon}
+                        src="/icons/icon-arrow.svg"
+                      />
+                    )}
+                  </div>
                 </li>
               </Link>
             ))}
