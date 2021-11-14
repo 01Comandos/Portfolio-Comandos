@@ -5,7 +5,7 @@
 }
 
 .description {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 2.17;
   letter-spacing: normal;
   color: var(--gray-1);
@@ -93,7 +93,7 @@
     max-width: 450px;
     justify-self: end;
     position: sticky;
-    top: 11rem;
+    top: 2rem;
   }
 
   .description {
