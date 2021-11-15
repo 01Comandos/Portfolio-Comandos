@@ -142,6 +142,7 @@
   .textSection {
     max-width: 600px;
     margin-left: var(--padding-large);
+    margin-top: 3rem;
   }
 
   .figureVideo {
