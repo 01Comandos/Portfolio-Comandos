@@ -140,7 +140,7 @@
     },
     "description": "Recover users easily and -almost - for free through Whatsapp and Truora’s non-code tool.",
     "shortDescription": "Recovering users via whatsapp with a non-code tool",
-    "url": ""
+    "url": "truora-whatsapp"
   },
   {
     "id": "Truoratruchecks",
@@ -151,6 +151,6 @@
     },
     "description": "Redesigning how to do a background query.",
     "shortDescription": "Redesigning how to do a background query",
-    "url": ""
+    "url": "truora-truchecks"
   }
 ]

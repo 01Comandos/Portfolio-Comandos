@@ -23,7 +23,7 @@ const Project = () => {
       <main className="pageContainer">
         <section className={styles.soonContainer}>
           <h1 className={styles.soonTitle}>DON'T WORRY, THIS PROJECT IS <span>ALMOST DONE</span></h1>
-          <Countdown date={new Date("2021-11-01")} />
+          <Countdown date={new Date("2022-02-01")} />
           <Link href="/">
             <button className="black button mt-2">
               Return to home
