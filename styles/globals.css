@@ -248,7 +248,7 @@ span.info {
 
 @media (min-width: 1025px) {
   .pageContainer {
-    padding-top: 8rem;
+    padding-top: 0rem;
   }
 }
 
