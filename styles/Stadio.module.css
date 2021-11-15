@@ -21,7 +21,7 @@
 .backgroundTop {
   height: 74px;
   width: 100%;
-  margin-bottom: -8px;
+  background-image: url("/images/projects/stadio/background-top.svg");
 }
 
 .moreProjects {

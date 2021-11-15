@@ -16,6 +16,7 @@ import styles from "@/styles/Pages.module.css";
 import stadioStyles from "@/styles/Stadio.module.css";
 import projects from "@/content/projects.json";
 import TestimonialsList from "@/content/testimonials.json";
+import MobileMenu from "@/components/MobileMenu/MobileMenu";
 import { visitPage } from "@/analytics/events";
 import { isMobile } from "../../utils";
 
@@ -60,10 +61,11 @@ const StadioPage = ({ isMobile }) => {
             title={content.collapsableSection.title}
             items={content.collapsableSection.items}
             containerStyles={stadioStyles.collapsableSection}/>
-          <img
+          {/* <img
             src="/images/projects/stadio/background-top.svg"
             className={stadioStyles.backgroundTop}
-          />
+          /> */}
+          <div className={stadioStyles.backgroundTop}></div>
           <ImageSection
             containerStyles={stadioStyles.sectionOne}
             projectName={content.name}
@@ -95,6 +97,7 @@ const StadioPage = ({ isMobile }) => {
           <Definition />
           <Contact />
           <Footer />
+          <MobileMenu />
         </main>
       </>
     </>
