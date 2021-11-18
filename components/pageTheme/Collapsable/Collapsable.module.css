@@ -160,6 +160,7 @@
     width: 550px;
     justify-self: end;
     height: auto;
+    align-self: baseline;
   }
 }
 

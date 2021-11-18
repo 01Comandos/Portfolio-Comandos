@@ -370,6 +370,10 @@
 }
 
 @media (min-width: 1025px) {
+  .main {
+    padding-top: 0;
+  }
+
   .rtcVideoMobile {
     display: none;
   }
