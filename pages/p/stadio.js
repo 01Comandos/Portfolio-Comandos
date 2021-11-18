@@ -24,7 +24,7 @@ const content = projects.find((project) => project.id === "Stadio");
 const moreProjects = projects.filter(
   (project) =>
     project.id === "RebajaTusCuentas" ||
-    project.id === "Spotfinder" ||
+    project.id === "mipOSPOS" ||
     project.id === "Truorawhatsapp"
 );
 
@@ -61,10 +61,6 @@ const StadioPage = ({ isMobile }) => {
             title={content.collapsableSection.title}
             items={content.collapsableSection.items}
             containerStyles={stadioStyles.collapsableSection}/>
-          {/* <img
-            src="/images/projects/stadio/background-top.svg"
-            className={stadioStyles.backgroundTop}
-          /> */}
           <div className={stadioStyles.backgroundTop}></div>
           <ImageSection
             containerStyles={stadioStyles.sectionOne}

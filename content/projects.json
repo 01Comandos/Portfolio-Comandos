@@ -1,24 +1,25 @@
 [
   {
-    "id": "RebajaTusCuentas",
-    "name": "RebajaTusCuentas",
+    "id": "Truoratruchecks",
+    "name": "Truora TruChecks",
     "pictures": {
-      "mobile": "/images/rtc-mobile.png",
-      "desktop": "/images/rtc.png"
+      "mobile": "/images/TruoraTruchekcs-mobile.png",
+      "desktop": "/images/TruoraTruchekcs.png"
     },
-    "beforeStartingSection": [
-      "/images/projects/rtc-before-01.png",
-      "/images/projects/rtc-before-01.png",
-      "/images/projects/rtc-before-01.png"
-    ],
-    "resultsSection": [
-      "/images/projects/rtc-ipad.jpg",
-      "/images/projects/rtc-ipad.jpg",
-      "/images/projects/rtc-ipad.jpg"
-    ],
-    "description": "Making it less painful to ask for mortgages is the mission of RebajaTusCuentas. All without goin to the bank.",
-    "shortDescription": "A financial platform built for scale and accessibility",
-    "url": "rebaja-tus-cuentas"
+    "description": "Redesigning how to do a background query.",
+    "shortDescription": "Redesigning how to do a background query",
+    "url": "truora-truchecks"
+  },
+  {
+    "id": "Truorawhatsapp",
+    "name": "Truora Whatsapp",
+    "pictures": {
+      "mobile": "/images/TruoraWhatsapp-mobile.png",
+      "desktop": "/images/TruoraWhatsapp.png"
+    },
+    "description": "Recover users easily and -almost - for free through Whatsapp and Truora’s non-code tool.",
+    "shortDescription": "Recovering users via whatsapp with a non-code tool",
+    "url": "truora-whatsapp"
   },
   {
     "id": "Stadio",
@@ -97,17 +98,6 @@
     "url": "stadio"
   },
   {
-    "id": "mipOSInterger",
-    "name": "mipOS Interger",
-    "pictures": {
-      "mobile": "/images/mipos-1-mobile.png",
-      "desktop": "/images/mipos-1.png"
-    },
-    "description": "1 or 40 Dark Kitchen, 1 or 100 restaurants. Everything in a tablet to manage thousands of orders by Delivery.",
-    "shortDescription": "A better experience for Dark Kitchen",
-    "url": "mipos-interger"
-  },
-  {
     "id": "mipOSPOS",
     "name": "mipOS POS",
     "logo": "/logos/mip-os.svg",
@@ -121,6 +111,38 @@
     "url": "mipos-pos"
   },
   {
+    "id": "mipOSInterger",
+    "name": "mipOS Interger",
+    "pictures": {
+      "mobile": "/images/mipos-1-mobile.png",
+      "desktop": "/images/mipos-1.png"
+    },
+    "description": "1 or 40 Dark Kitchen, 1 or 100 restaurants. Everything in a tablet to manage thousands of orders by Delivery.",
+    "shortDescription": "A better experience for Dark Kitchen",
+    "url": "mipos-interger"
+  },
+  {
+    "id": "RebajaTusCuentas",
+    "name": "RebajaTusCuentas",
+    "pictures": {
+      "mobile": "/images/rtc-mobile.png",
+      "desktop": "/images/rtc.png"
+    },
+    "beforeStartingSection": [
+      "/images/projects/rtc-before-01.png",
+      "/images/projects/rtc-before-01.png",
+      "/images/projects/rtc-before-01.png"
+    ],
+    "resultsSection": [
+      "/images/projects/rtc-ipad.jpg",
+      "/images/projects/rtc-ipad.jpg",
+      "/images/projects/rtc-ipad.jpg"
+    ],
+    "description": "Making it less painful to ask for mortgages is the mission of RebajaTusCuentas. All without goin to the bank.",
+    "shortDescription": "A financial platform built for scale and accessibility",
+    "url": "rebaja-tus-cuentas"
+  },
+  {
     "id": "Spotfinder",
     "name": "Spotfinder",
     "pictures": {
@@ -130,27 +152,5 @@
     "description": "Finding and reserving parking is not an easy thing. More with AI. Spotfinder the genuinely awesome.",
     "shortDescription": "Efficient parking experiences",
     "url": "spotfinder"
-  },
-  {
-    "id": "Truorawhatsapp",
-    "name": "Truora Whatsapp",
-    "pictures": {
-      "mobile": "/images/TruoraWhatsapp-mobile.png",
-      "desktop": "/images/TruoraWhatsapp.png"
-    },
-    "description": "Recover users easily and -almost - for free through Whatsapp and Truora’s non-code tool.",
-    "shortDescription": "Recovering users via whatsapp with a non-code tool",
-    "url": "truora-whatsapp"
-  },
-  {
-    "id": "Truoratruchecks",
-    "name": "Truora TruChecks",
-    "pictures": {
-      "mobile": "/images/TruoraTruchekcs-mobile.png",
-      "desktop": "/images/TruoraTruchekcs.png"
-    },
-    "description": "Redesigning how to do a background query.",
-    "shortDescription": "Redesigning how to do a background query",
-    "url": "truora-truchecks"
   }
 ]

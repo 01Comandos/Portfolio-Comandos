@@ -84,7 +84,7 @@
 }
 
 @media (min-width: 1025px) {
-  .projectVisibility:nth-child(n) {
+  .projectVisibility:nth-child(n+6) {
     display: block;
   }
 
