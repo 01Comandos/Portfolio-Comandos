@@ -7,16 +7,14 @@ import Expertise from "../components/Expertise/Expertise";
 import TestimonialsCarousel from "../components/TestimonialsCarousel/TestimonialsCarousel";
 import Definition from "../components/Definition/Definition";
 import Contact from "../components/Contact/Contact";
-import TestimonialsList from "../content/testimonials.json"
+import TestimonialsList from "../content/testimonials.json";
 import { visitPage } from "../analytics/events";
 import styles from "../styles/Home.module.css";
 import { isMobile } from "../utils";
 
-
 const Home = ({ isMobile }) => {
-
   useEffect(() => {
-    visitPage('Home viewed');
+    visitPage("Home viewed");
   }, []);
 
   return (
@@ -37,7 +35,10 @@ const Home = ({ isMobile }) => {
         <Projects isMobile={isMobile} />
         <div className={styles.verticalLine}></div>
         <Expertise />
-        <TestimonialsCarousel testimonials={TestimonialsList} isMobile={isMobile} />
+        <TestimonialsCarousel
+          testimonials={TestimonialsList}
+          isMobile={isMobile}
+        />
         <Definition />
         <Contact />
       </main>

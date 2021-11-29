@@ -1,5 +1,6 @@
 import classNames from "classnames";
-import { useState } from "react";
+import ImageGallery from "react-image-gallery";
+import { useState, useEffect } from "react";
 import { Disclosure } from "@headlessui/react";
 import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/solid";
 import { CheckCircleIcon } from "@heroicons/react/outline";
@@ -11,7 +12,7 @@ const renderItem = ({
   description,
   icon,
   list,
-  picture,
+  pictures,
   index,
   selectedItem,
 }) => {
@@ -74,14 +75,31 @@ const renderItem = ({
                     ))}
                   </ul>
                 </div>
-                <figure
-                  className={classNames({
-                    [styles.itemMobileFigure]: true,
-                    "padding-x": true,
-                  })}
-                >
-                  <img src={picture} className={styles.itemPicture} />
-                </figure>
+                {pictures.length > 1 ? (
+                  <div
+                    className={classNames(styles.itemMobileFigure, {
+                      "padding-x": true,
+                    })}
+                  >
+                    <ImageGallery
+                      originalClass={styles.itemPicture}
+                      items={pictures}
+                      showThumbnails={false}
+                      showNav={false}
+                      showFullscreenButton={false}
+                      showPlayButton={false}
+                      showIndex={true}
+                    />
+                  </div>
+                ) : (
+                  <figure
+                    className={classNames(styles.itemMobileFigure, {
+                      "padding-x": true,
+                    })}
+                  >
+                    <img src={pictures[0]} className={styles.itemPicture} />
+                  </figure>
+                )}
               </>
             )}
           </Disclosure.Panel>
@@ -91,8 +109,21 @@ const renderItem = ({
   );
 };
 
-function Collapsable({ title, items, containerStyles = {} }) {
+const renderPicture = (picture, containerStyles = {}) => (
+  <figure className={classNames(styles.itemDesktopFigure, containerStyles)}>
+    <img src={picture.original} className={styles.itemPicture} />
+  </figure>
+);
+
+function Collapsable({ isMobile, title, items, containerStyles = {} }) {
   const [selectedItem, setSelectedItem] = useState(0);
+  const [selectedPictures, setSelectedPictures] = useState(
+    items[0]?.pictures || []
+  );
+
+  useEffect(() => {
+    setSelectedPictures(items[selectedItem].pictures);
+  }, [selectedItem]);
 
   return (
     <div
@@ -103,7 +134,7 @@ function Collapsable({ title, items, containerStyles = {} }) {
     >
       <h3
         className={classNames({
-          [styles.title]: true
+          [styles.title]: true,
         })}
         dangerouslySetInnerHTML={{ __html: title }}
       ></h3>
@@ -118,9 +149,29 @@ function Collapsable({ title, items, containerStyles = {} }) {
           </div>
         ))}
       </div>
-      <figure className={styles.itemDesktopFigure}>
-        <img src={items[selectedItem].picture} className={styles.itemPicture} />
-      </figure>
+      {selectedPictures.length > 1 ? (
+        <div
+          className={classNames(
+            styles.itemDesktopFigure,
+            styles.paddingRightFigure
+          )}
+        >
+          <ImageGallery
+            renderItem={renderPicture}
+            items={selectedPictures}
+            showThumbnails={false}
+            showNav={!isMobile}
+            showFullscreenButton={false}
+            showPlayButton={false}
+            showIndex={true}
+          />
+        </div>
+      ) : (
+        renderPicture(
+          { original: selectedPictures[0] },
+          styles.paddingRightFigure
+        )
+      )}
     </div>
   );
 }

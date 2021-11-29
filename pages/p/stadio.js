@@ -58,6 +58,7 @@ const StadioPage = ({ isMobile }) => {
           />
           <div className={stadioStyles.line}></div>
           <Collapsable
+            isMobile={isMobile}
             title={content.collapsableSection.title}
             items={content.collapsableSection.items}
             containerStyles={stadioStyles.collapsableSection}/>

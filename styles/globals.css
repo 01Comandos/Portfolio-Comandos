@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import "~react-image-gallery/styles/css/image-gallery.css";
 
 @font-face {
   font-family: "icomoon";
@@ -155,7 +156,7 @@ figure {
 }
 
 .pb-4 {
-  padding-bottom: 4rem!important;
+  padding-bottom: 4rem !important;
 }
 
 .px-1 {
@@ -172,7 +173,7 @@ figure {
 }
 
 .text-white {
-  color: white!important;
+  color: white !important;
 }
 
 .text-centered {
@@ -235,6 +236,18 @@ span.info {
 .horizontalLine {
   border-bottom: 1px solid var(--gray-3);
   opacity: 0.21;
+}
+
+.image-gallery-left-nav .image-gallery-svg,
+.image-gallery-right-nav .image-gallery-svg {
+  height: 50px;
+  width: 40px;
+}
+
+.image-gallery-index {
+  border-radius: 4px;
+  right: 10px;
+  top: 5px;
 }
 
 @media (min-width: 769px) {

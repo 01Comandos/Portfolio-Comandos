@@ -108,6 +108,7 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
+  object-position: top right;
 }
 
 @media (min-width: 769px) {
@@ -141,9 +142,13 @@
     grid-area: image;
     overflow: hidden;
     height: 450px;
-    padding-right: var(--padding-tablet);
+    position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 8rem;
+  }
+
+  .paddingRightFigure {
+    padding-right: var(--padding-tablet);
   }
 
   .description {
@@ -157,7 +162,6 @@
   }
 
   .itemDesktopFigure {
-    width: 550px;
     justify-self: end;
     height: auto;
     align-self: baseline;
@@ -165,7 +169,7 @@
 }
 
 @media (min-width: 1201px) {
-  .itemDesktopFigure {
+  .paddingRightFigure {
     padding-right: var(--padding-large);
   }
 
@@ -185,7 +189,7 @@
     padding-right: var(--padding-extralarge);
   }
 
-  .itemDesktopFigure {
+  .paddingRightFigure {
     padding-right: 0;
   }
 
