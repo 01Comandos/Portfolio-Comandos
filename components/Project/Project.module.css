@@ -1,10 +1,20 @@
 .container {
+  color: white;
+  width: 100%;
+  cursor: pointer;
+}
+
+.container--light {
   color: #051441;
   width: 100%;
   cursor: pointer;
 }
 
 .container h1 {
+  margin: 0;
+}
+
+.container--light h1 {
   margin: 0;
 }
 
@@ -23,7 +33,6 @@
 
 .pictureMobile {
   object-fit: contain;
-  min-width: 320px;
   max-width: 100%;
 }
 
@@ -40,6 +49,7 @@
 
 .textContainer > p {
   flex-basis: 75%;
+  color: var(--gray-2);
 }
 
 .textContainer > img {

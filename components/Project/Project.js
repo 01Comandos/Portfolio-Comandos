@@ -3,7 +3,14 @@ import styles from './Project.module.css';
 import { trackEvent } from '../../analytics/events';
 import { useState } from 'react';
 
-const Project = ({ isMobile, pictures, name, description, url }) => {
+const Project = ({
+  isMobile,
+  pictures,
+  name,
+  description,
+  url,
+  lightTheme,
+}) => {
   const [isHover, setHover] = useState(false);
 
   return (
@@ -11,7 +18,7 @@ const Project = ({ isMobile, pictures, name, description, url }) => {
       href={`/p/${url}`}
       onClick={() => trackEvent('Project clicked', { project: name })}>
       <article
-        className={styles.container}
+        className={lightTheme ? styles['container--light'] : styles.container}
         onMouseEnter={() => setHover(true)}
         onMouseLeave={() => setHover(false)}>
         <img src={pictures.mobile} className={styles.pictureMobile} />
@@ -24,7 +31,7 @@ const Project = ({ isMobile, pictures, name, description, url }) => {
         <h4 className={styles.title}>{name}</h4>
         <div className={styles.textContainer}>
           <p className={styles.description}>{description}</p>
-          {!isMobile && <img src="/icons/icon-arrow.svg" />}
+          <img src="/icons/icon-arrow.svg" />
         </div>
       </article>
     </Link>

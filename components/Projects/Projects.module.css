@@ -1,8 +1,11 @@
 .container {
-  color: #051441;
-  margin: 3rem 0 0;
+  padding-bottom: 47px;
+}
+
+.container--light {
   padding-top: 61px;
   padding-bottom: 47px;
+  color: #051441;
   background-color: white;
 }
 
@@ -56,6 +59,10 @@
     padding-bottom: 3rem;
   }
 
+  .container--light {
+    margin: 0;
+  }
+
   .title {
     font-size: 50px;
     line-height: normal;
@@ -94,5 +101,10 @@
 
   .project {
     width: 31%;
+  }
+
+  .container {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }

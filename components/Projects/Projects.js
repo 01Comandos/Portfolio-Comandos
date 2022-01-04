@@ -9,8 +9,12 @@ const Projects = ({
   showDescription = true,
   showNavigationButton = true,
   showAllProjects = false,
+  lightTheme,
 }) => (
-  <section className={`${styles.container} padding-x`}>
+  <section
+    className={`${
+      lightTheme ? styles['container--light'] : styles.container
+    } padding-x`}>
     <h2 className={styles.title}>
       Looks like <span>magic</span>, works like <span>science</span>.
     </h2>
@@ -35,6 +39,7 @@ const Projects = ({
             pictures={project.pictures}
             description={project.description}
             url={project.url}
+            lightTheme={lightTheme}
           />
         </div>
       ))}
