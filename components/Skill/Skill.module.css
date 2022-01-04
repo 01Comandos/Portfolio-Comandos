@@ -1,17 +1,35 @@
 .container {
-  color: white;
+  color: #051441;
 }
 
 .title {
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.1px;
   margin: 1rem 0;
 }
 
+.description_container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 162px;
+}
+
 .description {
-  color: var(--gray-2);
-  font-size: 16px;
+  color: #051441;
+  font-size: 18px;
   line-height: 1.81;
-  font-weight: 300;
+  margin-bottom: 8px;
+}
+
+.check {
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+@media (min-width: 481px) {
+  .description_container {
+    max-height: none;
+  }
 }

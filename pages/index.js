@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Hero from '../components/Hero/Hero';
 import Companies from '../components/Companies/Companies';
 import Projects from '../components/Projects/Projects';
+import Experiences from '../components/Experiences/Experiences';
 import TestimonialsCarousel from '../components/TestimonialsCarousel/TestimonialsCarousel';
 import Definition from '../components/Definition/Definition';
 import Contact from '../components/Contact/Contact';
@@ -32,6 +33,7 @@ const Home = ({ isMobile }) => {
         <Companies />
         {/* <div className={styles.verticalLine}></div> */}
         <Projects isMobile={isMobile} />
+        <Experiences />
         <TestimonialsCarousel
           testimonials={TestimonialsList}
           isMobile={isMobile}

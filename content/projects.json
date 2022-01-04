@@ -1,27 +1,5 @@
 [
   {
-    "id": "Truoratruchecks",
-    "name": "Truora TruChecks",
-    "pictures": {
-      "mobile": "/images/TruoraTruchekcs-mobile.png",
-      "desktop": "/images/TruoraTruchekcs.png"
-    },
-    "description": "Redesigning how to do a background query.",
-    "shortDescription": "Redesigning how to do a background query",
-    "url": "truora-truchecks"
-  },
-  {
-    "id": "Truorawhatsapp",
-    "name": "Truora Whatsapp",
-    "pictures": {
-      "mobile": "/images/TruoraWhatsapp-mobile.png",
-      "desktop": "/images/TruoraWhatsapp.png"
-    },
-    "description": "Recover users easily and -almost - for free through Whatsapp and Truora’s non-code tool.",
-    "shortDescription": "Recovering users via whatsapp with a non-code tool",
-    "url": "truora-whatsapp"
-  },
-  {
     "id": "Stadio",
     "name": "Stadio",
     "logo": null,
@@ -116,17 +94,6 @@
     "url": "mipos-pos"
   },
   {
-    "id": "mipOSInterger",
-    "name": "mipOS Interger",
-    "pictures": {
-      "mobile": "/images/mipos-1-mobile.png",
-      "desktop": "/images/mipos-1.png"
-    },
-    "description": "1 or 40 Dark Kitchen, 1 or 100 restaurants. Everything in a tablet to manage thousands of orders by Delivery.",
-    "shortDescription": "A better experience for Dark Kitchen",
-    "url": "mipos-interger"
-  },
-  {
     "id": "RebajaTusCuentas",
     "name": "RebajaTusCuentas",
     "pictures": {
@@ -146,16 +113,5 @@
     "description": "Making it less painful to ask for mortgages is the mission of RebajaTusCuentas. All without goin to the bank.",
     "shortDescription": "A financial platform built for scale and accessibility",
     "url": "rebaja-tus-cuentas"
-  },
-  {
-    "id": "Spotfinder",
-    "name": "Spotfinder",
-    "pictures": {
-      "mobile": "/images/spotlitefinal-mobile.png",
-      "desktop": "/images/spotlitefinal.png"
-    },
-    "description": "Finding and reserving parking is not an easy thing. More with AI. Spotfinder the genuinely awesome.",
-    "shortDescription": "Efficient parking experiences",
-    "url": "spotfinder"
   }
 ]

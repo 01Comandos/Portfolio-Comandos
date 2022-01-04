@@ -21,7 +21,7 @@ const Projects = ({
       </p>
     )}
     <div className={styles.projects}>
-      {projectsList.map((project, index) => (
+      {projectsList.slice(0, 3).map((project, index) => (
         <div
           className={
             showAllProjects

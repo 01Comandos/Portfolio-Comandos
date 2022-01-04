@@ -1,0 +1,51 @@
+.container {
+  color: #051441;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: white;
+  border-top: solid 1px #97979766;
+}
+
+.title {
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 1.58;
+  letter-spacing: 0.16px;
+  margin: 0;
+}
+
+.title > span {
+  color: var(--secondary);
+}
+
+.skills {
+  display: block;
+  margin-top: 30px;
+}
+
+.skill {
+  box-sizing: border-box;
+  padding: 2rem 0;
+}
+
+@media (min-width: 481px) {
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .skill {
+    width: 45%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .skill {
+    width: 31%;
+  }
+
+  .title {
+    font-size: 50px;
+    letter-spacing: 0.21px;
+  }
+}
