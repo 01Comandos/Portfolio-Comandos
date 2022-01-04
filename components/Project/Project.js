@@ -1,7 +1,7 @@
-import Link from "next/link";
-import styles from "./Project.module.css";
-import { trackEvent } from "../../analytics/events";
-import { useState } from "react";
+import Link from 'next/link';
+import styles from './Project.module.css';
+import { trackEvent } from '../../analytics/events';
+import { useState } from 'react';
 
 const Project = ({ isMobile, pictures, name, description, url }) => {
   const [isHover, setHover] = useState(false);
@@ -9,13 +9,11 @@ const Project = ({ isMobile, pictures, name, description, url }) => {
   return (
     <Link
       href={`/p/${url}`}
-      onClick={() => trackEvent('Project clicked', { project: name })}
-    >
+      onClick={() => trackEvent('Project clicked', { project: name })}>
       <article
         className={styles.container}
         onMouseEnter={() => setHover(true)}
-        onMouseLeave={() => setHover(false)}
-      >
+        onMouseLeave={() => setHover(false)}>
         <img src={pictures.mobile} className={styles.pictureMobile} />
         <figure className={styles.figurePicture}>
           <img
@@ -26,7 +24,7 @@ const Project = ({ isMobile, pictures, name, description, url }) => {
         <h4 className={styles.title}>{name}</h4>
         <div className={styles.textContainer}>
           <p className={styles.description}>{description}</p>
-          {(isMobile || isHover) && <img src="/icons/icon-arrow.svg" />}
+          {!isMobile && <img src="/icons/icon-arrow.svg" />}
         </div>
       </article>
     </Link>

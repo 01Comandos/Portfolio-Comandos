@@ -1,20 +1,20 @@
-import { useState, useEffect, useRef } from "react";
-import { useSwipeable } from "react-swipeable";
-import ArrowButton from "../ArrowButton/ArrowButton";
-import styles from "./TestimonialsCarousel.module.css";
+import { useState, useEffect, useRef } from 'react';
+import { useSwipeable } from 'react-swipeable';
+import ArrowButton from '../ArrowButton/ArrowButton';
+import styles from './TestimonialsCarousel.module.css';
 
 const DELAY = 8000;
 
 const TestimonialCarousel = ({
   testimonials,
-  color = "tertiary",
-  isMobile
+  color = 'tertiary',
+  isMobile,
 }) => {
   const [index, setIndex] = useState(0);
   const timeoutRef = useRef(null);
   const handlers = useSwipeable({
-    onSwipedLeft: () => isMobile ? swipe(1) : null,
-    onSwipedRight: () => isMobile ? swipe(-1) : null,
+    onSwipedLeft: () => (isMobile ? swipe(1) : null),
+    onSwipedRight: () => (isMobile ? swipe(-1) : null),
     preventDefaultTouchmoveEvent: true,
   });
 
@@ -52,21 +52,20 @@ const TestimonialCarousel = ({
 
   return (
     <section
-      className={`${styles.container} ${styles[`${color}Container`]} padding-x`}
-    >
+      className={`${styles.container} ${
+        styles[`${color}Container`]
+      } padding-x`}>
       <h3 className={styles.title}>
         Impacting teams, products and thousands of people
       </h3>
       <div
         className={styles.slideshowSlider}
         {...handlers}
-        style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
-      >
+        style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}>
         {testimonials.map((testimonial, idx) => (
           <article
             key={idx}
-            className={`${styles.slide} ${index === idx ? styles.active : ""}`}
-          >
+            className={`${styles.slide} ${index === idx ? styles.active : ''}`}>
             {index === idx && (
               <ArrowButton
                 styles={styles.arrowLeft}
@@ -93,9 +92,14 @@ const TestimonialCarousel = ({
                 </div>
               </div>
             </div>
-            {index === idx && <ArrowButton styles={styles.arrowRight} onclick={() => {
+            {index === idx && (
+              <ArrowButton
+                styles={styles.arrowRight}
+                onclick={() => {
                   swipe(1);
-                }} />}
+                }}
+              />
+            )}
           </article>
         ))}
       </div>
@@ -105,12 +109,11 @@ const TestimonialCarousel = ({
           <div
             key={idx}
             className={`${styles.slideshowDot}${
-              index === idx ? " " + styles.active : ""
+              index === idx ? ' ' + styles.active : ''
             }`}
             onClick={() => {
               setIndex(idx);
-            }}
-          ></div>
+            }}></div>
         ))}
       </div>
     </section>

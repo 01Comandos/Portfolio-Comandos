@@ -1,14 +1,15 @@
 .container {
-  color: white;
-  margin: 3rem 0;
+  color: #051441;
+  margin: 3rem 0 0;
+  padding-top: 61px;
+  padding-bottom: 47px;
+  background-color: white;
 }
 
 .description {
-  color: var(--gray-1);
-  font-size: 16px;
+  font-size: 18px;
   line-height: 2;
   padding: 0 0 3rem 0;
-  font-weight: 300;
 }
 
 .projects {
@@ -20,7 +21,7 @@
   padding: 1.8rem 0;
 }
 
-.projectVisibility:nth-child(n+4) {
+.projectVisibility:nth-child(n + 4) {
   display: none;
 }
 
@@ -38,6 +39,8 @@
 
 .allProjects {
   min-width: 218px;
+  background-color: #030102;
+  color: white;
 }
 
 .options {
@@ -49,6 +52,7 @@
 @media (min-width: 769px) {
   .container {
     margin: 0;
+    padding-top: 3rem;
     padding-bottom: 3rem;
   }
 
@@ -74,17 +78,17 @@
     width: 45%;
   }
 
-  .projectVisibility:nth-child(n+4) {
+  .projectVisibility:nth-child(n + 4) {
     display: block;
   }
 
-  .projectVisibility:nth-child(n+5) {
+  .projectVisibility:nth-child(n + 5) {
     display: none;
   }
 }
 
 @media (min-width: 1025px) {
-  .projectVisibility:nth-child(n+6) {
+  .projectVisibility:nth-child(n + 6) {
     display: block;
   }
 

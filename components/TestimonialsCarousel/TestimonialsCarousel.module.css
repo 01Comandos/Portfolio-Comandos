@@ -4,7 +4,7 @@
 }
 
 .tertiaryContainer {
-  background-color: var(--tertiary);
+  background-color: #fceee2;
 }
 
 .infoContainer {
@@ -58,7 +58,8 @@
   transition: 0.1s linear;
 }
 
-.arrowRight, .arrowLeft {
+.arrowRight,
+.arrowLeft {
   display: none;
 }
 
@@ -137,7 +138,8 @@
     width: 80%;
   }
 
-  .arrowRight, .arrowLeft {
+  .arrowRight,
+  .arrowLeft {
     align-items: center;
     background-color: white;
     border: 3px solid #e0f5fc;
@@ -155,5 +157,9 @@
 
   .arrowLeft {
     transform: rotate(-90deg);
+  }
+
+  .text {
+    font-weight: 700;
   }
 }
