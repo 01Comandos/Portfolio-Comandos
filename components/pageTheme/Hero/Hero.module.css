@@ -30,7 +30,7 @@
   margin: 0;
   font-size: 35px;
   font-weight: 500;
-  letter-spacing: 0.15px;
+  letter-spacing: 0.19px;
   color: white;
 }
 
@@ -125,6 +125,8 @@
 
   .title {
     padding-top: 20px;
+    font-size: 46px;
+    letter-spacing: 0.2px;
   }
 
   .titleProjectInfo {

@@ -1,6 +1,7 @@
 [
   {
     "id": "Stadio",
+    "slug": "stadio",
     "name": "Stadio",
     "logo": null,
     "pictures": {
@@ -10,6 +11,8 @@
     },
     "description": "A great collaborative solution for runners. Lima? Sao Paulo? Let's run together!",
     "shortDescription": "A better running experience",
+    "subtitle": "Apple Watch design",
+    "title": "Redefining the jogging experience with friends",
     "summary": {
       "description": "It is true that the pandemic transformed us and we can no longer meet friends to jog. Stadio has taken it as an emblem to jog with friends in other cities or countries. It works basically like a room to zoom in and out for a jog! In his first month of MVP he worked with 100 people and it was amazing to see his performance.",
       "picture": "/images/projects/stadio/details-image.png",
@@ -19,23 +22,14 @@
         "Tools": ["Pencil", "Adobe Photoshop", "Sketch", "Origami"],
         "Project": ["Product Discovery", "UX Architecture", "Prototype"],
         "Deliverables": ["App Mobile", "App Apple Watch"],
-        "Applied methodologies": ["User and product discovery", "User interviews", "Usability testing", "Low-fi prototyping", "High-fi prototyping"]
+        "Applied methodologies": [
+          "User and product discovery",
+          "User interviews",
+          "Usability testing",
+          "Low-fi prototyping",
+          "High-fi prototyping"
+        ]
       }
-    },
-    "sectionOne": {
-      "description": "Check second by second how you perform against other competitors in the same race. May the fastest win!",
-      "picture": "/images/projects/stadio/section-1.png",
-      "title": "<span>Motivation</span> for running <span>on your wrist</span>"
-    },
-    "sectionTwo": {
-      "description": "You can organize sessions with friends or participate in other rooms with people from other cities or countries. Training has never been so much fun",
-      "picture": "/images/projects/stadio/section-2.png",
-      "title": "<span>Create rooms</span> or join in running <span>with strangers</span>"
-    },
-    "impactSection": {
-      "description": "Taking into account that the main running apps have not developed this feature very well. These were the results:",
-      "title": "Impact on <span>people</span>",
-      "picture": "/images/projects/stadio/impact-section.png"
     },
     "collapsableSection": {
       "title": "<span>A start with</span> a lot of <span>adrenaline</span>",
@@ -78,10 +72,37 @@
         }
       ]
     },
-    "url": "stadio"
+    "sectionOne": {
+      "description": "Check second by second how you perform against other competitors in the same race. May the fastest win!",
+      "picture": "/images/projects/stadio/section-1.png",
+      "title": "<span>Motivation</span> for running <span>on your wrist</span>"
+    },
+    "sectionTwo": {
+      "description": "You can organize sessions with friends or participate in other rooms with people from other cities or countries. Training has never been so much fun",
+      "picture": "/images/projects/stadio/section-2.png",
+      "title": "<span>Create rooms</span> or join in running <span>with strangers</span>"
+    },
+    "impactSection": {
+      "description": "Taking into account that the main running apps have not developed this feature very well. These were the results:",
+      "title": "Impact on <span>people</span>",
+      "picture": "/images/projects/stadio/impact-section.png",
+      "info": {
+        "logo": "/images/projects/stadio/stadio-logo.png",
+        "stars": "8 out of 10 still use stadio"
+      },
+      "company": [
+        "/images/projects/stadio/nike-logo.png",
+        "/images/projects/stadio/adidas-logo.png",
+        "/images/projects/stadio/apple-logo.png"
+      ],
+      "companyText": "Do not have this functionality"
+    },
+    "url": "stadio",
+    "moreProjectsSlugs": ["mipospos", "rebaja-tus-cuentas", "stadio"]
   },
   {
     "id": "mipOSPOS",
+    "slug": "mipospos",
     "name": "mipOS POS",
     "logo": "/logos/mip-os.svg",
     "pictures": {
@@ -95,6 +116,7 @@
   },
   {
     "id": "RebajaTusCuentas",
+    "slug": "rebaja-tus-cuentas",
     "name": "RebajaTusCuentas",
     "pictures": {
       "mobile": "/images/rtc-mobile.png",

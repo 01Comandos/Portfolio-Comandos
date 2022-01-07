@@ -10,9 +10,9 @@
 }
 
 .title {
-  font-size: 34px;
+  font-size: 35px;
   font-weight: 600;
-  letter-spacing: 0.17px;
+  letter-spacing: 0.15px;
   color: white;
   margin: 38px 0 0 0;
 }
@@ -22,10 +22,9 @@
 }
 
 .description {
-  font-size: 16px;
-  line-height: 1.9;
+  font-size: 18px;
+  line-height: 2;
   color: var(--gray-1);
-  font-weight: 300;
   margin-top: 29px;
 }
 
@@ -92,7 +91,7 @@
 
 .companyText {
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 500;
   letter-spacing: 0.07px;
   color: var(--gray-1);
   margin-left: 30px;
@@ -103,11 +102,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-      "image title"
-      "image description"
-      "image stadio-info"
-      "image line"
-      "image stadio-companies";
+      'image title'
+      'image description'
+      'image stadio-info'
+      'image line'
+      'image stadio-companies';
   }
 
   .figure {
@@ -122,11 +121,14 @@
     align-self: end;
     max-width: 469px;
     margin: 0;
+    font-size: 36px;
   }
 
   .description {
     grid-area: description;
     max-width: 469px;
+
+    line-height: 1.83;
   }
 
   .stadioInfo {

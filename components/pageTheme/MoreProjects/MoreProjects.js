@@ -1,18 +1,17 @@
-import Link from "next/link";
-import classNames from "classnames";
+import Link from 'next/link';
+import classNames from 'classnames';
 
-import Project from "@/components/Project/Project";
-import styles from "./MoreProjects.module.css";
+import Project from '@/components/Project/Project';
+import styles from './MoreProjects.module.css';
 
 function MoreProjects({ projects, isMobile, containerStyles }) {
   return (
     <div
       className={classNames({
         [styles.container]: true,
-        "padding-x": true,
-        [containerStyles]: true
-      })}
-    >
+        'padding-x': true,
+        [containerStyles]: true,
+      })}>
       <h3 className={styles.title}>Discover more project</h3>
       <div className={styles.projectsContainer}>
         {projects.map((project, index) => (
@@ -22,7 +21,7 @@ function MoreProjects({ projects, isMobile, containerStyles }) {
               pictures={project.pictures}
               name={project.name}
               description={project.description}
-              url={project.url}
+              slug={project.slug}
             />
           </div>
         ))}
@@ -30,8 +29,7 @@ function MoreProjects({ projects, isMobile, containerStyles }) {
       <div className={styles.buttons}>
         <Link
           href="/projects"
-          onClick={() => trackEvent("View all projects clicked")}
-        >
+          onClick={() => trackEvent('View all projects clicked')}>
           <button className={`black button ${styles.allProjects}`}>
             View all projects
           </button>

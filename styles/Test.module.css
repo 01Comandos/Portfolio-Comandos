@@ -1,0 +1,42 @@
+.section {
+  padding-top: 6rem;
+  border: 1px solid red;
+}
+
+.modal {
+  width: 100%;
+  height: 100%;
+  /* background-color: red; */
+}
+
+.overlay {
+  position: fixed;
+  inset: 0px;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 15;
+}
+
+.button {
+  position: fixed;
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  z-index: 14;
+}
+
+.button--left {
+  left: 0;
+}
+
+.button--right {
+  right: 0;
+}
+
+.close {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 50px;
+  width: 50px;
+  z-index: 14;
+}

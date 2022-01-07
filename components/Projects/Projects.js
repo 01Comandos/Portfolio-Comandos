@@ -38,7 +38,7 @@ const Projects = ({
             name={project.name}
             pictures={project.pictures}
             description={project.description}
-            url={project.url}
+            slug={project.slug}
             lightTheme={lightTheme}
           />
         </div>

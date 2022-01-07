@@ -5,11 +5,10 @@
 }
 
 .description {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 2.17;
   letter-spacing: normal;
   color: var(--gray-1);
-  font-weight: 300;
 }
 
 .figure {
@@ -64,7 +63,8 @@
     justify-content: space-between;
   }
 
-  .detail, .detail:nth-child(odd) {
+  .detail,
+  .detail:nth-child(odd) {
     flex-basis: 33%;
   }
 }
@@ -74,9 +74,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-    "description image"
-    "line image"
-    "details image";
+      'description image'
+      'line image'
+      'details image';
     grid-gap: 2rem;
     margin-top: 240px;
   }
@@ -98,18 +98,24 @@
 
   .description {
     grid-area: description;
+    line-height: 2.06;
   }
 
   .details {
     grid-area: details;
   }
 
-  .detail, .detail:nth-child(odd) {
+  .detail,
+  .detail:nth-child(odd) {
     flex-basis: 50%;
   }
 
   .description {
     margin-bottom: 58px;
+  }
+
+  .detailName {
+    font-size: 16px;
   }
 }
 

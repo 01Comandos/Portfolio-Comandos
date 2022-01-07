@@ -1,14 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
-@import "~react-image-gallery/styles/css/image-gallery.css";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import '~react-image-gallery/styles/css/image-gallery.css';
 
 @font-face {
-  font-family: "icomoon";
-  src: url("../public/fonts/icomoon.eot?cb8d9i");
-  src: url("../public/fonts/icomoon.eot?cb8d9i#iefix")
-      format("embedded-opentype"),
-    url("../public/fonts/icomoon.ttf?cb8d9i") format("truetype"),
-    url("../public/fonts/icomoon.woff?cb8d9i") format("woff"),
-    url("../public/fonts/icomoon.svg?cb8d9i#icomoon") format("svg");
+  font-family: 'icomoon';
+  src: url('../public/fonts/icomoon.eot?cb8d9i');
+  src: url('../public/fonts/icomoon.eot?cb8d9i#iefix')
+      format('embedded-opentype'),
+    url('../public/fonts/icomoon.ttf?cb8d9i') format('truetype'),
+    url('../public/fonts/icomoon.woff?cb8d9i') format('woff'),
+    url('../public/fonts/icomoon.svg?cb8d9i#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -44,10 +44,10 @@
   --padding-extralarge: 12%;
 }
 
-[class^="icon-"],
-[class*=" icon-"] {
+[class^='icon-'],
+[class*=' icon-'] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: "icomoon" !important;
+  font-family: 'icomoon' !important;
   speak: never;
   font-style: normal;
   font-weight: normal;
@@ -61,40 +61,40 @@
 }
 
 .icon-arrow .path1:before {
-  content: "\e900";
+  content: '\e900';
   opacity: 0.086;
 }
 .icon-arrow .path2:before {
-  content: "\e901";
+  content: '\e901';
   margin-left: -1em;
 }
 .icon-arrow .path3:before {
-  content: "\e902";
+  content: '\e902';
   margin-left: -1em;
 }
 .icon-behance:before {
-  content: "\e903";
+  content: '\e903';
 }
 .icon-github:before {
-  content: "\e904";
+  content: '\e904';
 }
 .icon-instagram:before {
-  content: "\e905";
+  content: '\e905';
 }
 .icon-linkedin:before {
-  content: "\e906";
+  content: '\e906';
 }
 .icon-menu:before {
-  content: "\e907";
+  content: '\e907';
 }
 .icon-twitter:before {
-  content: "\e908";
+  content: '\e908';
 }
 .icon-up .path1:before {
-  content: "\e909";
+  content: '\e909';
 }
 .icon-up .path2:before {
-  content: "\e90a";
+  content: '\e90a';
   margin-left: -1em;
 }
 
@@ -181,7 +181,7 @@ figure {
 }
 
 .icon-icon-behance:before {
-  content: "\e900";
+  content: '\e900';
   color: #fff;
 }
 
@@ -247,7 +247,8 @@ span.info {
 .image-gallery-index {
   border-radius: 4px;
   right: 10px;
-  top: 5px;
+  top: auto;
+  bottom: 5px;
 }
 
 @media (min-width: 769px) {

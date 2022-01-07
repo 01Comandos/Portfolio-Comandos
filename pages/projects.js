@@ -39,7 +39,7 @@ const ProjectsPage = ({ isMobile }) => {
             {projectsList.map((project, index) => (
               <Link
                 key={index}
-                href={`/p/${project.url}`}
+                href={`/p/${project.slug}`}
                 onClick={() =>
                   trackEvent('Project clicked', { project: project.name })
                 }>

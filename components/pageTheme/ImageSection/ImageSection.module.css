@@ -10,7 +10,7 @@
 }
 
 .title {
-  font-size: 34px;
+  font-size: 40px;
   font-weight: 600;
   letter-spacing: 0.17px;
   color: white;
@@ -22,8 +22,8 @@
 }
 
 .description {
-  font-size: 16px;
-  line-height: 1.9;
+  font-size: 21px;
+  line-height: 1.8;
   color: var(--gray-1);
   font-weight: 300;
   margin-top: 29px;
@@ -37,14 +37,14 @@
 
   .defaultContainer {
     grid-template-areas:
-      "image title"
-      "image description";
+      'image title'
+      'image description';
   }
 
   .reverseContainer {
     grid-template-areas:
-      "title image"
-      "description image";
+      'title image'
+      'description image';
   }
 
   .figure {
@@ -58,18 +58,19 @@
 
   .reverseContainer .figure {
     margin-left: 3rem;
-  } 
+  }
 
   .title {
     grid-area: title;
     max-width: 469px;
     margin: 0;
     align-self: flex-end;
-  } 
+  }
 
   .description {
     grid-area: description;
     max-width: 469px;
+    font-size: 25px;
   }
 
   /* .reverseContainer .title,
@@ -89,5 +90,5 @@
 
   .reverseContainer .figure {
     margin-left: 4rem;
-  } 
+  }
 }

@@ -3,8 +3,9 @@
 }
 
 .title {
+  max-width: 524px;
   color: white;
-  font-size: 38px;
+  font-size: 40px;
   font-weight: 600;
   line-height: 1.58;
   letter-spacing: 0.16px;
@@ -58,7 +59,7 @@
 
 .description {
   font-size: 16px;
-  line-height: 2;
+  line-height: 2.19;
   font-weight: 300;
   color: var(--gray-1);
   background-color: var(--gray-10);
@@ -90,7 +91,7 @@
   width: 25px;
   height: 25px;
   margin-right: 12px;
-  margin-top: 8px;
+  margin-top: 3px;
 }
 
 .itemMobileFigure {
@@ -115,9 +116,9 @@
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-      "title image"
-      "items image";
+    grid-template-areas:
+      'title image'
+      'items image';
     column-gap: 20px;
     position: relative;
   }
@@ -125,6 +126,7 @@
   .title {
     grid-area: title;
     padding-left: var(--padding-tablet);
+    max-width: 524px;
   }
 
   .itemsContainer {

@@ -1,11 +1,11 @@
-import classNames from "classnames";
-import ImageGallery from "react-image-gallery";
-import { useState, useEffect } from "react";
-import { Disclosure } from "@headlessui/react";
-import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/solid";
-import { CheckCircleIcon } from "@heroicons/react/outline";
-import Icon from "./Icon";
-import styles from "./Collapsable.module.css";
+import classNames from 'classnames';
+import ImageGallery from 'react-image-gallery';
+import { useState, useEffect } from 'react';
+import { Disclosure } from '@headlessui/react';
+import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/solid';
+import { CheckCircleIcon } from '@heroicons/react/outline';
+import Icon from './Icon';
+import styles from './Collapsable.module.css';
 
 const renderItem = ({
   title,
@@ -26,17 +26,15 @@ const renderItem = ({
               [styles.itemButtonOpen]: open,
               [styles.bgPrimary]: !open,
               [styles.bgGray]: open,
-              "padding-x": true,
-            })}
-          >
-            {icon && <Icon path={icon} color={open ? "secondary" : "gray"} />}
+              'padding-x': true,
+            })}>
+            {icon && <Icon path={icon} color={open ? 'secondary' : 'gray'} />}
             <span
               dangerouslySetInnerHTML={{ __html: title }}
               className={classNames({
                 [styles.itemTitle]: true,
                 [styles.bicolorTitle]: open,
-              })}
-            ></span>
+              })}></span>
             {open ? (
               <ChevronUpIcon
                 className={classNames({
@@ -60,9 +58,8 @@ const renderItem = ({
                 <div
                   className={classNames({
                     [styles.description]: true,
-                    "padding-x": true,
-                  })}
-                >
+                    'padding-x': true,
+                  })}>
                   <p>{description}</p>
                   <ul>
                     {list.map((item, idx) => (
@@ -78,9 +75,8 @@ const renderItem = ({
                 {pictures.length > 1 ? (
                   <div
                     className={classNames(styles.itemMobileFigure, {
-                      "padding-x": true,
-                    })}
-                  >
+                      'padding-x': true,
+                    })}>
                     <ImageGallery
                       originalClass={styles.itemPicture}
                       items={pictures}
@@ -94,9 +90,8 @@ const renderItem = ({
                 ) : (
                   <figure
                     className={classNames(styles.itemMobileFigure, {
-                      "padding-x": true,
-                    })}
-                  >
+                      'padding-x': true,
+                    })}>
                     <img src={pictures[0]} className={styles.itemPicture} />
                   </figure>
                 )}
@@ -130,19 +125,16 @@ function Collapsable({ isMobile, title, items, containerStyles = {} }) {
       className={classNames({
         [styles.container]: true,
         [containerStyles]: true,
-      })}
-    >
+      })}>
       <h3
         className={classNames({
           [styles.title]: true,
         })}
-        dangerouslySetInnerHTML={{ __html: title }}
-      ></h3>
+        dangerouslySetInnerHTML={{ __html: title }}></h3>
       <div
         className={classNames({
           [styles.itemsContainer]: true,
-        })}
-      >
+        })}>
         {items.map((item, index) => (
           <div onClick={() => setSelectedItem(index)} key={index}>
             {renderItem({ ...item, index, selectedItem })}
@@ -154,8 +146,7 @@ function Collapsable({ isMobile, title, items, containerStyles = {} }) {
           className={classNames(
             styles.itemDesktopFigure,
             styles.paddingRightFigure
-          )}
-        >
+          )}>
           <ImageGallery
             renderItem={renderPicture}
             items={selectedPictures}
