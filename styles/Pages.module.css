@@ -1,23 +1,13 @@
-.main {
-  padding-top: 5.6rem;
+.line {
+  border-top: solid 1px rgba(255, 255, 255, 0.12);
 }
 
-.bgBlack {
-  background-color: var(--primary);
-}
-
-.bgBlack6 {
-  background-color: var(--black-6);
+.light.line {
+  border-top: solid 1px #edf1fc;
 }
 
 @media (min-width: 769px) {
-  .main {
-    padding-top: 8rem;
-  }
 }
 
 @media (min-width: 1025px) {
-  .main {
-    padding-top: 4rem;
-  }
 }

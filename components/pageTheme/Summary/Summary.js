@@ -1,22 +1,38 @@
-import classNames from "classnames";
-import styles from "./Summary.module.css";
+import classNames from 'classnames';
+import styles from './Summary.module.css';
 
-function Summary({ projectName, description, picture, details }) {
+function Summary({
+  projectName,
+  description,
+  picture,
+  details,
+  theme,
+  background,
+  hasLine,
+}) {
   return (
     <div
+      style={{ background }}
       className={classNames({
         [styles.container]: true,
-        "padding-x": true,
-      })}
-    >
+        'padding-x': true,
+        [styles[theme]]: true,
+        [styles.hasLine]: !hasLine,
+      })}>
       <>
-        <p className={styles.description}>{description}</p>
+        {/* <p
+          className={styles.description}
+          dangerouslySetInnerHTML={{ __html: description }}></p> */}
         <div
-          className={classNames({
-            horizontalLine: true,
-            [styles.line]: true
-          })}
-        ></div>
+          className={styles.description}
+          dangerouslySetInnerHTML={{ __html: description }}></div>
+        {hasLine && (
+          <div
+            className={classNames({
+              horizontalLine: true,
+              [styles.line]: true,
+            })}></div>
+        )}
       </>
       <figure className={styles.figure}>
         <img className={styles.picture} src={picture} alt={projectName} />

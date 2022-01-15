@@ -2,7 +2,6 @@ import classNames from 'classnames';
 import styles from './ImpactSection.module.css';
 
 function ImpactSection({
-  containerStyles = null,
   projectName,
   picture,
   title,
@@ -10,13 +9,16 @@ function ImpactSection({
   info,
   company,
   companyText,
+  theme,
+  background,
 }) {
   return (
     <div
+      style={{ background }}
       className={classNames({
         [styles.container]: true,
+        [styles[theme]]: true,
         'padding-x': true,
-        [containerStyles]: containerStyles ? true : false,
       })}>
       <figure className={styles.figure}>
         <img src={picture} alt={projectName} className={styles.picture} />

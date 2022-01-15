@@ -1,3 +1,36 @@
+.light.container {
+  background-color: purple;
+}
+
+.light.container {
+  background-color: white;
+}
+
+.light .title {
+  color: #091d33;
+}
+
+.light .title > span {
+  color: #12d67d;
+}
+
+.light .description {
+  color: #1d262c;
+}
+
+.light .insightText {
+  color: #1d262c;
+}
+
+.light .infoLine {
+  border: solid 1px #edf1fc;
+}
+
+.container {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
 .figure {
   max-width: 100%;
   overflow: hidden;

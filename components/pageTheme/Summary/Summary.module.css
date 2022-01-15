@@ -1,6 +1,27 @@
+.light.container {
+  background: #fff;
+}
+
+.light .description {
+  color: #1d262c;
+}
+
+.light .detailName {
+  color: #1d262c;
+}
+
+.light .detailContent {
+  color: #1d262c;
+}
+
+.light .line {
+  display: none;
+}
+
 .container {
   background-color: transparent;
-  margin-top: 120px;
+  padding-top: 70px;
+  padding-bottom: 70px;
   position: relative;
 }
 
@@ -9,6 +30,10 @@
   line-height: 2.17;
   letter-spacing: normal;
   color: var(--gray-1);
+}
+
+.description p:first-child {
+  margin-bottom: 30px;
 }
 
 .figure {
@@ -21,6 +46,7 @@
   object-fit: cover;
   height: 100%;
   width: 100%;
+  border-radius: 22px;
 }
 
 .details {
@@ -70,6 +96,12 @@
 }
 
 @media (min-width: 1025px) {
+  .hasLine.container {
+    grid-row-gap: 0;
+  }
+  .light.container {
+    grid-row-gap: 0;
+  }
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -78,7 +110,6 @@
       'line image'
       'details image';
     grid-gap: 2rem;
-    margin-top: 240px;
   }
 
   .line {

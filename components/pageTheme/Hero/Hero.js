@@ -1,7 +1,9 @@
-import Image from "next/image";
-import classNames from "classnames";
-import ContactMe from "@/components/ContactMe/ContactMe";
-import styles from "./Hero.module.css";
+import Image from 'next/image';
+import { useState } from 'react';
+import classNames from 'classnames';
+import ContactMe from '@/components/ContactMe/ContactMe';
+import styles from './Hero.module.css';
+import Modal from 'react-modal';
 
 function Hero({
   logo,
@@ -9,14 +11,28 @@ function Hero({
   project,
   subtitle,
   title,
-  backgroundColor
+  withContact,
+  theme,
+  background,
 }) {
+  const [modalState, setModalState] = useState(false);
+
+  const toggleModalState = () => setModalState(!modalState);
+
   return (
-    <section className={classNames({
-      [styles.container]: true,
-      [backgroundColor]: backgroundColor
-    })}>
+    <section
+      style={{ background }}
+      className={classNames({
+        [styles.container]: true,
+        [styles[theme]]: true,
+      })}>
       <figure className={styles.figureVideo}>
+        <span
+          onClick={toggleModalState}
+          className={styles.figureProjectVideoInfo}>
+          <img src="/icons/icon-play.svg" alt="play" />
+          Play video
+        </span>
         <div className={styles.figureProjectInfo}>
           {!logo && <h2 className={styles.projectName}>{project}</h2>}
           <span className={styles.projectSlogan}>{subtitle}</span>
@@ -25,20 +41,32 @@ function Hero({
       </figure>
       <div className={styles.textSection}>
         <div className={styles.titleProjectInfo}>
-          {!logo && <h2 className={styles.projectName}>{project}</h2>}
+          {!logo && (
+            <h2 className={classNames(styles.projectName)}>{project}</h2>
+          )}
           {logo && (
             <figure className={styles.logo}>
-              <Image width={194} height={41} src={logo} />
+              <img src={logo} />
             </figure>
           )}
           <span className={styles.projectSlogan}>{subtitle}</span>
         </div>
-        <h1 className={styles.title}>{title}</h1>
-        <ContactMe
-          containerStyles={styles.contactMe}
-        />
-        <div className={styles.verticalLine}></div>
+        <h1 className={classNames(styles.title)}>{title}</h1>
+        {withContact && <ContactMe containerStyles={styles.contactMe} />}
+        <div
+          className={classNames([styles.verticalLine], [styles[theme]])}></div>
       </div>
+
+      <Modal
+        overlayClassName={styles.overlay}
+        className={styles.modal}
+        isOpen={modalState}
+        ariaHideApp={false}>
+        <div className={styles.close} onClick={toggleModalState}>
+          <img src="/icons/close.svg" alt="" />
+        </div>
+        <img className={styles.video} src={picture} />
+      </Modal>
     </section>
   );
 }

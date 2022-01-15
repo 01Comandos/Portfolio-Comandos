@@ -1,11 +1,11 @@
 import classNames from 'classnames';
-import ImageGallery from 'react-image-gallery';
 import { useState, useEffect } from 'react';
 import { Disclosure } from '@headlessui/react';
 import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/solid';
 import { CheckCircleIcon } from '@heroicons/react/outline';
 import Icon from './Icon';
 import styles from './Collapsable.module.css';
+import ModalCarousel from '@/components/ModalCarousel/ModalCarousel';
 
 const renderItem = ({
   title,
@@ -15,20 +15,28 @@ const renderItem = ({
   pictures,
   index,
   selectedItem,
+  theme,
+  itemBackground,
+  background,
 }) => {
   return (
     <Disclosure as="div" defaultOpen={selectedItem === index}>
       {({ open }) => (
         <>
           <Disclosure.Button
+            style={open ? { background: itemBackground } : {}}
             className={classNames({
               [styles.itemButton]: true,
               [styles.itemButtonOpen]: open,
-              [styles.bgPrimary]: !open,
               [styles.bgGray]: open,
               'padding-x': true,
             })}>
-            {icon && <Icon path={icon} color={open ? 'secondary' : 'gray'} />}
+            {icon && (
+              <Icon
+                path={icon}
+                color={theme == 'light' ? 'dark' : open ? 'secondary' : 'gray'}
+              />
+            )}
             <span
               dangerouslySetInnerHTML={{ __html: title }}
               className={classNames({
@@ -56,6 +64,7 @@ const renderItem = ({
               <>
                 {index !== selectedItem && close()}
                 <div
+                  style={open ? { background: itemBackground } : {}}
                   className={classNames({
                     [styles.description]: true,
                     'padding-x': true,
@@ -74,21 +83,15 @@ const renderItem = ({
                 </div>
                 {pictures.length > 1 ? (
                   <div
+                    style={{ background }}
                     className={classNames(styles.itemMobileFigure, {
                       'padding-x': true,
                     })}>
-                    <ImageGallery
-                      originalClass={styles.itemPicture}
-                      items={pictures}
-                      showThumbnails={false}
-                      showNav={false}
-                      showFullscreenButton={false}
-                      showPlayButton={false}
-                      showIndex={true}
-                    />
+                    <ModalCarousel items={pictures}></ModalCarousel>
                   </div>
                 ) : (
                   <figure
+                    style={{ background }}
                     className={classNames(styles.itemMobileFigure, {
                       'padding-x': true,
                     })}>
@@ -106,11 +109,19 @@ const renderItem = ({
 
 const renderPicture = (picture, containerStyles = {}) => (
   <figure className={classNames(styles.itemDesktopFigure, containerStyles)}>
-    <img src={picture.original} className={styles.itemPicture} />
+    <img src={picture} className={styles.itemPicture} />
   </figure>
 );
 
-function Collapsable({ isMobile, title, items, containerStyles = {} }) {
+function Collapsable({
+  isMobile,
+  title,
+  items,
+  containerStyles,
+  background,
+  theme,
+  itemBackground,
+}) {
   const [selectedItem, setSelectedItem] = useState(0);
   const [selectedPictures, setSelectedPictures] = useState(
     items[0]?.pictures || []
@@ -122,9 +133,11 @@ function Collapsable({ isMobile, title, items, containerStyles = {} }) {
 
   return (
     <div
+      style={{ background }}
       className={classNames({
         [styles.container]: true,
         [containerStyles]: true,
+        [styles[theme]]: true,
       })}>
       <h3
         className={classNames({
@@ -137,7 +150,14 @@ function Collapsable({ isMobile, title, items, containerStyles = {} }) {
         })}>
         {items.map((item, index) => (
           <div onClick={() => setSelectedItem(index)} key={index}>
-            {renderItem({ ...item, index, selectedItem })}
+            {renderItem({
+              ...item,
+              index,
+              selectedItem,
+              theme,
+              background,
+              itemBackground,
+            })}
           </div>
         ))}
       </div>
@@ -147,21 +167,10 @@ function Collapsable({ isMobile, title, items, containerStyles = {} }) {
             styles.itemDesktopFigure,
             styles.paddingRightFigure
           )}>
-          <ImageGallery
-            renderItem={renderPicture}
-            items={selectedPictures}
-            showThumbnails={false}
-            showNav={!isMobile}
-            showFullscreenButton={false}
-            showPlayButton={false}
-            showIndex={true}
-          />
+          <ModalCarousel items={selectedPictures}></ModalCarousel>
         </div>
       ) : (
-        renderPicture(
-          { original: selectedPictures[0] },
-          styles.paddingRightFigure
-        )
+        renderPicture(selectedPictures[0], styles.paddingRightFigure)
       )}
     </div>
   );

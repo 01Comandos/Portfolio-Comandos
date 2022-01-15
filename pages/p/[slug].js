@@ -9,6 +9,8 @@ import Summary from '@/components/pageTheme/Summary/Summary';
 import ImageSection from '@/components/pageTheme/ImageSection/ImageSection';
 import MoreProjects from '@/components/pageTheme/MoreProjects/MoreProjects';
 import Collapsable from '@/components/pageTheme/Collapsable/Collapsable';
+import PartnersSection from '@/components/pageTheme/PartnersSection/PartnersSection';
+import DisplayImage from '@/components/pageTheme/DisplayImage/DisplayImage';
 import TestimonialsCarousel from '@/components/TestimonialsCarousel/TestimonialsCarousel';
 import Footer from '@/components/Footer/Footer';
 import Definition from '@/components/Definition/Definition';
@@ -21,6 +23,7 @@ import MobileMenu from '@/components/MobileMenu/MobileMenu';
 import { visitPage } from '@/analytics/events';
 import { isMobile } from '../../utils';
 import { useState } from 'react';
+import classNames from 'classnames';
 
 // const moreProjects = projects.filter(
 //   (project) =>
@@ -63,68 +66,107 @@ const StadioPage = ({ isMobile }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <>
-        <Header withContact={true} />
-        <main className={styles.main}>
+        <Header
+          theme={content.theme}
+          background={content.header.background}
+          buttonStyle={content.theme == 'light' && 'info'}
+          withContact={true}
+        />
+        <main style={{ background: content.background }}>
           <Hero
+            theme={content.theme}
+            background={content.hero.background}
+            withContact={content.hero.hasContact}
             logo={content.logo}
             picture={content.pictures.default}
             project={content.name}
             subtitle={content.subtitle}
             title={content.title}
           />
-          <Summary
-            projectName={content.name}
-            details={content.summary.details}
-            description={content.summary.description}
-            picture={content.summary.picture}
-          />
-          <div className={stadioStyles.line}></div>
-          <Collapsable
-            isMobile={isMobile}
-            title={content.collapsableSection.title}
-            items={content.collapsableSection.items}
-            containerStyles={stadioStyles.collapsableSection}
-          />
-          <div className={stadioStyles.backgroundTop}></div>
-          <ImageSection
-            containerStyles={stadioStyles.sectionOne}
-            projectName={content.name}
-            description={content.sectionOne.description}
-            title={content.sectionOne.title}
-            picture={content.sectionOne.picture}
-          />
-          <ImageSection
-            containerStyles={stadioStyles.sectionTwo}
-            projectName={content.name}
-            description={content.sectionTwo.description}
-            title={content.sectionTwo.title}
-            picture={content.sectionTwo.picture}
-            isReverse={true}
-          />
-          <ImpactSection
-            projectName={content.name}
-            description={content.impactSection.description}
-            title={content.impactSection.title}
-            picture={content.impactSection.picture}
-            info={content.impactSection.info}
-            company={content.impactSection.company}
-            companyText={content.impactSection.companyText}
-          />
-          <div className={stadioStyles.line}></div>
-          <MoreProjects
-            containerStyles={stadioStyles.moreProjects}
-            projects={moreProjects}
-            isMobile={isMobile}
-          />
-          <TestimonialsCarousel
-            testimonials={TestimonialsList}
-            isMobile={isMobile}
-          />
-          <Definition />
-          <Contact />
-          <Footer />
-          <MobileMenu />
+          {content.sections.map((item, index) => (
+            <div key={index}>
+              {item.type == 'summary' && (
+                <Summary
+                  theme={content.theme}
+                  projectName={item.name}
+                  details={item.details}
+                  description={item.description}
+                  picture={item.picture}
+                  background={item.background}
+                  hasLine={item.hasLine}
+                />
+              )}
+              {item.type == 'collapsableSection' && (
+                <Collapsable
+                  theme={content.theme}
+                  isMobile={isMobile}
+                  title={item.title}
+                  items={item.items}
+                  background={item.background}
+                  itemBackground={item.itemBackground}
+                />
+              )}
+              {item.type == 'partnersSection' && (
+                <PartnersSection
+                  theme={content.theme}
+                  images={item.images}
+                  title={item.title}
+                  titleSmall={item.titleSmall}
+                />
+              )}
+              {item.type == 'displayImage' && (
+                <DisplayImage theme={content.theme} image={item.image} />
+              )}
+              {item.type == 'imageSection' && (
+                <>
+                  {/* <div className={stadioStyles.backgroundTop}></div> */}
+                  <ImageSection
+                    theme={content.theme}
+                    background={item.background}
+                    projectName={content.name}
+                    description={item.description}
+                    title={item.title}
+                    picture={item.picture}
+                    isReverse={item.reverse}
+                    comment={item.comment}
+                  />
+                </>
+              )}
+              {item.type == 'impactSection' && (
+                <ImpactSection
+                  theme={content.theme}
+                  background={item.background}
+                  projectName={content.name}
+                  description={item.description}
+                  title={item.title}
+                  picture={item.picture}
+                  info={item.info}
+                  company={item.company}
+                  companyText={item.companyText}
+                />
+              )}
+              {item.type == 'line' && (
+                <div
+                  className={classNames(styles.line, [
+                    styles[content.theme],
+                  ])}></div>
+              )}
+            </div>
+          ))}
         </main>
+        <MoreProjects
+          containerStyles={stadioStyles.moreProjects}
+          projects={moreProjects}
+          isMobile={isMobile}
+        />
+        <TestimonialsCarousel
+          testimonials={TestimonialsList}
+          isMobile={isMobile}
+        />
+        <Definition />
+        <Contact />
+        <Footer />
+        <MobileMenu />
       </>
     </>
   );

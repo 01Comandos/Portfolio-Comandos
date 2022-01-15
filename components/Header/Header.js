@@ -1,35 +1,32 @@
-import Link from "next/link";
+import Link from 'next/link';
 import classNames from 'classnames';
-import { useContext } from "react";
-import { MenuMobileContext } from "../../contexts/mobileMenuContext";
-import { menuOptions } from "../../utils/constants";
-import { trackEvent } from "../../analytics/events";
-import styles from "./Header.module.css";
+import { useContext } from 'react';
+import { MenuMobileContext } from '../../contexts/mobileMenuContext';
+import { menuOptions } from '../../utils/constants';
+import { trackEvent } from '../../analytics/events';
+import styles from './Header.module.css';
 
-const Header = ({
-  withContact,
-  backgroundStyle = null,
-  buttonStyle = null,
-  darkMenu = false
-}) => {
+const Header = ({ withContact, buttonStyle = null, theme, background }) => {
   const { toogleMenu } = useContext(MenuMobileContext);
-  const containerColor = backgroundStyle ? backgroundStyle : styles.bgcBlack;
+  // const containerColor = backgroundStyle ? backgroundStyle : styles.bgcBlack;
+  const darkMenu = theme == 'light';
 
   function registerEvent(actionName) {
     trackEvent(actionName);
   }
 
   function setMenuVisibility() {
-    registerEvent('Mobile menu clicked')
-    toogleMenu()
+    registerEvent('Mobile menu clicked');
+    toogleMenu();
   }
 
   return (
-    <header className={classNames([
-      styles.container,
-      containerColor
-    ])}>
-      <Link href="/" onClick={() => registerEvent('Header logo mobile clicked')}>
+    <header
+      style={{ background }}
+      className={classNames([styles.container, [styles[theme]]])}>
+      <Link
+        href="/"
+        onClick={() => registerEvent('Header logo mobile clicked')}>
         <img
           className={styles.logoMobile}
           src="/logo/logo-isotipo-white.svg"
@@ -38,7 +35,7 @@ const Header = ({
           height={51}
         />
       </Link>
-      {!darkMenu && 
+      {!darkMenu && (
         <Link href="/" onClick={() => registerEvent('Header logo clicked')}>
           <img
             className={styles.logo}
@@ -48,8 +45,8 @@ const Header = ({
             height={40}
           />
         </Link>
-      }
-      {darkMenu &&
+      )}
+      {darkMenu && (
         <Link href="/" onClick={() => registerEvent('Header logo clicked')}>
           <img
             className={styles.logo}
@@ -58,15 +55,16 @@ const Header = ({
             width={183}
             height={40}
           />
-      </Link>
-      }
+        </Link>
+      )}
       <div className={darkMenu ? styles.darkMenu : styles.menu}>
         {menuOptions.map((item, index) => (
           <Link
             key={index}
             href={item.link}
-            onClick={() => registerEvent('Menu option clicked', { value: item.name })}
-          >
+            onClick={() =>
+              registerEvent('Menu option clicked', { value: item.name })
+            }>
             <a>{item.name}</a>
           </Link>
         ))}
@@ -75,33 +73,35 @@ const Header = ({
         {withContact && (
           <Link
             href="/contact"
-            onClick={() => registerEvent('Header contact button clicked')}
-          >
+            onClick={() => registerEvent('Header contact button clicked')}>
             <button
               className={classNames({
                 [buttonStyle]: buttonStyle,
-                'black': !buttonStyle,
-                'button': true
-              })}
-            >
+                black: !buttonStyle,
+                button: true,
+              })}>
               Contact
             </button>
           </Link>
         )}
-        {!darkMenu && <img
-          onClick={setMenuVisibility}
-          className={styles.menuIcon}
-          src="/icons/icon-menu.svg"
-          width={28}
-          height={19}
-        />}
-        {darkMenu && <img
-          onClick={setMenuVisibility}
-          className={styles.menuIcon}
-          src="/icons/icon-black-menu.svg"
-          width={37}
-          height={37}
-        />}
+        {!darkMenu && (
+          <img
+            onClick={setMenuVisibility}
+            className={styles.menuIcon}
+            src="/icons/icon-menu.svg"
+            width={28}
+            height={19}
+          />
+        )}
+        {darkMenu && (
+          <img
+            onClick={setMenuVisibility}
+            className={styles.menuIcon}
+            src="/icons/icon-black-menu.svg"
+            width={37}
+            height={37}
+          />
+        )}
       </div>
     </header>
   );

@@ -1,5 +1,5 @@
-import classNames from "classnames";
-import styles from "./Icon.module.css";
+import classNames from 'classnames';
+import styles from './Icon.module.css';
 
 function Icon({ path, color }) {
   return (
@@ -10,6 +10,7 @@ function Icon({ path, color }) {
         [styles.secondary]: color === 'secondary',
         [styles.white]: color === 'white',
         [styles.gray]: color === 'gray',
+        [styles.dark]: color === 'dark',
       })}
     />
   );

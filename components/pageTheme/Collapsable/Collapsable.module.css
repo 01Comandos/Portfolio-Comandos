@@ -1,3 +1,55 @@
+.light.container {
+  background: white;
+}
+
+.light .title {
+  color: #091d33;
+}
+
+.light .title > span {
+  color: #12d67d;
+}
+
+/* .light .itemButton { */
+/* background: #edf1fc; */
+/* } */
+
+.light .itemTitle,
+.light .bicolorTitle,
+.light .bicolorTitle > span {
+  color: #1d262c;
+}
+
+.light .openArrow,
+.light .closeArrow {
+  color: black;
+}
+
+.light .description {
+  background: #edf1fc;
+  font-weight: normal;
+  color: #1d262c;
+}
+
+.light .itemList {
+  color: #1d262c;
+  font-weight: normal;
+}
+
+.light .checkIcon {
+  color: #1d262c;
+}
+
+.light .itemMobileFigure {
+  background: #edf1fc;
+  padding-top: 40px;
+}
+
+.container {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
 .itemsContainer {
   margin-top: 60px;
 }
@@ -24,6 +76,8 @@
   border: none;
   padding-top: 40px;
   padding-bottom: 20px;
+  background: inherit;
+  border-radius: 5px 5px 0 0;
 }
 
 .itemButtonIcon {
@@ -66,14 +120,14 @@
   padding-top: 17px;
   padding-bottom: 35px;
   padding-left: calc(44px + var(--padding-mobile));
-}
-
-.bgPrimary {
-  background-color: var(--primary);
+  border-radius: 0 0 5px 5px;
 }
 
 .bgGray {
   background-color: var(--gray-10);
+}
+.light .bgGray {
+  background: #edf1fc;
 }
 
 .checkIcon {
@@ -97,8 +151,8 @@
 .itemMobileFigure {
   width: 100%;
   overflow: hidden;
-  background-color: var(--primary);
-  margin-top: 40px;
+  background-color: inherit;
+  padding-top: 40px;
 }
 
 .itemDesktopFigure {
@@ -110,6 +164,7 @@
   height: 100%;
   object-fit: contain;
   object-position: top right;
+  border-radius: 22px;
 }
 
 @media (min-width: 769px) {
@@ -164,6 +219,7 @@
   }
 
   .itemDesktopFigure {
+    width: 550px;
     justify-self: end;
     height: auto;
     align-self: baseline;

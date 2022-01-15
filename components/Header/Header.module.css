@@ -1,18 +1,21 @@
+.light.container {
+  background-color: #fff;
+}
+
 .container {
   align-items: center;
   display: flex;
   justify-content: space-between;
   padding: 17px;
-  position: fixed;
+  position: sticky;
+  top: 0;
   width: 100%;
   z-index: 10;
-}
-
-.bgcBlack {
   background-color: #000;
 }
 
-.logoMobile, .logo {
+.logoMobile,
+.logo {
   cursor: pointer;
 }
 
@@ -57,7 +60,8 @@
     display: none;
   }
 
-  .menu, .darkMenu {
+  .menu,
+  .darkMenu {
     display: flex;
   }
 
