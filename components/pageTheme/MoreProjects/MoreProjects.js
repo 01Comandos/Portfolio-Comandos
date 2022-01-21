@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import Project from '@/components/Project/Project';
 import styles from './MoreProjects.module.css';
 
-function MoreProjects({ projects, isMobile, containerStyles }) {
+function MoreProjects({ projects, isMobile, containerStyles, limit }) {
   return (
     <div
       className={classNames({
@@ -14,7 +14,7 @@ function MoreProjects({ projects, isMobile, containerStyles }) {
       })}>
       <h3 className={styles.title}>Discover more project</h3>
       <div className={styles.projectsContainer}>
-        {projects.map((project, index) => (
+        {projects.slice(0, limit).map((project, index) => (
           <div key={index} className={styles.project}>
             <Project
               isMobile={isMobile}

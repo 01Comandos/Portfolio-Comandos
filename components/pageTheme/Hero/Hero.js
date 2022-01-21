@@ -14,10 +14,14 @@ function Hero({
   withContact,
   theme,
   background,
+  urlVideo,
 }) {
   const [modalState, setModalState] = useState(false);
 
-  const toggleModalState = () => setModalState(!modalState);
+  const toggleModalState = () => {
+    setModalState(!modalState);
+    document.body.style.overflow = modalState ? 'initial' : 'hidden';
+  };
 
   return (
     <section
@@ -27,12 +31,14 @@ function Hero({
         [styles[theme]]: true,
       })}>
       <figure className={styles.figureVideo}>
-        <span
-          onClick={toggleModalState}
-          className={styles.figureProjectVideoInfo}>
-          <img src="/icons/icon-play.svg" alt="play" />
-          Play video
-        </span>
+        {urlVideo && (
+          <span
+            onClick={toggleModalState}
+            className={styles.figureProjectVideoInfo}>
+            <img src="/icons/icon-play.svg" alt="play" />
+            Play video
+          </span>
+        )}
         <div className={styles.figureProjectInfo}>
           {!logo && <h2 className={styles.projectName}>{project}</h2>}
           <span className={styles.projectSlogan}>{subtitle}</span>
@@ -65,7 +71,19 @@ function Hero({
         <div className={styles.close} onClick={toggleModalState}>
           <img src="/icons/close.svg" alt="" />
         </div>
-        <img className={styles.video} src={picture} />
+        <div className={styles.videoContainer}>
+          <div className="aspect_ratio aspect_ratio--16by9">
+            <iframe
+              className="aspect_ratio__item object_fit_cover"
+              width="85%"
+              height="85%"
+              src={urlVideo}
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen></iframe>
+          </div>
+        </div>
       </Modal>
     </section>
   );

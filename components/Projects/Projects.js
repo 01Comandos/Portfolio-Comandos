@@ -10,6 +10,7 @@ const Projects = ({
   showNavigationButton = true,
   showAllProjects = false,
   lightTheme,
+  limit = undefined,
 }) => (
   <section
     className={`${
@@ -25,7 +26,7 @@ const Projects = ({
       </p>
     )}
     <div className={styles.projects}>
-      {projectsList.slice(0, 3).map((project, index) => (
+      {projectsList.slice(0, limit).map((project, index) => (
         <div
           className={
             showAllProjects
@@ -49,7 +50,7 @@ const Projects = ({
         <Link
           href="/projects"
           onClick={() => trackEvent('View all projects clicked')}>
-          <button className={`button ${styles.allProjects}`}>
+          <button className={`button  ${styles.allProjects}`}>
             View all projects
           </button>
         </Link>

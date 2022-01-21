@@ -1,3 +1,11 @@
+.dark3.container {
+  background-color: #15151b;
+}
+
+.dark2.container {
+  background-color: #212126;
+}
+
 .light.container {
   background: #fff;
 }
@@ -46,7 +54,7 @@
   object-fit: cover;
   height: 100%;
   width: 100%;
-  border-radius: 22px;
+  border-radius: 18px;
 }
 
 .details {
@@ -118,6 +126,7 @@
   }
 
   .figure {
+    width: 100%;
     grid-area: image;
     margin-top: 0;
     align-self: flex-start;

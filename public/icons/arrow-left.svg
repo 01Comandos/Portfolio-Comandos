@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>arrow-left</title>
+    <defs>
+        <path d="M13.5096311,0.435631073 C13.9364865,0.0087756333 14.6266694,0.0087756333 15.0390474,0.435642915 L15.0390474,0.435642915 L21.6693385,7.06667999 C22.101285,7.48306083 22.101285,8.1766333 21.6737023,8.58970226 L21.6737023,8.58970226 L15.04332,15.2200052 C14.6275953,15.651271 13.9365331,15.651271 13.5099063,15.2246438 C13.0940795,14.8097864 13.0940795,14.1249749 13.5098511,13.6947446 L13.5098511,13.6947446 L18.304,8.90866667 L1.40733333,8.90933333 C0.844224154,8.90933333 0.386784165,8.47467002 0.337695491,7.92314333 L0.337695491,7.92314333 L0.333333333,7.82466667 C0.333333333,7.22814364 0.81021527,6.75096421 1.40733333,6.75 L1.40733333,6.75 L18.3046667,6.74933333 L13.5099063,1.9546438 C13.1179102,1.56356147 13.0948516,0.931766374 13.4405011,0.511784924 L13.4405011,0.511784924 Z" id="path-1"></path>
+    </defs>
+    <g id="Design-2021" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-arrow" transform="translate(25.000000, 25.000000) scale(-1, 1) translate(-25.000000, -25.000000) ">
+            <rect id="Background" fill="#262728" x="0" y="0" width="50" height="50" rx="25"></rect>
+            <g id="Icons/Arrow-right" transform="translate(10.000000, 10.000000)">
+                <rect id="base" x="0" y="0" width="30" height="30"></rect>
+                <g id="Color/Primary" transform="translate(4.000000, 7.333333)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#1E201D" fill-rule="nonzero" xlink:href="#path-1"></use>
+                    <g id="Group" mask="url(#mask-2)">
+                        <g transform="translate(-4.000000, -7.333333)" id="Color/Primary">
+                            <rect id="Color/White" fill="#FFFFFF" x="0" y="0" width="30" height="30" rx="8"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

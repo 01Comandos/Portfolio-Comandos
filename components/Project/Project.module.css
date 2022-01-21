@@ -30,7 +30,11 @@
   max-width: 100%;
 }
 
-.picture {
+/* .picture {
+  display: none;
+} */
+
+.figurePicture {
   display: none;
 }
 
@@ -56,11 +60,13 @@
 }
 
 @media (min-width: 769px) {
-  .pictureMobile {
+  .pictureMobile,
+  .aspect_ratio--380by307 {
     display: none;
   }
 
   .figurePicture {
+    display: block;
     overflow: hidden;
     min-width: 320px;
     height: auto;

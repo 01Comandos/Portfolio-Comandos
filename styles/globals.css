@@ -251,6 +251,45 @@ span.info {
   bottom: 5px;
 }
 
+.aspect_ratio {
+  position: relative;
+  width: 100%;
+}
+.aspect_ratio::before {
+  display: block;
+  content: '';
+}
+.aspect_ratio__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.aspect_ratio--1by1::before {
+  padding-top: 100%;
+}
+.aspect_ratio--16by9::before {
+  padding-top: 56.25%;
+}
+.aspect_ratio--21by9::before {
+  padding-top: 42.8571428571%;
+}
+.aspect_ratio--4by3::before {
+  padding-top: 75%;
+}
+.aspect_ratio--402by486::before {
+  padding-top: 120.8955223880597%;
+}
+.aspect_ratio--380by307::before {
+  padding-top: 80.78947368421053%;
+}
+.aspect_ratio--569by673::before {
+  padding-top: 118.2776801406%;
+}
+
 @media (min-width: 769px) {
   .pageContainer {
     padding-top: 6rem;

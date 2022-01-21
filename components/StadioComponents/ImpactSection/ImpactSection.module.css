@@ -1,5 +1,9 @@
-.light.container {
-  background-color: purple;
+.dark3.container {
+  background-color: #15151b;
+}
+
+.dark2.container {
+  background-color: #212126;
 }
 
 .light.container {
@@ -75,17 +79,17 @@
 .yellowLine {
   width: 2px;
   height: 45px;
-  background-color: var(--secondary);
   margin-left: 35px;
   margin-right: 8px;
+  background-color: var(--secondary);
 }
 
 .insightText {
+  margin-left: 5px;
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.06px;
   color: white;
-  margin-left: 5px;
 }
 
 .starIcon {
@@ -96,8 +100,9 @@
 .infoLine {
   margin: 40px 0;
   height: 1px;
-  border: solid 1px rgba(255, 255, 255, 0.12);
   max-width: 469px;
+  align-self: center;
+  border: solid 1px rgba(255, 255, 255, 0.12);
 }
 
 .companies {

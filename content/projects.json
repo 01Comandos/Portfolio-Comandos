@@ -4,25 +4,30 @@
     "slug": "stadio",
     "name": "Stadio",
     "logo": null,
-    "theme": "dark",
-    "background": "",
+    "theme": "dark1",
     "pictures": {
       "default": "/images/projects/stadio/hero-image.png",
-      "mobile": "/images/stadio-mobile.png",
-      "desktop": "/images/stadio.png"
+      "mobile": "/images/projects/stadio/stadio-mobile.png",
+      "desktop": "/images/projects/stadio/stadio.png"
     },
     "description": "A great collaborative solution for runners. Lima? Sao Paulo? Let's run together!",
     "shortDescription": "A better running experience",
     "subtitle": "Apple Watch design",
     "title": "Redefining the jogging experience with friends",
     "url": "stadio",
-    "moreProjectsSlugs": ["mipospos", "rebaja-tus-cuentas", "stadio"],
+    "moreProjectsSlugs": [
+      "mipospos",
+      "rebaja-tus-cuentas",
+      "stadio",
+      "mipos-integrator"
+    ],
     "header": {
       "background": ""
     },
     "hero": {
       "background": "",
-      "hasContact": true
+      "hasContact": true,
+      "urlVideo": ""
     },
     "sections": [
       {
@@ -45,6 +50,9 @@
             "High-fi prototyping"
           ]
         }
+      },
+      {
+        "type": "line"
       },
       {
         "type": "collapsableSection",
@@ -91,12 +99,10 @@
         ]
       },
       {
-        "type": "line"
-      },
-      {
         "type": "imageSection",
         "background": "#111425",
         "reverse": false,
+        "hasBackgrounTop": true,
         "description": "Check second by second how you perform against other competitors in the same race. May the fastest win!",
         "picture": "/images/projects/stadio/section-1.png",
         "title": "<span>Motivation</span> for running <span>on your wrist</span>",
@@ -154,42 +160,47 @@
     "slug": "mipospos",
     "name": "mipOS POS",
     "logo": "/logos/mip-os.svg",
-    "theme": "dark",
-    "background": "#212126",
+    "theme": "dark2",
     "pictures": {
       "default": "/images/projects/mipos-pos/hero-image.png",
-      "mobile": "/images/mipos-2-mobile.png",
-      "desktop": "/images/mipos-2.png"
+      "mobile": "/images/projects/mipos-pos/mipos-2-mobile.png",
+      "desktop": "/images/projects/mipos-pos/mipos-2.png"
     },
     "description": "Underpinned by old operating systems, a great POS for the new generation of consumers.",
     "shortDescription": "A smart way to manage restaurants",
     "subtitle": "Web and tablet design",
-    "title": "Redefining the jogging experience with friends",
+    "title": "A smart way to manage restaurants",
     "url": "mipos-pos",
-    "moreProjectsSlugs": ["mipospos", "rebaja-tus-cuentas", "stadio"],
+    "moreProjectsSlugs": [
+      "mipospos",
+      "rebaja-tus-cuentas",
+      "stadio",
+      "mipos-integrator"
+    ],
     "header": {
       "background": "#212126"
     },
     "hero": {
       "background": "",
-      "hasContact": true
+      "hasContact": true,
+      "urlVideo": ""
     },
     "sections": [
       {
         "type": "summary",
         "background": "",
-        "hasLine": false,
+        "hasLine": true,
         "description": "Intuitive management of dishes, diners and business puts everyone in a better mood and therefore provides quality service.<br> With this product, mipOS expanded to Chile, Mexico, Ecuador and Colombia.",
-        "picture": "/images/projects/stadio/details-image.png",
+        "picture": "/images/projects/mipos-pos/summary.jpg",
         "details": {
           "Rol": ["Product Designer"],
-          "Duration": ["2 months"],
+          "Duration": ["9 months"],
           "Team": ["1 Product Designer", "5 developers", "1 Product Manager"],
           "Project": [
             "Product Discovery",
             "UX Architecture",
             "Design system",
-            "Source code."
+            "Source code"
           ],
           "Deliverables": ["Design App Mobile", "Design app Desktop"],
           "Applied methodologies": [
@@ -220,17 +231,22 @@
               "Management of single tables, combined tables, invoicing"
             ],
             "icon": "location-arrow.svg",
-            "pictures": ["/images/projects/stadio/paper-first.png"]
+            "pictures": [
+              "/images/projects/mipos-pos/collapsable-challenge-1.png",
+              "/images/projects/mipos-pos/collapsable-challenge-2.png",
+              "/images/projects/mipos-pos/collapsable-challenge-3.png",
+              "/images/projects/mipos-pos/collapsable-challenge-4.png"
+            ]
           },
           {
             "title": "<span>Customer</span> journey",
             "description": "",
             "list": [
-              "Designed with the collaboration of waiters and restaurant managers",
+              "Created with interviews to 10+ restaurants",
               "Designed with the collaboration of waiters and restaurant managers"
             ],
             "icon": "users-alt.svg",
-            "pictures": ["/images/projects/stadio/customer-journey.png"]
+            "pictures": ["/images/projects/mipos-pos/collapsable-journey.png"]
           },
           {
             "title": "<span>Defining</span> the process",
@@ -241,10 +257,8 @@
             ],
             "icon": "comment-heart.svg",
             "pictures": [
-              "/images/projects/stadio/stadio-01.png",
-              "/images/projects/stadio/stadio-02.png",
-              "/images/projects/stadio/stadio-03.png",
-              "/images/projects/stadio/stadio-04.png"
+              "/images/projects/mipos-pos/collapsable-process-1.png",
+              "/images/projects/mipos-pos/collapsable-process-2.png"
             ]
           }
         ]
@@ -254,13 +268,13 @@
         "background": "",
         "reverse": false,
         "description": "The integration of the entire business, including delivery app's, was so incredible that it accelerated its growth to 4 countries.",
-        "picture": "/images/projects/stadio/section-1.png",
+        "picture": "/images/projects/mipos-pos/image-section.jpg",
         "title": "<span>A result as great</span> as its purpose",
         "comment": {
           "hasCommente": true,
           "text": "The whole process of creating this product was a roller coaster of findings and iterations at the hand of Commandos. I will definitely work with him again.",
           "person": {
-            "image": "/images/customer-3.png",
+            "image": "/images/projects/mipos-pos/avatar-orlando.png",
             "name": "Orlando Espinoza",
             "description": "CEO at mipOS"
           }
@@ -271,17 +285,19 @@
         "background": "",
         "title": "Some Partners",
         "titleSmall": false,
+        "titleColor": "",
         "images": [
-          "/images/rappi.png",
-          "/images/rappi.png",
-          "/images/rappi.png",
-          "/images/rappi.png",
-          "/images/rappi.png"
+          "/images/projects/mipos-pos/partners-rappi.jpg",
+          "/images/projects/mipos-pos/partners-burger-king.jpg",
+          "/images/projects/mipos-pos/partners-el-moro.jpg",
+          "/images/projects/mipos-pos/partners-wlb.jpg",
+          "/images/projects/mipos-pos/partners-la-diva.jpg",
+          "/images/projects/mipos-pos/partners-fitzer.jpg"
         ]
       },
       {
         "type": "displayImage",
-        "image": "/images/projects/mipos-pos/mip-os-displayimage.jpg"
+        "image": "/images/projects/mipos-pos/displayimage.jpg"
       },
       {
         "type": "collapsableSection",
@@ -298,7 +314,12 @@
               "Management of single tables, combined tables, invoicing"
             ],
             "icon": "location-arrow.svg",
-            "pictures": ["/images/projects/stadio/paper-first.png"]
+            "pictures": [
+              "/images/projects/mipos-pos/collapsable-testing-1.png",
+              "/images/projects/mipos-pos/collapsable-testing-2.png",
+              "/images/projects/mipos-pos/collapsable-testing-3.png",
+              "/images/projects/mipos-pos/collapsable-testing-4.png"
+            ]
           },
           {
             "title": "<span>Usability</span> + data",
@@ -308,7 +329,7 @@
               "Usability testing + reporting = profit"
             ],
             "icon": "users-alt.svg",
-            "pictures": ["/images/projects/stadio/customer-journey.png"]
+            "pictures": ["/images/projects/mipos-pos/collapsable-usability.jpg"]
           },
           {
             "title": "<span>Intuitive</span> control",
@@ -318,7 +339,7 @@
               "Products with different images for distribution channels. Same as pricing and handling of combos."
             ],
             "icon": "comment-heart.svg",
-            "pictures": ["/images/projects/stadio/stadio-01.png"]
+            "pictures": ["/images/projects/mipos-pos/collapsable-intuitive.jpg"]
           }
         ]
       }
@@ -328,26 +349,31 @@
     "id": "RebajaTusCuentas",
     "slug": "rebaja-tus-cuentas",
     "name": "RebajaTusCuentas",
-    "logo": "/images/projects/rtc-logo-color.svg",
+    "logo": "/images/projects/rebaja-tus-cuentas/rtc-logo-color.svg",
     "theme": "light",
-    "background": "",
     "pictures": {
-      "default": "/images/projects/rtc-video.png",
-      "mobile": "/images/rtc-mobile.png",
-      "desktop": "/images/rtc.png"
+      "default": "/images/projects/rebaja-tus-cuentas/rtc-hero.png",
+      "mobile": "/images/projects/rebaja-tus-cuentas/rtc-mobile.png",
+      "desktop": "/images/projects/rebaja-tus-cuentas/rtc.png"
     },
     "description": "Making it less painful to ask for mortgages is the mission of RebajaTusCuentas. All without goin to the bank.",
     "shortDescription": "A financial platform built for scale and accessibility",
     "subtitle": "Web and responsive design",
     "title": "A financial platform  for mortgage loans",
     "url": "rebaja-tus-cuentas",
-    "moreProjectsSlugs": ["mipospos", "rebaja-tus-cuentas", "stadio"],
+    "moreProjectsSlugs": [
+      "mipospos",
+      "rebaja-tus-cuentas",
+      "stadio",
+      "mipos-integrator"
+    ],
     "header": {
       "background": "#edf1fc"
     },
     "hero": {
       "background": "linear-gradient(to bottom, #edf1fc 33%, #fff)",
-      "hasContact": false
+      "hasContact": false,
+      "urlVideo": "https://www.youtube.com/embed/cSlE9gzCEBg"
     },
     "sections": [
       {
@@ -355,11 +381,10 @@
         "background": "#edf1fc",
         "hasLine": false,
         "description": "<p>RebajaTusCuentas was born as Peruvian startup with the commitment to democratize access to mortgage loans in an underbanked country. It is a mortgages broker whit the support of 500 startup with presence in 3 countries and + 50M in loans granted.</p><p>It has been incredible to see the growth of RTC.</p>",
-        "picture": "/images/projects/rtc-summary.png",
+        "picture": "/images/projects/rebaja-tus-cuentas/rtc-summary.png",
         "details": {
           "Rol": ["Product Designer"],
           "Duration": ["6 months"],
-          "Team": ["1 Product Designer", "5 developers", "1 Product Manager"],
           "Tools": ["Pencil", "Adobe Photoshop", "Adobe illustrator", "Sketch"],
           "Project": [
             "Product Discovery",
@@ -367,6 +392,7 @@
             "Design System",
             "Prototype"
           ],
+          "Deliverables": ["Design App Mobile", "Design app Desktop"],
           "Applied methodologies": [
             "User and product discovery",
             "User interviews",
@@ -378,7 +404,7 @@
       {
         "type": "collapsableSection",
         "background": "",
-        "title": "<span>Your customers are hungry,</span> treat them special",
+        "title": "Users who may have <span>better interest rates</span>",
         "itemBackground": "",
         "items": [
           {
@@ -390,7 +416,12 @@
               "Constantly communicate the status of your process"
             ],
             "icon": "location-arrow.svg",
-            "pictures": ["/images/projects/stadio/paper-first.png"]
+            "pictures": [
+              "/images/projects/rebaja-tus-cuentas/collapsable-challenge-1.png",
+              "/images/projects/rebaja-tus-cuentas/collapsable-challenge-2.png",
+              "/images/projects/rebaja-tus-cuentas/collapsable-challenge-3.png",
+              "/images/projects/rebaja-tus-cuentas/collapsable-challenge-4.png"
+            ]
           },
           {
             "title": "<span>Customer</span> journey",
@@ -400,22 +431,17 @@
               "A slightly long tunnel but short in time compared to a traditional bank"
             ],
             "icon": "users-alt.svg",
-            "pictures": ["/images/projects/stadio/customer-journey.png"]
+            "pictures": ["/images/projects/rebaja-tus-cuentas/ux-progress.jpg"]
           },
           {
             "title": "<span>Defining</span> the process",
-            "description": "We visited restaurants, kitchens, dark kitchens and commissaries of large chain food stores. Our office was in a restaurant.",
+            "description": "",
             "list": [
               "The roadmap was created by a team. Taking into account time to experiment with prototypes.",
               "We had up to 3 experiments to achieve the best registration process."
             ],
             "icon": "comment-heart.svg",
-            "pictures": [
-              "/images/projects/stadio/stadio-01.png",
-              "/images/projects/stadio/stadio-01.png",
-              "/images/projects/stadio/stadio-01.png",
-              "/images/projects/stadio/stadio-01.png"
-            ]
+            "pictures": ["/images/projects/rebaja-tus-cuentas/ux-progress.jpg"]
           }
         ]
       },
@@ -424,29 +450,30 @@
         "background": "",
         "reverse": false,
         "description": "Understanding users well facilitated expansion to 3 countries. In Peru, they went from being a mortgage broker to a direct mortgage provider.",
-        "picture": "/images/projects/rtc-results-05.png",
+        "picture": "/images/projects/rebaja-tus-cuentas/rtc-results-05.png",
         "title": "<span>A result as great</span> as its purpose",
         "comment": {
           "hasCommente": true,
           "text": "Translating a lot of interviews and phone conversations from users, turning it into an incredible UX and all the expansion we had was largely thanks to Commands.",
           "person": {
-            "image": "/images/projects/rtc-cto.png",
+            "image": "/images/projects/rebaja-tus-cuentas/rtc-cto.png",
             "name": "Martín Mendoza del Solar",
             "description": "CTO at RebajaTusCuentas.com"
           }
         }
       },
       {
-        "type": "partnersSection",
+        "type": "clientsSection",
         "background": "",
         "title": "Some allied banks of RebajaTusCuentas",
         "titleSmall": true,
+        "titleColor": "",
         "images": [
-          "/images/projects/scotiabank.svg",
-          "/images/projects/interbank.svg",
-          "/images/projects/bbva.svg",
-          "/images/projects/banbif.svg",
-          "/images/projects/bcp.svg"
+          "/images/projects/rebaja-tus-cuentas/scotiabank.svg",
+          "/images/projects/rebaja-tus-cuentas/interbank.svg",
+          "/images/projects/rebaja-tus-cuentas/bbva.svg",
+          "/images/projects/rebaja-tus-cuentas/banbif.svg",
+          "/images/projects/rebaja-tus-cuentas/bcp.svg"
         ]
       },
       {
@@ -462,12 +489,7 @@
               "We unify all RebajaTusCuentas.com services under a single identity."
             ],
             "icon": "location-arrow.svg",
-            "pictures": [
-              "/images/projects/stadio/stadio-01.png",
-              "/images/projects/stadio/stadio-01.png",
-              "/images/projects/stadio/stadio-01.png",
-              "/images/projects/stadio/stadio-01.png"
-            ]
+            "pictures": ["/images/projects/rebaja-tus-cuentas/lets-go-work.png"]
           },
           {
             "title": "Exponential growth",
@@ -479,9 +501,210 @@
             ],
             "icon": "users-alt.svg",
             "pictures": [
-              "/images/projects/stadio/paper-first.png",
-              "/images/projects/stadio/stadio-01.png",
-              "/images/projects/stadio/stadio-01.png"
+              "/images/projects/rebaja-tus-cuentas/collapsable-expontenial-1.png",
+              "/images/projects/rebaja-tus-cuentas/collapsable-expontenial-2.png",
+              "/images/projects/rebaja-tus-cuentas/collapsable-expontenial-3.png",
+              "/images/projects/rebaja-tus-cuentas/collapsable-expontenial-4.png"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "miposIntegrator",
+    "slug": "mipos-integrator",
+    "name": "mipOS Integrator",
+    "logo": "/images/projects/mipos-integrator/mip-os-logo.svg",
+    "theme": "dark3",
+    "description": "1 or 40 Dark Kitchen, 1 or 100 restaurants. Everything in a tablet to manage thousands of orders by Delivery.",
+    "shortDescription": "A better experience for Dark Kitchen",
+    "subtitle": "Web and tablet design",
+    "title": "Manage several restaurants from dark kitchen",
+    "url": "mipos-integrator",
+    "pictures": {
+      "default": "/images/projects/mipos-integrator/mip-os-hero.png",
+      "mobile": "/images/projects/mipos-integrator/mip-os-hero.png",
+      "desktop": "/images/projects/mipos-integrator/mip-os-hero.png"
+    },
+    "moreProjectsSlugs": [
+      "mipospos",
+      "rebaja-tus-cuentas",
+      "stadio",
+      "mipos-integrator"
+    ],
+    "header": {
+      "background": "#15151b"
+    },
+    "hero": {
+      "background": "",
+      "hasContact": true,
+      "urlVideo": ""
+    },
+    "sections": [
+      {
+        "type": "summary",
+        "background": "",
+        "hasLine": true,
+        "description": "<p>Each brand has one tablet per delivery app. Now imagine having 30 brands. Restaurants - in this case Dark Kitchen - have a complex operation within a single kitchen. Many have a space set aside to store hundreds of tablets.</p>",
+        "picture": "/images/projects/mipos-integrator/summary.jpg",
+        "details": {
+          "Rol": ["Product Designer"],
+          "Duration": ["12 months"],
+          "Team": ["1 Product Designer", "8 developers", "1 Product Manager"],
+          "Project": [
+            "Product Discovery",
+            "UX Architecture",
+            "Design system",
+            "Source code"
+          ],
+          "Deliverables": [
+            "Design tablet and desktop app",
+            "App en tiendas de distribución"
+          ],
+          "Applied methodologies": [
+            "User and product discovery",
+            "User interviews",
+            "Usability testing",
+            "Low-fi prototyping",
+            "High-fi prototyping",
+            "Design Sprint + Scrum"
+          ]
+        }
+      },
+      {
+        "type": "line"
+      },
+      {
+        "type": "collapsableSection",
+        "background": "",
+        "title": "<span>One kitchen for many brands</span> can be chaos",
+        "itemBackground": "#191b1c",
+        "items": [
+          {
+            "title": "The <span>challenge</span>",
+            "description": "Create a great product to simplify the operation of up to 40 tablets on a single device.",
+            "list": [
+              "Hundreds of orders coming in at the same time",
+              "Order integrity",
+              "Order status and sales reports for each delivery app and each brand"
+            ],
+            "icon": "location-arrow.svg",
+            "pictures": [
+              "/images/projects/mipos-integrator/challenger-1.png",
+              "/images/projects/mipos-integrator/challenger-2.png"
+            ]
+          },
+          {
+            "title": "<span>Starting</span> the process",
+            "description": "In partnership with Muncher we visited dark kitchens. We learned about ordering and delivery problems.",
+            "list": [
+              "Some had up to 40 brands.",
+              "Some with order delivery tracking problems.",
+              "Turn on and off the brands in the delivery apps according to schedules and eventualities of the day."
+            ],
+            "icon": "comment-heart.svg",
+            "pictures": [
+              "/images/projects/mipos-integrator/the-process-1.png",
+              "/images/projects/mipos-integrator/the-process-2.png",
+              "/images/projects/mipos-integrator/the-process-3.png",
+              "/images/projects/mipos-integrator/the-process-4.png",
+              "/images/projects/mipos-integrator/the-process-5.png"
+            ]
+          },
+          {
+            "title": "<span>Customer</span> Journey",
+            "description": "",
+            "list": [
+              "We visited +5 Dark Kitchens to understand their daily life",
+              "On average, each kitchen served 30 brands in a single day. This translated into hundreds of menus, promotions and profit margins."
+            ],
+            "icon": "users-alt.svg",
+            "pictures": ["/images/projects/mipos-integrator/customer.png"]
+          }
+        ]
+      },
+      {
+        "type": "imageSection",
+        "background": "",
+        "reverse": false,
+        "description": "Having the different menus of different brands on one screen with easy integration with mipOS accounts was the secret of its growth.",
+        "picture": "/images/projects/mipos-integrator/imageSection.png",
+        "title": "<span>All delivery apps and menu</span> on a single screen",
+        "comment": {
+          "hasCommente": true,
+          "text": "Starting with Commands was accelerating everything from 0 to 100 in a matter of weeks. The best part: nothing was done without consulting UX and product adoption statistics.",
+          "person": {
+            "image": "/images/projects/mipos-integrator/avatar-orlando.jpg",
+            "name": "Roberto Yoncon",
+            "description": "CTO at mipOS"
+          }
+        }
+      },
+      {
+        "type": "clientsSection",
+        "background": "#15151b",
+        "title": "Some clients",
+        "titleSmall": true,
+        "titleColor": "#b4c0ca",
+        "images": [
+          "/images/projects/mipos-integrator/rappi.png",
+          "/images/projects/mipos-integrator/burger-king.png",
+          "/images/projects/mipos-integrator/elmoro.png",
+          "/images/projects/mipos-integrator/we-love.png",
+          "/images/projects/mipos-integrator/fitzer.png"
+        ]
+      },
+      {
+        "type": "collapsableSection",
+        "background": "",
+        "title": "<span>We eliminate all the tablets</span> and we are left with only one",
+        "itemBackground": "#191b1c",
+        "items": [
+          {
+            "title": "Maximum <span>efficiency</span>",
+            "description": "A roadmap created by 3 teams: devs + designate + user priorities.",
+            "list": [
+              "A new way to unify all menus: Uber Eats + Didi Foods + Rappi + iFood, among others.",
+              "Sever and data architecture to make the right decisions",
+              "Special attention to learn and shut down cooking from mipOS and not from every delivery app tablet"
+            ],
+            "icon": "location-arrow.svg",
+            "pictures": [
+              "/images/projects/mipos-integrator/efficiency-1.png",
+              "/images/projects/mipos-integrator/efficiency-2.png",
+              "/images/projects/mipos-integrator/efficiency-3.png",
+              "/images/projects/mipos-integrator/efficiency-4.png",
+              "/images/projects/mipos-integrator/efficiency-5.png"
+            ]
+          },
+          {
+            "title": "Order <span>delivery control</span>",
+            "description": "",
+            "list": [
+              "We created a monitoring and delivery system unique in the market up to that moment.",
+              "The dark kitchen is able to know the real status of each order with the assigned delivery person.",
+              "Para la gerencia significó tener un gran control de la operación."
+            ],
+            "icon": "users-alt.svg",
+            "pictures": [
+              "/images/projects/mipos-integrator/order-delivery-1.png",
+              "/images/projects/mipos-integrator/order-delivery-2.png",
+              "/images/projects/mipos-integrator/order-delivery-3.png"
+            ]
+          },
+          {
+            "title": "<span>Thousands of orders</span> without chaos",
+            "description": "",
+            "list": [
+              "We increased the average ticket by 40% as a result of better menu control.",
+              "In an average integration of 4 delivery apps, we were able to reduce 2 jobs."
+            ],
+            "icon": "comment-heart.svg",
+            "pictures": [
+              "/images/projects/mipos-integrator/without-chaos-1.png",
+              "/images/projects/mipos-integrator/without-chaos-2.png",
+              "/images/projects/mipos-integrator/without-chaos-3.png"
             ]
           }
         ]

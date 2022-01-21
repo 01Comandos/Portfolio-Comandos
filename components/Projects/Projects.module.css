@@ -46,6 +46,12 @@
   color: white;
 }
 
+.allProjects:hover {
+  background-color: var(--secondary);
+  color: var(--primary);
+  transition: 0.2s linear;
+}
+
 .options {
   margin: 3rem 0;
   text-align: center;

@@ -1,3 +1,11 @@
+.dark3.container {
+  background-color: #15151b;
+}
+
+.dark2.container {
+  background-color: #212126;
+}
+
 .light.container {
   background-color: white;
 }
@@ -10,9 +18,9 @@
   color: #091d33;
 }
 
-.light .contactMe {
-  border: 1px solid red;
-}
+/* .light .contactMe { */
+/* border: 1px solid red; */
+/* } */
 
 .light .verticalLine {
   border-right: solid 1px rgba(29, 38, 44, 0.44);
@@ -113,6 +121,9 @@
 .modal {
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .overlay {
@@ -124,8 +135,8 @@
 
 .close {
   position: fixed;
-  top: 0;
-  right: 0;
+  top: 10px;
+  right: 10px;
   height: 50px;
   width: 50px;
   z-index: 14;
@@ -140,6 +151,11 @@
   height: 80%;
   display: flex;
   margin: 55px auto;
+}
+
+.videoContainer {
+  width: 95%;
+  max-width: 1200px;
 }
 
 @media (min-width: 769px) {
@@ -191,7 +207,7 @@
 
   .figureVideo {
     max-width: 560px;
-    border-radius: 36px;
+    border-radius: 18px;
     height: auto;
     max-height: 490px;
     margin-right: var(--padding-tablet);
@@ -232,6 +248,10 @@
 
   .titleProjectInfo > .projectName {
     font-size: 44px;
+  }
+
+  .videoContainer {
+    width: 85%;
   }
 }
 

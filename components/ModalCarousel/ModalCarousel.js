@@ -3,11 +3,15 @@ import { useState } from 'react';
 import Slider from 'react-touch-drag-slider';
 import Modal from 'react-modal';
 import styles from './ModalCarousel.module.css';
+import classNames from 'classnames';
 
 const ModalCarousel = ({ items }) => {
   const [modalState, setModalState] = useState(false);
 
-  const toggleModalState = () => setModalState(!modalState);
+  const toggleModalState = () => {
+    setModalState(!modalState);
+    document.body.style.overflowY = modalState ? 'initial' : 'hidden';
+  };
 
   // carousel
 
@@ -27,13 +31,19 @@ const ModalCarousel = ({ items }) => {
 
   return (
     <div className={styles.container}>
-      <img
-        className={styles.image}
-        src={items[index]}
-        onClick={toggleModalState}
-      />
-      <div className={styles.imagesCounter}>
-        {index + 1} / {items.length}
+      <div className="aspect_ratio aspect_ratio--569by673">
+        <img
+          className={classNames(
+            styles.image,
+            'aspect_ratio__item',
+            'object_fit_cover'
+          )}
+          src={items[index]}
+          onClick={toggleModalState}
+        />
+        <div className={styles.imagesCounter}>
+          {index + 1} / {items.length}
+        </div>
       </div>
 
       <Modal
@@ -50,7 +60,7 @@ const ModalCarousel = ({ items }) => {
           <div
             className={`${styles.button} ${styles['button--left']}`}
             onClick={previous}>
-            <img src="/images/arrow.png" alt="arrow" />
+            <img src="/icons/arrow-left.svg" alt="arrow" />
           </div>
         )}
         {index === items.length - 1 ? (
@@ -59,7 +69,7 @@ const ModalCarousel = ({ items }) => {
           <div
             className={`${styles.button} ${styles['button--right']}`}
             onClick={next}>
-            <img src="/images/arrow.png" alt="arrow" />
+            <img src="/icons/arrow-right.svg" alt="arrow" />
           </div>
         )}
         <Slider

@@ -2,6 +2,7 @@ import Link from 'next/link';
 import styles from './Project.module.css';
 import { trackEvent } from '../../analytics/events';
 import { useState } from 'react';
+import classNames from 'classnames';
 
 const Project = ({
   isMobile,
@@ -23,12 +24,31 @@ const Project = ({
         }`}
         onMouseEnter={() => setHover(true)}
         onMouseLeave={() => setHover(false)}>
-        <img src={pictures.mobile} className={styles.pictureMobile} />
-        <figure className={styles.figurePicture}>
+        <div
+          className={classNames(
+            'aspect_ratio',
+            'aspect_ratio--380by307',
+            styles['aspect_ratio--380by307']
+          )}>
           <img
-            src={pictures.desktop}
-            className={`${styles.picture} ${isHover ? styles.animation : null}`}
+            src={pictures.mobile}
+            className={classNames(styles.pictureMobile, 'aspect_ratio__item')}
           />
+        </div>
+        <figure className={styles.figurePicture}>
+          <div
+            className={classNames(
+              'aspect_ratio',
+              'aspect_ratio--402by486',
+              styles['aspect_ratio--402by486']
+            )}>
+            <img
+              src={pictures.desktop}
+              className={`aspect_ratio__item  ${styles.picture} ${
+                isHover ? styles.animation : null
+              }`}
+            />
+          </div>
         </figure>
         <h4 className={styles.title}>{name}</h4>
         <div

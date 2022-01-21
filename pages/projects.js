@@ -5,6 +5,8 @@ import Projects from '../components/Projects/Projects';
 import projectsList from '../content/projects.json';
 import { isMobile } from '../utils';
 import { trackEvent, visitPage } from '../analytics/events';
+import SeoConfig from '../components/SeoConfig/SeoConfig';
+import Head from 'next/head';
 
 const projectDefault = projectsList[0];
 
@@ -23,6 +25,13 @@ const ProjectsPage = ({ isMobile }) => {
 
   return (
     <div className={styles.container}>
+      <Head>
+        <SeoConfig
+          title="Carlos Pérez"
+          description="Carlos Pérez | @01Comandos - Product Designer and UI & UX Designer"
+        />
+      </Head>
+
       <div className={styles.containerDesktop}>
         <figure className={styles.projectPictureContainer}>
           <img

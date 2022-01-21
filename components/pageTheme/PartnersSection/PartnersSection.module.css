@@ -6,6 +6,7 @@
   padding-top: 70px;
   padding-bottom: 70px;
   background-color: white;
+  position: relative;
 }
 
 .title {
@@ -34,6 +35,32 @@
   width: 100px;
   height: 100%;
   object-fit: contain;
+}
+
+.backgroundContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.backgroundTop {
+  background-image: url('/images/background-top.svg');
+  height: 74px;
+  width: 100%;
+  position: absolute;
+  top: -24px;
+  left: 0;
+}
+
+.backgroundBottom {
+  background-image: url('/images/background-bottom.svg');
+  height: 74px;
+  width: 100%;
+  position: absolute;
+  bottom: -24px;
+  left: 0;
 }
 
 @media (min-width: 769px) {

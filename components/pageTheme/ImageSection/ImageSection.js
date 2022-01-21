@@ -10,6 +10,7 @@ function ImageSection({
   comment,
   background,
   theme,
+  hasBackgrounTop,
 }) {
   return (
     <div
@@ -22,8 +23,19 @@ function ImageSection({
         [styles.defaultContainer]: !isReverse,
         [styles.reverseContainer]: isReverse,
       })}>
+      {hasBackgrounTop && <div className={styles.backgroundTop}></div>}
       <figure className={styles.figure}>
-        <img src={picture} alt={projectName} className={styles.picture} />
+        <div className="aspect_ratio aspect_ratio--569by673">
+          <img
+            src={picture}
+            alt={projectName}
+            className={classNames(
+              styles.picture,
+              'aspect_ratio__item',
+              'object_fit_cover'
+            )}
+          />
+        </div>
       </figure>
       {comment.hasCommente && (
         <img className={styles.logo} src="/icons/icon-section.svg" alt="logo" />
@@ -35,7 +47,7 @@ function ImageSection({
       {comment.hasCommente && (
         <>
           <p className={classNames(styles.comment, [styles[theme]])}>
-            {comment.text}
+            "{comment.text}"
           </p>
           <div className={classNames(styles.person, [styles[theme]])}>
             <img

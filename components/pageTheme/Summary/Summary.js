@@ -35,7 +35,17 @@ function Summary({
         )}
       </>
       <figure className={styles.figure}>
-        <img className={styles.picture} src={picture} alt={projectName} />
+        <div className="aspect_ratio aspect_ratio--569by673">
+          <img
+            className={classNames(
+              styles.picture,
+              'aspect_ratio__item',
+              'object_fit_cover'
+            )}
+            src={picture}
+            alt={projectName}
+          />
+        </div>
       </figure>
       <ul className={styles.details}>
         {Object.keys(details).map((key, index) => (

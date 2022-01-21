@@ -1,0 +1,44 @@
+.light .title {
+  color: #091d33;
+}
+
+.container {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: white;
+  position: relative;
+}
+
+.title {
+  text-align: center;
+  color: #1d262c;
+  font-weight: 600;
+  font-size: 30px;
+  letter-spacing: 0.13px;
+  margin-top: 0;
+}
+
+.titleSmall {
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.imagesContainer {
+  display: flex;
+  margin: 0 16px;
+  justify-content: space-evenly;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.image {
+  width: 100px;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media (min-width: 769px) {
+  .imagesContainer {
+    margin: 0 100px;
+  }
+}

@@ -1,7 +1,14 @@
 import classNames from 'classnames';
 import styles from './PartnersSection.module.css';
 
-function PartnersSection({ title, images, background, theme, titleSmall }) {
+function PartnersSection({
+  title,
+  images,
+  background,
+  theme,
+  titleSmall,
+  titleColor,
+}) {
   return (
     <div
       style={{ background }}
@@ -9,7 +16,12 @@ function PartnersSection({ title, images, background, theme, titleSmall }) {
         [styles.container]: true,
         [styles[theme]]: true,
       })}>
+      <div className={styles.backgroundContainer}>
+        <div className={styles.backgroundTop}></div>
+        <div className={styles.backgroundBottom}></div>
+      </div>
       <h4
+        style={{ color: titleColor }}
         className={classNames(styles.title, {
           [styles.titleSmall]: titleSmall,
         })}>

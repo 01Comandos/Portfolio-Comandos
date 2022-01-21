@@ -83,7 +83,7 @@ const renderItem = ({
                 </div>
                 {pictures.length > 1 ? (
                   <div
-                    style={{ background }}
+                    style={{ background: itemBackground }}
                     className={classNames(styles.itemMobileFigure, {
                       'padding-x': true,
                     })}>
@@ -91,11 +91,19 @@ const renderItem = ({
                   </div>
                 ) : (
                   <figure
-                    style={{ background }}
+                    style={{ background: itemBackground }}
                     className={classNames(styles.itemMobileFigure, {
                       'padding-x': true,
                     })}>
-                    <img src={pictures[0]} className={styles.itemPicture} />
+                    <div className="aspect_ratio aspect_ratio--569by673">
+                      <img
+                        src={pictures[0]}
+                        className={classNames(
+                          styles.itemPicture,
+                          'aspect_ratio__item'
+                        )}
+                      />
+                    </div>
                   </figure>
                 )}
               </>
@@ -109,7 +117,12 @@ const renderItem = ({
 
 const renderPicture = (picture, containerStyles = {}) => (
   <figure className={classNames(styles.itemDesktopFigure, containerStyles)}>
-    <img src={picture} className={styles.itemPicture} />
+    <div className="aspect_ratio aspect_ratio--569by673">
+      <img
+        src={picture}
+        className={classNames(styles.itemPicture, 'aspect_ratio__item')}
+      />
+    </div>
   </figure>
 );
 

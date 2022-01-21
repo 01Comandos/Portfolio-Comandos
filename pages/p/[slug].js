@@ -10,6 +10,7 @@ import ImageSection from '@/components/pageTheme/ImageSection/ImageSection';
 import MoreProjects from '@/components/pageTheme/MoreProjects/MoreProjects';
 import Collapsable from '@/components/pageTheme/Collapsable/Collapsable';
 import PartnersSection from '@/components/pageTheme/PartnersSection/PartnersSection';
+import ClientsSection from '@/components/pageTheme/ClientsSection/ClientsSection';
 import DisplayImage from '@/components/pageTheme/DisplayImage/DisplayImage';
 import TestimonialsCarousel from '@/components/TestimonialsCarousel/TestimonialsCarousel';
 import Footer from '@/components/Footer/Footer';
@@ -24,6 +25,7 @@ import { visitPage } from '@/analytics/events';
 import { isMobile } from '../../utils';
 import { useState } from 'react';
 import classNames from 'classnames';
+import SeoConfig from '../../components/SeoConfig/SeoConfig';
 
 // const moreProjects = projects.filter(
 //   (project) =>
@@ -61,9 +63,10 @@ const StadioPage = ({ isMobile }) => {
   return (
     <>
       <Head>
-        <title>{content.name}</title>
-        <meta name="description" content={content.description} />
-        <link rel="icon" href="/favicon.ico" />
+        <SeoConfig
+          title={'Comandos | ' + content.name}
+          description="Carlos Pérez | @01Comandos - Product Designer and UI & UX Designer"
+        />
       </Head>
       <>
         <Header
@@ -72,7 +75,7 @@ const StadioPage = ({ isMobile }) => {
           buttonStyle={content.theme == 'light' && 'info'}
           withContact={true}
         />
-        <main style={{ background: content.background }}>
+        <main>
           <Hero
             theme={content.theme}
             background={content.hero.background}
@@ -82,6 +85,7 @@ const StadioPage = ({ isMobile }) => {
             project={content.name}
             subtitle={content.subtitle}
             title={content.title}
+            urlVideo={content.hero.urlVideo}
           />
           {content.sections.map((item, index) => (
             <div key={index}>
@@ -112,25 +116,35 @@ const StadioPage = ({ isMobile }) => {
                   images={item.images}
                   title={item.title}
                   titleSmall={item.titleSmall}
+                  titleColor={item.titleColor}
+                  background={item.background}
+                />
+              )}
+              {item.type == 'clientsSection' && (
+                <ClientsSection
+                  theme={content.theme}
+                  images={item.images}
+                  title={item.title}
+                  titleSmall={item.titleSmall}
+                  titleColor={item.titleColor}
+                  background={item.background}
                 />
               )}
               {item.type == 'displayImage' && (
                 <DisplayImage theme={content.theme} image={item.image} />
               )}
               {item.type == 'imageSection' && (
-                <>
-                  {/* <div className={stadioStyles.backgroundTop}></div> */}
-                  <ImageSection
-                    theme={content.theme}
-                    background={item.background}
-                    projectName={content.name}
-                    description={item.description}
-                    title={item.title}
-                    picture={item.picture}
-                    isReverse={item.reverse}
-                    comment={item.comment}
-                  />
-                </>
+                <ImageSection
+                  theme={content.theme}
+                  background={item.background}
+                  projectName={content.name}
+                  description={item.description}
+                  title={item.title}
+                  picture={item.picture}
+                  isReverse={item.reverse}
+                  comment={item.comment}
+                  hasBackgrounTop={item.hasBackgrounTop}
+                />
               )}
               {item.type == 'impactSection' && (
                 <ImpactSection
@@ -147,17 +161,20 @@ const StadioPage = ({ isMobile }) => {
               )}
               {item.type == 'line' && (
                 <div
-                  className={classNames(styles.line, [
+                  className={classNames(styles.container, [
                     styles[content.theme],
-                  ])}></div>
+                  ])}>
+                  <div className={styles.line}></div>
+                </div>
               )}
             </div>
           ))}
         </main>
         <MoreProjects
-          containerStyles={stadioStyles.moreProjects}
+          containerStyles={styles.moreProjects}
           projects={moreProjects}
           isMobile={isMobile}
+          limit={3}
         />
         <TestimonialsCarousel
           testimonials={TestimonialsList}

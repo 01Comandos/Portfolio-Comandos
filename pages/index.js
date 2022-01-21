@@ -6,6 +6,7 @@ import Projects from '../components/Projects/Projects';
 import Experiences from '../components/Experiences/Experiences';
 import TestimonialsCarousel from '../components/TestimonialsCarousel/TestimonialsCarousel';
 import Definition from '../components/Definition/Definition';
+import SeoConfig from '../components/SeoConfig/SeoConfig';
 import Contact from '../components/Contact/Contact';
 import TestimonialsList from '../content/testimonials.json';
 import { visitPage } from '../analytics/events';
@@ -20,23 +21,22 @@ const Home = ({ isMobile }) => {
   return (
     <div>
       <Head>
-        <title>Carlos Pérez</title>
-        <meta
-          name="description"
-          content="Carlos Pérez | @01Comandos - Product Designer and UI & UX Designer"
+        <SeoConfig
+          title="Carlos Pérez"
+          description="Carlos Pérez | @01Comandos - Product Designer and UI & UX Designer"
         />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="pageContainer">
         <Hero />
         <div className={styles.verticalLine}></div>
         <Companies />
-        {/* <div className={styles.verticalLine}></div> */}
-        <Projects isMobile={isMobile} lightTheme={true} />
+
+        <Projects isMobile={isMobile} lightTheme={true} limit={3} />
         <Experiences />
         <TestimonialsCarousel
           testimonials={TestimonialsList}
           isMobile={isMobile}
+          background={'white'}
         />
         <Definition />
         <Contact />

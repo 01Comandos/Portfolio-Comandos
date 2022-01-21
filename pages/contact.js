@@ -7,6 +7,7 @@ import { useEffect } from 'react';
 import { isMobile } from '../utils';
 import { visitPage } from '../analytics/events';
 import styles from '../styles/Contact.module.css';
+import SeoConfig from '@/components/SeoConfig/SeoConfig';
 
 const Contact = ({ isMobile }) => {
   const router = useRouter();
@@ -19,12 +20,10 @@ const Contact = ({ isMobile }) => {
   return (
     <div>
       <Head>
-        <title>Contact</title>
-        <meta
-          name="description"
-          content="Carlos Pérez | @01Comandos - Product Designer and UI & UX Designer"
+        <SeoConfig
+          title="contact"
+          description="Carlos Pérez | @01Comandos - Product Designer and UI & UX Designer"
         />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.contactPage} pageContainer`}>
         <section className={`${styles.heroContainer} padding-x`}>
@@ -45,6 +44,7 @@ const Contact = ({ isMobile }) => {
         <TestimonialsCarousel
           testimonials={TestimonialsList}
           isMobile={isMobile}
+          background={'white'}
         />
       </main>
     </div>
