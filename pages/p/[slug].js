@@ -1,31 +1,31 @@
-import Head from 'next/head';
-import { useEffect } from 'react';
-import { useRouter } from 'next/router';
+import Head from "next/head";
+import { useEffect } from "react";
+import { useRouter } from "next/router";
 
-import ImpactSection from '@/components/StadioComponents/ImpactSection/ImpactSection';
-import Header from '@/components/Header/Header';
-import Hero from '@/components/pageTheme/Hero/Hero';
-import Summary from '@/components/pageTheme/Summary/Summary';
-import ImageSection from '@/components/pageTheme/ImageSection/ImageSection';
-import MoreProjects from '@/components/pageTheme/MoreProjects/MoreProjects';
-import Collapsable from '@/components/pageTheme/Collapsable/Collapsable';
-import PartnersSection from '@/components/pageTheme/PartnersSection/PartnersSection';
-import ClientsSection from '@/components/pageTheme/ClientsSection/ClientsSection';
-import DisplayImage from '@/components/pageTheme/DisplayImage/DisplayImage';
-import TestimonialsCarousel from '@/components/TestimonialsCarousel/TestimonialsCarousel';
-import Footer from '@/components/Footer/Footer';
-import Definition from '@/components/Definition/Definition';
-import Contact from '@/components/Contact/Contact';
-import styles from '@/styles/Pages.module.css';
-import stadioStyles from '@/styles/Stadio.module.css';
-import projects from '@/content/projects.json';
-import TestimonialsList from '@/content/testimonials.json';
-import MobileMenu from '@/components/MobileMenu/MobileMenu';
-import { visitPage } from '@/analytics/events';
-import { isMobile } from '../../utils';
-import { useState } from 'react';
-import classNames from 'classnames';
-import SeoConfig from '../../components/SeoConfig/SeoConfig';
+import ImpactSection from "@/components/StadioComponents/ImpactSection/ImpactSection";
+import Header from "@/components/Header/Header";
+import Hero from "@/components/pageTheme/Hero/Hero";
+import Summary from "@/components/pageTheme/Summary/Summary";
+import ImageSection from "@/components/pageTheme/ImageSection/ImageSection";
+import MoreProjects from "@/components/pageTheme/MoreProjects/MoreProjects";
+import Collapsable from "@/components/pageTheme/Collapsable/Collapsable";
+import PartnersSection from "@/components/pageTheme/PartnersSection/PartnersSection";
+import ClientsSection from "@/components/pageTheme/ClientsSection/ClientsSection";
+import DisplayImage from "@/components/pageTheme/DisplayImage/DisplayImage";
+import TestimonialsCarousel from "@/components/TestimonialsCarousel/TestimonialsCarousel";
+import Footer from "@/components/Footer/Footer";
+import Definition from "@/components/Definition/Definition";
+import Contact from "@/components/Contact/Contact";
+import styles from "@/styles/Pages.module.css";
+import stadioStyles from "@/styles/Stadio.module.css";
+import projects from "@/content/projects.json";
+import TestimonialsList from "@/content/testimonials.json";
+import MobileMenu from "@/components/MobileMenu/MobileMenu";
+import { visitPage } from "@/analytics/events";
+import { isMobile } from "../../utils";
+import { useState } from "react";
+import classNames from "classnames";
+import SeoConfig from "../../components/SeoConfig/SeoConfig";
 
 // const moreProjects = projects.filter(
 //   (project) =>
@@ -34,27 +34,27 @@ import SeoConfig from '../../components/SeoConfig/SeoConfig';
 //     project.id === 'Truorawhatsapp'
 // );
 
-const StadioPage = ({ isMobile }) => {
-  const router = useRouter();
-  const slug = router.query.slug;
-  console.log(slug);
+const StadioPage = ({ isMobile, content, moreProjects }) => {
+  // const router = useRouter();
+  // const slug = router.query.slug;
+  // console.log(slug);
 
-  // const content = projects.find((project) => project.id === 'Stadio');
+  // // const content = projects.find((project) => project.id === 'Stadio');
 
-  const [content, setContent] = useState(null);
+  // const [content, setContent] = useState(null);
 
-  const [moreProjects, setMoreProjects] = useState([]);
+  // const [moreProjects, setMoreProjects] = useState([]);
 
-  useEffect(() => {
-    const projectItem = projects.find(
-      (projectItem) => projectItem.slug == slug
-    );
-    setContent(projectItem);
-    const items = projects.filter((item) =>
-      projectItem.moreProjectsSlugs.includes(item.slug)
-    );
-    setMoreProjects(items);
-  }, []);
+  // useEffect(() => {
+  //   const projectItem = projects.find(
+  //     (projectItem) => projectItem.slug == slug
+  //   );
+  //   setContent(projectItem);
+  //   const items = projects.filter((item) =>
+  //     projectItem.moreProjectsSlugs.includes(item.slug)
+  //   );
+  //   setMoreProjects(items);
+  // }, []);
 
   if (!content) {
     return <div>Proyecto no encontrado</div>;
@@ -62,17 +62,15 @@ const StadioPage = ({ isMobile }) => {
 
   return (
     <>
-      <Head>
-        <SeoConfig
-          title={'Comandos | ' + content.name}
-          description="Carlos Pérez | @01Comandos - Product Designer and UI & UX Designer"
-        />
-      </Head>
+      <SeoConfig
+        title={"Comandos | " + content.name}
+        description="Carlos Pérez | @01Comandos - Product Designer and UI & UX Designer"
+      />
       <>
         <Header
           theme={content.theme}
           background={content.header.background}
-          buttonStyle={content.theme == 'light' && 'info'}
+          buttonStyle={content.theme == "light" && "info"}
           withContact={true}
         />
         <main>
@@ -89,7 +87,7 @@ const StadioPage = ({ isMobile }) => {
           />
           {content.sections.map((item, index) => (
             <div key={index}>
-              {item.type == 'summary' && (
+              {item.type == "summary" && (
                 <Summary
                   theme={content.theme}
                   projectName={item.name}
@@ -100,7 +98,7 @@ const StadioPage = ({ isMobile }) => {
                   hasLine={item.hasLine}
                 />
               )}
-              {item.type == 'collapsableSection' && (
+              {item.type == "collapsableSection" && (
                 <Collapsable
                   theme={content.theme}
                   isMobile={isMobile}
@@ -110,7 +108,7 @@ const StadioPage = ({ isMobile }) => {
                   itemBackground={item.itemBackground}
                 />
               )}
-              {item.type == 'partnersSection' && (
+              {item.type == "partnersSection" && (
                 <PartnersSection
                   theme={content.theme}
                   images={item.images}
@@ -120,7 +118,7 @@ const StadioPage = ({ isMobile }) => {
                   background={item.background}
                 />
               )}
-              {item.type == 'clientsSection' && (
+              {item.type == "clientsSection" && (
                 <ClientsSection
                   theme={content.theme}
                   images={item.images}
@@ -130,10 +128,10 @@ const StadioPage = ({ isMobile }) => {
                   background={item.background}
                 />
               )}
-              {item.type == 'displayImage' && (
+              {item.type == "displayImage" && (
                 <DisplayImage theme={content.theme} image={item.image} />
               )}
-              {item.type == 'imageSection' && (
+              {item.type == "imageSection" && (
                 <ImageSection
                   theme={content.theme}
                   background={item.background}
@@ -146,7 +144,7 @@ const StadioPage = ({ isMobile }) => {
                   hasBackgrounTop={item.hasBackgrounTop}
                 />
               )}
-              {item.type == 'impactSection' && (
+              {item.type == "impactSection" && (
                 <ImpactSection
                   theme={content.theme}
                   background={item.background}
@@ -159,11 +157,12 @@ const StadioPage = ({ isMobile }) => {
                   companyText={item.companyText}
                 />
               )}
-              {item.type == 'line' && (
+              {item.type == "line" && (
                 <div
                   className={classNames(styles.container, [
                     styles[content.theme],
-                  ])}>
+                  ])}
+                >
                   <div className={styles.line}></div>
                 </div>
               )}
@@ -189,10 +188,18 @@ const StadioPage = ({ isMobile }) => {
   );
 };
 
-export const getServerSideProps = async ({ req }) => {
+export const getServerSideProps = async ({ req, params }) => {
+  const slug = params.slug;
+  const content = projects.find((projectItem) => projectItem.slug == slug);
+  const moreProjects = projects.filter((item) =>
+    content.moreProjectsSlugs.includes(item.slug)
+  );
+
   return {
     props: {
       isMobile: isMobile(req),
+      content,
+      moreProjects,
     },
   };
 };

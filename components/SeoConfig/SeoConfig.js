@@ -1,7 +1,9 @@
+import Head from "next/head";
+
 const SeoConfig = ({ title, description }) => {
   console.log(title);
   return (
-    <>
+    <Head>
       <title>{title}</title>
       <meta name="description" content={description} />
       <link rel="icon" href="/favicon.ico" />
@@ -16,7 +18,7 @@ const SeoConfig = ({ title, description }) => {
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content="/images/safeimage.png" />
-    </>
+    </Head>
   );
 };
 
