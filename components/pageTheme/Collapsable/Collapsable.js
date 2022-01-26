@@ -1,12 +1,12 @@
-import classNames from 'classnames';
-import { useState, useEffect } from 'react';
-import { Disclosure } from '@headlessui/react';
-import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/solid';
-import { CheckCircleIcon } from '@heroicons/react/outline';
-import Icon from './Icon';
-import styles from './Collapsable.module.css';
-import ModalCarousel from '@/components/ModalCarousel/ModalCarousel';
-import { trackEvent } from '../../../analytics/events';
+import classNames from "classnames";
+import { useState, useEffect } from "react";
+import { Disclosure } from "@headlessui/react";
+import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/solid";
+import { CheckCircleIcon } from "@heroicons/react/outline";
+import Icon from "./Icon";
+import styles from "./Collapsable.module.css";
+import ModalCarousel from "@/components/ModalCarousel/ModalCarousel";
+import { trackEvent } from "../../../analytics/events";
 
 const renderItem = ({
   title,
@@ -30,12 +30,13 @@ const renderItem = ({
               [styles.itemButton]: true,
               [styles.itemButtonOpen]: open,
               [styles.bgGray]: open,
-              'padding-x': true,
-            })}>
+              "padding-x": true,
+            })}
+          >
             {icon && (
               <Icon
                 path={icon}
-                color={theme == 'light' ? 'dark' : open ? 'secondary' : 'gray'}
+                color={theme == "light" ? "dark" : open ? "secondary" : "gray"}
               />
             )}
             <span
@@ -43,7 +44,8 @@ const renderItem = ({
               className={classNames({
                 [styles.itemTitle]: true,
                 [styles.bicolorTitle]: open,
-              })}></span>
+              })}
+            ></span>
             {open ? (
               <ChevronUpIcon
                 className={classNames({
@@ -68,8 +70,9 @@ const renderItem = ({
                   style={open ? { background: itemBackground } : {}}
                   className={classNames({
                     [styles.description]: true,
-                    'padding-x': true,
-                  })}>
+                    "padding-x": true,
+                  })}
+                >
                   <p>{description}</p>
                   <ul>
                     {list.map((item, idx) => (
@@ -78,7 +81,8 @@ const renderItem = ({
                           [styles.itemList]: true,
                           [styles.itemMargin]: !description,
                         })}
-                        key={idx}>
+                        key={idx}
+                      >
                         <div className={styles.checkIconContainer}>
                           <CheckCircleIcon className={styles.checkIcon} />
                         </div>
@@ -91,22 +95,24 @@ const renderItem = ({
                   <div
                     style={{ background: itemBackground }}
                     className={classNames(styles.itemMobileFigure, {
-                      'padding-x': true,
-                    })}>
+                      "padding-x": true,
+                    })}
+                  >
                     <ModalCarousel items={pictures}></ModalCarousel>
                   </div>
                 ) : (
                   <figure
                     style={{ background: itemBackground }}
                     className={classNames(styles.itemMobileFigure, {
-                      'padding-x': true,
-                    })}>
+                      "padding-x": true,
+                    })}
+                  >
                     <div className="aspect_ratio aspect_ratio--569by673">
                       <img
                         src={pictures[0]}
                         className={classNames(
                           styles.itemPicture,
-                          'aspect_ratio__item'
+                          "aspect_ratio__item"
                         )}
                       />
                     </div>
@@ -126,7 +132,7 @@ const renderPicture = (picture, containerStyles = {}) => (
     <div className="aspect_ratio aspect_ratio--569by673">
       <img
         src={picture}
-        className={classNames(styles.itemPicture, 'aspect_ratio__item')}
+        className={classNames(styles.itemPicture, "aspect_ratio__item")}
       />
     </div>
   </figure>
@@ -141,6 +147,7 @@ function Collapsable({
   theme,
   itemBackground,
   id,
+  projectId,
 }) {
   const [selectedItem, setSelectedItem] = useState(0);
   const [selectedPictures, setSelectedPictures] = useState(
@@ -158,23 +165,27 @@ function Collapsable({
         [styles.container]: true,
         [containerStyles]: true,
         [styles[theme]]: true,
-      })}>
+      })}
+    >
       <h3
         className={classNames({
           [styles.title]: true,
         })}
-        dangerouslySetInnerHTML={{ __html: title }}></h3>
+        dangerouslySetInnerHTML={{ __html: title }}
+      ></h3>
       <div
         className={classNames({
           [styles.itemsContainer]: true,
-        })}>
+        })}
+      >
         {items.map((item, index) => (
           <div
             onClick={() => {
               setSelectedItem(index);
-              trackEvent(`Dropdown ${id} Item ${index++} clicked`);
+              trackEvent(`Projects: ${projectId} dropdown ${id} Item ${index+1} clicked`);
             }}
-            key={index}>
+            key={index}
+          >
             {renderItem({
               ...item,
               index,
@@ -191,7 +202,8 @@ function Collapsable({
           className={classNames(
             styles.itemDesktopFigure,
             styles.paddingRightFigure
-          )}>
+          )}
+        >
           <ModalCarousel items={selectedPictures}></ModalCarousel>
         </div>
       ) : (

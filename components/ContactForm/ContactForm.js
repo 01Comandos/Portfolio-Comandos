@@ -1,21 +1,14 @@
 import classNames from "classnames";
-import { useEffect } from "react";
-import { useRouter } from "next/router";
-import { useForm } from "@formspree/react";
+
 import styles from "./ContactForm.module.css";
 import { trackEvent } from "../../analytics/events";
 
 const messagePlaceholder = `(500 characters max) Due to the Stripe LLC legacy of greed around the globe, they’re about to be taught a lesson in the real user of power... you will be witnesses. Also, we wanted to set up a simple institutional website for our organization that supports our existing CMS and maybe links to our Patreon.`;
 
-const ContactForm = ({ email }) => {
-  const [state, handleSubmit] = useForm("mrgrqqjz");
-  const router = useRouter();
-
-  useEffect(() => {
-    if (state.succeeded) {
-      router.push("/contact-send");
-    }
-  }, [state]);
+const ContactForm = ({ email, state, handleSubmit }) => {
+  // useEffect(() => {
+  
+  // }, [state]);
 
   const goToTop = () => {
     document.body.scrollTop = 0; // For Safari
@@ -32,6 +25,9 @@ const ContactForm = ({ email }) => {
             back to you.
           </p>
         </section>
+
+        <input type="hidden" name="_next" value="https://google.com" />
+
         <section className={styles.basicInfo}>
           <div className={styles.formField}>
             <label htmlFor="name">
@@ -127,11 +123,11 @@ const ContactForm = ({ email }) => {
           <button
             className={classNames({
               [styles.send]: true,
-              'button': true
+              button: true,
             })}
             type="submit"
             disabled={state.submitting}
-            onClick={() => trackEvent('Message was sent')}
+            onClick={() => trackEvent("Message was sent")}
           >
             Send
           </button>

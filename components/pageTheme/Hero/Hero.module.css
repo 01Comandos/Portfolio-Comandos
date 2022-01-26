@@ -34,9 +34,16 @@
 
 .figureVideo {
   position: relative;
-  height: 360px;
+  min-height: 360px;
+  max-height: 420px;
   overflow: hidden;
   width: 100%;
+  cursor: pointer;
+}
+
+.figureVideo--not_video {
+  pointer-events: none;
+  cursor: default;
 }
 
 .imageVideo {
@@ -44,6 +51,9 @@
   object-position: 0% 18%;
   width: 100%;
   height: 100%;
+  
+  /* border: 1px solid red; */
+  margin-top: 120px;
 }
 
 .figureProjectVideoInfo {
@@ -172,6 +182,7 @@
 
   .imageVideo {
     object-position: 0% 20%;
+    margin-top: 0;
   }
 
   .textSection {

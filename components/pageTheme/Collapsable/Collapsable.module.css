@@ -51,7 +51,6 @@
 
 .container {
   padding-top: 70px;
-  padding-bottom: 70px;
 }
 
 .itemsContainer {
@@ -161,7 +160,7 @@
   overflow: hidden;
   background-color: var(--gray-10);
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 70px;
 }
 
 .itemDesktopFigure {
@@ -180,10 +179,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-      'title image'
-      'items image';
+      "title image"
+      "items image";
     column-gap: 20px;
     position: relative;
+
+    padding-bottom: 70px;
   }
 
   .title {
