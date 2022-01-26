@@ -151,6 +151,10 @@
     margin-top: 48px;
   }
 
+  .hasLine.details {
+    margin-top: 18px;
+  }
+
   .detail,
   .detail:nth-child(odd) {
     flex-basis: 50%;

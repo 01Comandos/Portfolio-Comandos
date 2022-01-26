@@ -44,7 +44,8 @@ function Summary({
           />
         </div>
       </figure>
-      <ul className={styles.details}>
+      <ul
+        className={classNames(styles.details, { [styles.hasLine]: !hasLine })}>
         {Object.keys(details).map((key, index) => (
           <li key={index} className={styles.detail}>
             <strong className={styles.detailName}>{key}</strong>
