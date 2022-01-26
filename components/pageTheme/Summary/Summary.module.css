@@ -23,7 +23,7 @@
 }
 
 .light .line {
-  display: none;
+  border-bottom: 1px solid var(--primary);
 }
 
 .container {
@@ -42,6 +42,10 @@
 
 .description p:first-child {
   margin-bottom: 30px;
+}
+
+.description p:only-child {
+  margin-bottom: 0;
 }
 
 .figure {
@@ -139,19 +143,17 @@
   .description {
     grid-area: description;
     line-height: 2.06;
+    margin-bottom: 38px;
   }
 
   .details {
     grid-area: details;
+    margin-top: 48px;
   }
 
   .detail,
   .detail:nth-child(odd) {
     flex-basis: 50%;
-  }
-
-  .description {
-    margin-bottom: 58px;
   }
 
   .detailName {

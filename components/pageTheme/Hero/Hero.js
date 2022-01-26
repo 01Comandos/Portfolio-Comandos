@@ -4,6 +4,7 @@ import classNames from 'classnames';
 import ContactMe from '@/components/ContactMe/ContactMe';
 import styles from './Hero.module.css';
 import Modal from 'react-modal';
+import { trackEvent } from '../../../analytics/events';
 
 function Hero({
   logo,
@@ -15,6 +16,7 @@ function Hero({
   theme,
   background,
   urlVideo,
+  showNameDesktop,
 }) {
   const [modalState, setModalState] = useState(false);
 
@@ -33,14 +35,22 @@ function Hero({
       <figure className={styles.figureVideo}>
         {urlVideo && (
           <span
-            onClick={toggleModalState}
+            onClick={() => {
+              toggleModalState();
+              trackEvent('Open modal carousel clicked');
+            }}
             className={styles.figureProjectVideoInfo}>
             <img src="/icons/icon-play.svg" alt="play" />
             Play video
           </span>
         )}
         <div className={styles.figureProjectInfo}>
-          {!logo && <h2 className={styles.projectName}>{project}</h2>}
+          <h2
+            className={classNames(styles.projectName, {
+              [styles.showNameDesktop]: showNameDesktop,
+            })}>
+            {project}
+          </h2>
           <span className={styles.projectSlogan}>{subtitle}</span>
         </div>
         <img src={picture} className={styles.imageVideo} />

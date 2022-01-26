@@ -3,6 +3,14 @@ import styles from './Companies.module.css';
 
 const companiesList = [
   {
+    height: 27,
+    width: 135,
+    name: 'Yaydoo',
+    logo: '/images/yaydoo.svg',
+    yc: false,
+    startups: true,
+  },
+  {
     height: 34,
     width: 123,
     name: 'Truora',

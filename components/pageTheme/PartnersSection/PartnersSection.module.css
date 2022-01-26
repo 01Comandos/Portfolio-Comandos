@@ -1,5 +1,21 @@
+.dark3.partnersSection {
+  background-color: #15151b;
+}
+
+.dark2.partnersSection {
+  background-color: #212126;
+}
+
+.light.partnersSection {
+  background: white;
+}
+
 .light .title {
   color: #091d33;
+}
+
+.partnersSection {
+  padding-top: 70px;
 }
 
 .container {

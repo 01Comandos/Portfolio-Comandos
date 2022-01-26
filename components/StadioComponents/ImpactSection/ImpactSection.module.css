@@ -68,7 +68,7 @@
 .stadioInfo {
   display: flex;
   align-items: center;
-  margin-top: 55px;
+  margin-top: 35px;
 }
 
 .stadioLogo {
@@ -98,9 +98,9 @@
 }
 
 .infoLine {
+  width: 100%;
   margin: 40px 0;
   height: 1px;
-  max-width: 469px;
   align-self: center;
   border: solid 1px rgba(255, 255, 255, 0.12);
 }
@@ -139,48 +139,44 @@
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-      'image title'
-      'image description'
-      'image stadio-info'
-      'image line'
-      'image stadio-companies';
+    align-items: center;
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  .left {
+    align-self: flex-start;
   }
 
   .figure {
     align-self: flex-start;
-    grid-area: image;
     margin-right: 3rem;
     max-width: 500px;
   }
 
   .title {
-    grid-area: title;
-    align-self: end;
     max-width: 469px;
     margin: 0;
     font-size: 36px;
   }
 
   .description {
-    grid-area: description;
     max-width: 469px;
-
     line-height: 1.83;
   }
 
   .stadioInfo {
-    margin-top: 10px;
-    grid-area: stadio-info;
+    margin-top: 25px;
   }
 
   .infoLine {
-    grid-area: line;
+    max-width: 469px;
     margin: 20px 0;
-  }
-
-  .companies {
-    grid-area: stadio-companies;
+    align-self: flex-start;
   }
 }
 

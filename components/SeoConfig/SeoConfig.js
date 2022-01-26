@@ -1,7 +1,6 @@
-import Head from "next/head";
+import Head from 'next/head';
 
 const SeoConfig = ({ title, description }) => {
-  console.log(title);
   return (
     <Head>
       <title>{title}</title>

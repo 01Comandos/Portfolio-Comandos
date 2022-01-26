@@ -145,6 +145,10 @@
   margin-top: 26px;
 }
 
+.itemMargin:first-child {
+  margin-top: 0;
+}
+
 .checkIconContainer {
   width: 25px;
   height: 25px;
@@ -155,8 +159,9 @@
 .itemMobileFigure {
   width: 100%;
   overflow: hidden;
-  background-color: inherit;
+  background-color: var(--gray-10);
   padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .itemDesktopFigure {
@@ -166,7 +171,6 @@
 .itemPicture {
   width: 100%;
   height: 100%;
-  /* object-fit: contain; */
   object-position: top right;
   border-radius: 22px;
 }

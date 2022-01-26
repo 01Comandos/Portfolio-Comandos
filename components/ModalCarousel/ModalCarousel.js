@@ -29,6 +29,10 @@ const ModalCarousel = ({ items }) => {
     if (index > 0) setIndex(index - 1);
   };
 
+  const reset = () => {
+    setIndex(0);
+  };
+
   return (
     <div className={styles.container}>
       <div className="aspect_ratio aspect_ratio--569by673">
@@ -38,11 +42,11 @@ const ModalCarousel = ({ items }) => {
             'aspect_ratio__item',
             'object_fit_cover'
           )}
-          src={items[index]}
+          src={items[0]}
           onClick={toggleModalState}
         />
         <div className={styles.imagesCounter}>
-          {index + 1} / {items.length}
+          {0 + 1} / {items.length}
         </div>
       </div>
 
@@ -51,7 +55,12 @@ const ModalCarousel = ({ items }) => {
         className={styles.modal}
         isOpen={modalState}
         ariaHideApp={false}>
-        <div className={styles.close} onClick={toggleModalState}>
+        <div
+          className={styles.close}
+          onClick={() => {
+            toggleModalState();
+            reset();
+          }}>
           <img src="/icons/close.svg" alt="" />
         </div>
         {index === 0 ? (

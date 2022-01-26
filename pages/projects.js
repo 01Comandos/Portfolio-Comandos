@@ -1,12 +1,12 @@
-import Link from "next/link";
-import { useState, useEffect } from "react";
-import styles from "../styles/Projects.module.css";
-import Projects from "../components/Projects/Projects";
-import projectsList from "../content/projects.json";
-import { isMobile } from "../utils";
-import { trackEvent, visitPage } from "../analytics/events";
-import SeoConfig from "../components/SeoConfig/SeoConfig";
-import Head from "next/head";
+import Link from 'next/link';
+import { useState, useEffect } from 'react';
+import styles from '../styles/Projects.module.css';
+import Projects from '../components/Projects/Projects';
+import projectsList from '../content/projects.json';
+import { isMobile } from '../utils';
+import { trackEvent, visitPage } from '../analytics/events';
+import SeoConfig from '../components/SeoConfig/SeoConfig';
+import Head from 'next/head';
 
 const projectDefault = projectsList[0];
 
@@ -16,7 +16,7 @@ const ProjectsPage = ({ isMobile }) => {
   const projectStyles = `${styles.projectName} ${styles.projectText}`;
 
   useEffect(() => {
-    visitPage("Project page viewed");
+    visitPage('Project page viewed');
   }, []);
 
   function hoverProject(project) {
@@ -26,8 +26,8 @@ const ProjectsPage = ({ isMobile }) => {
   return (
     <div className={styles.container}>
       <SeoConfig
-        title="Carlos Pérez"
-        description="Carlos Pérez | @01Comandos - Product Designer and UI & UX Designer"
+        title="Projects - Comandos"
+        description="Case studies of our experience in digital product projects, product strategy, MVP’s of new products and web3."
       />
 
       <div className={styles.containerDesktop}>
@@ -48,25 +48,21 @@ const ProjectsPage = ({ isMobile }) => {
                 key={index}
                 href={`/p/${project.slug}`}
                 onClick={() =>
-                  trackEvent("Project clicked", { project: project.name })
-                }
-              >
+                  trackEvent('Project clicked', { project: project.name })
+                }>
                 <li
                   className={styles.projectDetails}
-                  onMouseEnter={() => hoverProject(project)}
-                >
+                  onMouseEnter={() => hoverProject(project)}>
                   <div
                     className={
                       selectedProject.id === project.id
                         ? projectSelectedStyles
                         : projectStyles
-                    }
-                  >
+                    }>
                     <span>{project.name}</span>
                   </div>
                   <p
-                    className={`${styles.projectDescription} ${styles.projectText}`}
-                  >
+                    className={`${styles.projectDescription} ${styles.projectText}`}>
                     {project.shortDescription}
                   </p>
                   <div className={styles.iconContainer}>

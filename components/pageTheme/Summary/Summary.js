@@ -20,9 +20,6 @@ function Summary({
         [styles.hasLine]: !hasLine,
       })}>
       <>
-        {/* <p
-          className={styles.description}
-          dangerouslySetInnerHTML={{ __html: description }}></p> */}
         <div
           className={styles.description}
           dangerouslySetInnerHTML={{ __html: description }}></div>

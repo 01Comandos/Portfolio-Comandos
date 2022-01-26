@@ -6,6 +6,7 @@ import { CheckCircleIcon } from '@heroicons/react/outline';
 import Icon from './Icon';
 import styles from './Collapsable.module.css';
 import ModalCarousel from '@/components/ModalCarousel/ModalCarousel';
+import { trackEvent } from '../../../analytics/events';
 
 const renderItem = ({
   title,
@@ -72,7 +73,12 @@ const renderItem = ({
                   <p>{description}</p>
                   <ul>
                     {list.map((item, idx) => (
-                      <li className={styles.itemList} key={idx}>
+                      <li
+                        className={classNames({
+                          [styles.itemList]: true,
+                          [styles.itemMargin]: !description,
+                        })}
+                        key={idx}>
                         <div className={styles.checkIconContainer}>
                           <CheckCircleIcon className={styles.checkIcon} />
                         </div>
@@ -134,6 +140,7 @@ function Collapsable({
   background,
   theme,
   itemBackground,
+  id,
 }) {
   const [selectedItem, setSelectedItem] = useState(0);
   const [selectedPictures, setSelectedPictures] = useState(
@@ -162,7 +169,12 @@ function Collapsable({
           [styles.itemsContainer]: true,
         })}>
         {items.map((item, index) => (
-          <div onClick={() => setSelectedItem(index)} key={index}>
+          <div
+            onClick={() => {
+              setSelectedItem(index);
+              trackEvent(`Dropdown ${id} Item ${index++} clicked`);
+            }}
+            key={index}>
             {renderItem({
               ...item,
               index,

@@ -195,11 +195,6 @@
   .person {
     max-width: 469px;
   }
-
-  /* .reverseContainer .title,
-  .reverseContainer .description {
-    justify-self: end;
-  } */
 }
 
 @media (min-width: 1201px) {

@@ -1,27 +1,28 @@
-import Head from "next/head";
-import { useRouter } from "next/router";
-import ContactForm from "../components/ContactForm/ContactForm";
-import TestimonialsCarousel from "../components/TestimonialsCarousel/TestimonialsCarousel";
-import TestimonialsList from "../content/testimonials.json";
-import { useEffect } from "react";
-import { isMobile } from "../utils";
-import { visitPage } from "../analytics/events";
-import styles from "../styles/Contact.module.css";
-import SeoConfig from "@/components/SeoConfig/SeoConfig";
+import Head from 'next/head';
+import { useRouter } from 'next/router';
+import ContactForm from '../components/ContactForm/ContactForm';
+import TestimonialsCarousel from '../components/TestimonialsCarousel/TestimonialsCarousel';
+import TestimonialsList from '../content/testimonials.json';
+import { useEffect } from 'react';
+import { isMobile } from '../utils';
+import { visitPage } from '../analytics/events';
+import styles from '../styles/Contact.module.css';
+import SeoConfig from '@/components/SeoConfig/SeoConfig';
 
 const Contact = ({ isMobile }) => {
   const router = useRouter();
   const { email } = router.query;
 
   useEffect(() => {
-    visitPage("Contact page viewed");
+    visitPage('Contact page viewed');
+    // console.log(router);
   }, []);
 
   return (
     <div>
       <SeoConfig
-        title="contact"
-        description="Carlos Pérez | @01Comandos - Product Designer and UI & UX Designer"
+        title="Contact Comandos"
+        description="Contact Comandos to create amazing products. Whenever you want you can write us to make an appointment."
       />
       <main className={`${styles.contactPage} pageContainer`}>
         <section className={`${styles.heroContainer} padding-x`}>
@@ -42,7 +43,7 @@ const Contact = ({ isMobile }) => {
         <TestimonialsCarousel
           testimonials={TestimonialsList}
           isMobile={isMobile}
-          background={"white"}
+          background={'white'}
         />
       </main>
     </div>

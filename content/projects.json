@@ -12,9 +12,13 @@
     },
     "description": "A great collaborative solution for runners. Lima? Sao Paulo? Let's run together!",
     "shortDescription": "A better running experience",
-    "subtitle": "Apple Watch design",
     "title": "Redefining the jogging experience with friends",
+    "subtitle": "Apple Watch design",
     "url": "stadio",
+    "seo": {
+      "title": "Stadio: UX for runners - Comandos",
+      "description": "In a pandemic that is not over yet, schedule and run with friends who are in another country with your apple watch."
+    },
     "moreProjectsSlugs": [
       "mipospos",
       "rebaja-tus-cuentas",
@@ -24,17 +28,19 @@
     "header": {
       "background": ""
     },
-    "hero": {
-      "background": "",
-      "hasContact": true,
-      "urlVideo": ""
-    },
     "sections": [
+      {
+        "type": "hero",
+        "background": "",
+        "hasContact": true,
+        "urlVideo": "",
+        "showNameDesktop": true
+      },
       {
         "type": "summary",
         "background": "",
         "hasLine": null,
-        "description": "It is true that the pandemic transformed us and we can no longer meet friends to jog. Stadio has taken it as an emblem to jog with friends in other cities or countries. It works basically like a room to zoom in and out for a jog! In his first month of MVP he worked with 100 people and it was amazing to see his performance.",
+        "description": "<p>It is true that the pandemic transformed us and we can no longer meet friends to jog. Stadio has taken it as an emblem to jog with friends in other cities or countries. It works basically like a room to zoom in and out for a jog! In his first month of MVP he worked with 100 people and it was amazing to see his performance.</p>",
         "picture": "/images/projects/stadio/details-image.png",
         "details": {
           "Rol": ["Product Designer"],
@@ -56,6 +62,7 @@
       },
       {
         "type": "collapsableSection",
+        "id": 1,
         "background": "",
         "title": "<span>A start with</span> a lot of <span>adrenaline</span>",
         "itemBackground": "",
@@ -168,9 +175,13 @@
     },
     "description": "Underpinned by old operating systems, a great POS for the new generation of consumers.",
     "shortDescription": "A smart way to manage restaurants",
-    "subtitle": "Web and tablet design",
     "title": "A smart way to manage restaurants",
+    "subtitle": "Web and tablet design",
     "url": "mipos-pos",
+    "seo": {
+      "title": "mipOS POS: Easy restaurant management - Comandos",
+      "description": "Designed to innovate and make the experience of managing, serving customers and auditing restaurant chains incredible."
+    },
     "moreProjectsSlugs": [
       "mipospos",
       "rebaja-tus-cuentas",
@@ -180,17 +191,18 @@
     "header": {
       "background": "#212126"
     },
-    "hero": {
-      "background": "",
-      "hasContact": true,
-      "urlVideo": ""
-    },
     "sections": [
+      {
+        "type": "hero",
+        "background": "",
+        "hasContact": true,
+        "urlVideo": ""
+      },
       {
         "type": "summary",
         "background": "",
         "hasLine": true,
-        "description": "Intuitive management of dishes, diners and business puts everyone in a better mood and therefore provides quality service.<br> With this product, mipOS expanded to Chile, Mexico, Ecuador and Colombia.",
+        "description": "<p>Intuitive management of dishes, diners and business puts everyone in a better mood and therefore provides quality service.</p><p>With this product, mipOS expanded to Chile, Mexico, Ecuador and Colombia.</p>",
         "picture": "/images/projects/mipos-pos/summary.jpg",
         "details": {
           "Rol": ["Product Designer"],
@@ -218,6 +230,7 @@
       },
       {
         "type": "collapsableSection",
+        "id": 1,
         "background": "",
         "title": "<span>Your customers are hungry,</span> treat them special",
         "itemBackground": "#191b1c",
@@ -297,10 +310,11 @@
       },
       {
         "type": "displayImage",
-        "image": "/images/projects/mipos-pos/displayimage.jpg"
+        "image": "/images/projects/mipos-pos/displayimage.png"
       },
       {
         "type": "collapsableSection",
+        "id": 2,
         "background": "",
         "title": "<span>A result</span> based on <span>hundreds of tests</span>",
         "itemBackground": "#191b1c",
@@ -358,9 +372,13 @@
     },
     "description": "Making it less painful to ask for mortgages is the mission of RebajaTusCuentas. All without goin to the bank.",
     "shortDescription": "A financial platform built for scale and accessibility",
-    "subtitle": "Web and responsive design",
     "title": "A financial platform  for mortgage loans",
+    "subtitle": "Web and responsive design",
     "url": "rebaja-tus-cuentas",
+    "seo": {
+      "title": "RebajaTusCuentas: Mortgage loans in hours - Comandos",
+      "description": "A lot of data to guide a product used by thousands of people in 3 countries and more than 60M of investment at that time."
+    },
     "moreProjectsSlugs": [
       "mipospos",
       "rebaja-tus-cuentas",
@@ -370,12 +388,13 @@
     "header": {
       "background": "#edf1fc"
     },
-    "hero": {
-      "background": "linear-gradient(to bottom, #edf1fc 33%, #fff)",
-      "hasContact": false,
-      "urlVideo": "https://www.youtube.com/embed/cSlE9gzCEBg"
-    },
     "sections": [
+      {
+        "type": "hero",
+        "background": "linear-gradient(to bottom, #edf1fc 33%, #fff)",
+        "hasContact": false,
+        "urlVideo": "https://www.youtube.com/embed/cSlE9gzCEBg"
+      },
       {
         "type": "summary",
         "background": "#edf1fc",
@@ -403,6 +422,7 @@
       },
       {
         "type": "collapsableSection",
+        "id": 1,
         "background": "",
         "title": "Users who may have <span>better interest rates</span>",
         "itemBackground": "",
@@ -431,7 +451,9 @@
               "A slightly long tunnel but short in time compared to a traditional bank"
             ],
             "icon": "users-alt.svg",
-            "pictures": ["/images/projects/rebaja-tus-cuentas/ux-progress.jpg"]
+            "pictures": [
+              "/images/projects/rebaja-tus-cuentas/collapsable-customer.jpg"
+            ]
           },
           {
             "title": "<span>Defining</span> the process",
@@ -441,7 +463,9 @@
               "We had up to 3 experiments to achieve the best registration process."
             ],
             "icon": "comment-heart.svg",
-            "pictures": ["/images/projects/rebaja-tus-cuentas/ux-progress.jpg"]
+            "pictures": [
+              "/images/projects/rebaja-tus-cuentas/collapsable-defining.png"
+            ]
           }
         ]
       },
@@ -478,6 +502,7 @@
       },
       {
         "type": "collapsableSection",
+        "id": 2,
         "background": "",
         "title": "The result was <span>amazing</span>",
         "itemBackground": "",
@@ -517,15 +542,19 @@
     "name": "mipOS Integrator",
     "logo": "/images/projects/mipos-integrator/mip-os-logo.svg",
     "theme": "dark3",
-    "description": "1 or 40 Dark Kitchen, 1 or 100 restaurants. Everything in a tablet to manage thousands of orders by Delivery.",
-    "shortDescription": "A better experience for Dark Kitchen",
-    "subtitle": "Web and tablet design",
-    "title": "Manage several restaurants from dark kitchen",
-    "url": "mipos-integrator",
     "pictures": {
       "default": "/images/projects/mipos-integrator/mip-os-hero.png",
       "mobile": "/images/projects/mipos-integrator/mip-os-hero.png",
       "desktop": "/images/projects/mipos-integrator/mip-os-hero.png"
+    },
+    "description": "1 or 40 Dark Kitchen, 1 or 100 restaurants. Everything in a tablet to manage thousands of orders by Delivery.",
+    "shortDescription": "A better experience for Dark Kitchen",
+    "title": "Manage several restaurants from dark kitchen",
+    "subtitle": "Web and tablet design",
+    "url": "mipos-integrator",
+    "seo": {
+      "title": "mipOS Interger: Multiple dark kitchens on one screen - Comandos",
+      "description": "+8 screens per kitchen summed up in 1 was the great result of mipOS Interger with Comandos. Have you ever managed a dark kitchen?"
     },
     "moreProjectsSlugs": [
       "mipospos",
@@ -536,12 +565,13 @@
     "header": {
       "background": "#15151b"
     },
-    "hero": {
-      "background": "",
-      "hasContact": true,
-      "urlVideo": ""
-    },
     "sections": [
+      {
+        "type": "hero",
+        "background": "",
+        "hasContact": true,
+        "urlVideo": ""
+      },
       {
         "type": "summary",
         "background": "",
@@ -577,6 +607,7 @@
       },
       {
         "type": "collapsableSection",
+        "id": 1,
         "background": "",
         "title": "<span>One kitchen for many brands</span> can be chaos",
         "itemBackground": "#191b1c",
@@ -657,6 +688,7 @@
       },
       {
         "type": "collapsableSection",
+        "id": 2,
         "background": "",
         "title": "<span>We eliminate all the tablets</span> and we are left with only one",
         "itemBackground": "#191b1c",

@@ -1,31 +1,31 @@
-import Head from "next/head";
-import { useEffect } from "react";
-import { useRouter } from "next/router";
+import Head from 'next/head';
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
 
-import ImpactSection from "@/components/StadioComponents/ImpactSection/ImpactSection";
-import Header from "@/components/Header/Header";
-import Hero from "@/components/pageTheme/Hero/Hero";
-import Summary from "@/components/pageTheme/Summary/Summary";
-import ImageSection from "@/components/pageTheme/ImageSection/ImageSection";
-import MoreProjects from "@/components/pageTheme/MoreProjects/MoreProjects";
-import Collapsable from "@/components/pageTheme/Collapsable/Collapsable";
-import PartnersSection from "@/components/pageTheme/PartnersSection/PartnersSection";
-import ClientsSection from "@/components/pageTheme/ClientsSection/ClientsSection";
-import DisplayImage from "@/components/pageTheme/DisplayImage/DisplayImage";
-import TestimonialsCarousel from "@/components/TestimonialsCarousel/TestimonialsCarousel";
-import Footer from "@/components/Footer/Footer";
-import Definition from "@/components/Definition/Definition";
-import Contact from "@/components/Contact/Contact";
-import styles from "@/styles/Pages.module.css";
-import stadioStyles from "@/styles/Stadio.module.css";
-import projects from "@/content/projects.json";
-import TestimonialsList from "@/content/testimonials.json";
-import MobileMenu from "@/components/MobileMenu/MobileMenu";
-import { visitPage } from "@/analytics/events";
-import { isMobile } from "../../utils";
-import { useState } from "react";
-import classNames from "classnames";
-import SeoConfig from "../../components/SeoConfig/SeoConfig";
+import ImpactSection from '@/components/StadioComponents/ImpactSection/ImpactSection';
+import Header from '@/components/Header/Header';
+import Hero from '@/components/pageTheme/Hero/Hero';
+import Summary from '@/components/pageTheme/Summary/Summary';
+import ImageSection from '@/components/pageTheme/ImageSection/ImageSection';
+import MoreProjects from '@/components/pageTheme/MoreProjects/MoreProjects';
+import Collapsable from '@/components/pageTheme/Collapsable/Collapsable';
+import PartnersSection from '@/components/pageTheme/PartnersSection/PartnersSection';
+import ClientsSection from '@/components/pageTheme/ClientsSection/ClientsSection';
+import DisplayImage from '@/components/pageTheme/DisplayImage/DisplayImage';
+import TestimonialsCarousel from '@/components/TestimonialsCarousel/TestimonialsCarousel';
+import Footer from '@/components/Footer/Footer';
+import Definition from '@/components/Definition/Definition';
+import Contact from '@/components/Contact/Contact';
+import styles from '@/styles/Pages.module.css';
+import stadioStyles from '@/styles/Stadio.module.css';
+import projects from '@/content/projects.json';
+import TestimonialsList from '@/content/testimonials.json';
+import MobileMenu from '@/components/MobileMenu/MobileMenu';
+import { visitPage } from '@/analytics/events';
+import { isMobile } from '../../utils';
+import { useState } from 'react';
+import classNames from 'classnames';
+import SeoConfig from '../../components/SeoConfig/SeoConfig';
 
 // const moreProjects = projects.filter(
 //   (project) =>
@@ -56,6 +56,10 @@ const StadioPage = ({ isMobile, content, moreProjects }) => {
   //   setMoreProjects(items);
   // }, []);
 
+  useEffect(() => {
+    if (content) visitPage(`Projects: ${content.id} page viewed`);
+  }, []);
+
   if (!content) {
     return <div>Proyecto no encontrado</div>;
   }
@@ -63,31 +67,34 @@ const StadioPage = ({ isMobile, content, moreProjects }) => {
   return (
     <>
       <SeoConfig
-        title={"Comandos | " + content.name}
-        description="Carlos Pérez | @01Comandos - Product Designer and UI & UX Designer"
+        title={content.seo.title}
+        description={content.seo.description}
       />
       <>
         <Header
           theme={content.theme}
           background={content.header.background}
-          buttonStyle={content.theme == "light" && "info"}
+          buttonStyle={content.theme == 'light' && 'info'}
           withContact={true}
         />
         <main>
-          <Hero
-            theme={content.theme}
-            background={content.hero.background}
-            withContact={content.hero.hasContact}
-            logo={content.logo}
-            picture={content.pictures.default}
-            project={content.name}
-            subtitle={content.subtitle}
-            title={content.title}
-            urlVideo={content.hero.urlVideo}
-          />
           {content.sections.map((item, index) => (
             <div key={index}>
-              {item.type == "summary" && (
+              {item.type == 'hero' && (
+                <Hero
+                  theme={content.theme}
+                  background={item.background}
+                  withContact={item.hasContact}
+                  logo={content.logo}
+                  picture={content.pictures.default}
+                  project={content.name}
+                  subtitle={content.subtitle}
+                  title={content.title}
+                  urlVideo={item.urlVideo}
+                  showNameDesktop={item.showNameDesktop}
+                />
+              )}
+              {item.type == 'summary' && (
                 <Summary
                   theme={content.theme}
                   projectName={item.name}
@@ -98,7 +105,7 @@ const StadioPage = ({ isMobile, content, moreProjects }) => {
                   hasLine={item.hasLine}
                 />
               )}
-              {item.type == "collapsableSection" && (
+              {item.type == 'collapsableSection' && (
                 <Collapsable
                   theme={content.theme}
                   isMobile={isMobile}
@@ -106,9 +113,10 @@ const StadioPage = ({ isMobile, content, moreProjects }) => {
                   items={item.items}
                   background={item.background}
                   itemBackground={item.itemBackground}
+                  id={item.id}
                 />
               )}
-              {item.type == "partnersSection" && (
+              {item.type == 'partnersSection' && (
                 <PartnersSection
                   theme={content.theme}
                   images={item.images}
@@ -118,7 +126,7 @@ const StadioPage = ({ isMobile, content, moreProjects }) => {
                   background={item.background}
                 />
               )}
-              {item.type == "clientsSection" && (
+              {item.type == 'clientsSection' && (
                 <ClientsSection
                   theme={content.theme}
                   images={item.images}
@@ -128,10 +136,10 @@ const StadioPage = ({ isMobile, content, moreProjects }) => {
                   background={item.background}
                 />
               )}
-              {item.type == "displayImage" && (
+              {item.type == 'displayImage' && (
                 <DisplayImage theme={content.theme} image={item.image} />
               )}
-              {item.type == "imageSection" && (
+              {item.type == 'imageSection' && (
                 <ImageSection
                   theme={content.theme}
                   background={item.background}
@@ -144,7 +152,7 @@ const StadioPage = ({ isMobile, content, moreProjects }) => {
                   hasBackgrounTop={item.hasBackgrounTop}
                 />
               )}
-              {item.type == "impactSection" && (
+              {item.type == 'impactSection' && (
                 <ImpactSection
                   theme={content.theme}
                   background={item.background}
@@ -157,12 +165,11 @@ const StadioPage = ({ isMobile, content, moreProjects }) => {
                   companyText={item.companyText}
                 />
               )}
-              {item.type == "line" && (
+              {item.type == 'line' && (
                 <div
                   className={classNames(styles.container, [
                     styles[content.theme],
-                  ])}
-                >
+                  ])}>
                   <div className={styles.line}></div>
                 </div>
               )}
