@@ -544,7 +544,7 @@
     "theme": "dark3",
     "pictures": {
       "default": "/images/projects/mipos-integrator/mip-os-hero.png",
-      "mobile": "/images/projects/mipos-integrator/mipos-integrator.png",
+      "mobile": "/images/projects/mipos-integrator/mipos-integrator-mobile.png",
       "desktop": "/images/projects/mipos-integrator/mipos-integrator.png"
     },
     "description": "1 or 40 Dark Kitchen, 1 or 100 restaurants. Everything in a tablet to manage thousands of orders by Delivery.",
