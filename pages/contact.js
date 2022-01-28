@@ -12,7 +12,7 @@ import { useForm } from "@formspree/react";
 import ContactSend from "./contact-send";
 
 const Contact = ({ isMobile }) => {
-  const [state, handleSubmit] = useForm("mrgrqqjz");
+  const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORMSPREE_TOKEN);
 
   const router = useRouter();
   const { email } = router.query;
