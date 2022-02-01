@@ -37,6 +37,8 @@
   padding-top: 70px;
   padding-bottom: 70px;
   position: relative;
+  /* margin-top: -2px; */
+  display: block;
 }
 
 .figure {

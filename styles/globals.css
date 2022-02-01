@@ -127,6 +127,10 @@ ul {
   box-sizing: border-box;
 }
 
+button {
+  margin-bottom: 0;
+}
+
 figure {
   margin: 0;
 }
