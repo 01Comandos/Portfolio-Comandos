@@ -38,7 +38,6 @@
   max-height: 420px;
   overflow: hidden;
   width: 100%;
-  cursor: pointer;
 }
 
 .figureVideo--not_video {
@@ -51,8 +50,6 @@
   object-position: 0% 18%;
   width: 100%;
   height: 100%;
-  
-  /* border: 1px solid red; */
   margin-top: 120px;
 }
 
@@ -79,7 +76,7 @@
 
 .projectName {
   margin: 0;
-  font-size: 35px;
+  font-size: 28px;
   font-weight: 500;
   letter-spacing: 0.19px;
   color: white;
@@ -124,19 +121,23 @@
 
 /* Modal */
 
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  inset: 0px;
+  z-index: 15;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
 .modal {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.overlay {
-  position: fixed;
-  inset: 0px;
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: 15;
 }
 
 .close {

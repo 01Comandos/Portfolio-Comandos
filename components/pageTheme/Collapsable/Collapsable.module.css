@@ -57,15 +57,20 @@
   margin-top: 60px;
 }
 
+.itemsContainer div:last-child div .lastItem {
+  padding-bottom: 65px;
+}
+
 .title {
   max-width: 524px;
   color: white;
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 600;
   line-height: 1.58;
   letter-spacing: 0.16px;
   margin: 0;
   padding-left: var(--padding-mobile);
+  padding-right: var(--padding-mobile);
 }
 
 .title > span {
@@ -179,8 +184,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-      "title image"
-      "items image";
+      'title image'
+      'items image';
     column-gap: 20px;
     position: relative;
 
@@ -190,13 +195,19 @@
   .title {
     grid-area: title;
     padding-left: var(--padding-tablet);
+    padding-right: 0;
     max-width: 524px;
+    font-size: 40px;
   }
 
   .itemsContainer {
     margin-top: 20px;
     grid-area: items;
     padding-left: var(--padding-tablet);
+  }
+
+  .itemsContainer div:last-child div .lastItem {
+    padding-bottom: 20px;
   }
 
   .itemMobileFigure {

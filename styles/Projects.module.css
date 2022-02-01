@@ -1,5 +1,5 @@
 .container {
-  padding-top: 6rem;
+  /* padding-top: 2rem; */
   color: white;
 }
 
@@ -8,8 +8,8 @@
 }
 
 @media (min-width: 769px) {
-  .container {
-    padding-top: 2rem;
+  .containerMobile > section {
+    padding-top: 0;
   }
 }
 

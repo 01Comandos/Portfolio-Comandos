@@ -1,6 +1,6 @@
 .container {
   color: #051441;
-  padding-top: 3rem;
+  padding-top: 64px;
   padding-bottom: 3rem;
   background-color: white;
   border-top: solid 1px #97979766;
@@ -36,6 +36,16 @@
 
   .skill {
     width: 45%;
+  }
+}
+
+@media (min-width: 769px) {
+  .container {
+    padding-top: 3rem;
+  }
+
+  .title {
+    margin-top: 3rem;
   }
 }
 

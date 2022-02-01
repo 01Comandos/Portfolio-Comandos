@@ -1,10 +1,10 @@
-import Image from "next/image";
-import { useState } from "react";
-import classNames from "classnames";
-import ContactMe from "@/components/ContactMe/ContactMe";
-import styles from "./Hero.module.css";
-import Modal from "react-modal";
-import { trackEvent } from "../../../analytics/events";
+import Image from 'next/image';
+import { useState } from 'react';
+import classNames from 'classnames';
+import ContactMe from '@/components/ContactMe/ContactMe';
+import styles from './Hero.module.css';
+import Modal from 'react-modal';
+import { trackEvent } from '../../../analytics/events';
 
 function Hero({
   logo,
@@ -23,7 +23,7 @@ function Hero({
 
   const toggleModalState = () => {
     setModalState(!modalState);
-    document.body.style.overflow = modalState ? "initial" : "hidden";
+    document.body.style.overflow = modalState ? 'initial' : 'hidden';
   };
 
   return (
@@ -32,19 +32,18 @@ function Hero({
       className={classNames({
         [styles.container]: true,
         [styles[theme]]: true,
-      })}
-    >
+      })}>
       <figure
         className={`${styles.figureVideo} ${
           !urlVideo && styles[`figureVideo--not_video`]
-        }`}
-        onClick={() => {
-          toggleModalState();
-          trackEvent(`Projects: ${projectId} open modal carousel clicked`);
-        }}
-      >
+        }`}>
         {urlVideo && (
-          <span className={styles.figureProjectVideoInfo}>
+          <span
+            className={styles.figureProjectVideoInfo}
+            onClick={() => {
+              toggleModalState();
+              trackEvent(`Projects: ${projectId} open modal carousel clicked`);
+            }}>
             <img src="/icons/icon-play.svg" alt="play" />
             Play video
           </span>
@@ -53,8 +52,7 @@ function Hero({
           <h2
             className={classNames(styles.projectName, {
               [styles.showNameDesktop]: showNameDesktop,
-            })}
-          >
+            })}>
             {project}
           </h2>
           <span className={styles.projectSlogan}>{subtitle}</span>
@@ -76,16 +74,14 @@ function Hero({
         <h1 className={classNames(styles.title)}>{title}</h1>
         {withContact && <ContactMe containerStyles={styles.contactMe} />}
         <div
-          className={classNames([styles.verticalLine], [styles[theme]])}
-        ></div>
+          className={classNames([styles.verticalLine], [styles[theme]])}></div>
       </div>
 
       <Modal
         overlayClassName={styles.overlay}
         className={styles.modal}
         isOpen={modalState}
-        ariaHideApp={false}
-      >
+        ariaHideApp={false}>
         <div className={styles.close} onClick={toggleModalState}>
           <img src="/icons/close.svg" alt="" />
         </div>
@@ -99,8 +95,7 @@ function Hero({
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
+              allowFullScreen></iframe>
           </div>
         </div>
       </Modal>

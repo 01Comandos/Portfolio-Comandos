@@ -29,7 +29,6 @@
 .container {
   background-color: transparent;
   padding-top: 70px;
-  padding-bottom: 70px;
   position: relative;
 }
 
@@ -115,6 +114,7 @@
     grid-row-gap: 0;
   }
   .container {
+    padding-bottom: 70px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:

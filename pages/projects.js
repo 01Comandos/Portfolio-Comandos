@@ -42,7 +42,7 @@ const ProjectsPage = ({ isMobile }) => {
           <h2 className={styles.title}>
             Looks like <span>magic</span>, works like <span>science</span>.
           </h2>
-          <ul className={styles.projectsList}>
+          <div className={styles.projectsList}>
             {projectsList.map((project, index) => (
               <Link
                 key={index}
@@ -50,7 +50,7 @@ const ProjectsPage = ({ isMobile }) => {
                 onClick={() =>
                   trackEvent('Project clicked', { project: project.name })
                 }>
-                <li
+                <a
                   className={styles.projectDetails}
                   onMouseEnter={() => hoverProject(project)}>
                   <div
@@ -73,10 +73,10 @@ const ProjectsPage = ({ isMobile }) => {
                       />
                     )}
                   </div>
-                </li>
+                </a>
               </Link>
             ))}
-          </ul>
+          </div>
         </div>
       </div>
       <div className={styles.containerMobile}>

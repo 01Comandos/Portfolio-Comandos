@@ -72,8 +72,8 @@
 }
 
 .stadioLogo {
-  width: 65px;
-  height: 65px;
+  width: 55px;
+  height: 55px;
 }
 
 .yellowLine {
@@ -123,8 +123,8 @@
 }
 
 .companyLogo {
-  width: 65px;
-  height: 65px;
+  width: 55px;
+  height: 55px;
 }
 
 .companyText {
@@ -145,7 +145,7 @@
   .right {
     display: flex;
     flex-direction: column;
-    gap: 35px;
+    gap: 20px;
   }
 
   .left {

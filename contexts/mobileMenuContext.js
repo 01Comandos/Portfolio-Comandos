@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useState } from 'react';
 
 const MenuMobileContext = createContext();
 
@@ -7,11 +7,13 @@ const MenuMobileProvider = ({ children }) => {
 
   const toogleMenu = () => {
     if (!activeMenu) {
-      document.body.style.position = "fixed";
-      document.body.style.top = "0px";
+      document.body.style.position = '';
+      // document.body.style.top = '0px';
+      document.body.style.overflow = 'hidden';
     } else {
       document.body.style.position = '';
       document.body.style.top = '';
+      document.body.style.overflow = 'initial';
     }
     setMenuState(!activeMenu);
   };

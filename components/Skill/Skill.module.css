@@ -2,8 +2,12 @@
   color: #051441;
 }
 
+.icon {
+  width: 54px;
+}
+
 .title {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 600;
   letter-spacing: 0.1px;
   margin: 1rem 0;
@@ -13,12 +17,12 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  max-height: 162px;
+  max-height: 140px;
 }
 
 .description {
   color: #051441;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 1.81;
   margin-bottom: 8px;
 }
@@ -31,5 +35,19 @@
 @media (min-width: 481px) {
   .description_container {
     max-height: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .icon {
+    width: 66px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .description {
+    font-size: 18px;
   }
 }

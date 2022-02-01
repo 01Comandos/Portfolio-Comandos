@@ -18,7 +18,7 @@ const Project = ({
     <Link
       href={`/p/${slug}`}
       onClick={() => trackEvent('Project clicked', { project: name })}>
-      <article
+      <a
         className={`${styles.container} ${
           lightTheme ? styles['container--light'] : null
         }`}
@@ -58,7 +58,7 @@ const Project = ({
           <p className={styles.description}>{description}</p>
           <img src="/icons/icon-arrow.svg" />
         </div>
-      </article>
+      </a>
     </Link>
   );
 };

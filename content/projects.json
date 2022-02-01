@@ -43,27 +43,11 @@
         "description": "<p>It is true that the pandemic transformed us and we can no longer meet friends to jog. Stadio has taken it as an emblem to jog with friends in other cities or countries. It works basically like a room to zoom in and out for a jog! In his first month of MVP he worked with 100 people and it was amazing to see his performance.</p>",
         "picture": "/images/projects/stadio/details-image.png",
         "details": {
-          "Rol": [
-            "Product Designer"
-          ],
-          "Duration": [
-            "2 months"
-          ],
-          "Tools": [
-            "Pencil",
-            "Adobe Photoshop",
-            "Sketch",
-            "Origami"
-          ],
-          "Project": [
-            "Product Discovery",
-            "UX Architecture",
-            "Prototype"
-          ],
-          "Deliverables": [
-            "App Mobile",
-            "App Apple Watch"
-          ],
+          "Rol": ["Product Designer"],
+          "Duration": ["2 months"],
+          "Tools": ["Pencil", "Adobe Photoshop", "Sketch", "Origami"],
+          "Project": ["Product Discovery", "UX Architecture", "Prototype"],
+          "Deliverables": ["App Mobile", "App Apple Watch"],
           "Applied methodologies": [
             "User and product discovery",
             "User interviews",
@@ -92,9 +76,7 @@
               "How important is it to run with other people?"
             ],
             "icon": "location-arrow.svg",
-            "pictures": [
-              "/images/projects/stadio/paper-first.png"
-            ]
+            "pictures": ["/images/projects/stadio/paper-first.png"]
           },
           {
             "title": "<span>Customer</span> journey",
@@ -104,9 +86,7 @@
               "Designing a freemium business model"
             ],
             "icon": "users-alt.svg",
-            "pictures": [
-              "/images/projects/stadio/customer-journey.png"
-            ]
+            "pictures": ["/images/projects/stadio/customer-journey.png"]
           },
           {
             "title": "Organized and <span>Simple</span>",
@@ -225,27 +205,16 @@
         "description": "<p>Intuitive management of dishes, diners and business puts everyone in a better mood and therefore provides quality service.</p><p>With this product, mipOS expanded to Chile, Mexico, Ecuador and Colombia.</p>",
         "picture": "/images/projects/mipos-pos/summary.jpg",
         "details": {
-          "Rol": [
-            "Product Designer"
-          ],
-          "Duration": [
-            "9 months"
-          ],
-          "Team": [
-            "1 Product Designer",
-            "5 developers",
-            "1 Product Manager"
-          ],
+          "Rol": ["Product Designer"],
+          "Duration": ["9 months"],
+          "Team": ["1 Product Designer", "5 developers", "1 Product Manager"],
           "Project": [
             "Product Discovery",
             "UX Architecture",
             "Design system",
             "Source code"
           ],
-          "Deliverables": [
-            "Design App Mobile",
-            "Design app Desktop"
-          ],
+          "Deliverables": ["Design App Mobile", "Design app Desktop"],
           "Applied methodologies": [
             "User and product discovery",
             "User interviews",
@@ -290,9 +259,7 @@
               "Designed with the collaboration of waiters and restaurant managers"
             ],
             "icon": "users-alt.svg",
-            "pictures": [
-              "/images/projects/mipos-pos/collapsable-journey.png"
-            ]
+            "pictures": ["/images/projects/mipos-pos/collapsable-journey.png"]
           },
           {
             "title": "<span>Defining</span> the process",
@@ -376,9 +343,7 @@
               "Usability testing + reporting = profit"
             ],
             "icon": "users-alt.svg",
-            "pictures": [
-              "/images/projects/mipos-pos/collapsable-usability.jpg"
-            ]
+            "pictures": ["/images/projects/mipos-pos/collapsable-usability.jpg"]
           },
           {
             "title": "<span>Intuitive</span> control",
@@ -388,9 +353,7 @@
               "Products with different images for distribution channels. Same as pricing and handling of combos."
             ],
             "icon": "comment-heart.svg",
-            "pictures": [
-              "/images/projects/mipos-pos/collapsable-intuitive.jpg"
-            ]
+            "pictures": ["/images/projects/mipos-pos/collapsable-intuitive.jpg"]
           }
         ]
       }
@@ -439,28 +402,16 @@
         "description": "<p>RebajaTusCuentas was born as Peruvian startup with the commitment to democratize access to mortgage loans in an underbanked country. It is a mortgages broker whit the support of 500 startup with presence in 3 countries and + 50M in loans granted.</p><p>It has been incredible to see the growth of RTC.</p>",
         "picture": "/images/projects/rebaja-tus-cuentas/rtc-summary.png",
         "details": {
-          "Rol": [
-            "Product Designer"
-          ],
-          "Duration": [
-            "6 months"
-          ],
-          "Tools": [
-            "Pencil",
-            "Adobe Photoshop",
-            "Adobe illustrator",
-            "Sketch"
-          ],
+          "Rol": ["Product Designer"],
+          "Duration": ["6 months"],
+          "Tools": ["Pencil", "Adobe Photoshop", "Adobe illustrator", "Sketch"],
           "Project": [
             "Product Discovery",
             "UX Architecture",
             "Design System",
             "Prototype"
           ],
-          "Deliverables": [
-            "Design App Mobile",
-            "Design app Desktop"
-          ],
+          "Deliverables": ["Design App Mobile", "Design app Desktop"],
           "Applied methodologies": [
             "User and product discovery",
             "User interviews",
@@ -563,9 +514,7 @@
               "We unify all RebajaTusCuentas.com services under a single identity."
             ],
             "icon": "location-arrow.svg",
-            "pictures": [
-              "/images/projects/rebaja-tus-cuentas/lets-go-work.png"
-            ]
+            "pictures": ["/images/projects/rebaja-tus-cuentas/lets-go-work.png"]
           },
           {
             "title": "Exponential growth",
@@ -630,17 +579,9 @@
         "description": "<p>Each brand has one tablet per delivery app. Now imagine having 30 brands. Restaurants - in this case Dark Kitchen - have a complex operation within a single kitchen. Many have a space set aside to store hundreds of tablets.</p>",
         "picture": "/images/projects/mipos-integrator/summary.jpg",
         "details": {
-          "Rol": [
-            "Product Designer"
-          ],
-          "Duration": [
-            "12 months"
-          ],
-          "Team": [
-            "1 Product Designer",
-            "8 developers",
-            "1 Product Manager"
-          ],
+          "Rol": ["Product Designer"],
+          "Duration": ["12 months"],
+          "Team": ["1 Product Designer", "8 developers", "1 Product Manager"],
           "Project": [
             "Product Discovery",
             "UX Architecture",
@@ -710,9 +651,7 @@
               "On average, each kitchen served 30 brands in a single day. This translated into hundreds of menus, promotions and profit margins."
             ],
             "icon": "users-alt.svg",
-            "pictures": [
-              "/images/projects/mipos-integrator/customer.png"
-            ]
+            "pictures": ["/images/projects/mipos-integrator/customer.png"]
           }
         ]
       },
@@ -725,7 +664,7 @@
         "title": "<span>All delivery apps and menu</span> on a single screen",
         "comment": {
           "hasCommente": true,
-          "text": "Starting with Commands was accelerating everything from 0 to 100 in a matter of weeks. The best part: nothing was done without consulting UX and product adoption statistics.",
+          "text": "Starting with Comandos was accelerating everything from 0 to 100 in a matter of weeks. The best part: nothing was done without consulting UX and product adoption statistics.",
           "person": {
             "image": "/images/projects/mipos-integrator/avatar-orlando.jpg",
             "name": "Roberto Yoncon",

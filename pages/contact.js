@@ -1,24 +1,26 @@
-import Head from "next/head";
-import { useRouter } from "next/router";
-import ContactForm from "../components/ContactForm/ContactForm";
-import TestimonialsCarousel from "../components/TestimonialsCarousel/TestimonialsCarousel";
-import TestimonialsList from "../content/testimonials.json";
-import { useEffect } from "react";
-import { isMobile } from "../utils";
-import { visitPage } from "../analytics/events";
-import styles from "../styles/Contact.module.css";
-import SeoConfig from "@/components/SeoConfig/SeoConfig";
-import { useForm } from "@formspree/react";
-import ContactSend from "./contact-send";
+import Head from 'next/head';
+import { useRouter } from 'next/router';
+import ContactForm from '../components/ContactForm/ContactForm';
+import TestimonialsCarousel from '../components/TestimonialsCarousel/TestimonialsCarousel';
+import TestimonialsList from '../content/testimonials.json';
+import { useEffect } from 'react';
+import { isMobile } from '../utils';
+import { visitPage } from '../analytics/events';
+import styles from '../styles/Contact.module.css';
+import SeoConfig from '@/components/SeoConfig/SeoConfig';
+import { useForm } from '@formspree/react';
+import ContactSend from './contact-send';
 
 const Contact = ({ isMobile }) => {
-  const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORMSPREE_TOKEN);
+  const [state, handleSubmit] = useForm(
+    process.env.NEXT_PUBLIC_FORMSPREE_TOKEN
+  );
 
   const router = useRouter();
   const { email } = router.query;
 
   useEffect(() => {
-    visitPage("Contact page viewed");
+    visitPage('Contact page viewed');
   }, []);
 
   if (state.succeeded) {
@@ -50,7 +52,7 @@ const Contact = ({ isMobile }) => {
         <TestimonialsCarousel
           testimonials={TestimonialsList}
           isMobile={isMobile}
-          background={"white"}
+          background={'white'}
         />
       </main>
     </div>

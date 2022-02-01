@@ -1,14 +1,14 @@
 .container {
   background-color: black;
   width: 100%;
-  background-image: url("/images/line-bg.png");
+  background-image: url('/images/line-bg.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position-y: 90%;
 }
 
 .container.inactive {
-  animation: moveDown .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+  animation: moveDown 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
   display: none;
   height: 0;
 }
@@ -25,7 +25,7 @@
   left: 0;
   opacity: 1;
   padding: 1.2rem;
-  animation: moveUp .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+  animation: moveUp 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 
 .header {
@@ -62,19 +62,19 @@
 
 @keyframes moveUp {
   0% {
-    transform:translateY(100px);
+    transform: translateY(100px);
   }
   100% {
-    transform:translateY(0);
+    transform: translateY(0);
   }
 }
 
 @keyframes moveDown {
   0% {
-    transform:translateY(0px);
+    transform: translateY(0px);
   }
   100% {
-    transform:translateY(0px);
+    transform: translateY(0px);
   }
 }
 
