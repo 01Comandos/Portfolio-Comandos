@@ -79,7 +79,7 @@ const ProjectDetailsPage = ({ isMobile, content, moreProjects }) => {
         />
         <main>
           {content.sections.map((item, index) => (
-            <div key={index}>
+            <div key={`${content.id}-${index}`}>
               {item.type == "hero" && (
                 <Hero
                   theme={content.theme}
