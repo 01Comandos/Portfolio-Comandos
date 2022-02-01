@@ -15,7 +15,10 @@
   font-weight: 600;
   font-size: 30px;
   letter-spacing: 0.13px;
+  margin-bottom: 32px;
   margin-top: 0;
+  margin-left: 16px;
+  margin-right: 16px;
 }
 
 .titleSmall {

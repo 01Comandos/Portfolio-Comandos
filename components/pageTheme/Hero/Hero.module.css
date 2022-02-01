@@ -38,6 +38,7 @@
   max-height: 420px;
   overflow: hidden;
   width: 100%;
+  cursor: pointer;
 }
 
 .figureVideo--not_video {
@@ -154,16 +155,20 @@
   width: 100%;
 }
 
-.video {
-  height: 80%;
-  display: flex;
-  margin: 55px auto;
-}
 
 .videoContainer {
   width: 95%;
   max-width: 1200px;
+  position: relative;
 }
+
+.video {
+}
+
+.videoItem {
+  object-fit: fill;
+}
+
 
 @media (min-width: 769px) {
   .container {
