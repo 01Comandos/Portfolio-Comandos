@@ -16,7 +16,7 @@ const Definition = () => {
         <div>
           <p className={styles.description}>
             Comandos has more than 10 years of experience creating innovate
-            products through human-centered desing. The most effective team of
+            products through human-centered design. The most effective team of
             designers and developers to achieve the maximum potential of your
             idea.
           </p>
