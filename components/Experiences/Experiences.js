@@ -3,7 +3,7 @@ import Skill from '../Skill/Skill';
 
 const skills = [
   {
-    skill: 'Desing',
+    skill: 'Design',
     icon: '/images/user-research-light.svg',
     items: [
       'User experience',

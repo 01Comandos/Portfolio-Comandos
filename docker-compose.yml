@@ -2,7 +2,7 @@ version: '3'
 services:
   server:
     build: .
-    image: mmendozadelsolar/comandos:${tag}
+    image: ${IMG}
     container_name: server
     ports:
        - 80:80
