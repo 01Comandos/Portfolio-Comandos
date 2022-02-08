@@ -1,0 +1,10 @@
+version: '3'
+services:
+  server:
+    image: registry.digitalocean.com/comandos/web:latest
+    container_name: server
+    ports:
+       - 80:3000
+    env_file:
+      - .env
+    restart: unless-stopped
