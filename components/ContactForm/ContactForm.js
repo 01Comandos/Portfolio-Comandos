@@ -2,14 +2,11 @@ import classNames from "classnames";
 
 import styles from "./ContactForm.module.css";
 import { trackEvent } from "../../analytics/events";
+import LazyImage from "../LazyImage/LazyImage";
 
 const messagePlaceholder = `(500 characters max) Due to the Stripe LLC legacy of greed around the globe, they’re about to be taught a lesson in the real user of power... you will be witnesses. Also, we wanted to set up a simple institutional website for our organization that supports our existing CMS and maybe links to our Patreon.`;
 
 const ContactForm = ({ email, state, handleSubmit }) => {
-  // useEffect(() => {
-  
-  // }, [state]);
-
   const goToTop = () => {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
@@ -105,7 +102,7 @@ const ContactForm = ({ email, state, handleSubmit }) => {
 
         <section className={styles.optionsContainer}>
           <a className={styles.goBack} onClick={goToTop}>
-            <img
+            <LazyImage
               src="/icons/green-up.svg"
               alt="Up arrow"
               className={styles.iconDesktop}
@@ -113,7 +110,7 @@ const ContactForm = ({ email, state, handleSubmit }) => {
             <span className={styles.goBackText}>
               Go back to the top of the form
             </span>
-            <img
+            <LazyImage
               src="/icons/up.svg"
               alt="Up arrow"
               className={styles.iconMobile}

@@ -7,6 +7,7 @@ import Icon from "./Icon";
 import styles from "./Collapsable.module.css";
 import ModalCarousel from "@/components/ModalCarousel/ModalCarousel";
 import { trackEvent } from "../../../analytics/events";
+import LazyImage from "../../LazyImage/LazyImage";
 
 const renderItem = ({
   title,
@@ -108,12 +109,13 @@ const renderItem = ({
                     })}
                   >
                     <div className="aspect_ratio aspect_ratio--569by673">
-                      <img
+                      <LazyImage
                         src={pictures[0]}
                         className={classNames(
                           styles.itemPicture,
                           "aspect_ratio__item"
                         )}
+                        alt={title}
                       />
                     </div>
                   </figure>
@@ -130,9 +132,10 @@ const renderItem = ({
 const renderPicture = (picture, containerStyles = {}) => (
   <figure className={classNames(styles.itemDesktopFigure, containerStyles)}>
     <div className="aspect_ratio aspect_ratio--569by673">
-      <img
+      <LazyImage
         src={picture}
         className={classNames(styles.itemPicture, "aspect_ratio__item")}
+        alt="Project picture"
       />
     </div>
   </figure>
@@ -182,7 +185,11 @@ function Collapsable({
           <div
             onClick={() => {
               setSelectedItem(index);
-              trackEvent(`Projects: ${projectId} dropdown ${id} Item ${index+1} clicked`);
+              trackEvent(
+                `Projects: ${projectId} dropdown ${id} Item ${
+                  index + 1
+                } clicked`
+              );
             }}
             key={index}
           >

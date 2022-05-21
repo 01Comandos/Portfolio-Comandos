@@ -1,32 +1,34 @@
-import Link from 'next/link';
-import classNames from 'classnames';
-import { useContext } from 'react';
-import { MenuMobileContext } from '../../contexts/mobileMenuContext';
-import { menuOptions } from '../../utils/constants';
-import { trackEvent } from '../../analytics/events';
-import styles from './Header.module.css';
+import Link from "next/link";
+import classNames from "classnames";
+import { useContext } from "react";
+import { MenuMobileContext } from "../../contexts/mobileMenuContext";
+import { menuOptions } from "../../utils/constants";
+import { trackEvent } from "../../analytics/events";
+import styles from "./Header.module.css";
 
 const Header = ({ withContact, buttonStyle = null, theme, background }) => {
   const { toogleMenu } = useContext(MenuMobileContext);
   // const containerColor = backgroundStyle ? backgroundStyle : styles.bgcBlack;
-  const darkMenu = theme == 'light';
+  const darkMenu = theme == "light";
 
   function registerEvent(actionName) {
     trackEvent(actionName);
   }
 
   function setMenuVisibility() {
-    registerEvent('Mobile menu clicked');
+    registerEvent("Mobile menu clicked");
     toogleMenu();
   }
 
   return (
     <header
       style={{ background }}
-      className={classNames([styles.container, [styles[theme]]])}>
+      className={classNames([styles.container, [styles[theme]]])}
+    >
       <Link
         href="/"
-        onClick={() => registerEvent('Header logo mobile clicked')}>
+        onClick={() => registerEvent("Header logo mobile clicked")}
+      >
         <img
           className={styles.logoMobile}
           src="/logo/logo-isotipo-white.svg"
@@ -36,7 +38,7 @@ const Header = ({ withContact, buttonStyle = null, theme, background }) => {
         />
       </Link>
       {!darkMenu && (
-        <Link href="/" onClick={() => registerEvent('Header logo clicked')}>
+        <Link href="/" onClick={() => registerEvent("Header logo clicked")}>
           <img
             className={styles.logo}
             src="/logo/logo-white.svg"
@@ -47,7 +49,7 @@ const Header = ({ withContact, buttonStyle = null, theme, background }) => {
         </Link>
       )}
       {darkMenu && (
-        <Link href="/" onClick={() => registerEvent('Header logo clicked')}>
+        <Link href="/" onClick={() => registerEvent("Header logo clicked")}>
           <img
             className={styles.logo}
             src="/logo/logo-black.svg"
@@ -63,8 +65,9 @@ const Header = ({ withContact, buttonStyle = null, theme, background }) => {
             key={index}
             href={item.link}
             onClick={() =>
-              registerEvent('Menu option clicked', { value: item.name })
-            }>
+              registerEvent("Menu option clicked", { value: item.name })
+            }
+          >
             <a>{item.name}</a>
           </Link>
         ))}
@@ -73,13 +76,15 @@ const Header = ({ withContact, buttonStyle = null, theme, background }) => {
         {withContact && (
           <Link
             href="/contact"
-            onClick={() => registerEvent('Header contact button clicked')}>
+            onClick={() => registerEvent("Header contact button clicked")}
+          >
             <button
               className={classNames({
                 [buttonStyle]: buttonStyle,
                 black: !buttonStyle,
                 button: true,
-              })}>
+              })}
+            >
               Contact
             </button>
           </Link>
@@ -91,6 +96,7 @@ const Header = ({ withContact, buttonStyle = null, theme, background }) => {
             src="/icons/icon-menu.svg"
             width={28}
             height={19}
+            alt="menu-icon"
           />
         )}
         {darkMenu && (
@@ -100,6 +106,7 @@ const Header = ({ withContact, buttonStyle = null, theme, background }) => {
             src="/icons/icon-black-menu.svg"
             width={37}
             height={37}
+            alt="menu-icon"
           />
         )}
       </div>

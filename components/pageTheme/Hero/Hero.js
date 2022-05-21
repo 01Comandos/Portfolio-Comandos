@@ -1,10 +1,10 @@
-import Image from "next/image";
 import { useState } from "react";
 import classNames from "classnames";
 import ContactMe from "@/components/ContactMe/ContactMe";
 import styles from "./Hero.module.css";
 import Modal from "react-modal";
 import { trackEvent } from "../../../analytics/events";
+import LazyImage from "../../LazyImage/LazyImage";
 
 function Hero({
   logo,
@@ -45,7 +45,7 @@ function Hero({
       >
         {urlVideo && (
           <span className={styles.figureProjectVideoInfo}>
-            <img src="/icons/icon-play.svg" alt="play" />
+            <LazyImage src="/icons/icon-play.svg" alt="play" />
             Play video
           </span>
         )}
@@ -59,7 +59,7 @@ function Hero({
           </h2>
           <span className={styles.projectSlogan}>{subtitle}</span>
         </div>
-        <img src={picture} className={styles.imageVideo} />
+        <LazyImage src={picture} className={styles.imageVideo} alt={project} />
       </figure>
       <div className={styles.textSection}>
         <div className={styles.titleProjectInfo}>
@@ -68,7 +68,7 @@ function Hero({
           )}
           {logo && (
             <figure className={styles.logo}>
-              <img src={logo} />
+              <LazyImage src={logo} alt="logo" />
             </figure>
           )}
           <span className={styles.projectSlogan}>{subtitle}</span>
@@ -87,7 +87,7 @@ function Hero({
         ariaHideApp={false}
       >
         <div className={styles.close} onClick={toggleModalState}>
-          <img src="/icons/close.svg" alt="" />
+          <LazyImage src="/icons/close.svg" alt="close-icon" />
         </div>
         <div className={styles.videoContainer}>
           <div className="aspect_ratio aspect_ratio--16by9">

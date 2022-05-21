@@ -1,5 +1,6 @@
-import classNames from 'classnames';
-import styles from './ResultSection.module.css';
+import classNames from "classnames";
+import styles from "./ResultSection.module.css";
+import LazyImage from "../../LazyImage/LazyImage";
 
 function ResultSection({
   projectName,
@@ -16,16 +17,18 @@ function ResultSection({
       className={classNames({
         [styles.container]: true,
         [styles[theme]]: true,
-        'padding-x': true,
+        "padding-x": true,
         [styles.defaultContainer]: !isReverse,
         [styles.reverseContainer]: isReverse,
-      })}>
+      })}
+    >
       <figure className={styles.figure}>
-        <img src={picture} alt={projectName} className={styles.picture} />
+        <LazyImage src={picture} alt={projectName} className={styles.picture} />
       </figure>
       <h3
         className={styles.title}
-        dangerouslySetInnerHTML={{ __html: title }}></h3>
+        dangerouslySetInnerHTML={{ __html: title }}
+      ></h3>
       <p className={styles.description}>{description}</p>
     </div>
   );

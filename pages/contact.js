@@ -10,6 +10,7 @@ import styles from "../styles/Contact.module.css";
 import SeoConfig from "@/components/SeoConfig/SeoConfig";
 import { useForm } from "@formspree/react";
 import ContactSend from "./contact-send";
+import LazyImage from "../components/LazyImage/LazyImage";
 
 const Contact = ({ isMobile }) => {
   const [state, handleSubmit] = useForm("mrgrqqjz");
@@ -34,7 +35,10 @@ const Contact = ({ isMobile }) => {
       <main className={`${styles.contactPage} pageContainer`}>
         <section className={`${styles.heroContainer} padding-x`}>
           <figure>
-            <img src="/images/contact-hero.png" alt="Contact hero image" />
+            <LazyImage
+              src="/images/contact-hero.png"
+              alt="Contact hero image"
+            />
           </figure>
           <div>
             <h1 className={styles.heroTitle}>
