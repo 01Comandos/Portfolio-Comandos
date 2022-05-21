@@ -1,14 +1,15 @@
-import classNames from 'classnames';
-import { useState, useEffect, useRef } from 'react';
-import { useSwipeable } from 'react-swipeable';
-import ArrowButton from '../ArrowButton/ArrowButton';
-import styles from './TestimonialsCarousel.module.css';
+import classNames from "classnames";
+import { useState, useEffect, useRef } from "react";
+import { useSwipeable } from "react-swipeable";
+import ArrowButton from "../ArrowButton/ArrowButton";
+import styles from "./TestimonialsCarousel.module.css";
+import LazyImage from "../LazyImage/LazyImage";
 
 const DELAY = 8000;
 
 const TestimonialCarousel = ({
   testimonials,
-  color = 'tertiary',
+  color = "tertiary",
   isMobile,
   background,
 }) => {
@@ -57,20 +58,23 @@ const TestimonialCarousel = ({
       <div
         className={`${styles.container} ${
           styles[`${color}Container`]
-        } padding-x`}>
+        } padding-x`}
+      >
         <h3 className={styles.title}>
           Impacting teams, products and thousands of people
         </h3>
         <div
           className={styles.slideshowSlider}
           {...handlers}
-          style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}>
+          style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
+        >
           {testimonials.map((testimonial, idx) => (
             <article
               key={idx}
               className={`${styles.slide} ${
-                index === idx ? styles.active : ''
-              }`}>
+                index === idx ? styles.active : ""
+              }`}
+            >
               {index === idx && (
                 <ArrowButton
                   styles={styles.arrowLeft}
@@ -82,7 +86,7 @@ const TestimonialCarousel = ({
               <div className={styles.slideContent}>
                 <p className={styles.text}>{testimonial.feedback}</p>
                 <div className={styles.customers}>
-                  <img
+                  <LazyImage
                     className={styles.customerPicture}
                     src={testimonial.customer.picture}
                     alt={testimonial.customer.name}
@@ -114,11 +118,12 @@ const TestimonialCarousel = ({
             <div
               key={idx}
               className={`${styles.slideshowDot}${
-                index === idx ? ' ' + styles.active : ''
+                index === idx ? " " + styles.active : ""
               }`}
               onClick={() => {
                 setIndex(idx);
-              }}></div>
+              }}
+            ></div>
           ))}
         </div>
       </div>

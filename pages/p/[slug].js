@@ -27,35 +27,7 @@ import { useState } from "react";
 import classNames from "classnames";
 import SeoConfig from "../../components/SeoConfig/SeoConfig";
 
-// const moreProjects = projects.filter(
-//   (project) =>
-//     project.id === 'RebajaTusCuentas' ||
-//     project.id === 'mipOSPOS' ||
-//     project.id === 'Truorawhatsapp'
-// );
-
 const ProjectDetailsPage = ({ isMobile, content, moreProjects }) => {
-  // const router = useRouter();
-  // const slug = router.query.slug;
-  // console.log(slug);
-
-  // // const content = projects.find((project) => project.id === 'Stadio');
-
-  // const [content, setContent] = useState(null);
-
-  // const [moreProjects, setMoreProjects] = useState([]);
-
-  // useEffect(() => {
-  //   const projectItem = projects.find(
-  //     (projectItem) => projectItem.slug == slug
-  //   );
-  //   setContent(projectItem);
-  //   const items = projects.filter((item) =>
-  //     projectItem.moreProjectsSlugs.includes(item.slug)
-  //   );
-  //   setMoreProjects(items);
-  // }, []);
-
   useEffect(() => {
     if (content) visitPage(`Projects: ${content.id} page viewed`);
   }, []);

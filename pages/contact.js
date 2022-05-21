@@ -1,15 +1,16 @@
-import Head from 'next/head';
-import { useRouter } from 'next/router';
-import ContactForm from '../components/ContactForm/ContactForm';
-import TestimonialsCarousel from '../components/TestimonialsCarousel/TestimonialsCarousel';
-import TestimonialsList from '../content/testimonials.json';
-import { useEffect } from 'react';
-import { isMobile } from '../utils';
-import { visitPage } from '../analytics/events';
-import styles from '../styles/Contact.module.css';
-import SeoConfig from '@/components/SeoConfig/SeoConfig';
-import { useForm } from '@formspree/react';
-import ContactSend from './contact-send';
+import Head from "next/head";
+import { useRouter } from "next/router";
+import ContactForm from "../components/ContactForm/ContactForm";
+import TestimonialsCarousel from "../components/TestimonialsCarousel/TestimonialsCarousel";
+import TestimonialsList from "../content/testimonials.json";
+import { useEffect } from "react";
+import { isMobile } from "../utils";
+import { visitPage } from "../analytics/events";
+import styles from "../styles/Contact.module.css";
+import SeoConfig from "@/components/SeoConfig/SeoConfig";
+import { useForm } from "@formspree/react";
+import ContactSend from "./contact-send";
+import LazyImage from "../components/LazyImage/LazyImage";
 
 const Contact = ({ isMobile }) => {
   const [state, handleSubmit] = useForm(
@@ -36,7 +37,10 @@ const Contact = ({ isMobile }) => {
       <main className={`${styles.contactPage} pageContainer`}>
         <section className={`${styles.heroContainer} padding-x`}>
           <figure>
-            <img src="/images/contact-hero.png" alt="Contact hero image" />
+            <LazyImage
+              src="/images/contact-hero.png"
+              alt="Contact hero image"
+            />
           </figure>
           <div>
             <h1 className={styles.heroTitle}>

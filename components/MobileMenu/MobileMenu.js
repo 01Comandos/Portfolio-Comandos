@@ -2,9 +2,10 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { useContext } from "react";
 import { MenuMobileContext } from "../../contexts/mobileMenuContext";
-import { menuOptions } from '../../utils/constants';
+import { menuOptions } from "../../utils/constants";
 import { trackEvent } from "../../analytics/events";
 import styles from "./MobileMenu.module.css";
+import LazyImage from "../LazyImage/LazyImage";
 
 const MobileMenu = () => {
   const router = useRouter();
@@ -13,24 +14,26 @@ const MobileMenu = () => {
 
   return (
     <section
-      className={`${styles.container} ${activeMenu ? styles.active : styles.inactive}`}
+      className={`${styles.container} ${
+        activeMenu ? styles.active : styles.inactive
+      }`}
     >
       <div className={styles.header}>
-        <img
+        <LazyImage
           className={styles.logoMobile}
           src="/logo/logo-isotipo-white.svg"
           alt="Comandos Logotipo"
           width={51}
           height={51}
         />
-        <img
+        <LazyImage
           className={styles.logo}
           src="/logo/logo-white.svg"
           alt="Comandos Logotipo"
           width={183}
           height={40}
         />
-        <img
+        <LazyImage
           onClick={toogleMenu}
           className={styles.closeIcon}
           src="/icons/close.svg"
@@ -43,11 +46,8 @@ const MobileMenu = () => {
           <Link
             href={item.link}
             key={index}
-            onClick={() => 
-              trackEvent(
-                'Mobile menu option clicked',
-                { value: item.name }
-              )
+            onClick={() =>
+              trackEvent("Mobile menu option clicked", { value: item.name })
             }
           >
             <li

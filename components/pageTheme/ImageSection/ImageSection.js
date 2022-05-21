@@ -1,5 +1,6 @@
-import classNames from 'classnames';
-import styles from './ImageSection.module.css';
+import classNames from "classnames";
+import styles from "./ImageSection.module.css";
+import LazyImage from "../../LazyImage/LazyImage";
 
 function ImageSection({
   projectName,
@@ -18,31 +19,37 @@ function ImageSection({
       className={classNames({
         [styles.container]: true,
         [styles[theme]]: true,
-        'padding-x': true,
+        "padding-x": true,
         [styles.hasCommente]: comment.hasCommente,
         [styles.defaultContainer]: !isReverse,
         [styles.reverseContainer]: isReverse,
-      })}>
+      })}
+    >
       {hasBackgrounTop && <div className={styles.backgroundTop}></div>}
       <figure className={styles.figure}>
         <div className="aspect_ratio aspect_ratio--569by673">
-          <img
+          <LazyImage
             src={picture}
             alt={projectName}
             className={classNames(
               styles.picture,
-              'aspect_ratio__item',
-              'object_fit_cover'
+              "aspect_ratio__item",
+              "object_fit_cover"
             )}
           />
         </div>
       </figure>
       {comment.hasCommente && (
-        <img className={styles.logo} src="/icons/icon-section.svg" alt="logo" />
+        <LazyImage
+          className={styles.logo}
+          src="/icons/icon-section.svg"
+          alt="logo"
+        />
       )}
       <h3
         className={styles.title}
-        dangerouslySetInnerHTML={{ __html: title }}></h3>
+        dangerouslySetInnerHTML={{ __html: title }}
+      ></h3>
       <p className={styles.description}>{description}</p>
       {comment.hasCommente && (
         <>
@@ -50,7 +57,7 @@ function ImageSection({
             "{comment.text}"
           </p>
           <div className={classNames(styles.person, [styles[theme]])}>
-            <img
+            <LazyImage
               className={classNames(styles.personImage)}
               src={comment.person.image}
               alt={comment.name}
@@ -59,7 +66,8 @@ function ImageSection({
               {comment.person.name}
             </p>
             <p
-              className={classNames(styles.personDescription, [styles[theme]])}>
+              className={classNames(styles.personDescription, [styles[theme]])}
+            >
               {comment.person.description}
             </p>
           </div>

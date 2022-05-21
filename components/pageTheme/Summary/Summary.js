@@ -1,5 +1,6 @@
-import classNames from 'classnames';
-import styles from './Summary.module.css';
+import classNames from "classnames";
+import styles from "./Summary.module.css";
+import LazyImage from "../../LazyImage/LazyImage";
 
 function Summary({
   projectName,
@@ -15,29 +16,32 @@ function Summary({
       style={{ background }}
       className={classNames({
         [styles.container]: true,
-        'padding-x': true,
+        "padding-x": true,
         [styles[theme]]: true,
         [styles.hasLine]: !hasLine,
-      })}>
+      })}
+    >
       <>
         <div
           className={styles.description}
-          dangerouslySetInnerHTML={{ __html: description }}></div>
+          dangerouslySetInnerHTML={{ __html: description }}
+        ></div>
         {hasLine && (
           <div
             className={classNames({
               horizontalLine: true,
               [styles.line]: true,
-            })}></div>
+            })}
+          ></div>
         )}
       </>
       <figure className={styles.figure}>
         <div className="aspect_ratio aspect_ratio--569by673">
-          <img
+          <LazyImage
             className={classNames(
               styles.picture,
-              'aspect_ratio__item',
-              'object_fit_cover'
+              "aspect_ratio__item",
+              "object_fit_cover"
             )}
             src={picture}
             alt={projectName}
@@ -45,7 +49,8 @@ function Summary({
         </div>
       </figure>
       <ul
-        className={classNames(styles.details, { [styles.hasLine]: !hasLine })}>
+        className={classNames(styles.details, { [styles.hasLine]: !hasLine })}
+      >
         {Object.keys(details).map((key, index) => (
           <li key={index} className={styles.detail}>
             <strong className={styles.detailName}>{key}</strong>

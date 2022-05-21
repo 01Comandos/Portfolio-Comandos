@@ -1,12 +1,13 @@
-import classNames from 'classnames';
-import { useState, useEffect } from 'react';
-import { Disclosure } from '@headlessui/react';
-import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/solid';
-import { CheckCircleIcon } from '@heroicons/react/outline';
-import Icon from './Icon';
-import styles from './Collapsable.module.css';
-import ModalCarousel from '@/components/ModalCarousel/ModalCarousel';
-import { trackEvent } from '../../../analytics/events';
+import classNames from "classnames";
+import { useState, useEffect } from "react";
+import { Disclosure } from "@headlessui/react";
+import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/solid";
+import { CheckCircleIcon } from "@heroicons/react/outline";
+import Icon from "./Icon";
+import styles from "./Collapsable.module.css";
+import ModalCarousel from "@/components/ModalCarousel/ModalCarousel";
+import { trackEvent } from "../../../analytics/events";
+import LazyImage from "../../LazyImage/LazyImage";
 
 const renderItem = ({
   title,
@@ -103,12 +104,13 @@ const renderItem = ({
                       'padding-x': true,
                     })}>
                     <div className="aspect_ratio aspect_ratio--569by673">
-                      <img
+                      <LazyImage
                         src={pictures[0]}
                         className={classNames(
                           styles.itemPicture,
                           'aspect_ratio__item'
                         )}
+                        alt={title}
                       />
                     </div>
                   </figure>
@@ -125,9 +127,10 @@ const renderItem = ({
 const renderPicture = (picture, containerStyles = {}) => (
   <figure className={classNames(styles.itemDesktopFigure, containerStyles)}>
     <div className="aspect_ratio aspect_ratio--569by673">
-      <img
+      <LazyImage
         src={picture}
-        className={classNames(styles.itemPicture, 'aspect_ratio__item')}
+        className={classNames(styles.itemPicture, "aspect_ratio__item")}
+        alt="Project picture"
       />
     </div>
   </figure>

@@ -1,10 +1,11 @@
-import classNames from 'classnames';
-import styles from './DisplayImage.module.css';
+import classNames from "classnames";
+import styles from "./DisplayImage.module.css";
+import LazyImage from "../../LazyImage/LazyImage";
 
 function DisplayImage({ image }) {
   return (
     <>
-      <img className={styles.image} src={image} alt={image} />
+      <LazyImage className={styles.image} src={image} alt={image} />
     </>
   );
 }

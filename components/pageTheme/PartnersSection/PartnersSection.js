@@ -1,5 +1,6 @@
-import classNames from 'classnames';
-import styles from './PartnersSection.module.css';
+import classNames from "classnames";
+import styles from "./PartnersSection.module.css";
+import LazyImage from "../../LazyImage/LazyImage";
 
 function PartnersSection({
   title,
@@ -12,7 +13,8 @@ function PartnersSection({
   return (
     <div
       style={{ background }}
-      className={classNames(styles.partnersSection, styles[theme])}>
+      className={classNames(styles.partnersSection, styles[theme])}
+    >
       <div className={classNames([styles.container], [styles[theme]])}>
         <div className={styles.backgroundContainer}>
           <div className={styles.backgroundTop}></div>
@@ -22,13 +24,19 @@ function PartnersSection({
           style={{ color: titleColor }}
           className={classNames(styles.title, {
             [styles.titleSmall]: titleSmall,
-          })}>
+          })}
+        >
           {title}
         </h4>
         <div className={styles.imagesContainer}>
           {images.map((item, index) => (
             <div key={index}>
-              <img className={styles.image} src={item} key={index} />
+              <LazyImage
+                className={styles.image}
+                src={item}
+                key={index}
+                alt={title}
+              />
             </div>
           ))}
         </div>
