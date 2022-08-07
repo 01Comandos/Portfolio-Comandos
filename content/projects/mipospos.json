@@ -1,0 +1,197 @@
+{
+  "id": "mipOSPOS",
+  "slug": "mipospos",
+  "name": "mipOS POS",
+  "logo": "/logos/mip-os.svg",
+  "theme": "dark2",
+  "pictures": {
+    "default": "/images/projects/mipos-pos/hero-image.png",
+    "mobile": "/images/projects/mipos-pos/mipos-2-mobile.png",
+    "desktop": "/images/projects/mipos-pos/mipos-2.png"
+  },
+  "description": "Underpinned by old operating systems, a great POS for the new generation of consumers.",
+  "shortDescription": "A smart way to manage restaurants",
+  "title": "A smart way to manage restaurants",
+  "subtitle": "Web and tablet design",
+  "url": "mipos-pos",
+  "seo": {
+    "title": "mipOS POS: Easy restaurant management - Comandos",
+    "description": "Designed to innovate and make the experience of managing, serving customers and auditing restaurant chains incredible."
+  },
+  "moreProjectsSlugs": [
+    "mipospos",
+    "rebaja-tus-cuentas",
+    "stadio",
+    "mipos-integrator"
+  ],
+  "header": {
+    "background": "#212126"
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "background": "",
+      "hasContact": true,
+      "urlVideo": ""
+    },
+    {
+      "type": "summary",
+      "background": "",
+      "hasLine": true,
+      "description": "<p>Intuitive management of dishes, diners and business puts everyone in a better mood and therefore provides quality service.</p><p>With this product, mipOS expanded to Chile, Mexico, Ecuador and Colombia.</p>",
+      "picture": "/images/projects/mipos-pos/summary.jpg",
+      "details": {
+        "Rol": ["Product Designer"],
+        "Duration": ["9 months"],
+        "Team": ["1 Product Designer", "5 developers", "1 Product Manager"],
+        "Project": [
+          "Product Discovery",
+          "UX Architecture",
+          "Design system",
+          "Source code"
+        ],
+        "Deliverables": ["Design App Mobile", "Design app Desktop"],
+        "Applied methodologies": [
+          "User and product discovery",
+          "User interviews",
+          "Usability testing",
+          "Low-fi prototyping",
+          "High-fi prototyping",
+          "Design Sprint + Scrum"
+        ]
+      }
+    },
+    {
+      "type": "line"
+    },
+    {
+      "type": "collapsableSection",
+      "id": 1,
+      "background": "",
+      "title": "<span>Your customers are hungry,</span> treat them special",
+      "itemBackground": "#191b1c",
+      "items": [
+        {
+          "title": "The <span>challenge</span>",
+          "description": "We had to create a magical experience for everyone: Waiters, captains, diners and cooks.",
+          "list": [
+            "Control and management of personnel",
+            "Notifications of orders to kitchen, bar area, management and orders via delivery apps",
+            "Management of single tables, combined tables, invoicing"
+          ],
+          "icon": "location-arrow.svg",
+          "pictures": [
+            "/images/projects/mipos-pos/collapsable-challenge-1.png",
+            "/images/projects/mipos-pos/collapsable-challenge-2.png",
+            "/images/projects/mipos-pos/collapsable-challenge-3.png",
+            "/images/projects/mipos-pos/collapsable-challenge-4.png"
+          ]
+        },
+        {
+          "title": "<span>Customer</span> journey",
+          "description": "",
+          "list": [
+            "Created with interviews to 10+ restaurants",
+            "Designed with the collaboration of waiters and restaurant managers"
+          ],
+          "icon": "users-alt.svg",
+          "pictures": ["/images/projects/mipos-pos/collapsable-journey.png"]
+        },
+        {
+          "title": "<span>Defining</span> the process",
+          "description": "We visited restaurants, kitchens, dark kitchens and commissaries of large chain food stores. Our office was in a restaurant.",
+          "list": [
+            "Customer journey for waiters, captains and management",
+            "Customer journey for inventory replenishment"
+          ],
+          "icon": "comment-heart.svg",
+          "pictures": [
+            "/images/projects/mipos-pos/collapsable-process-1.png",
+            "/images/projects/mipos-pos/collapsable-process-2.png"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "imageSection",
+      "background": "",
+      "reverse": false,
+      "description": "The integration of the entire business, including delivery app's, was so incredible that it accelerated its growth to 4 countries.",
+      "picture": "/images/projects/mipos-pos/image-section.jpg",
+      "title": "<span>A result as great</span> as its purpose",
+      "comment": {
+        "hasCommente": true,
+        "text": "The whole process of creating this product was a roller coaster of findings and iterations at the hand of Comandos. I will definitely work with him again.",
+        "person": {
+          "image": "/images/projects/mipos-pos/avatar-orlando.png",
+          "name": "Orlando Espinoza",
+          "description": "CEO at mipOS"
+        }
+      }
+    },
+    {
+      "type": "partnersSection",
+      "background": "",
+      "title": "Some Partners",
+      "titleSmall": false,
+      "titleColor": "",
+      "images": [
+        "/images/projects/mipos-pos/partners-rappi.jpg",
+        "/images/projects/mipos-pos/partners-burger-king.jpg",
+        "/images/projects/mipos-pos/partners-el-moro.jpg",
+        "/images/projects/mipos-pos/partners-wlb.jpg",
+        "/images/projects/mipos-pos/partners-la-diva.jpg",
+        "/images/projects/mipos-pos/partners-fitzer.jpg"
+      ]
+    },
+    {
+      "type": "displayImage",
+      "image": "/images/projects/mipos-pos/displayimage.png"
+    },
+    {
+      "type": "collapsableSection",
+      "id": 2,
+      "background": "",
+      "title": "<span>A result</span> based on <span>hundreds of tests</span>",
+      "itemBackground": "#191b1c",
+      "items": [
+        {
+          "title": "Constant <span>testing</span>",
+          "description": "Week by week we held experience review sessions with managers, waiters and diners.",
+          "list": [
+            "Control and management of personnel",
+            "Notifications of orders to kitchen, bar area, management and orders via delivery apps",
+            "Management of single tables, combined tables, invoicing"
+          ],
+          "icon": "location-arrow.svg",
+          "pictures": [
+            "/images/projects/mipos-pos/collapsable-testing-1.png",
+            "/images/projects/mipos-pos/collapsable-testing-2.png",
+            "/images/projects/mipos-pos/collapsable-testing-3.png",
+            "/images/projects/mipos-pos/collapsable-testing-4.png"
+          ]
+        },
+        {
+          "title": "<span>Usability</span> + data",
+          "description": "",
+          "list": [
+            "We improve all the reports that can exist in a restaurant. Which product has the best performance?",
+            "Usability testing + reporting = profit"
+          ],
+          "icon": "users-alt.svg",
+          "pictures": ["/images/projects/mipos-pos/collapsable-usability.jpg"]
+        },
+        {
+          "title": "<span>Intuitive</span> control",
+          "description": "Manage all the chain's menus, branches and delivery app's in one place. No more scattered or outdated menu times.",
+          "list": [
+            "Integrated with 5 delivery app's",
+            "Products with different images for distribution channels. Same as pricing and handling of combos."
+          ],
+          "icon": "comment-heart.svg",
+          "pictures": ["/images/projects/mipos-pos/collapsable-intuitive.jpg"]
+        }
+      ]
+    }
+  ]
+}

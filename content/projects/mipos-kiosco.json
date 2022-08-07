@@ -1,0 +1,139 @@
+{
+  "id": "miposKiosko",
+  "slug": "mipos-kiosko",
+  "name": "mipOS Kiosko",
+  "logo": "/logos/mip-os.svg",
+  "theme": "dark3",
+  "pictures": {
+    "default": "/images/projects/mipos-kiosko/mip-os-kiosko-video.png",
+    "mobile": "/images/projects/mipos-kiosko/mip-os-kiosko-video.png",
+    "desktop": "/images/projects/mipos-kiosko/figure-app-2.png"
+  },
+  "description": "Make your customers order with a touch screen and optimize your processes.",
+  "shortDescription": "A better experience for Dark Kitchen",
+  "title": "Order and pay for your order without a waiter",
+  "subtitle": "Tablet Design for Roku devices",
+  "url": "mipos-integrator",
+  "seo": {
+    "title": "mipOS Interger: Multiple dark kitchens on one screen - Comandos",
+    "description": "+8 screens per kitchen summed up in 1 was the great result of mipOS Interger with Comandos. Have you ever managed a dark kitchen?"
+  },
+  "moreProjectsSlugs": [
+    "mipospos",
+    "rebaja-tus-cuentas",
+    "stadio",
+    "mipos-integrator"
+  ],
+  "header": {
+    "background": "#15151b"
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "background": "",
+      "hasContact": false,
+      "urlVideo": ""
+    },
+    {
+      "type": "summary",
+      "background": "",
+      "hasLine": true,
+      "description": "<p>mipOS Kiosko is a solution for restaurants that have a high frequency of customers ordering take-away food in person. Kiosko allows your to take the order and pay in one go.</p>      We achieved a 25% reduction in the time it took a customer to order, wait for their order and receive it.</p>",
+      "picture": "/images/projects/mipos-kiosko/figure-app-2.png",
+      "details": {
+        "Rol": ["Product Designer"],
+        "Duration": ["2 months"],
+        "Tools": ["Pencil", "Adobe Photoshop", "Sketch"],
+        "Project": ["Product Discovery", "UX Architecture"],
+        "Deliverables": ["Design App tablet", "Design for large screen"],
+        "Applied methodologies": [
+          "User and product discovery",
+          "User interviews",
+          "High-fi prototyping"
+        ]
+      }
+    },
+    {
+      "type": "line"
+    },
+    {
+      "type": "collapsableSection",
+      "id": 1,
+      "background": "",
+      "title": "Places with amazing food and <span>lots of hungry users</span>",
+      "itemBackground": "#191b1c",
+      "items": [
+        {
+          "title": "The <span>challenge</span>",
+          "description": "Create a great product to simplify the operation of up to 40 tablets on a single device.",
+          "list": [
+            "Hundreds of orders coming in at the same time",
+            "Order integrity",
+            "Order status and sales reports for each delivery app and each brand"
+          ],
+          "icon": "location-arrow.svg",
+          "pictures": ["/images/projects/mipos-kiosko/ux-progress-4.png"]
+        },
+        {
+          "title": "<span>Starting</span> the process",
+          "description": "It was key to understand the whole life time of the service, at what moment the user interacts with Kiosko and under which average psychological stage the person was at. Was it common to go with friends? with small children?.",
+          "list": [],
+          "icon": "users-alt.svg",
+          "pictures": ["/images/projects/mipos-kiosko/ux-progress-2.png"]
+        },
+        {
+          "title": "Super <span>fast MVP</span>",
+          "description": "In 30 days we were able to create a super mvp to test with users, the first test was done in Bogota. After all the feedback we received we were able to have the product finished in 60 days.",
+          "list": [],
+          "icon": "comment-heart.svg",
+          "pictures": ["/images/projects/mipos-kiosko/ux-progress-3.png"]
+        }
+      ]
+    },
+    {
+      "type": "imageSection",
+      "background": "",
+      "reverse": false,
+      "description": "We integrate with Rappi Pay, Stripe and cash payments with an incredible product selection and payment experience.",
+      "picture": "/images/projects/mipos-kiosko/figure-app.png",
+      "title": "<span>A result as great</span> as its purpose",
+      "comment": {
+        "hasCommente": true,
+        "text": "“It was a huge challenge, at the time Comandos was in a different country than the launching country and could not travel in the short term. I handled everything so neatly that we didn’t have to iterate, it was a gear that worked perfectly.",
+        "person": {
+          "image": "/images/projects/mipos-pos/avatar-orlando.png",
+          "name": "Orlando Espinoza",
+          "description": "CTO at mipOS"
+        }
+      }
+    },
+    {
+      "type": "collapsableSection",
+      "id": 2,
+      "background": "",
+      "title": "The result was an <span>innovation in the restaurant world</span>",
+      "itemBackground": "#191b1c",
+      "items": [
+        {
+          "title": "Constant <span>testing</span>",
+          "description": "We had a quick adoption in a specific target of bars and restaurants. The secret was to keep a constant test of the customers’ sensation at checkout. Do you feel that your order was received correctly?.",
+          "list": [],
+          "icon": "location-arrow.svg",
+          "pictures": [
+            "/images/projects/mipos-kiosko/ux-mip-os-kiosko-progress.png"
+          ]
+        },
+        {
+          "title": "Exponential <span>growth</span>",
+          "description": "",
+          "list": [
+            "We improve adaptability according to the restaurant. We also created a version for malls.",
+            "In the mall version you start by selecting the restaurant you want to eat at and then access the menu."
+          ],
+          "icon": "users-alt.svg",
+          "pictures": ["/images/projects/mipos-kiosko/ux-progress.png"]
+        }
+      ]
+    }
+  ]
+}

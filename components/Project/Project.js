@@ -20,7 +20,7 @@ const Project = ({
       href={`/p/${slug}`}
       onClick={() => trackEvent("Project clicked", { project: name })}
     >
-      <article
+      <a
         className={`${styles.container} ${
           lightTheme ? styles["container--light"] : null
         }`}

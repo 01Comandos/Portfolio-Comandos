@@ -1,0 +1,143 @@
+{
+  "id": "SpotFinder",
+  "slug": "spotfinder",
+  "name": "SpotFinder",
+  "logo": "/images/projects/spotfinder/SPOTFINDER_LOGO.svg",
+  "theme": "light",
+  "pictures": {
+    "default": "/images/projects/spotfinder/Spotfinder-Main1.png",
+    "mobile": "/images/projects/spotfinder/Spotfinder-Main1.png",
+    "desktop": "/images/projects/spotfinder/hardware-spotfinder.png"
+  },
+  "description": "A search engine for parking spaces in the best shopping malls.",
+  "shortDescription": "Efficient parking experiences.",
+  "title": "Find parking in large and busy shopping malls.",
+  "subtitle": "Web and responsive design. Industrial Design",
+  "url": "spotfinder",
+  "seo": {
+    "title": "RebajaTusCuentas: Mortgage loans in hours - Comandos",
+    "description": "A lot of data to guide a product used by thousands of people in 3 countries and more than 60M of investment at that time."
+  },
+  "moreProjectsSlugs": ["mipospos", "truora-tru-connect", "stadio"],
+  "header": {
+    "background": "#edf1fc"
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "background": "linear-gradient(to bottom, #edf1fc 33%, #fff)",
+      "hasContact": false
+    },
+    {
+      "type": "summary",
+      "background": "#edf1fc",
+      "hasLine": false,
+      "description": "<p>Spotfinder is an effort to control the availability of parking stalls in very large and crowded places such as shopping malls or stadiums. It had a hardware design to control the actual availability and a complete user experience design to find a spot, reserve it for FREE with an integration with google maps and augmented reality.</p>",
+      "picture": "/images/projects/spotfinder/Figure-app.png",
+      "details": {
+        "Rol": ["Product Designer, Industrial designer"],
+        "Duration": ["6 months"],
+        "Tools": [
+          "Pencil",
+          "Adobe Photoshop",
+          "Adobe illustrator",
+          "Sketch",
+          "3D Max and AutoCAD"
+        ],
+        "Project": ["Product Discovery", "UX Architecture", "3D printing"],
+        "Deliverables": [
+          "Design App Mobile",
+          "Design 3D for hardware",
+          "Electronic analysis"
+        ],
+        "Applied methodologies": [
+          "User and product discovery",
+          "User interviews",
+          "High-fi prototyping",
+          "Hardware stress testing"
+        ]
+      }
+    },
+    {
+      "type": "collapsableSection",
+      "id": 1,
+      "background": "",
+      "title": "Users find parking spaces <span>from their phone</span>",
+      "itemBackground": "",
+      "items": [
+        {
+          "title": "The <span>challenge</span>",
+          "description": "In very busy and large sites it can take up to 1 hour to find a parking space, so why not reserve it for a limited time and guide you to the place?.",
+          "list": [
+            "Up to 1 hour of time saved.",
+            "Integrate with google maps + augmented reality.",
+            "Remembers where your parked you car."
+          ],
+          "icon": "location-arrow.svg",
+          "pictures": ["/images/projects/spotfinder/UX-progress.png"]
+        },
+        {
+          "title": "<span>Defining</span> the process",
+          "description": "We had 2 stages. The first was to valdiate the idea in its minimum experession. The secord was to have a more complete MVP to go to market with an App to reserve space and then come back to get your car.",
+          "list": [],
+          "icon": "users-alt.svg",
+          "pictures": ["/images/projects/spotfinder/Right.png"]
+        },
+        {
+          "title": "<span>Customer</span> journey",
+          "description": "",
+          "list": [
+            "The basis of this project was electronics to know the availability. We relied on IoT to have an first MVP in 30 days.",
+            "We had up to 3 experiments to achieve the best registration process."
+          ],
+          "icon": "comment-heart.svg",
+          "pictures": ["/images/projects/spotfinder/ux-progress-2.png"]
+        }
+      ]
+    },
+    {
+      "type": "imageSection",
+      "background": "",
+      "reverse": false,
+      "description": "A complete MVP with hardware design included in less than 6 monts.",
+      "picture": "/images/projects/spotfinder/app-spofinder.png",
+      "title": "<span>An outstanding result, </span> all in one",
+      "comment": {
+        "hasCommente": true,
+        "text": "“It has been a roller coaster of feelings starting from scratch on everything and making progress including industrial design, electronics, stress testing, platform app. It’s amazing to work with Comandos.",
+        "person": {
+          "image": "/images/projects/spotfinder/avatar-martin.png",
+          "name": "Joshua Hernandez",
+          "description": "Founder at Spotfinder"
+        }
+      }
+    },
+    {
+      "type": "collapsableSection",
+      "id": 2,
+      "background": "",
+      "title": "The result was <span>amazing</span>",
+      "itemBackground": "",
+      "items": [
+        {
+          "title": "Patented hardware",
+          "description": "We unify entire experience of reserving parking spaces into a low-cost experience, optimizing internal routes within the establishment using augmented reality.",
+          "list": [],
+          "icon": "location-arrow.svg",
+          "pictures": ["/images/projects/spotfinder/hardware-spotfinder.png"]
+        },
+        {
+          "title": "Exponential growth",
+          "description": "",
+          "list": [
+            "We design 2 types of solutions according to the client’s approach.",
+            "We reduce by 70% the time to find parking spaces in big events in stadiums.",
+            "The entire solution was patented."
+          ],
+          "icon": "users-alt.svg",
+          "pictures": ["/images/projects/spotfinder/ux-progress-3.png"]
+        }
+      ]
+    }
+  ]
+}

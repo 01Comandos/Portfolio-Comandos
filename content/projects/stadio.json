@@ -1,0 +1,163 @@
+{
+  "id": "Stadio",
+  "slug": "stadio",
+  "name": "Stadio",
+  "logo": null,
+  "theme": "dark1",
+  "pictures": {
+    "default": "/images/projects/stadio/hero-image.png",
+    "mobile": "/images/projects/stadio/stadio-mobile.png",
+    "desktop": "/images/projects/stadio/stadio.png"
+  },
+  "description": "A great collaborative solution for runners. Lima? Sao Paulo? Let's run together!",
+  "shortDescription": "A better running experience",
+  "title": "Redefining the jogging experience with friends",
+  "subtitle": "Apple Watch design",
+  "url": "stadio",
+  "seo": {
+    "title": "Stadio: UX for runners - Comandos",
+    "description": "In a pandemic that is not over yet, schedule and run with friends who are in another country with your apple watch."
+  },
+  "moreProjectsSlugs": [
+    "mipospos",
+    "rebaja-tus-cuentas",
+    "stadio",
+    "mipos-integrator"
+  ],
+  "header": {
+    "background": ""
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "background": "",
+      "hasContact": true,
+      "urlVideo": "",
+      "showNameDesktop": true
+    },
+    {
+      "type": "summary",
+      "background": "",
+      "hasLine": null,
+      "description": "<p>It is true that the pandemic transformed us and we can no longer meet friends to jog. Stadio has taken it as an emblem to jog with friends in other cities or countries. It works basically like a room to zoom in and out for a jog! In his first month of MVP he worked with 100 people and it was amazing to see his performance.</p>",
+      "picture": "/images/projects/stadio/details-image.png",
+      "details": {
+        "Rol": ["Product Designer"],
+        "Duration": ["2 months"],
+        "Tools": ["Pencil", "Adobe Photoshop", "Sketch", "Origami"],
+        "Project": ["Product Discovery", "UX Architecture", "Prototype"],
+        "Deliverables": ["App Mobile", "App Apple Watch"],
+        "Applied methodologies": [
+          "User and product discovery",
+          "User interviews",
+          "Usability testing",
+          "Low-fi prototyping",
+          "High-fi prototyping"
+        ]
+      }
+    },
+    {
+      "type": "line"
+    },
+    {
+      "type": "collapsableSection",
+      "id": 1,
+      "background": "",
+      "title": "<span>A start with</span> a lot of <span>adrenaline</span>",
+      "itemBackground": "",
+      "items": [
+        {
+          "title": "Paper <span>first</span>",
+          "description": "To get started I needed a few blank pages and to answer these questions:",
+          "list": [
+            "What is the day-to-day life of these people?",
+            "Why apple watch and not another device?",
+            "How important is it to run with other people?"
+          ],
+          "icon": "location-arrow.svg",
+          "pictures": ["/images/projects/stadio/paper-first.png"]
+        },
+        {
+          "title": "<span>Customer</span> journey",
+          "description": "",
+          "list": [
+            "Interviews with 20+ running enthusiasts",
+            "Designing a freemium business model"
+          ],
+          "icon": "users-alt.svg",
+          "pictures": ["/images/projects/stadio/customer-journey.png"]
+        },
+        {
+          "title": "Organized and <span>Simple</span>",
+          "description": "The flow of the app was designed based on current running apps to reduce the learning curve for our runner and what they expected.",
+          "list": [
+            "40+ runners to test in test phase",
+            "In the process we created the open rooms for running"
+          ],
+          "icon": "comment-heart.svg",
+          "pictures": [
+            "/images/projects/stadio/stadio-01.png",
+            "/images/projects/stadio/stadio-02.png",
+            "/images/projects/stadio/stadio-03.png",
+            "/images/projects/stadio/stadio-04.png"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "imageSection",
+      "background": "#111425",
+      "reverse": false,
+      "hasBackgrounTop": true,
+      "description": "Check second by second how you perform against other competitors in the same race. May the fastest win!",
+      "picture": "/images/projects/stadio/section-1.png",
+      "title": "<span>Motivation</span> for running <span>on your wrist</span>",
+      "comment": {
+        "hasCommente": false,
+        "text": "",
+        "person": {
+          "image": "",
+          "name": "",
+          "description": ""
+        }
+      }
+    },
+    {
+      "type": "imageSection",
+      "background": "",
+      "reverse": true,
+      "description": "You can organize sessions with friends or participate in other rooms with people from other cities or countries. Training has never been so much fun",
+      "picture": "/images/projects/stadio/section-2.png",
+      "title": "<span>Create rooms</span> or join in running <span>with strangers</span>",
+      "comment": {
+        "hasCommente": false,
+        "text": "",
+        "person": {
+          "image": "",
+          "name": "",
+          "description": ""
+        }
+      }
+    },
+    {
+      "type": "line"
+    },
+    {
+      "type": "impactSection",
+      "background": "",
+      "description": "Taking into account that the main running apps have not developed this feature very well. These were the results:",
+      "title": "Impact on <span>people</span>",
+      "picture": "/images/projects/stadio/impact-section.png",
+      "info": {
+        "logo": "/images/projects/stadio/stadio-logo.png",
+        "stars": "8 out of 10 still use stadio"
+      },
+      "company": [
+        "/images/projects/stadio/nike-logo.png",
+        "/images/projects/stadio/adidas-logo.png",
+        "/images/projects/stadio/apple-logo.png"
+      ],
+      "companyText": "Do not have this functionality"
+    }
+  ]
+}

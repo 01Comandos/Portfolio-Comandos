@@ -1,0 +1,105 @@
+{
+  "id": "TruoraTruConnect",
+  "slug": "truora-tru-connect",
+  "name": "Truora TruConnect",
+  "logo": "/images/projects/truora-tru-connect/truora-logo.svg",
+  "theme": "light",
+  "pictures": {
+    "default": "/images/projects/truora-tru-connect/Truconnect-main@2x.png",
+    "mobile": "/images/projects/truora-tru-connect/TruoraTruConnect.png",
+    "desktop": "/images/projects/truora-tru-connect/TruoraTruConnect.png"
+  },
+  "description": "A search engine for parking spaces in the best shopping malls.",
+  "shortDescription": "Redesigning how to do a background query",
+  "title": "Build personalized chatbots and use them across multiple channels.",
+  "subtitle": "Web and responsive design. Industrial Design",
+  "url": "truora-tru-connect",
+  "seo": {
+    "title": "RebajaTusCuentas: Mortgage loans in hours - Comandos",
+    "description": "A lot of data to guide a product used by thousands of people in 3 countries and more than 60M of investment at that time."
+  },
+  "moreProjectsSlugs": [
+    "stadio",
+    "mipospos-integer",
+    "truora-tru-connect",
+    "mipospos"
+  ],
+  "header": {
+    "background": "#edf1fc"
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "background": "linear-gradient(to bottom, #edf1fc 33%, #fff)",
+      "hasContact": false
+    },
+    {
+      "type": "summary",
+      "background": "#edf1fc",
+      "hasLine": false,
+      "description": "<p>At Truora we realized that users are using emails to try to keep users in conversion funnels. All this has changed and people are staying in messenger chat, not in emails. How to take advantage of all this to convert quality users?</p><p>Truora TruConnect is a tool that allows your create conversations with chatbots for the processes you want. We are based on the messaging chat that people use the most to make processes, reactivate users and improve up to 30% of your growth process.</p>",
+      "picture": "/images/projects/truora-tru-connect/Figure-app.png",
+      "details": {
+        "Rol": ["Head of UX"],
+        "Duration": ["3 months"],
+        "Tools": ["Pencil", "Figma"],
+        "Project": ["Product Discovery", "UX Architecture", "User research"],
+        "Deliverables": ["Desktop design", "Usability report", "MVP in code"],
+        "Applied methodologies": [
+          "User and product discovery",
+          "User interviews",
+          "High-fi prototyping"
+        ]
+      }
+    },
+    {
+      "type": "collapsableSection",
+      "id": 1,
+      "background": "",
+      "title": "Improve the <span>conversion</span> of your conversation <span>using Whatsapp</span>",
+      "itemBackground": "",
+      "items": [
+        {
+          "title": "The <span>challenge</span>",
+          "description": "For over 40 years we have been using email to try to keep users in conversion funnels. All this has changed and people are staying in messenger chat, not in emails. How to take advantage of all this to convert quality users?.",
+          "list": [
+            "Extremely easy to create and validate a conversation.",
+            "Integrated simulator to review a conversation before deploying it to the entire target."
+          ],
+          "icon": "location-arrow.svg",
+          "pictures": [
+            "/images/projects/truora-tru-connect/truora-challenge.png"
+          ]
+        },
+        {
+          "title": "<span>Defining</span> the process",
+          "description": "We had 2 stages. The first was to valdiate the idea in its minimum experession. The secord was to have a more complete MVP to go to market with an App to reserve space and then come back to get your car.",
+          "list": [],
+          "icon": "comment-heart.svg",
+          "pictures": ["/images/projects/truora-tru-connect/truora-process.png"]
+        },
+        {
+          "title": "<span>Super fast MVP</span>",
+          "description": "",
+          "list": [
+            "Design, iteration and development oriented to solve the problem from the root. In love with the solution we achieve.",
+            "Our final user test consisted of 10 pilots with different customers and objectives."
+          ],
+          "icon": "users-alt.svg",
+          "pictures": ["/images/projects/truora-tru-connect/UX-progress.png"]
+        }
+      ]
+    },
+    {
+      "type": "imageSection",
+      "background": "",
+      "reverse": false,
+      "description": "An MVP created in 3 months with the support of several pilots to confirm the initial hypothesis.",
+      "picture": "/images/projects/truora-tru-connect/truora-metrics.png",
+      "title": "<span>Achieved in record time</span> including some iterations",
+      "comment": {
+        "hasCommente": false
+      }
+    }
+  ]
+}

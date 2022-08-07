@@ -2,7 +2,7 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import styles from "../styles/Projects.module.css";
 import Projects from "../components/Projects/Projects";
-import projectsList from "../content/projects.json";
+import projectsList from "../content/projects";
 import { isMobile } from "../utils";
 import { trackEvent, visitPage } from "../analytics/events";
 import SeoConfig from "../components/SeoConfig/SeoConfig";
@@ -52,7 +52,7 @@ const ProjectsPage = ({ isMobile }) => {
                   trackEvent("Project clicked", { project: project.name })
                 }
               >
-                <li
+                <a
                   className={styles.projectDetails}
                   onMouseEnter={() => hoverProject(project)}
                 >

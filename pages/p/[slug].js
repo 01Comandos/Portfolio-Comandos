@@ -18,7 +18,7 @@ import Definition from "@/components/Definition/Definition";
 import Contact from "@/components/Contact/Contact";
 import styles from "@/styles/Pages.module.css";
 import stadioStyles from "@/styles/Stadio.module.css";
-import projects from "@/content/projects.json";
+import projects from "@/content/projects";
 import TestimonialsList from "@/content/testimonials.json";
 import MobileMenu from "@/components/MobileMenu/MobileMenu";
 import { visitPage } from "@/analytics/events";
@@ -92,12 +92,14 @@ const ProjectDetailsPage = ({ isMobile, content, moreProjects }) => {
               )}
               {item.type == "partnersSection" && (
                 <PartnersSection
-                  theme={content.theme}
-                  images={item.images}
-                  title={item.title}
-                  titleSmall={item.titleSmall}
-                  titleColor={item.titleColor}
                   background={item.background}
+                  containerBackground={item.containerBackground}
+                  hideWhiteBackground={item.hideWhiteBackground}
+                  images={item.images}
+                  theme={content.theme}
+                  title={item.title}
+                  titleColor={item.titleColor}
+                  titleSmall={item.titleSmall}
                 />
               )}
               {item.type == "clientsSection" && (

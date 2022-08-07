@@ -1,0 +1,207 @@
+{
+  "id": "miposIntegrator",
+  "slug": "mipos-integrator",
+  "name": "mipOS Integrator",
+  "logo": "/images/projects/mipos-integrator/mip-os-logo.svg",
+  "theme": "dark3",
+  "pictures": {
+    "default": "/images/projects/mipos-integrator/mip-os-hero.png",
+    "mobile": "/images/projects/mipos-integrator/mipos-integrator-mobile.png",
+    "desktop": "/images/projects/mipos-integrator/mipos-integrator-desktop.png"
+  },
+  "description": "1 or 40 Dark Kitchen, 1 or 100 restaurants. Everything in a tablet to manage thousands of orders by Delivery.",
+  "shortDescription": "A better experience for Dark Kitchen",
+  "title": "Manage several restaurants from dark kitchen",
+  "subtitle": "Web and tablet design",
+  "url": "mipos-integrator",
+  "seo": {
+    "title": "mipOS Interger: Multiple dark kitchens on one screen - Comandos",
+    "description": "+8 screens per kitchen summed up in 1 was the great result of mipOS Interger with Comandos. Have you ever managed a dark kitchen?"
+  },
+  "moreProjectsSlugs": [
+    "mipospos",
+    "rebaja-tus-cuentas",
+    "stadio",
+    "mipos-integrator"
+  ],
+  "header": {
+    "background": "#15151b"
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "background": "",
+      "hasContact": true,
+      "urlVideo": ""
+    },
+    {
+      "type": "summary",
+      "background": "",
+      "hasLine": true,
+      "description": "<p>Each brand has one tablet per delivery app. Now imagine having 30 brands. Restaurants - in this case Dark Kitchen - have a complex operation within a single kitchen. Many have a space set aside to store hundreds of tablets.</p>",
+      "picture": "/images/projects/mipos-integrator/summary.jpg",
+      "details": {
+        "Rol": ["Product Designer"],
+        "Duration": ["12 months"],
+        "Team": ["1 Product Designer", "8 developers", "1 Product Manager"],
+        "Project": [
+          "Product Discovery",
+          "UX Architecture",
+          "Design system",
+          "Source code"
+        ],
+        "Deliverables": [
+          "Design tablet and desktop app",
+          "App en tiendas de distribución"
+        ],
+        "Applied methodologies": [
+          "User and product discovery",
+          "User interviews",
+          "Usability testing",
+          "Low-fi prototyping",
+          "High-fi prototyping",
+          "Design Sprint + Scrum"
+        ]
+      }
+    },
+    {
+      "type": "line"
+    },
+    {
+      "type": "collapsableSection",
+      "id": 1,
+      "background": "",
+      "title": "<span>One kitchen for many brands</span> can be chaos",
+      "itemBackground": "#191b1c",
+      "items": [
+        {
+          "title": "The <span>challenge</span>",
+          "description": "Create a great product to simplify the operation of up to 40 tablets on a single device.",
+          "list": [
+            "Hundreds of orders coming in at the same time",
+            "Order integrity",
+            "Order status and sales reports for each delivery app and each brand"
+          ],
+          "icon": "location-arrow.svg",
+          "pictures": [
+            "/images/projects/mipos-integrator/challenger-1.png",
+            "/images/projects/mipos-integrator/challenger-2.png"
+          ]
+        },
+        {
+          "title": "<span>Starting</span> the process",
+          "description": "In partnership with Muncher we visited dark kitchens. We learned about ordering and delivery problems.",
+          "list": [
+            "Some had up to 40 brands.",
+            "Some with order delivery tracking problems.",
+            "Turn on and off the brands in the delivery apps according to schedules and eventualities of the day."
+          ],
+          "icon": "comment-heart.svg",
+          "pictures": [
+            "/images/projects/mipos-integrator/the-process-1.png",
+            "/images/projects/mipos-integrator/the-process-2.png",
+            "/images/projects/mipos-integrator/the-process-3.png",
+            "/images/projects/mipos-integrator/the-process-4.png",
+            "/images/projects/mipos-integrator/the-process-5.png"
+          ]
+        },
+        {
+          "title": "<span>Customer</span> Journey",
+          "description": "",
+          "list": [
+            "We visited +5 Dark Kitchens to understand their daily life",
+            "On average, each kitchen served 30 brands in a single day. This translated into hundreds of menus, promotions and profit margins."
+          ],
+          "icon": "users-alt.svg",
+          "pictures": ["/images/projects/mipos-integrator/customer.png"]
+        }
+      ]
+    },
+    {
+      "type": "imageSection",
+      "background": "",
+      "reverse": false,
+      "description": "Having the different menus of different brands on one screen with easy integration with mipOS accounts was the secret of its growth.",
+      "picture": "/images/projects/mipos-integrator/imageSection.png",
+      "title": "<span>All delivery apps and menu</span> on a single screen",
+      "comment": {
+        "hasCommente": true,
+        "text": "Starting with Comandos was accelerating everything from 0 to 100 in a matter of weeks. The best part: nothing was done without consulting UX and product adoption statistics.",
+        "person": {
+          "image": "/images/projects/mipos-integrator/avatar-orlando.jpg",
+          "name": "Roberto Yoncon",
+          "description": "CTO at mipOS"
+        }
+      }
+    },
+    {
+      "type": "clientsSection",
+      "background": "#15151b",
+      "title": "Some clients",
+      "titleSmall": true,
+      "titleColor": "#b4c0ca",
+      "images": [
+        "/images/projects/mipos-integrator/rappi.png",
+        "/images/projects/mipos-integrator/burger-king.png",
+        "/images/projects/mipos-integrator/elmoro.png",
+        "/images/projects/mipos-integrator/we-love.png",
+        "/images/projects/mipos-integrator/fitzer.png"
+      ]
+    },
+    {
+      "type": "collapsableSection",
+      "id": 2,
+      "background": "",
+      "title": "<span>We eliminate all the tablets</span> and we are left with only one",
+      "itemBackground": "#191b1c",
+      "items": [
+        {
+          "title": "Maximum <span>efficiency</span>",
+          "description": "A roadmap created by 3 teams: devs + designate + user priorities.",
+          "list": [
+            "A new way to unify all menus: Uber Eats + Didi Foods + Rappi + iFood, among others.",
+            "Sever and data architecture to make the right decisions",
+            "Special attention to learn and shut down cooking from mipOS and not from every delivery app tablet"
+          ],
+          "icon": "location-arrow.svg",
+          "pictures": [
+            "/images/projects/mipos-integrator/efficiency-1.png",
+            "/images/projects/mipos-integrator/efficiency-2.png",
+            "/images/projects/mipos-integrator/efficiency-3.png",
+            "/images/projects/mipos-integrator/efficiency-4.png",
+            "/images/projects/mipos-integrator/efficiency-5.png"
+          ]
+        },
+        {
+          "title": "Order <span>delivery control</span>",
+          "description": "",
+          "list": [
+            "We created a monitoring and delivery system unique in the market up to that moment.",
+            "The dark kitchen is able to know the real status of each order with the assigned delivery person.",
+            "Para la gerencia significó tener un gran control de la operación."
+          ],
+          "icon": "users-alt.svg",
+          "pictures": [
+            "/images/projects/mipos-integrator/order-delivery-1.png",
+            "/images/projects/mipos-integrator/order-delivery-2.png",
+            "/images/projects/mipos-integrator/order-delivery-3.png"
+          ]
+        },
+        {
+          "title": "<span>Thousands of orders</span> without chaos",
+          "description": "",
+          "list": [
+            "We increased the average ticket by 40% as a result of better menu control.",
+            "In an average integration of 4 delivery apps, we were able to reduce 2 jobs."
+          ],
+          "icon": "comment-heart.svg",
+          "pictures": [
+            "/images/projects/mipos-integrator/without-chaos-1.png",
+            "/images/projects/mipos-integrator/without-chaos-2.png",
+            "/images/projects/mipos-integrator/without-chaos-3.png"
+          ]
+        }
+      ]
+    }
+  ]
+}

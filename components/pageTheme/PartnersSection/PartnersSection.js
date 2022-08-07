@@ -6,20 +6,27 @@ function PartnersSection({
   title,
   images,
   background,
+  hideWhiteBackground,
+  containerBackground,
   theme,
   titleSmall,
   titleColor,
 }) {
   return (
     <div
-      style={{ background }}
+      style={{ background: background }}
       className={classNames(styles.partnersSection, styles[theme])}
     >
-      <div className={classNames([styles.container], [styles[theme]])}>
-        <div className={styles.backgroundContainer}>
-          <div className={styles.backgroundTop}></div>
-          <div className={styles.backgroundBottom}></div>
-        </div>
+      <div
+        style={{ background: containerBackground }}
+        className={classNames([styles.container])}
+      >
+        {!hideWhiteBackground && (
+          <div className={styles.backgroundContainer}>
+            <div className={styles.backgroundTop}></div>
+            <div className={styles.backgroundBottom}></div>
+          </div>
+        )}
         <h4
           style={{ color: titleColor }}
           className={classNames(styles.title, {

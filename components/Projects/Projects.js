@@ -1,8 +1,8 @@
-import Link from 'next/link';
-import Project from '../Project/Project';
-import projectsList from '../../content/projects.json';
-import styles from './Projects.module.css';
-import { trackEvent } from '../../analytics/events';
+import Link from "next/link";
+import Project from "../Project/Project";
+import projectsList from "../../content/projects";
+import styles from "./Projects.module.css";
+import { trackEvent } from "../../analytics/events";
 
 const Projects = ({
   isMobile,
@@ -14,8 +14,9 @@ const Projects = ({
 }) => (
   <section
     className={`${
-      lightTheme ? styles['container--light'] : styles.container
-    } padding-x`}>
+      lightTheme ? styles["container--light"] : styles.container
+    } padding-x`}
+  >
     <h2 className={styles.title}>
       Looks like <span>magic</span>, works like <span>science</span>.
     </h2>
@@ -33,7 +34,8 @@ const Projects = ({
               ? styles.project
               : `${styles.project} ${styles.projectVisibility}`
           }
-          key={index}>
+          key={index}
+        >
           <Project
             isMobile={isMobile}
             name={project.name}
@@ -49,7 +51,8 @@ const Projects = ({
       <div className={styles.options}>
         <Link
           href="/projects"
-          onClick={() => trackEvent('View all projects clicked')}>
+          onClick={() => trackEvent("View all projects clicked")}
+        >
           <button className={`button  ${styles.allProjects}`}>
             View all projects
           </button>

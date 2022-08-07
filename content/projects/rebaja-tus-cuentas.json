@@ -1,4 +1,177 @@
 {
-    "name": "Rebaja Tus Cuentas",
-    "description": ""
+  "id": "RebajaTusCuentas",
+  "slug": "rebaja-tus-cuentas",
+  "name": "RebajaTusCuentas",
+  "logo": "/images/projects/rebaja-tus-cuentas/rtc-logo-color.svg",
+  "theme": "light",
+  "pictures": {
+    "default": "/images/projects/rebaja-tus-cuentas/rtc-hero.png",
+    "mobile": "/images/projects/rebaja-tus-cuentas/rtc-mobile.png",
+    "desktop": "/images/projects/rebaja-tus-cuentas/rtc.png"
+  },
+  "description": "Making it less painful to ask for mortgages is the mission of RebajaTusCuentas. All without goin to the bank.",
+  "shortDescription": "A financial platform built for scale and accessibility",
+  "title": "A financial platform  for mortgage loans",
+  "subtitle": "Web and responsive design",
+  "url": "rebaja-tus-cuentas",
+  "seo": {
+    "title": "RebajaTusCuentas: Mortgage loans in hours - Comandos",
+    "description": "A lot of data to guide a product used by thousands of people in 3 countries and more than 60M of investment at that time."
+  },
+  "moreProjectsSlugs": [
+    "mipospos",
+    "rebaja-tus-cuentas",
+    "stadio",
+    "mipos-integrator"
+  ],
+  "header": {
+    "background": "#edf1fc"
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "background": "linear-gradient(to bottom, #edf1fc 33%, #fff)",
+      "hasContact": false,
+      "urlVideo": "https://www.youtube.com/embed/cSlE9gzCEBg"
+    },
+    {
+      "type": "summary",
+      "background": "#edf1fc",
+      "hasLine": false,
+      "description": "<p>RebajaTusCuentas was born as a Peruvian startup with the commitment to democratize access to mortgage loans in an underbanked country. It is a mortgage broker with the support of 500 startup with presence in 3 countries and + 50M in loans granted.</p>",
+      "picture": "/images/projects/rebaja-tus-cuentas/rtc-summary.png",
+      "details": {
+        "Rol": ["Product Designer"],
+        "Duration": ["6 months"],
+        "Tools": ["Pencil", "Adobe Photoshop", "Adobe illustrator", "Sketch"],
+        "Project": [
+          "Product Discovery",
+          "UX Architecture",
+          "Design System",
+          "Prototype"
+        ],
+        "Deliverables": ["Design App Mobile", "Design app Desktop"],
+        "Applied methodologies": [
+          "User and product discovery",
+          "User interviews",
+          "High-fi prototyping",
+          "QA"
+        ]
+      }
+    },
+    {
+      "type": "collapsableSection",
+      "id": 1,
+      "background": "",
+      "title": "Users who may have <span>better interest rates</span>",
+      "itemBackground": "",
+      "items": [
+        {
+          "title": "The <span>challenge</span>",
+          "description": "Banked people who are unaware that they can get better interest rates for their mortgages. Bearing in mind that fintech services are new and may not generate much confidence.",
+          "list": [
+            "Conveying strength and confidence",
+            "Pre-approved mortgages by banks and RebajaTusCuentas",
+            "Constantly communicate the status of your process"
+          ],
+          "icon": "location-arrow.svg",
+          "pictures": [
+            "/images/projects/rebaja-tus-cuentas/collapsable-challenge-1.png",
+            "/images/projects/rebaja-tus-cuentas/collapsable-challenge-2.png",
+            "/images/projects/rebaja-tus-cuentas/collapsable-challenge-3.png",
+            "/images/projects/rebaja-tus-cuentas/collapsable-challenge-4.png"
+          ]
+        },
+        {
+          "title": "<span>Customer</span> journey",
+          "description": "",
+          "list": [
+            "+40 telephone interviews and video calls",
+            "A slightly long tunnel but short in time compared to a traditional bank"
+          ],
+          "icon": "users-alt.svg",
+          "pictures": [
+            "/images/projects/rebaja-tus-cuentas/collapsable-customer.jpg"
+          ]
+        },
+        {
+          "title": "<span>Defining</span> the process",
+          "description": "",
+          "list": [
+            "The roadmap was created by a team. Taking into account time to experiment with prototypes.",
+            "We had up to 3 experiments to achieve the best registration process."
+          ],
+          "icon": "comment-heart.svg",
+          "pictures": [
+            "/images/projects/rebaja-tus-cuentas/collapsable-defining.png"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "imageSection",
+      "background": "",
+      "reverse": false,
+      "description": "Understanding users well facilitated expansion to 3 countries. In Peru, they went from being a mortgage broker to a direct mortgage provider.",
+      "picture": "/images/projects/rebaja-tus-cuentas/rtc-results-05.png",
+      "title": "<span>A result as great</span> as its purpose",
+      "comment": {
+        "hasCommente": true,
+        "text": "Translating a lot of interviews and phone conversations from users, turning it into an incredible UX and all the expansion we had was largely thanks to Comandos.",
+        "person": {
+          "image": "/images/projects/rebaja-tus-cuentas/rtc-cto.png",
+          "name": "Martín Mendoza del Solar",
+          "description": "CTO at RebajaTusCuentas.com"
+        }
+      }
+    },
+    {
+      "type": "clientsSection",
+      "background": "",
+      "title": "Some allied banks of RebajaTusCuentas",
+      "titleSmall": true,
+      "titleColor": "",
+      "images": [
+        "/images/projects/rebaja-tus-cuentas/scotiabank.svg",
+        "/images/projects/rebaja-tus-cuentas/interbank.svg",
+        "/images/projects/rebaja-tus-cuentas/bbva.svg",
+        "/images/projects/rebaja-tus-cuentas/banbif.svg",
+        "/images/projects/rebaja-tus-cuentas/bcp.svg"
+      ]
+    },
+    {
+      "type": "collapsableSection",
+      "id": 2,
+      "background": "",
+      "title": "The result was <span>amazing</span>",
+      "itemBackground": "",
+      "items": [
+        {
+          "title": "New brand image",
+          "description": "We unified all RTC services together with a new corporate identity. We made attractive what is usually boring for users.",
+          "list": [
+            "We unify all RebajaTusCuentas.com services under a single identity."
+          ],
+          "icon": "location-arrow.svg",
+          "pictures": ["/images/projects/rebaja-tus-cuentas/lets-go-work.png"]
+        },
+        {
+          "title": "Exponential growth",
+          "description": "",
+          "list": [
+            "Expansion to Peru, Colombia and Mexico.",
+            "In Peru we went from being a mortgage broker to delivering mortgages directly.",
+            "BBVA Peru acquires part of RTC’s operation."
+          ],
+          "icon": "users-alt.svg",
+          "pictures": [
+            "/images/projects/rebaja-tus-cuentas/collapsable-expontenial-1.png",
+            "/images/projects/rebaja-tus-cuentas/collapsable-expontenial-2.png",
+            "/images/projects/rebaja-tus-cuentas/collapsable-expontenial-3.png",
+            "/images/projects/rebaja-tus-cuentas/collapsable-expontenial-4.png"
+          ]
+        }
+      ]
+    }
+  ]
 }
